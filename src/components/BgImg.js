@@ -19,9 +19,7 @@ const BgImg = ({ children, img }) => {
       }
     }
   `)
-  const edge = data.allFile.edges.find(({ node }) => {
-    return node.name === img
-  })
+  const edge = data.allFile.edges.find(({ node }) => node.name === img)
   const fluid = edge ? edge.node.childImageSharp.fluid : null
   return fluid ? (
     <BackgroundImage Tag="section" fluid={fluid} backgroundColor={`white`}>
