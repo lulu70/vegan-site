@@ -14,6 +14,8 @@ class BlogPostTemplate extends React.Component {
     const {
       title: siteTitle,
       subTitle: siteSubTitle,
+      blueColor,
+      greenColor,
     } = this.props.data.site.siteMetadata
     // const { previous, next } = this.props.pageContext
     return (
@@ -22,6 +24,8 @@ class BlogPostTemplate extends React.Component {
           location={this.props.location}
           title={siteTitle}
           subTitle={siteSubTitle}
+          blueColor={blueColor}
+          greenColor={greenColor}
         >
           <SEO
             title={post.frontmatter.title}
@@ -98,6 +102,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         subTitle
+        blueColor
+        greenColor
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -109,6 +115,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         bgImg
+        tags
       }
     }
   }

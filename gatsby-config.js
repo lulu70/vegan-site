@@ -3,6 +3,7 @@ module.exports = {
     title: `TECH LIFESTYLE`,
     subTitle: `TO MAKE YOUR LIFESTYLE BETTER`,
     blueColor: "#002940",
+    greenColor: "#afccae",
     author: `Lior Cohen`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
