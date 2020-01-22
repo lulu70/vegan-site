@@ -15,6 +15,8 @@ const BlogIndex = ({ data, location }) => {
   } = data.site.siteMetadata
   const posts = data.allMarkdownRemark.edges
   const { searchState } = React.useContext(Context)
+  const hasSearchResults = searchState.filteredPosts && searchState.query !== ""
+  const postsToRender = hasSearchResults ? searchState.filteredPosts : posts
   return (
     <Layout
       location={location}
@@ -33,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
           Try searching for something else...
         </p>
       )}
-      {posts.map(({ node }) => {
+      {postsToRender.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>

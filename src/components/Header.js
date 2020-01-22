@@ -3,7 +3,7 @@ import { scale, rhythm } from "../utils/typography"
 import { Link } from "gatsby"
 import Logo from "../../content/assets/Logo.svg"
 import SearchInput from "./SearchInput"
-const Header = ({ subTitle, blueColor, greenColor, posts }) => {
+const Header = ({ blueColor, greenColor, posts }) => {
   return (
     <header
       style={{
@@ -34,14 +34,6 @@ const Header = ({ subTitle, blueColor, greenColor, posts }) => {
         >
           <Logo style={{ width: "200px" }} />
         </Link>
-        <div
-          style={{
-            fontSize: rhythm(0.3),
-            padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          {subTitle}
-        </div>
         {posts && <SearchInput posts={posts} greenColor={greenColor} />}
       </div>
     </header>

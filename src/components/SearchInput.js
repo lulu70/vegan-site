@@ -9,7 +9,6 @@ const SearchInput = ({ posts, greenColor }) => {
     setPosts(searchDispatch, posts)
   }, [posts, searchDispatch])
 
-  const emptyQuery = ""
   const handleInputChange = event => {
     const query = event.target.value
     const filteredPosts = posts.filter(post => {
@@ -23,8 +22,7 @@ const SearchInput = ({ posts, greenColor }) => {
           .includes(query.toLowerCase())
       )
     })
-    const hasSearchResults = filteredPosts && query !== emptyQuery
-    setPosts(searchDispatch, hasSearchResults ? filteredPosts : posts)
+    setPosts(searchDispatch, filteredPosts)
     setQuery(searchDispatch, query)
   }
   return (
