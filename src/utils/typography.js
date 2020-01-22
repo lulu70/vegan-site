@@ -3,6 +3,10 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    body: {
+      fontFamily: "roboto, Sans-Serif",
+      fontWeight: "lighter",
+    },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },

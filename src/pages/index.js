@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -9,13 +9,22 @@ import { rhythm } from "../utils/typography"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const {
+      title: siteTitle,
+      subTitle: siteSubTitle,
+      blueColor,
+    } = data.site.siteMetadata
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout
+        location={this.props.location}
+        title={siteTitle}
+        subTitle={siteSubTitle}
+        blueColor={blueColor}
+      >
         <SEO title="All posts" />
-        <Bio />
+        {/* <Bio /> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -26,7 +35,10 @@ class BlogIndex extends React.Component {
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Link
+                    style={{ boxShadow: `none`, color: blueColor }}
+                    to={node.fields.slug}
+                  >
                     {title}
                   </Link>
                 </h3>
@@ -54,6 +66,8 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        subTitle
+        blueColor
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

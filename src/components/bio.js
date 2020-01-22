@@ -54,7 +54,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who really likes to travelling.
+        Written by <strong>{author}</strong>.
       </p>
     </div>
   )

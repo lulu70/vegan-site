@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Holidays-Lifestyle`,
+    title: `TECH LIFESTYLE`,
+    subTitle: `TO MAKE YOUR LIFESTYLE BETTER`,
+    blueColor: "#002940",
     author: `Lior Cohen`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -9,6 +11,14 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
