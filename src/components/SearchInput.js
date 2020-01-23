@@ -2,8 +2,10 @@ import React from "react"
 import { Context } from "../context/ContextProvider"
 import { setPosts, setQuery } from "../context/reducers.js/searchReducer"
 import SearchIcon from "../../content/assets/search.svg"
+import { rhythm } from "../utils/typography"
+
 const SearchInput = ({ posts, greenColor }) => {
-  const { searchDispatch } = React.useContext(Context)
+  const { searchState, searchDispatch } = React.useContext(Context)
 
   React.useEffect(() => {
     setPosts(searchDispatch, posts)
@@ -35,11 +37,16 @@ const SearchInput = ({ posts, greenColor }) => {
     >
       <SearchIcon />
       <input
-        style={{ border: 0, backgroundColor: greenColor }}
+        style={{
+          border: 0,
+          backgroundColor: greenColor,
+          borderRadius: rhythm(0.2),
+        }}
         type="text"
         id="search"
         placeholder="Search..."
         onChange={handleInputChange}
+        value={searchState.query}
       />
     </label>
   )

@@ -18,7 +18,7 @@ const Header = ({ blueColor, greenColor, posts }) => {
           display: "flex",
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(30),
           alignItems: "center",
           color: "white",
           justifyContent: "space-between",
