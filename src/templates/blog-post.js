@@ -11,21 +11,9 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const bgImg = post.frontmatter.bgImg
-    const {
-      title: siteTitle,
-      subTitle: siteSubTitle,
-      blueColor,
-      greenColor,
-    } = this.props.data.site.siteMetadata
     return (
       <BgImg img={bgImg}>
-        <Layout
-          location={this.props.location}
-          title={siteTitle}
-          subTitle={siteSubTitle}
-          blueColor={blueColor}
-          greenColor={greenColor}
-        >
+        <Layout location={this.props.location}>
           <SEO
             title={post.frontmatter.title}
             description={post.frontmatter.description || post.excerpt}
@@ -70,14 +58,6 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        subTitle
-        blueColor
-        greenColor
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)

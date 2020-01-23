@@ -6,6 +6,7 @@ export const searchInitialState = {
 const types = {
   setPosts: "SET_POSTS",
   setQuery: "SET_QUERY",
+  resetState: "RESET_STATE",
 }
 
 export const setPosts = (dispatch, payload) => {
@@ -18,6 +19,11 @@ export const setQuery = (dispatch, payload) => {
   dispatch({
     type: types.setQuery,
     payload,
+  })
+}
+export const resetState = dispatch => {
+  dispatch({
+    type: types.resetState,
   })
 }
 
@@ -34,6 +40,9 @@ export const searchReducer = (state, { type, payload }) => {
         ...state,
         query: payload,
       }
+    }
+    case types.resetState: {
+      return searchInitialState
     }
     default: {
       return state

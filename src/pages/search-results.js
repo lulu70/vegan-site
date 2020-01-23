@@ -1,22 +1,26 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import { Context } from "../context/ContextProvider"
-import { resetState } from "../context/reducers.js/searchReducer"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Context } from "../context/ContextProvider"
+import { Link } from "gatsby"
 import { rhythm } from "../utils/typography"
+import Divider from "../components/Divider"
 
-const BlogIndex = ({ data, location }) => {
+const SearchResults = ({ data }) => {
   const { blueColor } = data.site.siteMetadata
-  const posts = data.allMarkdownRemark.edges
-  const { searchDispatch } = React.useContext(Context)
-  React.useEffect(() => {
-    resetState(searchDispatch)
-  }, [searchDispatch])
+  const { searchState } = React.useContext(Context)
+  const { filteredPosts, query } = searchState
   return (
-    <Layout location={location}>
-      <SEO title="All posts" />
-      {posts.map(({ node }) => {
+    <Layout>
+      <Divider />
+      <p>
+        Your search for <strong>"{query}"</strong> returned{" "}
+        {filteredPosts.length} {filteredPosts.length > 1 ? "results" : "result"}
+        ...
+      </p>
+      {filteredPosts.length < 1 && (
+        <span>Try searching for something else...</span>
+      )}
+      {filteredPosts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
@@ -49,8 +53,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
-
+export default SearchResults
 export const pageQuery = graphql`
   query {
     site {
@@ -59,23 +62,6 @@ export const pageQuery = graphql`
         subTitle
         blueColor
         greenColor
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-            bgImg
-            tags
-          }
-        }
       }
     }
   }
