@@ -2,8 +2,12 @@ import React from "react"
 import { useStaticQuery } from "gatsby"
 import Header from "./Header"
 import { rhythm } from "../utils/typography"
+import Search from "./Search"
+import { Context } from "../context/ContextProvider"
 
 const Layout = ({ children }) => {
+  const { searchState } = React.useContext(Context)
+  const { searchVisibility } = searchState
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -34,17 +38,13 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const { title, subTitle, blueColor, greenColor } = data.site.siteMetadata
+  const { blueColor } = data.site.siteMetadata
   const posts = data.allMarkdownRemark.edges
+
   return (
     <>
-      <Header
-        title={title}
-        subTitle={subTitle}
-        blueColor={blueColor}
-        greenColor={greenColor}
-        posts={posts}
-      />
+      <Header blueColor={blueColor} />
+      {searchVisibility && <Search blueColor={blueColor} posts={posts} />}
       <div
         style={{
           marginLeft: `auto`,

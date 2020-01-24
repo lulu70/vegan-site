@@ -1,20 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { Context } from "../context/ContextProvider"
-import { resetState } from "../context/reducers.js/searchReducer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex = ({ data }) => {
   const { blueColor } = data.site.siteMetadata
   const posts = data.allMarkdownRemark.edges
-  const { searchDispatch } = React.useContext(Context)
-  React.useEffect(() => {
-    resetState(searchDispatch)
-  }, [searchDispatch])
   return (
-    <Layout location={location}>
+    <Layout>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug

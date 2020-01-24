@@ -1,13 +1,12 @@
 import React from "react"
 import { Context } from "../context/ContextProvider"
-import { setPosts, setQuery } from "../context/reducers.js/searchReducer"
-import SearchIcon from "../../content/assets/search.svg"
+import { setPosts, setQuery } from "../context/reducers/searchReducer"
 import { rhythm } from "../utils/typography"
-import { navigate } from "gatsby"
 
-const SearchInput = ({ posts, greenColor }) => {
+const SearchInput = ({ posts }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { query } = searchState
+
   const handleInputChange = event => {
     const query = event.target.value
     const filteredPosts = posts.filter(post => {
@@ -25,40 +24,29 @@ const SearchInput = ({ posts, greenColor }) => {
     setPosts(searchDispatch, filteredPosts)
     setQuery(searchDispatch, query)
   }
-  const onFormSubmit = e => {
-    e.preventDefault()
-    query && navigate("/search-results")
-  }
+
   return (
-    <form onSubmit={onFormSubmit}>
-      <label
-        htmlFor="search"
+    <label
+      htmlFor="search"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        flex: 1,
+      }}
+    >
+      <input
         style={{
-          display: "flex",
-          alignItems: "center",
+          border: "solid 2px grey",
+          borderRadius: rhythm(0.3),
+          flex: 1,
         }}
-      >
-        <button
-          type="submit"
-          style={{ backgroundColor: "transparent", border: 0, display: "flex" }}
-          disabled={!query}
-        >
-          <SearchIcon />
-        </button>
-        <input
-          style={{
-            border: 0,
-            backgroundColor: greenColor,
-            borderRadius: rhythm(0.2),
-          }}
-          type="text"
-          id="search"
-          placeholder="Search..."
-          onChange={handleInputChange}
-          value={query}
-        />
-      </label>
-    </form>
+        type="text"
+        id="search"
+        placeholder="Search..."
+        onChange={handleInputChange}
+        value={query}
+      />
+    </label>
   )
 }
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { searchInitialState, searchReducer } from "./reducers.js/searchReducer"
+import { searchInitialState, searchReducer } from "./reducers/searchReducer"
 export const Context = React.createContext()
 
 const ContextProvider = ({ children }) => {
