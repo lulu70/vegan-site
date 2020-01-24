@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
           greenColor
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             excerpt
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
   `)
 
   const { blueColor } = data.site.siteMetadata
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMdx.edges
 
   return (
     <>

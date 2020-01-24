@@ -6,7 +6,7 @@ import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data }) => {
   const { blueColor } = data.site.siteMetadata
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMdx.edges
   return (
     <Layout>
       <SEO title="All posts" />
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
         greenColor
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
