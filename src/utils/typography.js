@@ -11,6 +11,10 @@ Wordpress2016.overrideThemeStyles = () => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    a: { boxShadow: `none` },
+    "ul,ol": {
+      paddingLeft: typography.rhythm(0.6),
+    },
   }
 }
 

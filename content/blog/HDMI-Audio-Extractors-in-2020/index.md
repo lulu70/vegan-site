@@ -1,120 +1,53 @@
 ---
 title: HDMI Audio Extractors in 2020
 date: "2020-01-22"
-description: "this is a test post about something"
+description: "An HDMI audio extractor is a device that allows you to extract audio signals from an HDMI source.
+In this post we will explain what it can do for you and also share our recommendations"
 bgImg: ""
 tags: ["hdmi", "audio", "apple tv", "mini jack", "sound system"]
 ---
 
-## What is it ? 🤷‍♂️
+[Skip to see the products](#hdmi-extractor-to-the-rescue)
 
-An HDMI audio extractor is that device that allows you to extract audio signals from an HDMI source.
+## What is it ?
+
+An HDMI audio extractor is a device that allows you to extract audio signals from an HDMI source.
+
+![Car Audio Memes - Funny posts for car lovers and those who like upgrading their sound systems](./Car-Audio-Memes-Funny-posts-for-car-lovers-and-those-who-like-upgrading-their-sound-systems.jpeg)
 
 ## Why do I need it?
 
-An HDMI cable can carry all the video <strong>and audio</strong> you need, but what happens if you need to get connected to a different audio system?
-Many times when you arranging any kind of event for more then 10 poeple for example you realise that you need more audio volume then the crappy TV screen speakers you have.
-Yes, you need a more powerfull sound system, but all you have is a device that has only an HDMI output like the <a target="blank" href="https://www.amazon.com/Apple-TV-32GB-4th-generation/dp/B075NFX24M">Apple TV</a>.
-The video goes where you expect it to go but how can you connect the audio?
+An HDMI cable can carry all the <strong>video and audio</strong> you need, but what happens if you need to get connected to a different audio system?
+Many devices these days ships with just an HDMI output. For example this one: <a target="blank" href="https://www.amazon.com/Apple-TV-32GB-4th-generation/dp/B075NFX24M">Apple TV</a> or this one: <a target="blank" href="https://www.amazon.com/Google-GA3A00403A14-Chromecast-Ultra/dp/B0157OY5EA/ref=sr_1_4?crid=RAY82VUKAWHT&keywords=cromecast+tv&qid=1579872011&sprefix=cromecast%2Caps%2C216&sr=8-4">Google Chromecast Ultra</a>.
+The assumption with these devices is that the buyer will connect it to his tv screen that has build in speakers.
+But what if you want something better, what if the build in speakers are just not enough and you need more volume, or what if you just want to use a projector???
+Where will the audio go then? Unfortunately the answer is : <strong>NOWHERE</strong>.
+![A man trying to listen to music with earphones connected to a trash can.](./a-man-listening-to-a-garbage-can.jpg)
 
 ### HDMI extractor to the Rescue
 
-I've made this list of great options for you to concider to fix your problem.
+We've made this list of great options for you to consider to fix this problem.
+With these devices you wil have the ability to extract the audio from your source to standart audio connectors that you will be able to easily connect to any standart speaker or audio system.
 
-## On deer horse aboard tritely yikes and much
+---
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+1. #### <a target="blank" href="https://www.amazon.com/J-Tech-Digital-Extractor-Converter-JTDAT5CH/dp/B00BIQER0E/ref=sr_1_17_sspa?crid=2EQYUBO7BBKGL&keywords=hdmi+audio+extractor&qid=1579875015&sprefix=hdmi+audio%2Caps%2C230&sr=8-17-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFFUjZHMDVOU0JGV0wmZW5jcnlwdGVkSWQ9QTAxNDI2NzkxTkMxUzhPQjFNTUg3JmVuY3J5cHRlZEFkSWQ9QTAxNzkwMzMxSVhKODZPQUlZVzdYJndpZGdldE5hbWU9c3BfYnRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">J-Tech Digital Premium Quality 1080P HDMI To HDMI + Audio (SPDIF + RCA Stereo) Audio Extractor Converter (JTDAT5CH) - price: \$25.95 - \$45.99</a>
 
-- This however showed weasel
-- Well uncritical so misled
-  - this is very interesting
-- Goodness much until that fluid owl
+![J-Tech Digital Premium Quality 1080P HDMI To HDMI + Audio (SPDIF + RCA Stereo) Audio Extractor Converter (JTDAT5CH)](./j-tech.jpg)
 
-When she reached the first hills of the **Italic Mountains**, she had a last
-view back on the skyline of her hometown _Bookmarksgrove_, the headline of
-[Alphabet Village](http://google.com) and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.
+- Extract the digital HDMI audio signal from the HDMI input and convert it to 2 channel analog stereo output or 5.1 channel Audio output
+- Supports the highest video resolution to 1080p. Supports 225MHz/2.25Gbps per channel bandwidth
+  Supports 12bit per channel (36bit all channel) deep color. Supports HDCP, Video EDID Pass Through; Plug & Play
+- Audio EDID Settings: 2CH for L/R or SPDIF stereo output; 5.1CH for SPDIF Output, Supports uncompressed audio such as LPCM. Supports compressed audio such as DTS Digital, Dolby Digital
+- Provides the Best Flexibility through Three NEW Audio EDID Settings: Pass, 2CH and 5.1CH, Support 3D video (To get 3D, all units connected to the splitter outputs must support 3D). This item supports Apple TV and various Blu-ray player and satellite receivers.
 
-### Overlaid the jeepers uselessly much excluding
+---
 
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-[Longe and Parole](http://google.com) and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.
+2. #### <a target="blank" href="https://www.amazon.com/avedio-links-Extractor-Splitter-Converter/dp/B07H94D77V/ref=sr_1_5?crid=2EQYUBO7BBKGL&keywords=hdmi+audio+extractor&qid=1579873381&sprefix=hdmi+audio%2Caps%2C230&sr=8-5">avedio links 4K HDMI Audio Extractor - price: \$23.99</a>
 
-> Far far away, behind the word mountains, far from the countries Vokalia and
-> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-> right at the coast of the Semantics, a large language ocean.
+![avedio links 4K HDMI Audio Extractor](./avedio-links-4K-HDMI-Audio-Extractor.jpg)
 
-It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.
-
-### According a funnily until pre-set or arrogant well cheerful
-
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
-
-1.  So baboon this
-2.  Mounted militant weasel gregariously admonishingly straightly hey
-3.  Dear foresaw hungry and much some overhung
-4.  Rash opossum less because less some amid besides yikes jeepers frenetic
-    impassive fruitlessly shut
-
-When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.
-
-> The copy warned the Little Blind Text, that where it came from it would have
-> been rewritten a thousand times and everything that was left from its origin
-> would be the word "and" and the Little Blind Text should turn around and
-> return to its own, safe country.
-
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.
-
-#### Silent delightfully including because before one up barring chameleon
-
-Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.
-
-Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
-
-##### Wherever far wow thus a squirrel raccoon jeez jaguar this from along
-
-She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.
-
-###### Slapped cozy a that lightheartedly and far
-
-The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word "and" and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.
+- HDMI Audio Extractor :One HDMI input to One HDMI ouput + Optical Toslink SPDIF and Analog 3.5mm AUX stereo audio out (Tips: SPDIF and AUX audio support output separately to sound-bar, amplifier, headphone and other audio receiver without connecting TV / Monitor)
+- Three Audio mode switch settings: (Pass, 2CH and 5.1CH Mode) 3.5mm audio output supports incoming 2CH PCM LPCM stereo audio; Optical SPDIF output supports incoming 2CH PCM, 5.1CH Dolby Digital, Dolby TrueHD, DTS-HD.
+- 4K 60Hz High Resolution: avedio links HDMI Optical audio Extractor Support 4KX2K@60Hz/ 3D/1080p/1080i/720p/576i/480p/480i. Support video color format: 24bit/deep color 30bit,36bit with sync sound; HDMI v1.4; It also Support HDMI ARC (Audio Return Channel)
+- Wide Compatible :Suitable for various HDMI source devices like Blu-ray/ DVD/ HD player, cable/satellite box, Amazon Fire TV, Apple TV, PS3/4, Xbox, PC/laptop, HD camera, HD DVR etc.
