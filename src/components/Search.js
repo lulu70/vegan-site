@@ -9,15 +9,23 @@ import { rhythm } from "../utils/typography"
 import SearchInput from "./SearchInput"
 import { Link } from "gatsby"
 import debounce from "lodash.debounce"
+import "../styles.css"
+
 const Search = ({ posts, blueColor }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { filteredPosts, query } = searchState
+
   const [scrollHeight, setScrollHeight] = React.useState(null)
+  const [containerClassName, setContainerClassName] = React.useState(
+    "search__container__fadeIn"
+  )
+
   React.useEffect(() => {
     if (!query) {
       setPosts(searchDispatch, posts)
     }
   }, [posts, searchDispatch, query])
+
   React.useEffect(() => {
     setScrollHeight(document.body.scrollHeight)
     const handleResize = () => {
@@ -29,18 +37,22 @@ const Search = ({ posts, blueColor }) => {
     }
   }, [searchDispatch])
   const close = () => {
-    resetSearchState(searchDispatch)
-    setSearchVisibility(searchDispatch, false)
+    setContainerClassName("search__container__fadeOut")
+    setTimeout(() => {
+      resetSearchState(searchDispatch)
+      setSearchVisibility(searchDispatch, false)
+    }, 100)
   }
   return (
     <div
+      className={containerClassName}
       style={{
-        width: "100%",
-        height: scrollHeight,
-        backgroundColor: "rgba(255,255,255,0.96)",
         position: "absolute",
         left: 0,
         top: 0,
+        width: "100%",
+        height: scrollHeight,
+        backgroundColor: "rgba(255,255,255,0.96)",
         display: "flex",
         justifyContent: "center",
         color: "black",
@@ -54,22 +66,7 @@ const Search = ({ posts, blueColor }) => {
           flexDirection: "column",
         }}
       >
-        <div style={{ display: "flex", marginTop: rhythm(1) }}>
-          <SearchInput posts={posts} />
-          <button
-            onClick={() => {
-              close()
-            }}
-            style={{
-              backgroundColor: "transparent",
-              border: 0,
-              height: rhythm(1),
-            }}
-          >
-            close X
-          </button>
-        </div>
-
+        <SearchInput posts={posts} close={close} blueColor={blueColor} />
         {query && (
           <>
             <p>

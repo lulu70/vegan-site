@@ -3,7 +3,7 @@ import { Context } from "../context/ContextProvider"
 import { setPosts, setQuery } from "../context/reducers/searchReducer"
 import { rhythm } from "../utils/typography"
 
-const SearchInput = ({ posts }) => {
+const SearchInput = ({ posts, close, blueColor }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { query } = searchState
 
@@ -30,19 +30,33 @@ const SearchInput = ({ posts }) => {
       htmlFor="search"
       style={{
         display: "flex",
-        alignItems: "center",
-        flex: 1,
+        flexDirection: "column",
       }}
     >
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <h3 style={{ color: blueColor }}>Search The Website...</h3>
+        <button
+          onClick={() => {
+            close()
+          }}
+          style={{
+            backgroundColor: "transparent",
+            border: 0,
+            height: rhythm(1),
+            cursor: "pointer",
+          }}
+        >
+          close X
+        </button>
+      </div>
       <input
         style={{
           border: "solid 2px grey",
-          borderRadius: rhythm(0.3),
-          flex: 1,
+          borderRadius: rhythm(0.1),
+          padding: rhythm(0.3),
         }}
-        type="text"
+        type="search"
         id="search"
-        placeholder="Search..."
         onChange={handleInputChange}
         value={query}
       />
