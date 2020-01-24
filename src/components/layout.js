@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header blueColor={blueColor} />
+      <Header color={blueColor} />
       {searchVisibility && <Search blueColor={blueColor} posts={posts} />}
       <div
         style={{
