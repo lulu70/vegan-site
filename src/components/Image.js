@@ -2,13 +2,13 @@ import React from "react"
 import GatsbyImage from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Image = ({ path, ...props }) => {
+const Image = ({ name, ...props }) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
       allFile {
         edges {
           node {
-            relativePath
+            name
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid_withWebp
@@ -19,13 +19,15 @@ const Image = ({ path, ...props }) => {
       }
     }
   `)
-  const { node } = data.allFile.edges.find(
-    ({ node }) => node.relativePath === path
-  )
-  return node ? (
-    <GatsbyImage fluid={node.childImageSharp.fluid} {...props} />
+
+  const edge = data.allFile.edges.find(({ node }) => node.name === name)
+
+  return edge ? (
+    <GatsbyImage fluid={edge.node.childImageSharp.fluid} {...props} />
   ) : (
-    <h1>Image</h1>
+    <h1 style={{ color: "red" }}>
+      <strong>Cant find the image...</strong>
+    </h1>
   )
 }
 
