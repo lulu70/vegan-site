@@ -4,6 +4,8 @@ import Header from "./Header"
 import { rhythm } from "../utils/typography"
 import Search from "./Search"
 import { Context } from "../context/ContextProvider"
+import { MDXProvider } from "@mdx-js/react"
+import Image from "./Image"
 
 const Layout = ({ children }) => {
   const { searchState } = React.useContext(Context)
@@ -40,7 +42,7 @@ const Layout = ({ children }) => {
 
   const { blueColor } = data.site.siteMetadata
   const posts = data.allMdx.edges
-
+  const componentsForMdx = { Image }
   return (
     <>
       <Header color={blueColor} />
@@ -52,7 +54,9 @@ const Layout = ({ children }) => {
           maxWidth: rhythm(30),
         }}
       >
-        <main>{children}</main>
+        <main>
+          <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
+        </main>
       </div>
     </>
   )
