@@ -30,6 +30,7 @@ const Header = ({ color }) => {
       >
         <Link
           to={`/`}
+          aria-label="home"
           style={{
             boxShadow: `none`,
             textDecoration: `none`,
@@ -42,6 +43,7 @@ const Header = ({ color }) => {
         {!searchVisibility && (
           <button
             type="submit"
+            aria-label="search"
             style={{
               backgroundColor: "transparent",
               border: 0,

@@ -5,7 +5,7 @@ module.exports = {
     blueColor: "#002940",
     greenColor: "#afccae",
     author: `Lior Cohen`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A Tech blog to improve your lifestyle`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `kylemathews`,
@@ -89,7 +89,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `content/assets/Logo.png`,
+        icon: `content/assets/Logo.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -101,6 +101,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
