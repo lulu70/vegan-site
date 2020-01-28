@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(30),
+          maxWidth: rhythm(24),
         }}
       >
         <main>

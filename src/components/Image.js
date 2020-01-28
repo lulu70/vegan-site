@@ -2,11 +2,7 @@ import React from "react"
 import GatsbyImage from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Image = ({
-  fileName,
-  style = { width: 400, marginLeft: 0 },
-  ...props
-}) => {
+const Image = ({ fileName, small, style, ...props }) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
       allFile {
@@ -29,8 +25,8 @@ const Image = ({
   return edge ? (
     <GatsbyImage
       fluid={edge.node.childImageSharp.fluid}
-      style={style}
       {...props}
+      style={{ width: small ? "250px" : "", ...style }}
     />
   ) : (
     <p style={{ color: "red" }}>

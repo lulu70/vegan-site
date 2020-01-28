@@ -12,8 +12,9 @@ Wordpress2016.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     a: { boxShadow: `none` },
-    "ul,ol": {
+    "ul,ol, blockquote": {
       paddingLeft: typography.rhythm(0.6),
+      marginLeft: 0,
     },
   }
 }

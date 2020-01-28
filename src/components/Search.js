@@ -61,7 +61,7 @@ const Search = ({ posts, blueColor }) => {
     >
       <div
         style={{
-          width: rhythm(30),
+          width: rhythm(24),
           display: "flex",
           flexDirection: "column",
         }}
