@@ -6,8 +6,9 @@ import Search from "./Search"
 import { Context } from "../context/ContextProvider"
 import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
+import Bio from "./Bio"
 import "../styles.css"
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const [postContainerStyle, setPostContainerStyle] = React.useState(
     "layout__postContainer__fadeIn"
   )
@@ -53,6 +54,8 @@ const Layout = ({ children }) => {
   const { blueColor } = data.site.siteMetadata
   const posts = data.allMdx.edges
   const componentsForMdx = { Image }
+  const rootPath = `${__PATH_PREFIX__}/`
+  const isIndexPage = location.pathname === rootPath
   return (
     <>
       <Header color={blueColor} />
@@ -62,12 +65,28 @@ const Layout = ({ children }) => {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(40),
+          display: "flex",
         }}
       >
-        <main>
+        <main
+          style={{
+            flex: 2,
+          }}
+        >
           <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
         </main>
+        <div style={{ flex: 0.1 }}></div>
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          {isIndexPage ? <span /> : <Bio />}
+        </div>
       </div>
     </>
   )

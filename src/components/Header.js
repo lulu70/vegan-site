@@ -23,7 +23,7 @@ const Header = ({ color, style }) => {
           display: "flex",
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(40),
           alignItems: "center",
           color: "white",
           justifyContent: "space-between",

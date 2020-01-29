@@ -1,17 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Bio from "../components/bio"
+import Bio from "../components/Bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import BgImg from "../components/BgImg"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-const BlogPostTemplate = ({ data }) => {
+const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
   const bgImg = post.frontmatter.bgImg
   return (
     <BgImg img={bgImg}>
-      <Layout>
+      <Layout location={location}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}

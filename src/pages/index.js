@@ -4,11 +4,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data }) => {
+const BlogIndex = ({ data, location }) => {
   const { blueColor } = data.site.siteMetadata
   const posts = data.allMdx.edges
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
