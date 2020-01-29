@@ -5,7 +5,7 @@ import Logo from "../../content/assets/Logo.svg"
 import SearchIcon from "../../content/assets/search.svg"
 import { Context } from "../context/ContextProvider"
 import { setSearchVisibility } from "../context/reducers/searchReducer"
-const Header = ({ color }) => {
+const Header = ({ color, style }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { searchVisibility } = searchState
   return (
@@ -15,6 +15,7 @@ const Header = ({ color }) => {
         padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
         borderBottom: "1px solid grey ",
         backgroundColor: color,
+        ...style,
       }}
     >
       <div
