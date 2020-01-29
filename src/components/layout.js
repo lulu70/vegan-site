@@ -6,8 +6,18 @@ import Search from "./Search"
 import { Context } from "../context/ContextProvider"
 import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
-
+import "../styles.css"
 const Layout = ({ children }) => {
+  const [postContainerStyle, setPostContainerStyle] = React.useState(
+    "layout__postContainer__fadeIn"
+  )
+  React.useEffect(() => {
+    setPostContainerStyle("layout__postContainer__fadeIn")
+    return () => {
+      setPostContainerStyle("layout__postContainer__fadeOut")
+    }
+  }, [setPostContainerStyle])
+
   const { searchState } = React.useContext(Context)
   const { searchVisibility } = searchState
   const data = useStaticQuery(graphql`
@@ -48,6 +58,7 @@ const Layout = ({ children }) => {
       <Header color={blueColor} />
       {searchVisibility && <Search blueColor={blueColor} posts={posts} />}
       <div
+        className={postContainerStyle}
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
