@@ -2,12 +2,12 @@ import React from "react"
 import Bio from "./Bio"
 import RelatedPosts from "./RelatedPosts"
 
-const RightSide = ({ location, relatedPosts, blueColor, style }) => {
+const RightSide = ({ location, relatedPosts, blueColor, style, className }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isIndexPage = location.pathname === rootPath
 
   return (
-    <div style={style}>
+    <div style={style} className={className}>
       {isIndexPage ? (
         <span />
       ) : (

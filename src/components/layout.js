@@ -77,6 +77,7 @@ const Layout = ({ children, location, relatedPosts }) => {
         </main>
         <div style={{ flex: 0.1 }}></div>
         <RightSide
+          className="rightSide"
           style={{ flex: 1 }}
           location={location}
           relatedPosts={relatedPosts}
