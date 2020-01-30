@@ -44,6 +44,7 @@ const Layout = ({ children, location }) => {
               description
               bgImg
               tags
+              relatedPosts
             }
           }
         }
