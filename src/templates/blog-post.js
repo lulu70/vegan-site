@@ -9,9 +9,10 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
   const bgImg = post.frontmatter.bgImg
+  const relatedPosts = data.relatedPosts.edges
   return (
     <BgImg img={bgImg}>
-      <Layout location={location}>
+      <Layout location={location} relatedPosts={relatedPosts}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -54,7 +55,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String!, $relatedPosts: [String]) {
     mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -65,6 +66,24 @@ export const pageQuery = graphql`
         description
         bgImg
         tags
+      }
+    }
+    relatedPosts: allMdx(filter: { fields: { slug: { in: $relatedPosts } } }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            bgImg
+            tags
+            relatedPosts
+          }
+        }
       }
     }
   }

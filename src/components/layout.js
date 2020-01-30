@@ -8,7 +8,7 @@ import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
 import "../styles.css"
 import RightSide from "./RightSide"
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location, relatedPosts }) => {
   const [postContainerStyle, setPostContainerStyle] = React.useState(
     "layout__postContainer__fadeIn"
   )
@@ -85,7 +85,11 @@ const Layout = ({ children, location }) => {
             height: "100px",
           }}
         >
-          <RightSide location={location} posts={posts} blueColor={blueColor} />
+          <RightSide
+            location={location}
+            relatedPosts={relatedPosts}
+            blueColor={blueColor}
+          />
         </div>
       </div>
     </>

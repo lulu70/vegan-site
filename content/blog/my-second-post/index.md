@@ -4,7 +4,7 @@ date: "2015-05-06T23:46:37.121Z"
 description: ""
 bgImg: ""
 tags: ["food", "eggs"]
-relatedPosts: ["new-beginnings", "hello-world"]
+relatedPosts: ["/new-beginnings/", "/hello-world/"]
 ---
 
 Wow! I love blogging so much already.
