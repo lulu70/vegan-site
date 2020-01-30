@@ -77,20 +77,12 @@ const Layout = ({ children, location, relatedPosts }) => {
           <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
         </main>
         <div style={{ flex: 0.1 }}></div>
-        <div
-          style={{
-            flex: 1,
-            display: "flex",
-            flexDirection: "column",
-            height: "100px",
-          }}
-        >
-          <RightSide
-            location={location}
-            relatedPosts={relatedPosts}
-            blueColor={blueColor}
-          />
-        </div>
+        <RightSide
+          style={{ flex: 1 }}
+          location={location}
+          relatedPosts={relatedPosts}
+          blueColor={blueColor}
+        />
       </div>
     </>
   )

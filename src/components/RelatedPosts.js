@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const RelatedPosts = ({ blueColor, relatedPosts }) => {
   return (
     <div>
-      <h4 style={{ color: blueColor, marginTop: 0 }}>Related Posts:</h4>
+      <h4 style={{ color: blueColor }}>Related Posts:</h4>
       {relatedPosts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
