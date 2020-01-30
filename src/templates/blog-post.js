@@ -55,7 +55,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!, $relatedPosts: [String]) {
+  query BlogPostBySlug($slug: String!, $tags: [String]) {
     mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -68,7 +68,12 @@ export const pageQuery = graphql`
         tags
       }
     }
-    relatedPosts: allMdx(filter: { fields: { slug: { in: $relatedPosts } } }) {
+    relatedPosts: allMdx(
+      filter: {
+        frontmatter: { tags: { in: $tags } }
+        fields: { slug: { ne: $slug } }
+      }
+    ) {
       edges {
         node {
           excerpt
@@ -81,7 +86,6 @@ export const pageQuery = graphql`
             description
             bgImg
             tags
-            relatedPosts
           }
         }
       }

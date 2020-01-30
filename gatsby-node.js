@@ -19,7 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               frontmatter {
                 title
-                relatedPosts
+                tags
               }
             }
           }
@@ -35,13 +35,13 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create blog posts pages.
   const posts = result.data.allMdx.edges
 
-  posts.forEach((post, index) => {
+  posts.forEach(post => {
     createPage({
       path: post.node.fields.slug,
       component: blogPost,
       context: {
         slug: post.node.fields.slug,
-        relatedPosts: post.node.frontmatter.relatedPosts,
+        tags: post.node.frontmatter.tags,
       },
     })
   })

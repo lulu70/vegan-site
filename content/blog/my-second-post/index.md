@@ -3,8 +3,7 @@ title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
 description: ""
 bgImg: ""
-tags: ["food", "eggs"]
-relatedPosts: ["/new-beginnings/", "/hello-world/"]
+tags: ["food", "eggs", "starter-post"]
 ---
 
 Wow! I love blogging so much already.
