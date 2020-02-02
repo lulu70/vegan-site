@@ -3,9 +3,14 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
-    "body, h1, h2, h3, h4, h5, h6 ": {
+    body: {
+      fontWeight: "lighter",
+      fontFamily: "Sans-Serif",
+    },
+    " h1, h2, h3, h4, h5, h6 ": {
       fontFamily: "Sans-Serif",
       fontWeight: "lighter",
+      marginTop: typography.rhythm(1),
     },
 
     "a.gatsby-resp-image-link": {

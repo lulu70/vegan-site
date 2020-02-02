@@ -9,6 +9,7 @@ import { rhythm } from "../utils/typography"
 import SearchInput from "./SearchInput"
 import { Link } from "gatsby"
 import debounce from "lodash.debounce"
+import Image from "../components/Image"
 import "../styles.css"
 
 const Search = ({ posts, blueColor }) => {
@@ -83,33 +84,50 @@ const Search = ({ posts, blueColor }) => {
         {filteredPosts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: `none`, color: blueColor }}
-                    to={node.fields.slug}
-                    onClick={() => {
-                      close()
+            <div
+              key={node.fields.slug}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <article>
+                <header>
+                  <h3
+                    style={{
+                      marginBottom: rhythm(1 / 4),
                     }}
                   >
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
+                    <Link
+                      style={{ boxShadow: `none`, color: blueColor }}
+                      to={node.fields.slug}
+                      onClick={close}
+                    >
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                </section>
+              </article>
+              <Link
+                style={{ boxShadow: `none`, color: blueColor }}
+                to={node.fields.slug}
+                onClick={close}
+              >
+                <Image
+                  fileName={node.frontmatter.featuredImage}
+                  style={{ width: "150px", marginLeft: rhythm(1) }}
                 />
-              </section>
-            </article>
+              </Link>
+            </div>
           )
         })}
       </div>

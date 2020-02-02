@@ -3,17 +3,27 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Image from "../components/Image"
 
 const BlogIndex = ({ data, location }) => {
   const { blueColor } = data.site.siteMetadata
   const posts = data.allMdx.edges
   return (
-    <Layout location={location}>
+    <Layout full location={location}>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug}>
+          <article
+            key={node.fields.slug}
+            style={{ width: "30%", margin: rhythm(0.2) }}
+          >
+            <Link
+              style={{ boxShadow: `none`, color: blueColor }}
+              to={node.fields.slug}
+            >
+              <Image fileName={node.frontmatter.featuredImage} />
+            </Link>
             <header>
               <h3
                 style={{
@@ -39,6 +49,7 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
+      <div className="after" style={{ width: "30%" }} />
     </Layout>
   )
 }
@@ -68,6 +79,7 @@ export const pageQuery = graphql`
             description
             bgImg
             tags
+            featuredImage
           }
         }
       }

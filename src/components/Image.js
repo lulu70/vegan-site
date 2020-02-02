@@ -26,6 +26,7 @@ const Image = ({ fileName, small, style, ...props }) => {
     <GatsbyImage
       fluid={edge.node.childImageSharp.fluid}
       {...props}
+      alt={fileName}
       style={{ width: small ? "250px" : "", ...style }}
     />
   ) : (

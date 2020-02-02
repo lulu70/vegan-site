@@ -8,7 +8,7 @@ import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
 import "../styles.css"
 import RightSide from "./RightSide"
-const Layout = ({ children, location, relatedPosts }) => {
+const Layout = ({ children, location, relatedPosts, full }) => {
   const [postContainerStyle, setPostContainerStyle] = React.useState(
     "layout__postContainer__fadeIn"
   )
@@ -44,6 +44,7 @@ const Layout = ({ children, location, relatedPosts }) => {
               description
               bgImg
               tags
+              featuredImage
             }
           }
         }
@@ -66,23 +67,30 @@ const Layout = ({ children, location, relatedPosts }) => {
           marginRight: `auto`,
           maxWidth: rhythm(40),
           display: "flex",
+          flexWrap: "wrap",
+          marginTop: rhythm(1),
+          justifyContent: "space-between",
         }}
       >
         <main
           style={{
             flex: 3,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
           }}
         >
           <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
         </main>
-        <div style={{ flex: 0.1 }}></div>
-        <RightSide
-          className="rightSide"
-          style={{ flex: 1 }}
-          location={location}
-          relatedPosts={relatedPosts}
-          blueColor={blueColor}
-        />
+        {!full && (
+          <RightSide
+            className="rightSide"
+            style={{ flex: 1, paddingLeft: rhythm(1) }}
+            location={location}
+            relatedPosts={relatedPosts}
+            blueColor={blueColor}
+          />
+        )}
       </div>
     </>
   )

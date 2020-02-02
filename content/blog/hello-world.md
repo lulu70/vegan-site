@@ -3,6 +3,7 @@ title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 bgImg: ""
+featuredImage: "salty_egg"
 tags: ["hello", "starter-post"]
 ---
 
@@ -25,6 +26,5 @@ Oh, and here's a great quote from this Wikipedia on
 <!-- ![Chinese Salty Egg](./salty_egg.jpg) -->
 
 <Image
-    alt="Chinese Salty Egg"
     fileName="salty_egg"
   />
