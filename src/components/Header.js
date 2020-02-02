@@ -12,7 +12,6 @@ const Header = ({ color, style }) => {
     <header
       style={{
         ...scale(0.1),
-        padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
         borderBottom: "1px solid grey ",
         backgroundColor: color,
         ...style,
@@ -50,6 +49,7 @@ const Header = ({ color, style }) => {
               border: 0,
               display: "flex",
               cursor: "pointer",
+              padding: 0,
             }}
             onClick={() => {
               setSearchVisibility(searchDispatch, true)

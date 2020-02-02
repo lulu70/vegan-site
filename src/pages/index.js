@@ -14,10 +14,7 @@ const BlogIndex = ({ data, location }) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article
-            key={node.fields.slug}
-            style={{ width: "30%", margin: rhythm(0.2) }}
-          >
+          <article className="index__article" key={node.fields.slug}>
             <Link
               style={{ boxShadow: `none`, color: blueColor }}
               to={node.fields.slug}
@@ -49,7 +46,7 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
-      <div className="after" style={{ width: "30%" }} />
+      <article className="index__article__after" />
     </Layout>
   )
 }

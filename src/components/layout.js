@@ -9,15 +9,15 @@ import Image from "./Image"
 import "../styles.css"
 import RightSide from "./RightSide"
 const Layout = ({ children, location, relatedPosts, full }) => {
-  const [postContainerStyle, setPostContainerStyle] = React.useState(
+  const [postContainerClassName, setPostContainerClassName] = React.useState(
     "layout__postContainer__fadeIn"
   )
   React.useEffect(() => {
-    setPostContainerStyle("layout__postContainer__fadeIn")
+    setPostContainerClassName("layout__postContainer__fadeIn")
     return () => {
-      setPostContainerStyle("layout__postContainer__fadeOut")
+      setPostContainerClassName("layout__postContainer__fadeOut")
     }
-  }, [setPostContainerStyle])
+  }, [setPostContainerClassName])
 
   const { searchState } = React.useContext(Context)
   const { searchVisibility } = searchState
@@ -61,7 +61,7 @@ const Layout = ({ children, location, relatedPosts, full }) => {
       <Header color={blueColor} />
       {searchVisibility && <Search blueColor={blueColor} posts={posts} />}
       <div
-        className={postContainerStyle}
+        className={postContainerClassName}
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
@@ -84,7 +84,7 @@ const Layout = ({ children, location, relatedPosts, full }) => {
         </main>
         {!full && (
           <RightSide
-            className="rightSide"
+            className="layout__rightSide"
             style={{ flex: 1, paddingLeft: rhythm(1) }}
             location={location}
             relatedPosts={relatedPosts}
