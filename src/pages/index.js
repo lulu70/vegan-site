@@ -4,13 +4,22 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Image from "../components/Image"
-
 const BlogIndex = ({ data, location }) => {
   const { blueColor } = data.site.siteMetadata
   const posts = data.allMdx.edges
   return (
     <Layout full location={location}>
       <SEO title="All posts" />
+      <h1
+        style={{
+          width: "100%",
+          textAlign: "center",
+          margin: rhythm(2),
+          color: blueColor,
+        }}
+      >
+        A SIMPLE TECH AND LIFESTYLE BLOG
+      </h1>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (

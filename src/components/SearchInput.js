@@ -34,7 +34,7 @@ const SearchInput = ({ posts, close, blueColor }) => {
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <h1 style={{ color: blueColor }}>Search The Website...</h1>
+        <h1 style={{ color: blueColor }}>Search...</h1>
         <button
           onClick={() => {
             close()

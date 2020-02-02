@@ -68,7 +68,6 @@ const Layout = ({ children, location, relatedPosts, full }) => {
           maxWidth: rhythm(40),
           display: "flex",
           flexWrap: "wrap",
-          marginTop: rhythm(1),
           justifyContent: "space-between",
         }}
       >
