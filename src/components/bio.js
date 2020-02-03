@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import GatsbyImage from "gatsby-image"
 import { rhythm } from "../utils/typography"
 import styled from "styled-components"
+import { MAIN_COLOR } from "../constants"
 
 const Container = styled.div`
   display: flex;
@@ -14,6 +15,9 @@ const StyledImage = styled(GatsbyImage)`
   margin-bottom: 0;
   min-width: 50;
   border-radius: 100%;
+`
+const StyledP = styled.p`
+  color: ${MAIN_COLOR};
 `
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -46,9 +50,9 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <StyledP>
         Written by <strong>{author}</strong>.
-      </p>
+      </StyledP>
     </Container>
   )
 }

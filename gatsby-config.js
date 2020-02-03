@@ -2,8 +2,6 @@ module.exports = {
   siteMetadata: {
     title: `TECH LIFESTYLE`,
     subTitle: `TO MAKE YOUR LIFESTYLE BETTER`,
-    blueColor: "#002940",
-    greenColor: "#afccae",
     author: `Lior Cohen`,
     description: `A Tech blog to improve your lifestyle`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -88,7 +86,7 @@ module.exports = {
         short_name: `techLifestyle`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#ffffff`,
+        theme_color: `#002940`,
         display: `minimal-ui`,
         icon: `content/assets/Logo.svg`,
       },

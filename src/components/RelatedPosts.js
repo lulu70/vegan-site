@@ -1,23 +1,15 @@
 import React from "react"
-// import { Link } from "gatsby"
-import styled from "styled-components"
 import StyledLink from "./StyledLink"
-const Header = styled.h4`
-  color: ${props => props.color};
-`
-const RelatedPosts = ({ blueColor, relatedPosts }) => {
+
+const RelatedPosts = ({ relatedPosts }) => {
   return (
     <div>
-      <Header color={blueColor}>Related Posts:</Header>
+      <h4>Related Posts:</h4>
       {relatedPosts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <React.Fragment key={node.fields.slug}>
-            <header>
-              <StyledLink color={blueColor} to={node.fields.slug}>
-                {title}
-              </StyledLink>
-            </header>
+            <StyledLink to={node.fields.slug}>{title}</StyledLink>
             <hr />
           </React.Fragment>
         )

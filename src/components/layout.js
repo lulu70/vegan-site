@@ -8,7 +8,7 @@ import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
 import RightSide from "./RightSide"
 import styled from "styled-components"
-
+import { MAIN_COLOR } from "../constants"
 const PostContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
@@ -50,8 +50,6 @@ const Layout = ({ children, location, relatedPosts, full }) => {
         siteMetadata {
           title
           subTitle
-          blueColor
-          greenColor
         }
       }
       allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -75,14 +73,13 @@ const Layout = ({ children, location, relatedPosts, full }) => {
     }
   `)
 
-  const { blueColor } = data.site.siteMetadata
   const posts = data.allMdx.edges
   const componentsForMdx = { Image }
 
   return (
     <>
-      <Header color={blueColor} />
-      {searchVisibility && <Search blueColor={blueColor} posts={posts} />}
+      <Header color={MAIN_COLOR} />
+      {searchVisibility && <Search posts={posts} />}
       <PostContainer className="layout__postContainer">
         <Main className="layout__main">
           <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
@@ -92,7 +89,6 @@ const Layout = ({ children, location, relatedPosts, full }) => {
             className="layout__rightSide"
             location={location}
             relatedPosts={relatedPosts}
-            blueColor={blueColor}
           />
         )}
       </PostContainer>

@@ -53,7 +53,7 @@ const FeaturedImage = styled(Image)`
   margin-left: ${rhythm(1)};
 `
 
-const Search = ({ posts, blueColor }) => {
+const Search = ({ posts }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { filteredPosts, query } = searchState
 
@@ -81,7 +81,7 @@ const Search = ({ posts, blueColor }) => {
   return (
     <Container className="search__container" style={{ height: scrollHeight }}>
       <InnerContainer className="search__innerContainer">
-        <SearchInput posts={posts} close={close} blueColor={blueColor} />
+        <SearchInput posts={posts} close={close} />
         {query && (
           <>
             <p>
@@ -109,7 +109,6 @@ const Search = ({ posts, blueColor }) => {
                       className="search__postHeaderLink"
                       to={node.fields.slug}
                       onClick={close}
-                      color={blueColor}
                     >
                       {title}
                     </StyledLink>

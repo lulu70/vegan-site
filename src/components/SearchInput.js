@@ -13,9 +13,6 @@ const Container = styled.div`
   justify-content: space-between;
 `
 
-const Header = styled.h1`
-  color: ${props => props.color};
-`
 const CloseButton = styled.button`
   background-color: transparent;
   border: 0;
@@ -28,7 +25,7 @@ const Input = styled.input`
   padding: ${rhythm(0.3)};
 `
 
-const SearchInput = ({ posts, close, blueColor }) => {
+const SearchInput = ({ posts, close }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { query } = searchState
 
@@ -53,9 +50,7 @@ const SearchInput = ({ posts, close, blueColor }) => {
   return (
     <Label htmlFor="search" className="searchInput__label">
       <Container className="searchInput__container">
-        <Header className="searchInput__header" color={blueColor}>
-          Search...
-        </Header>
+        <h1 className="searchInput__header">Search...</h1>
         <CloseButton
           onClick={() => {
             close()

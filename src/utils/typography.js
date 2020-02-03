@@ -1,6 +1,6 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
-
+import { MAIN_COLOR } from "../constants"
 Wordpress2016.overrideThemeStyles = () => {
   return {
     body: {
@@ -11,8 +11,8 @@ Wordpress2016.overrideThemeStyles = () => {
       fontFamily: "Sans-Serif",
       fontWeight: "lighter",
       marginTop: typography.rhythm(1),
+      color: MAIN_COLOR,
     },
-
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },

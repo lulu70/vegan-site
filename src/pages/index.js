@@ -31,12 +31,11 @@ const Article = styled.article`
 `
 
 const BlogIndex = ({ data, location }) => {
-  const { blueColor } = data.site.siteMetadata
   const posts = data.allMdx.edges
   return (
     <Layout full location={location}>
       <SEO title="All posts" />
-      <MainHeader color={blueColor} className="index__mainHeader">
+      <MainHeader className="index__mainHeader">
         A SIMPLE TECH AND LIFESTYLE BLOG
       </MainHeader>
       {posts.map(({ node }) => {
@@ -53,7 +52,6 @@ const BlogIndex = ({ data, location }) => {
               <PostHeader className="index__postHeader">
                 <StyledLink
                   className="index__postHeaderLink"
-                  color={blueColor}
                   to={node.fields.slug}
                 >
                   {title}
@@ -84,8 +82,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         subTitle
-        blueColor
-        greenColor
       }
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
