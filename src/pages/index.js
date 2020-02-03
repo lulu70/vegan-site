@@ -1,19 +1,16 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Image from "../components/Image"
 import styled from "styled-components"
+import StyledLink from "../components/StyledLink"
 
 const MainHeader = styled.h1`
   width: 100%;
   text-align: center;
   margin: ${rhythm(2)};
-  color: ${props => props.color};
-`
-const StyledLink = styled(Link)`
-  box-shadow: none;
   color: ${props => props.color};
 `
 const PostHeader = styled.h3`

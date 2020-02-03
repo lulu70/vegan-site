@@ -23,11 +23,6 @@ const Container = styled.div`
   justify-content: space-between;
 `
 
-const StyledLink = styled(Link)`
-  box-shadow: none;
-  text-decoration: none;
-  color: inherit;
-`
 const StyledLogo = styled(Logo)`
   width: 200px;
 `
@@ -46,9 +41,9 @@ const Header = ({ color }) => {
   return (
     <MainHeader color={color}>
       <Container>
-        <StyledLink to={`/`} aria-label="home">
+        <Link to={`/`} aria-label="home">
           <StyledLogo />
-        </StyledLink>
+        </Link>
 
         {!searchVisibility && (
           <SearchButton

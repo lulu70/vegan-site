@@ -1,15 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import styled from "styled-components"
-
+import StyledLink from "./StyledLink"
 const Header = styled.h4`
   color: ${props => props.color};
 `
-const StyledLink = styled(Link)`
-  box-shadow: none;
-  color: ${props => props.color};
-`
-
 const RelatedPosts = ({ blueColor, relatedPosts }) => {
   return (
     <div>

@@ -7,10 +7,10 @@ import {
 } from "../context/reducers/searchReducer"
 import { rhythm } from "../utils/typography"
 import SearchInput from "./SearchInput"
-import { Link } from "gatsby"
 import debounce from "lodash.debounce"
 import Image from "../components/Image"
 import styled from "styled-components"
+import StyledLink from "./StyledLink"
 
 const Container = styled.div`
   position: absolute;
@@ -47,10 +47,6 @@ const PostContainer = styled.div`
 `
 const PostHeader = styled.h3`
   margin-bottom: ${rhythm(1 / 4)};
-`
-const StyledLink = styled(Link)`
-  box-shadow: none;
-  color: ${props => props.color};
 `
 const FeaturedImage = styled(Image)`
   width: 150px;
