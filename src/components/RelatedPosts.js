@@ -1,21 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
+
+const Header = styled.h4`
+  color: ${props => props.color};
+`
+const StyledLink = styled(Link)`
+  box-shadow: none;
+  color: ${props => props.color};
+`
 
 const RelatedPosts = ({ blueColor, relatedPosts }) => {
   return (
     <div>
-      <h4 style={{ color: blueColor }}>Related Posts:</h4>
+      <Header color={blueColor}>Related Posts:</Header>
       {relatedPosts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <React.Fragment key={node.fields.slug}>
             <header>
-              <Link
-                style={{ boxShadow: `none`, color: blueColor }}
-                to={node.fields.slug}
-              >
+              <StyledLink color={blueColor} to={node.fields.slug}>
                 {title}
-              </Link>
+              </StyledLink>
             </header>
             <hr />
           </React.Fragment>

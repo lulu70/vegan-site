@@ -6,6 +6,20 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import BgImg from "../components/BgImg"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import styled from "styled-components"
+
+const Header = styled.h1`
+  margin-top: ${rhythm(1)};
+  margin-bottom: 0;
+`
+const DateParagraph = styled.p`
+  ${scale(-1 / 5)};
+  display: block;
+  margin-bottom: ${rhythm(1)};
+`
+const EndLine = styled.hr`
+  margin-bottom: ${rhythm(1)};
+`
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
   const bgImg = post.frontmatter.bgImg
@@ -19,30 +33,11 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <article>
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
-              {post.frontmatter.date}
-            </p>
+            <Header>{post.frontmatter.title}</Header>
+            <DateParagraph>{post.frontmatter.date}</DateParagraph>
           </header>
           <MDXRenderer>{post.body}</MDXRenderer>
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
+          <EndLine />
           <footer>
             <Bio />
           </footer>

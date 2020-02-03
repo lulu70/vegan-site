@@ -5,61 +5,64 @@ import Logo from "../../content/assets/Logo.svg"
 import SearchIcon from "../../content/assets/search.svg"
 import { Context } from "../context/ContextProvider"
 import { setSearchVisibility } from "../context/reducers/searchReducer"
-const Header = ({ color, style }) => {
+import styled from "styled-components"
+
+const MainHeader = styled.header`
+  ${scale(0.1)};
+  border-bottom: 1px solid grey;
+  background-color: ${props => props.color};
+`
+
+const Container = styled.div`
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ${rhythm(40)};
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+`
+
+const StyledLink = styled(Link)`
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+`
+const StyledLogo = styled(Logo)`
+  width: 200px;
+`
+
+const SearchButton = styled.button`
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  cursor: pointer;
+  padding: 0;
+`
+
+const Header = ({ color }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { searchVisibility } = searchState
   return (
-    <header
-      style={{
-        ...scale(0.1),
-        borderBottom: "1px solid grey ",
-        backgroundColor: color,
-        ...style,
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(40),
-          alignItems: "center",
-          color: "white",
-          justifyContent: "space-between",
-        }}
-      >
-        <Link
-          to={`/`}
-          aria-label="home"
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-        >
-          <Logo style={{ width: "200px" }} />
-        </Link>
+    <MainHeader color={color}>
+      <Container>
+        <StyledLink to={`/`} aria-label="home">
+          <StyledLogo />
+        </StyledLink>
 
         {!searchVisibility && (
-          <button
+          <SearchButton
             type="submit"
             aria-label="search"
-            style={{
-              backgroundColor: "transparent",
-              border: 0,
-              display: "flex",
-              cursor: "pointer",
-              padding: 0,
-            }}
             onClick={() => {
               setSearchVisibility(searchDispatch, true)
             }}
           >
             <SearchIcon />
-          </button>
+          </SearchButton>
         )}
-      </div>
-    </header>
+      </Container>
+    </MainHeader>
   )
 }
 

@@ -2,6 +2,31 @@ import React from "react"
 import { Context } from "../context/ContextProvider"
 import { setPosts, setQuery } from "../context/reducers/searchReducer"
 import { rhythm } from "../utils/typography"
+import styled from "styled-components"
+
+const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+`
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+const Header = styled.h1`
+  color: ${props => props.color};
+`
+const CloseButton = styled.button`
+  background-color: transparent;
+  border: 0;
+  height: ${rhythm(1)};
+  cursor: pointer;
+`
+const Input = styled.input`
+  border: solid 2px grey;
+  border-radius: ${rhythm(0.1)};
+  padding: ${rhythm(0.3)};
+`
 
 const SearchInput = ({ posts, close, blueColor }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
@@ -26,41 +51,28 @@ const SearchInput = ({ posts, close, blueColor }) => {
   }
 
   return (
-    <label
-      htmlFor="search"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <h1 style={{ color: blueColor }}>Search...</h1>
-        <button
+    <Label htmlFor="search" className="searchInput__label">
+      <Container className="searchInput__container">
+        <Header className="searchInput__header" color={blueColor}>
+          Search...
+        </Header>
+        <CloseButton
           onClick={() => {
             close()
           }}
-          style={{
-            backgroundColor: "transparent",
-            border: 0,
-            height: rhythm(1),
-            cursor: "pointer",
-          }}
+          className="searchInput__closeButton"
         >
           close X
-        </button>
-      </div>
-      <input
-        style={{
-          border: "solid 2px grey",
-          borderRadius: rhythm(0.1),
-          padding: rhythm(0.3),
-        }}
+        </CloseButton>
+      </Container>
+      <Input
+        className="searchInput__input"
         type="search"
         id="search"
         onChange={handleInputChange}
         value={query}
       />
-    </label>
+    </Label>
   )
 }
 

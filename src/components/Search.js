@@ -10,23 +10,64 @@ import SearchInput from "./SearchInput"
 import { Link } from "gatsby"
 import debounce from "lodash.debounce"
 import Image from "../components/Image"
-import "../styles.css"
+import styled from "styled-components"
+
+const Container = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.96);
+  display: flex;
+  justify-content: center;
+  color: black;
+  z-index: 1;
+
+  opacity: 1;
+  animation: fadeIn 0.1s ease-in;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`
+const InnerContainer = styled.div`
+  width: ${rhythm(24)};
+  display: flex;
+  flex-direction: column;
+`
+const PostContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+const PostHeader = styled.h3`
+  margin-bottom: ${rhythm(1 / 4)};
+`
+const StyledLink = styled(Link)`
+  box-shadow: none;
+  color: ${props => props.color};
+`
+const FeaturedImage = styled(Image)`
+  width: 150px;
+  margin-left: ${rhythm(1)};
+`
 
 const Search = ({ posts, blueColor }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { filteredPosts, query } = searchState
 
   const [scrollHeight, setScrollHeight] = React.useState(null)
-  const [containerClassName, setContainerClassName] = React.useState(
-    "search__container__fadeIn"
-  )
 
   React.useEffect(() => {
     if (!query) {
       setPosts(searchDispatch, posts)
     }
   }, [posts, searchDispatch, query])
-
   React.useEffect(() => {
     setScrollHeight(document.body.scrollHeight)
     const handleResize = () => {
@@ -38,35 +79,12 @@ const Search = ({ posts, blueColor }) => {
     }
   }, [searchDispatch])
   const close = () => {
-    setContainerClassName("search__container__fadeOut")
-    setTimeout(() => {
-      resetSearchState(searchDispatch)
-      setSearchVisibility(searchDispatch, false)
-    }, 100)
+    resetSearchState(searchDispatch)
+    setSearchVisibility(searchDispatch, false)
   }
   return (
-    <div
-      className={containerClassName}
-      style={{
-        position: "absolute",
-        left: 0,
-        top: 0,
-        width: "100%",
-        height: scrollHeight,
-        backgroundColor: "rgba(255,255,255,0.96)",
-        display: "flex",
-        justifyContent: "center",
-        color: "black",
-        zIndex: 1,
-      }}
-    >
-      <div
-        style={{
-          width: rhythm(24),
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
+    <Container className="search__container" style={{ height: scrollHeight }}>
+      <InnerContainer className="search__innerContainer">
         <SearchInput posts={posts} close={close} blueColor={blueColor} />
         {query && (
           <>
@@ -84,29 +102,22 @@ const Search = ({ posts, blueColor }) => {
         {filteredPosts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div
+            <PostContainer
               key={node.fields.slug}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
+              className="search__postContainer"
             >
               <article>
                 <header>
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link
-                      style={{ boxShadow: `none`, color: blueColor }}
+                  <PostHeader className="search__postHeader">
+                    <StyledLink
+                      className="search__postHeaderLink"
                       to={node.fields.slug}
                       onClick={close}
+                      color={blueColor}
                     >
                       {title}
-                    </Link>
-                  </h3>
+                    </StyledLink>
+                  </PostHeader>
                   <small>{node.frontmatter.date}</small>
                 </header>
                 <section>
@@ -117,21 +128,21 @@ const Search = ({ posts, blueColor }) => {
                   />
                 </section>
               </article>
-              <Link
-                style={{ boxShadow: `none`, color: blueColor }}
+              <StyledLink
                 to={node.fields.slug}
                 onClick={close}
+                className="search__featuredImageLink"
               >
-                <Image
+                <FeaturedImage
                   fileName={node.frontmatter.featuredImage}
-                  style={{ width: "150px", marginLeft: rhythm(1) }}
+                  className="search__featuredImage"
                 />
-              </Link>
-            </div>
+              </StyledLink>
+            </PostContainer>
           )
         })}
-      </div>
-    </div>
+      </InnerContainer>
+    </Container>
   )
 }
 

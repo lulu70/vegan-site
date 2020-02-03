@@ -6,19 +6,42 @@ import Search from "./Search"
 import { Context } from "../context/ContextProvider"
 import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
-import "../styles.css"
 import RightSide from "./RightSide"
-const Layout = ({ children, location, relatedPosts, full }) => {
-  const [postContainerClassName, setPostContainerClassName] = React.useState(
-    "layout__postContainer__fadeIn"
-  )
-  React.useEffect(() => {
-    setPostContainerClassName("layout__postContainer__fadeIn")
-    return () => {
-      setPostContainerClassName("layout__postContainer__fadeOut")
-    }
-  }, [setPostContainerClassName])
+import styled from "styled-components"
 
+const PostContainer = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ${rhythm(40)};
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  opacity: 1;
+  animation: fadeIn 0.2s ease-in;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`
+const Main = styled.main`
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`
+const StyledRightSide = styled(RightSide)`
+  flex: 1;
+  padding-left: ${rhythm(1)};
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+`
+const Layout = ({ children, location, relatedPosts, full }) => {
   const { searchState } = React.useContext(Context)
   const { searchVisibility } = searchState
   const data = useStaticQuery(graphql`
@@ -60,37 +83,19 @@ const Layout = ({ children, location, relatedPosts, full }) => {
     <>
       <Header color={blueColor} />
       {searchVisibility && <Search blueColor={blueColor} posts={posts} />}
-      <div
-        className={postContainerClassName}
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(40),
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-        }}
-      >
-        <main
-          style={{
-            flex: 3,
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-          }}
-        >
+      <PostContainer className="layout__postContainer">
+        <Main className="layout__main">
           <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
-        </main>
+        </Main>
         {!full && (
-          <RightSide
+          <StyledRightSide
             className="layout__rightSide"
-            style={{ flex: 1, paddingLeft: rhythm(1) }}
             location={location}
             relatedPosts={relatedPosts}
             blueColor={blueColor}
           />
         )}
-      </div>
+      </PostContainer>
     </>
   )
 }

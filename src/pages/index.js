@@ -4,45 +4,64 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Image from "../components/Image"
+import styled from "styled-components"
+
+const MainHeader = styled.h1`
+  width: 100%;
+  text-align: center;
+  margin: ${rhythm(2)};
+  color: ${props => props.color};
+`
+const StyledLink = styled(Link)`
+  box-shadow: none;
+  color: ${props => props.color};
+`
+const PostHeader = styled.h3`
+  margin-bottom: ${rhythm(1 / 4)};
+`
+
+const Article = styled.article`
+  @media (min-width: 900px) {
+    width: 30%;
+  }
+
+  @media (max-width: 900px) {
+    width: 45%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`
+
 const BlogIndex = ({ data, location }) => {
   const { blueColor } = data.site.siteMetadata
   const posts = data.allMdx.edges
   return (
     <Layout full location={location}>
       <SEO title="All posts" />
-      <h1
-        style={{
-          width: "100%",
-          textAlign: "center",
-          margin: rhythm(2),
-          color: blueColor,
-        }}
-      >
+      <MainHeader color={blueColor} className="index__mainHeader">
         A SIMPLE TECH AND LIFESTYLE BLOG
-      </h1>
+      </MainHeader>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article className="index__article" key={node.fields.slug}>
-            <Link
-              style={{ boxShadow: `none`, color: blueColor }}
+          <Article className="index__article" key={node.fields.slug}>
+            <StyledLink
+              className="index__featuredImageLink"
               to={node.fields.slug}
             >
               <Image fileName={node.frontmatter.featuredImage} />
-            </Link>
+            </StyledLink>
             <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link
-                  style={{ boxShadow: `none`, color: blueColor }}
+              <PostHeader className="index__postHeader">
+                <StyledLink
+                  className="index__postHeaderLink"
+                  color={blueColor}
                   to={node.fields.slug}
                 >
                   {title}
-                </Link>
-              </h3>
+                </StyledLink>
+              </PostHeader>
               <small>{node.frontmatter.date}</small>
             </header>
             <section>
@@ -52,10 +71,10 @@ const BlogIndex = ({ data, location }) => {
                 }}
               />
             </section>
-          </article>
+          </Article>
         )
       })}
-      <article className="index__article__after" />
+      <Article className="index__lastArticle" />
     </Layout>
   )
 }
