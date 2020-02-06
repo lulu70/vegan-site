@@ -36,7 +36,7 @@ const Container = styled.div`
   }
 `
 const InnerContainer = styled.div`
-  width: ${rhythm(24)};
+  width: ${rhythm(40)};
   display: flex;
   flex-direction: column;
 `
