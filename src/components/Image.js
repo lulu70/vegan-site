@@ -18,7 +18,7 @@ const Image = ({ fileName, small, style, ...props }) => {
             name
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid_withWebp
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
