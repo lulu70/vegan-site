@@ -7,7 +7,8 @@ featuredImage:
   src: ../assets/images/a-man-listening-to-a-garbage-can.jpg
   title: first-test-featured-image-title
 tags:
-  - lior cohen
+  - lior
+  - cohen
 ---
 
 first-test- body
