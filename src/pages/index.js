@@ -46,7 +46,7 @@ const BlogIndex = ({ data, location }) => {
               className="index__featuredImageLink"
               to={node.fields.slug}
             >
-              <Image fileName={node.frontmatter.featuredImage} />
+              <Image fileName={node.frontmatter.featuredImage.title} />
             </StyledLink>
             <header>
               <PostHeader className="index__postHeader">
@@ -97,7 +97,9 @@ export const pageQuery = graphql`
             description
             bgImg
             tags
-            featuredImage
+            featuredImage {
+              title
+            }
           }
         }
       }

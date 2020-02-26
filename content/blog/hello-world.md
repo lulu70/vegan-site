@@ -3,7 +3,10 @@ title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 bgImg: ""
-featuredImage: "salty_egg"
+featuredImage:
+  alt: alt_text
+  src: ../assets/images/a-man-listening-to-a-garbage-can.jpg
+  title: a-man-listening-to-a-garbage-can
 tags: ["hello", "starter-post"]
 ---
 

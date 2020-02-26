@@ -65,7 +65,9 @@ const Layout = ({ children, location, relatedPosts, full }) => {
               description
               bgImg
               tags
-              featuredImage
+              featuredImage {
+                title
+              }
             }
           }
         }
