@@ -12,11 +12,3 @@ tags:
 ---
 
 first-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- body
-
-![alt_text](../assets/images/a-man-listening-to-a-garbage-can.jpg "first-test-image")
-
-<Image fileName="a-man-wearing-a-tape-cassette-as-a-head" />
-
-![alt_text](../assets/images/a-man-listening-to-a-garbage-can.jpg "a-man-listening-to-a-garbage-can")
-
-<Image fileName="a-man-listening-to-a-garbage-can" />
