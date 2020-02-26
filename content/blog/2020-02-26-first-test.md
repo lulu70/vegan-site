@@ -10,7 +10,8 @@ tags:
   - lior
   - cohen
 ---
-
 first-test- body
 
-![alt_text](../assets/images/a-man-listening-to-a-garbage-can.jpg "first-test-image")
+![alt_text](../assets/images/a-man-listening-to-a-garbage-can.jpg "a-man-listening-to-a-garbage-can")
+
+<Image fileName="a-man-listening-to-a-garbage-can" />
