@@ -2,8 +2,8 @@ backend:
   name: github
   repo: lulu70/vegan-site
 
-media_folder: content/assets
-public_folder: ../assets
+media_folder: content/assets/images
+public_folder: ../assets/images
 
 collections:
   - name: "blog"
