@@ -7,10 +7,9 @@ featuredImage:
   src: ../assets/images/a-man-listening-to-a-garbage-can.jpg
   title: a-man-listening-to-a-garbage-can
 tags:
-  - lior
-  - cohen
+  - lior cohen
 ---
-<Image fileName="undefined" />
+<Image fileName="a-man-listening-to-a-garbage-can" />
 
 first-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- bodyfirst-test- body
 
