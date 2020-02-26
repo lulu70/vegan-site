@@ -5,7 +5,7 @@ description: first-test-description
 featuredImage:
   alt: alt_text
   src: ../assets/images/a-man-listening-to-a-garbage-can.jpg
-  title: first-test-featured-image-title
+  title: a-man-listening-to-a-garbage-can
 tags:
   - lior
   - cohen
