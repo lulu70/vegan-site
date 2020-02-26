@@ -12,7 +12,7 @@ collections:
     create: true
     slug: "{{slug}}"
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -22,7 +22,6 @@ collections:
         widget: object
         fields:
           - { name: src, label: Image, widget: image }
-          - { name: alt, label: Alt text, widget: string }
           - { name: title, label: Title, widget: string }
       - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
       - { label: "Body", name: "body", widget: "markdown" }
