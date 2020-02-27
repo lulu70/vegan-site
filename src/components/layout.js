@@ -49,7 +49,6 @@ const Layout = ({ children, location, relatedPosts, full }) => {
       site {
         siteMetadata {
           title
-          subTitle
         }
       }
       allMdx(sort: { fields: [frontmatter___date], order: DESC }) {

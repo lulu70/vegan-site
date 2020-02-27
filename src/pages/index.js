@@ -36,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout full location={location}>
       <SEO title="All posts" />
       <MainHeader className="index__mainHeader">
-        A SIMPLE TECH AND LIFESTYLE BLOG
+        {data.site.siteMetadata.title}
       </MainHeader>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
@@ -81,7 +81,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        subTitle
       }
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {

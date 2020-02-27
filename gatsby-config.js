@@ -1,13 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `TECH LIFESTYLE`,
-    subTitle: `TO MAKE YOUR LIFESTYLE BETTER`,
+    title: `The Vegan Home`,
     author: `Lior Cohen`,
-    description: `A Tech blog to improve your lifestyle`,
+    description: `A Vegan website`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
-    },
   },
   plugins: [
     {
