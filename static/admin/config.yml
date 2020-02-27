@@ -11,8 +11,8 @@ collections:
     folder: "content/blog"
     create: true
     slug: "{{slug}}"
-    publish_mode: editorial_workflow
     editor:
+      publish_mode: editorial_workflow
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
