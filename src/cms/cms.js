@@ -9,14 +9,14 @@ CMS.registerEditorComponent({
   // Fields the user need to fill out when adding an instance of the component
   fields: [{ name: "src", label: "Image", widget: "image" }],
   // Pattern to identify a block as being an instance of this component
-  //   pattern: /^mdxImage (\S+)$/,
+  pattern: /\w/,
   //   // Function to extract data elements from the regexp match
-  //   fromBlock: function(match) {
-  //     console.log(match)
-  //     return {
-  //       title: match,
-  //     }
-  //   },
+  fromBlock: function(match) {
+    console.log(match)
+    return {
+      title: match,
+    }
+  },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
     const fileName = obj.src
