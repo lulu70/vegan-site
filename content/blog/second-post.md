@@ -8,6 +8,4 @@ tags:
   - hdmi
   - screen
 ---
-
-
-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body
+Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body
