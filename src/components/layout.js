@@ -63,11 +63,7 @@ const Layout = ({ children, location, relatedPosts, full }) => {
               date(formatString: "MMMM DD, YYYY")
               title
               description
-              bgImg
               tags
-              featuredImage {
-                title
-              }
             }
           }
         }

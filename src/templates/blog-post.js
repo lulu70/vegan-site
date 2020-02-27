@@ -4,7 +4,6 @@ import Bio from "../components/Bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import BgImg from "../components/BgImg"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 
@@ -22,28 +21,25 @@ const EndLine = styled.hr`
 `
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
-  const bgImg = post.frontmatter.bgImg
   const relatedPosts = data.relatedPosts.edges
   return (
-    <BgImg img={bgImg}>
-      <Layout location={location} relatedPosts={relatedPosts}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <article>
-          <header>
-            <Header>{post.frontmatter.title}</Header>
-            <DateParagraph>{post.frontmatter.date}</DateParagraph>
-          </header>
-          <MDXRenderer>{post.body}</MDXRenderer>
-          <EndLine />
-          <footer>
-            <Bio />
-          </footer>
-        </article>
-      </Layout>
-    </BgImg>
+    <Layout location={location} relatedPosts={relatedPosts}>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
+      <article>
+        <header>
+          <Header>{post.frontmatter.title}</Header>
+          <DateParagraph>{post.frontmatter.date}</DateParagraph>
+        </header>
+        <MDXRenderer>{post.body}</MDXRenderer>
+        <EndLine />
+        <footer>
+          <Bio />
+        </footer>
+      </article>
+    </Layout>
   )
 }
 
@@ -59,7 +55,6 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        bgImg
         tags
       }
     }
@@ -79,7 +74,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            bgImg
             tags
           }
         }
