@@ -22,7 +22,6 @@ CMS.registerEditorComponent({
     const fileName = obj.src
       ? obj.src.replace("../assets/images/", "").split(".")[0]
       : ""
-    console.log(fileName)
     return `<Image fileName="${fileName}" />`
   },
   // Preview output for this component. Can either be a string or a React component
