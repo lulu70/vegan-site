@@ -49,6 +49,10 @@ const Layout = ({ children, location, relatedPosts, full }) => {
       site {
         siteMetadata {
           title
+          menuLinks {
+            name
+            link
+          }
         }
       }
       allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -80,7 +84,7 @@ const Layout = ({ children, location, relatedPosts, full }) => {
 
   return (
     <>
-      <Header color={MAIN_COLOR} />
+      <Header color={MAIN_COLOR} menuLinks={data.site.siteMetadata.menuLinks} />
       {searchVisibility && <Search posts={posts} />}
       <PostContainer className="layout__postContainer">
         <Main className="layout__main">

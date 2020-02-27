@@ -2,6 +2,17 @@ module.exports = {
   siteMetadata: {
     title: `The Vegan Home`,
     blogTitle: `The Vegan Blog`,
+    recepiesTitle: `Vegan Recepies`,
+    menuLinks: [
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+      {
+        name: "Recepies",
+        link: "/recepies",
+      },
+    ],
     author: `Lior Cohen`,
     description: `A Vegan website`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -28,6 +39,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: `pages`,
       },
     },
     {

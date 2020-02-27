@@ -34,7 +34,7 @@ const Blog = ({ data, location }) => {
   const posts = data.allMdx.edges
   return (
     <Layout full location={location}>
-      <SEO title="All posts" />
+      <SEO title="Blog" />
       <MainHeader className="blog__mainHeader">
         {data.site.siteMetadata.blogTitle}
       </MainHeader>
