@@ -129,7 +129,7 @@ const Search = ({ posts }) => {
                 className="search__featuredImageLink"
               >
                 <FeaturedImage
-                  fileName={node.frontmatter.featuredImage}
+                  fileName={node.frontmatter.featuredImage.src.name}
                   className="search__featuredImage"
                 />
               </StyledLink>

@@ -64,6 +64,11 @@ const Layout = ({ children, location, relatedPosts, full }) => {
               title
               description
               tags
+              featuredImage {
+                src {
+                  name
+                }
+              }
             }
           }
         }
