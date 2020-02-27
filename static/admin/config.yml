@@ -2,6 +2,7 @@ backend:
   name: github
   repo: lulu70/vegan-site
 
+publish_mode: editorial_workflow
 media_folder: content/assets/images
 public_folder: ../assets/images
 
@@ -12,7 +13,6 @@ collections:
     create: true
     slug: "{{slug}}"
     editor:
-      publish_mode: editorial_workflow
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
