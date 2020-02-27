@@ -1,5 +1,5 @@
 ---
-title: second-post
+title: Second Post
 date: 2020-02-26T08:12:48.991Z
 description: second-post descrition
 featuredImage:
