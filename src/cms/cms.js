@@ -17,7 +17,6 @@ CMS.registerEditorComponent({
   // },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    console.log(obj)
     const fileName = obj.src
       ? obj.src.replace("../assets/images/", "").split(".")[0]
       : ""

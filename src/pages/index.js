@@ -1,11 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
-import Image from "../components/Image"
 import styled from "styled-components"
+import { rhythm } from "../utils/typography"
 import StyledLink from "../components/StyledLink"
+import { graphql } from "gatsby"
 
 const MainHeader = styled.h1`
   width: 100%;
@@ -13,68 +12,22 @@ const MainHeader = styled.h1`
   margin: ${rhythm(2)};
   color: ${props => props.color};
 `
-const PostHeader = styled.h3`
-  margin-bottom: ${rhythm(1 / 4)};
-`
 
-const Article = styled.article`
-  @media (min-width: 900px) {
-    width: 30%;
-  }
-
-  @media (max-width: 900px) {
-    width: 45%;
-  }
-  @media (max-width: 600px) {
-    width: 100%;
-  }
-`
-
-const BlogIndex = ({ data, location }) => {
-  const posts = data.allMdx.edges
+const index = ({ data, location }) => {
   return (
     <Layout full location={location}>
       <SEO title="All posts" />
       <MainHeader className="index__mainHeader">
         {data.site.siteMetadata.title}
       </MainHeader>
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <Article className="index__article" key={node.fields.slug}>
-            <StyledLink
-              className="index__featuredImageLink"
-              to={node.fields.slug}
-            >
-              <Image fileName={node.frontmatter.featuredImage.src.name} />
-            </StyledLink>
-            <header>
-              <PostHeader className="index__postHeader">
-                <StyledLink
-                  className="index__postHeaderLink"
-                  to={node.fields.slug}
-                >
-                  {title}
-                </StyledLink>
-              </PostHeader>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </Article>
-        )
-      })}
-      <Article className="index__lastArticle" />
+      <StyledLink className="index__linkToBlog" to="/blog">
+        Blog
+      </StyledLink>
     </Layout>
   )
 }
 
-export default BlogIndex
+export default index
 
 export const pageQuery = graphql`
   query {

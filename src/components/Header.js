@@ -44,7 +44,7 @@ const Header = ({ color }) => {
         <Link to={`/`} aria-label="home">
           <StyledLogo />
         </Link>
-
+        <nav>blog</nav>
         {!searchVisibility && (
           <SearchButton
             type="submit"

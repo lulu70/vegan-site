@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `The Vegan Home`,
+    blogTitle: `The Vegan Blog`,
     author: `Lior Cohen`,
     description: `A Vegan website`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
