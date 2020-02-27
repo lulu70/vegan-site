@@ -8,4 +8,8 @@ tags:
   - hdmi
   - screen
 ---
+<Image fileName="give-me-a-second-to-grab-my-camera" />
+
 Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body
+
+# Header
