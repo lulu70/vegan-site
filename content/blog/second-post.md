@@ -7,6 +7,7 @@ featuredImage:
 tags:
   - hdmi
   - screen
+  - post
 ---
 <Image fileName="give-me-a-second-to-grab-my-camera" />
 
