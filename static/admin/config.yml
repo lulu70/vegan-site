@@ -2,7 +2,7 @@ backend:
   name: github
   repo: lulu70/vegan-site
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: content/assets/images
 public_folder: ../assets/images
 
