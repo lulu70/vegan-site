@@ -11,6 +11,7 @@ collections:
     folder: "content/blog"
     create: true
     slug: "{{slug}}"
+    publish_mode: editorial_workflow
     editor:
       preview: false
     fields:
