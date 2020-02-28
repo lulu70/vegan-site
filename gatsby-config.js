@@ -103,8 +103,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `TECH LIFESTYLE`,
-        short_name: `techLifestyle`,
+        name: `THE VEGAN HOME`,
+        short_name: `theveganhome`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#002940`,
