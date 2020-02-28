@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: lulu70/vegan-site
+  name: git-gateway
 
 publish_mode: editorial_workflow
 media_folder: content/assets/images
