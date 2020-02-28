@@ -8,7 +8,7 @@ tags:
   - hdmi
   - screen
   - post
-author: lior cohen
+author: 'John Lennon '
 ---
 Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body
 
