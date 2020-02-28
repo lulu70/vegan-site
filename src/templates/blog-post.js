@@ -63,6 +63,7 @@ export const pageQuery = graphql`
         frontmatter: { tags: { in: $tags } }
         fields: { slug: { ne: $slug } }
       }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {

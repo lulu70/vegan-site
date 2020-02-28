@@ -49,26 +49,5 @@ export const pageQuery = graphql`
         id
       }
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-            tags
-            featuredImage {
-              src {
-                name
-              }
-            }
-          }
-        }
-      }
-    }
   }
 `
