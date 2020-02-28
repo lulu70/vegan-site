@@ -2,7 +2,7 @@ import React from "react"
 import Bio from "./bio"
 import RelatedPosts from "./RelatedPosts"
 
-const RightSide = ({ location, relatedPosts, style, className }) => {
+const RightSide = ({ location, relatedPosts, style, className, author }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isIndexPage = location.pathname === rootPath
 
@@ -12,7 +12,7 @@ const RightSide = ({ location, relatedPosts, style, className }) => {
         <span />
       ) : (
         <>
-          <Bio />
+          <Bio author={author} />
           {relatedPosts && relatedPosts.length > 0 && (
             <RelatedPosts relatedPosts={relatedPosts} />
           )}

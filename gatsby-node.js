@@ -20,6 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
               frontmatter {
                 title
                 tags
+                author
               }
             }
           }
@@ -42,6 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: post.node.fields.slug,
         tags: post.node.frontmatter.tags,
+        author: post.node.frontmatter.author,
       },
     })
   })

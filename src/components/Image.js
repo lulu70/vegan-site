@@ -9,7 +9,7 @@ const StyledImage = styled(GatsbyImage)`
 const Error = styled.p`
   color: red;
 `
-const Image = ({ fileName, small, style, ...props }) => {
+const Image = ({ avatar, fileName, small, style, ...props }) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
       allFile {
@@ -17,6 +17,9 @@ const Image = ({ fileName, small, style, ...props }) => {
           node {
             name
             childImageSharp {
+              fixed(width: 50, height: 50) {
+                ...GatsbyImageSharpFixed_tracedSVG
+              }
               fluid {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
@@ -30,13 +33,22 @@ const Image = ({ fileName, small, style, ...props }) => {
   const edge = data.allFile.edges.find(({ node }) => node.name === fileName)
 
   return edge ? (
-    <StyledImage
-      fluid={edge.node.childImageSharp.fluid}
-      {...props}
-      alt={fileName}
-      small={small}
-      style={{ ...style }}
-    />
+    avatar ? (
+      <StyledImage
+        fixed={edge.node.childImageSharp.fixed}
+        {...props}
+        alt={fileName}
+        style={{ ...style }}
+      />
+    ) : (
+      <StyledImage
+        fluid={edge.node.childImageSharp.fluid}
+        {...props}
+        alt={fileName}
+        small={small}
+        style={{ ...style }}
+      />
+    )
   ) : (
     <Error className="image__error">
       <strong>No image found...</strong>

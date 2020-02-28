@@ -21,9 +21,10 @@ const EndLine = styled.hr`
 `
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
+  const author = data.author.childAuthorsJson
   const relatedPosts = data.relatedPosts.edges
   return (
-    <Layout location={location} relatedPosts={relatedPosts}>
+    <Layout location={location} relatedPosts={relatedPosts} author={author}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -36,7 +37,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <MDXRenderer>{post.body}</MDXRenderer>
         <EndLine />
         <footer>
-          <Bio author={post.frontmatter.author} />
+          <Bio author={author} />
         </footer>
       </article>
     </Layout>
@@ -46,7 +47,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!, $tags: [String]) {
+  query BlogPostBySlug($slug: String!, $tags: [String], $author: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -57,6 +58,17 @@ export const pageQuery = graphql`
         description
         tags
         author
+      }
+    }
+    author: file(
+      sourceInstanceName: { eq: "authors" }
+      childAuthorsJson: { name: { eq: $author } }
+    ) {
+      childAuthorsJson {
+        name
+        image {
+          name
+        }
       }
     }
     relatedPosts: allMdx(

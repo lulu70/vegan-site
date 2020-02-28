@@ -41,7 +41,7 @@ const StyledRightSide = styled(RightSide)`
     display: none;
   }
 `
-const Layout = ({ children, location, relatedPosts, full }) => {
+const Layout = ({ children, location, relatedPosts, full, author }) => {
   const { searchState } = React.useContext(Context)
   const { searchVisibility } = searchState
   const data = useStaticQuery(graphql`
@@ -95,6 +95,7 @@ const Layout = ({ children, location, relatedPosts, full }) => {
             className="layout__rightSide"
             location={location}
             relatedPosts={relatedPosts}
+            author={author}
           />
         )}
       </PostContainer>
