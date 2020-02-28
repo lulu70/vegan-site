@@ -4,7 +4,10 @@ export default {
   // Visible label
   label: "MDXImage",
   // Fields the user need to fill out when adding an instance of the component
-  fields: [{ name: "src", label: "Image", widget: "image" }],
+  fields: [
+    { label: "Small", name: "small", widget: "boolean", default: false },
+    { name: "src", label: "Image", widget: "image" },
+  ],
   // Pattern to identify a block as being an instance of this component
   // pattern: /<Image fileName=".+" \/>/,
   //   // Function to extract data elements from the regexp match
@@ -18,7 +21,7 @@ export default {
     const fileName = obj.src
       ? obj.src.replace("../assets/images/", "").split(".")[0]
       : ""
-    return `<Image fileName="${fileName}" />`
+    return `<Image fileName="${fileName}" small={${obj.small}} />`
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
