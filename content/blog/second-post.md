@@ -8,6 +8,7 @@ tags:
   - hdmi
   - screen
   - post
+author: lior cohen
 ---
 Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body
 
