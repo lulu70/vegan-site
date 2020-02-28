@@ -24,3 +24,12 @@ collections:
           - { name: src, label: Image, widget: image }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "author"
+    label: "Author"
+    folder: "content/authors"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
