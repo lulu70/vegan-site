@@ -1,4 +1,5 @@
 import React from "react"
+import Bio from "./bio"
 import RelatedPosts from "./RelatedPosts"
 
 const RightSide = ({ location, relatedPosts, style, className }) => {
@@ -11,6 +12,7 @@ const RightSide = ({ location, relatedPosts, style, className }) => {
         <span />
       ) : (
         <>
+          <Bio />
           {relatedPosts && relatedPosts.length > 0 && (
             <RelatedPosts relatedPosts={relatedPosts} />
           )}
