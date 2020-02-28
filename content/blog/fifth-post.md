@@ -6,6 +6,7 @@ featuredImage:
   src: ../assets/images/a-man-wearing-a-tape-cassette-as-a-head.png
 tags:
   - post
+author: lior cohen
 ---
 Fifth post body Fifth post body Fifth post body Fifth post body Fifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post bodyFifth post body
 
