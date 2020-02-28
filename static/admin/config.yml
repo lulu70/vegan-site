@@ -6,6 +6,18 @@ media_folder: content/assets/images
 public_folder: ../assets/images
 
 collections:
+  - name: "authors"
+    label: "Author"
+    folder: "content/authors"
+    extension: "json"
+    create: true
+    slug: "{{name}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
