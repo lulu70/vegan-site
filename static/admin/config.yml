@@ -35,4 +35,11 @@ collections:
         fields:
           - { name: src, label: Image, widget: image }
       - { label: "Tags", name: "tags", widget: "list" }
+      - label: "Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        searchFields: ["name", "image"]
+        valueField: "name"
+        displayFields: ["name"]
       - { label: "Body", name: "body", widget: "markdown" }

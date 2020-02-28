@@ -18,6 +18,7 @@ module.exports = {
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
   },
   plugins: [
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
@@ -39,6 +40,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/authors`,
+        name: `authors`,
       },
     },
     {
