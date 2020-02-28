@@ -20,6 +20,7 @@ const EndLine = styled.hr`
   margin-bottom: ${rhythm(1)};
 `
 const BlogPostTemplate = ({ data, location }) => {
+  console.log(data)
   const post = data.mdx
   const relatedPosts = data.relatedPosts.edges
   return (
@@ -56,6 +57,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        author
       }
     }
     relatedPosts: allMdx(

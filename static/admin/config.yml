@@ -36,6 +36,7 @@ collections:
     label: "Author"
     folder: "content/authors"
     create: true
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
