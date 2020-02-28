@@ -6,6 +6,7 @@ featuredImage:
   src: ../assets/images/salty_egg.jpg
 tags:
   - post
+author: lior cohen
 ---
 dskfjlskdjfdskfsdskfjlskdjfdskfsdsk
 
