@@ -24,7 +24,15 @@ collections:
           - { name: src, label: Image, widget: image }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "author"
+      - {
+          name: "author",
+          widget: "relation",
+          collection: "authors",
+          searchFields: ["name"],
+          valueField: "name",
+          displayFields: ["name"],
+        }
+  - name: "authors"
     label: "Author"
     folder: "content/authors"
     create: true
