@@ -29,7 +29,7 @@ collections:
           widget: "relation",
           collection: "authors",
           searchFields: ["name"],
-          valueField: "name",
+          valueField: ["name", "image"],
           displayFields: ["name"],
         }
   - name: "authors"

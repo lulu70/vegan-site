@@ -20,7 +20,6 @@ const EndLine = styled.hr`
   margin-bottom: ${rhythm(1)};
 `
 const BlogPostTemplate = ({ data, location }) => {
-  console.log(data)
   const post = data.mdx
   const relatedPosts = data.relatedPosts.edges
   return (
@@ -37,7 +36,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <MDXRenderer>{post.body}</MDXRenderer>
         <EndLine />
         <footer>
-          <Bio />
+          <Bio author={post.frontmatter.author} />
         </footer>
       </article>
     </Layout>

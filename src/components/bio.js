@@ -19,7 +19,8 @@ const StyledImage = styled(GatsbyImage)`
 const StyledP = styled.p`
   color: ${MAIN_COLOR};
 `
-const Bio = () => {
+const Bio = props => {
+  console.log(props)
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
