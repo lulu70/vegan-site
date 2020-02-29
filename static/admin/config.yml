@@ -11,7 +11,7 @@ collections:
     folder: "content/authors"
     extension: "json"
     create: true
-    slug: "{{name}}"
+    slug: "{{title}}"
     editor:
       preview: false
     fields:
