@@ -23,10 +23,6 @@ const Container = styled.div`
   color: white;
 `
 
-const StyledLogo = styled(Logo)`
-  width: 200px;
-`
-
 const SearchButton = styled.button`
   background-color: transparent;
   border: 0;
@@ -52,7 +48,7 @@ const Header = ({ color, menuLinks }) => {
     <MainHeader color={color}>
       <Container>
         <Link to={`/`} aria-label="home">
-          <StyledLogo />
+          <Logo />
         </Link>
         <div className="Header__navWrapper">
           <nav>
