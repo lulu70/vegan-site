@@ -16,4 +16,4 @@ djfdskfsdskfjlskdjfdskfsdskfjlskdjfdskfsdskfjlskdjfdskfsdskfjlskdjfds
 
 kfsdskfjlskdjfdskfsdskfjlskdjfdskfsdskfjlskdjfdskfsdskfjlskdjfdskfsdskfjlskdjfdskfsdskfjlskdjfdskfs
 
-<Image fileName="quicktime-recording-settings" />
+<Image fileName="a-man-listening-to-a-garbage-can" small={false} />
