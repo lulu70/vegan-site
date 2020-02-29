@@ -16,7 +16,11 @@ collections:
       preview: false
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - name: image
+        label: Image
+        widget: object
+        fields:
+          - { name: src, label: Image, widget: image }
 
   - name: "blog"
     label: "Blog"

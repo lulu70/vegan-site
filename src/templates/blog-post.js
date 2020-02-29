@@ -21,7 +21,7 @@ const EndLine = styled.hr`
 `
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
-  const author = data.author.childAuthorsJson
+  const author = data.author
   const relatedPosts = data.relatedPosts.edges
   return (
     <Layout location={location} relatedPosts={relatedPosts} author={author}>
@@ -60,15 +60,10 @@ export const pageQuery = graphql`
         author
       }
     }
-    author: file(
-      sourceInstanceName: { eq: "authors" }
-      childAuthorsJson: { name: { eq: $author } }
-    ) {
-      childAuthorsJson {
+    author: authorsJson(name: { eq: $author }) {
+      name
+      image {
         name
-        image {
-          name
-        }
       }
     }
     relatedPosts: allMdx(
