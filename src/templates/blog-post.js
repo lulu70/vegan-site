@@ -60,8 +60,8 @@ export const pageQuery = graphql`
         author
       }
     }
-    author: authorsJson(name: { eq: $author }) {
-      name
+    author: authorsJson(title: { eq: $author }) {
+      title
       image {
         name
       }

@@ -39,7 +39,7 @@ collections:
         name: "author"
         widget: "relation"
         collection: "authors"
-        searchFields: ["name", "image"]
-        valueField: "name"
-        displayFields: ["name"]
+        searchFields: ["title", "image"]
+        valueField: "title"
+        displayFields: ["title"]
       - { label: "Body", name: "body", widget: "markdown" }

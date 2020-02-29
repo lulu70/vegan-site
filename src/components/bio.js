@@ -28,7 +28,7 @@ const Bio = ({ author }) => {
         avatar
       />
       <StyledP>
-        Written by <strong>{author.name}</strong>.
+        Written by <strong>{author.title}</strong>.
       </StyledP>
     </Container>
   )
