@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 import StyledLink from "../components/StyledLink"
 import { graphql } from "gatsby"
-
+import { upperCase } from "../utils/helpers"
 const MainHeader = styled.h1`
   width: 100%;
   text-align: center;
@@ -20,9 +20,9 @@ const index = ({ data, location }) => {
       <MainHeader className="index__mainHeader">
         {data.site.siteMetadata.title}
       </MainHeader>
-      {data.pages.nodes.map(({ name, id }) => (
-        <StyledLink key={id} className="index__linkToBlog" to={`/${name}`}>
-          <h2>{name[0].toUpperCase() + name.slice(1)}</h2>
+      {data.pages.nodes.map(({ name, fields, id }) => (
+        <StyledLink key={id} className="index__linkToBlog" to={fields.slug}>
+          <h2>{upperCase(name)}</h2>
         </StyledLink>
       ))}
     </Layout>
@@ -47,6 +47,9 @@ export const pageQuery = graphql`
       nodes {
         name
         id
+        fields {
+          slug
+        }
       }
     }
   }

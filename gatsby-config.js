@@ -3,16 +3,6 @@ module.exports = {
     title: `The Vegan Home`,
     blogTitle: `The Vegan Blog`,
     recepiesTitle: `Vegan Recepies`,
-    menuLinks: [
-      {
-        name: "Blog",
-        link: "/blog",
-      },
-      {
-        name: "Recepies",
-        link: "/recepies",
-      },
-    ],
     author: `Lior Cohen`,
     description: `A Vegan website`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,

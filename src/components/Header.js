@@ -6,7 +6,7 @@ import SearchIcon from "../../content/assets/search.svg"
 import { Context } from "../context/ContextProvider"
 import { setSearchVisibility } from "../context/reducers/searchReducer"
 import styled from "styled-components"
-import StyledLink from "./StyledLink"
+import MainMenu from "./MainMenu"
 
 const MainHeader = styled.header`
   ${scale(0.1)};
@@ -31,17 +31,7 @@ const SearchButton = styled.button`
   padding: 0;
   margin-left: auto;
 `
-const Ul = styled.ul`
-  display: flex;
-  flex: 1;
-  margin: 0;
-`
-const Li = styled.li`
-  list-style-type: none;
-  padding: 1rem;
-`
-
-const Header = ({ color, menuLinks }) => {
+const Header = ({ color }) => {
   const { searchState, searchDispatch } = React.useContext(Context)
   const { searchVisibility } = searchState
   return (
@@ -50,19 +40,7 @@ const Header = ({ color, menuLinks }) => {
         <Link to={`/`} aria-label="home">
           <Logo />
         </Link>
-        <div className="Header__navWrapper">
-          <nav>
-            <Ul>
-              {menuLinks.map(link => (
-                <Li key={link.name}>
-                  <StyledLink color="white" to={link.link}>
-                    {link.name}
-                  </StyledLink>
-                </Li>
-              ))}
-            </Ul>
-          </nav>
-        </div>
+        <MainMenu />
         {!searchVisibility && (
           <SearchButton
             type="submit"
