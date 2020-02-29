@@ -8,7 +8,7 @@ tags:
   - hdmi
   - screen
   - post
-author: 'John Lennon '
+author: John Lennon
 ---
 Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body second-post Body
 
