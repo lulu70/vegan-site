@@ -1,3 +1,4 @@
 import CMS from "netlify-cms-app"
-import mdxImageWidget from "./mdxImageWidget"
-CMS.registerEditorComponent(mdxImageWidget)
+import BlogPreview from "./BlogPreview"
+
+CMS.registerPreviewTemplate("blog", BlogPreview)
