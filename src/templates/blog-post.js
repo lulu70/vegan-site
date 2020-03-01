@@ -16,6 +16,9 @@ const DateParagraph = styled.p`
   display: block;
   margin-bottom: ${rhythm(1)};
 `
+const Article = styled.article`
+  width: 100%;
+`
 const EndLine = styled.hr`
   margin-bottom: ${rhythm(1)};
 `
@@ -29,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <Article>
         <header>
           <Header>{post.frontmatter.title}</Header>
           <DateParagraph>{post.frontmatter.date}</DateParagraph>
@@ -39,7 +42,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <footer>
           <Bio author={author} />
         </footer>
-      </article>
+      </Article>
     </Layout>
   )
 }
