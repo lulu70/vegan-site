@@ -8,7 +8,7 @@ tags:
   - post
 author: john lennon
 ---
-![lennon](../assets/images/lennon.jpg "lennon")
+![lennon](../assets/images/give-me-a-second-to-grab-my-camera.png "lennon")
 
 dskfjlskdjfdskfsdskfjlskdjfdskfsdsk
 
