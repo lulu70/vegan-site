@@ -8,7 +8,7 @@ tags:
   - post
 author: john lennon
 ---
-![lennon](../assets/images/salty_egg.jpg "lennon")
+![lennon](../assets/images/lennon.jpg "lennon")
 
 dskfjlskdjfdskfsdskfjlskdjfdskfsdsk
 
