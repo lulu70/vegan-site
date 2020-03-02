@@ -10,10 +10,19 @@ const BlogPreview = ({ entry, widgetFor }) => {
         day: "numeric",
       })
     : ""
+  const updatedDate = entry.getIn(["data", "updatedDate"])
+    ? entry.getIn(["data", "updatedDate"]).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : ""
   return (
     <div className="container">
       <h1>{title}</h1>
-      <small>{date}</small>
+      <small>
+        {date === updatedDate ? date : `Updated at: ${updatedDate}`}
+      </small>
       <main>{body}</main>
     </div>
   )
