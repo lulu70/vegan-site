@@ -32,7 +32,6 @@ const Article = styled.article`
 
 const Blog = ({ data, location }) => {
   const posts = data.allMdx.edges
-  console.log(posts)
   return (
     <Layout full location={location}>
       <SEO title="Blog" />
@@ -58,7 +57,11 @@ const Blog = ({ data, location }) => {
                   {title}
                 </StyledLink>
               </PostHeader>
-              <small>{node.frontmatter.date}</small>
+              <small>
+                {node.frontmatter.date === node.frontmatter.updatedDate
+                  ? node.frontmatter.date
+                  : `Updated at: ${node.frontmatter.updatedDate}`}
+              </small>
             </header>
             <section>
               <p

@@ -35,7 +35,11 @@ const BlogPostTemplate = ({ data, location }) => {
       <Article>
         <header>
           <Header>{post.frontmatter.title}</Header>
-          <DateParagraph>{post.frontmatter.date}</DateParagraph>
+          <DateParagraph>
+            {post.frontmatter.date === post.frontmatter.updatedDate
+              ? post.frontmatter.date
+              : `Updated at: ${post.frontmatter.updatedDate}`}
+          </DateParagraph>
         </header>
         <MDXRenderer>{post.body}</MDXRenderer>
         <EndLine />
@@ -58,6 +62,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        updatedDate(formatString: "MMMM DD, YYYY")
         description
         tags
         author
