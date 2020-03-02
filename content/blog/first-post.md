@@ -1,7 +1,7 @@
 ---
 title: First Post
 date: 2020-02-24T10:45:00.680Z
-updatedDate: 2020-03-02T23:00:00.000Z
+updatedDate: 2020-03-03T04:00:00.000Z
 description: description of first post
 featuredImage:
   src: ../assets/images/lennon.jpg
