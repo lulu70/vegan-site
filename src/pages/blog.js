@@ -32,6 +32,7 @@ const Article = styled.article`
 
 const Blog = ({ data, location }) => {
   const posts = data.allMdx.edges
+  console.log(posts)
   return (
     <Layout full location={location}>
       <SEO title="Blog" />
@@ -92,6 +93,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
+            updatedDate(formatString: "MMMM DD, YYYY")
             title
             description
             tags
