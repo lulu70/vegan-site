@@ -6,7 +6,7 @@ description: description of first recipe
 featuredImage:
   src: ../assets/images/lennon.jpg
 tags:
-  - post
+  - recipe
 author: john lennon
 ---
 
