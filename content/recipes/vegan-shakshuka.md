@@ -9,6 +9,6 @@ tags:
   - recipe
 author: lior cohen
 ---
-This is vegan shakshuka made with love.
+This is a vegan shakshuka made with love.
 
 ![vegan-shakshuka](../assets/images/vegan-shakshuka.jpg "vegan-shakshuka")
