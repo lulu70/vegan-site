@@ -44,3 +44,30 @@ collections:
         valueField: "title"
         displayFields: ["title"]
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "recipe"
+    label: "Recipe"
+    folder: "content/recipes"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Updated Date", name: "updatedDate", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - name: featuredImage
+        label: Featured Image
+        widget: object
+        fields:
+          - { name: src, label: Image, widget: image }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - label: "Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        searchFields: ["title", "image"]
+        valueField: "title"
+        displayFields: ["title"]
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -1,11 +1,11 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
-import Image from "../components/Image"
 import styled from "styled-components"
+import { rhythm } from "../utils/typography"
+import { graphql } from "gatsby"
 import StyledLink from "../components/StyledLink"
+import Image from "../components/Image"
 
 const MainHeader = styled.h1`
   width: 100%;
@@ -30,21 +30,21 @@ const Article = styled.article`
   }
 `
 
-const Blog = ({ data, location }) => {
+const Recipes = ({ data, location }) => {
   const posts = data.allFile.nodes
   return (
     <Layout full location={location}>
       <SEO title="Blog" />
-      <MainHeader className="blog__mainHeader">
-        {data.site.siteMetadata.blogTitle}
+      <MainHeader className="recipes__mainHeader">
+        {data.site.siteMetadata.recipesTitle}
       </MainHeader>
       {posts.map(post => {
         const title =
           post.childMdx.frontmatter.title || post.childMdx.fields.slug
         return (
-          <Article className="blog__article" key={post.childMdx.fields.slug}>
+          <Article className="recipes__article" key={post.childMdx.fields.slug}>
             <StyledLink
-              className="blog__featuredImageLink"
+              className="recipes__featuredImageLink"
               to={post.childMdx.fields.slug}
             >
               <Image
@@ -52,9 +52,9 @@ const Blog = ({ data, location }) => {
               />
             </StyledLink>
             <header>
-              <PostHeader className="blog__postHeader">
+              <PostHeader className="recipes__postHeader">
                 <StyledLink
-                  className="blog__postHeaderLink"
+                  className="recipes__postHeaderLink"
                   to={post.childMdx.fields.slug}
                 >
                   {title}
@@ -79,22 +79,22 @@ const Blog = ({ data, location }) => {
           </Article>
         )
       })}
-      <Article className="blog__lastArticle" />
+      <Article className="recipes__lastArticle" />
     </Layout>
   )
 }
 
-export default Blog
+export default Recipes
 
 export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        blogTitle
+        recipesTitle
       }
     }
     allFile(
-      filter: { sourceInstanceName: { eq: "blog" } }
+      filter: { sourceInstanceName: { eq: "recipes" } }
       sort: { fields: childMdx___frontmatter___updatedDate, order: DESC }
     ) {
       nodes {
