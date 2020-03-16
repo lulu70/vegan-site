@@ -12,7 +12,7 @@ const Error = styled.p`
 const Image = ({ avatar, fileName, small, style, ...props }) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
-      allFile {
+      allFile(filter: { sourceInstanceName: { eq: "assets" } }) {
         edges {
           node {
             name
@@ -29,9 +29,7 @@ const Image = ({ avatar, fileName, small, style, ...props }) => {
       }
     }
   `)
-
   const edge = data.allFile.edges.find(({ node }) => node.name === fileName)
-
   return edge ? (
     avatar ? (
       <StyledImage
