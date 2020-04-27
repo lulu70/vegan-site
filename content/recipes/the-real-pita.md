@@ -11,19 +11,18 @@ tags:
   - bread
 author: lior cohen
 ---
-
 ![pita](../assets/images/img_3664.jpeg "baked pita")
 
 > 8 portions
 
 ## Ingredients
 
-- 4 cups all-purpose flour
-- 1.5 tsp of active dry yeast
-- 1 tbsp of sugar
-- 2.5 tbsp of olive oil
-- 1.5 tsp of salt
-- 1.5 cups of water
+* 4 cups of all-purpose flour
+* 1.5 tsp of active dry yeast
+* 1 tbsp of sugar
+* 2.5 tbsp of olive oil
+* 1.5 tsp of salt
+* 1.5 cups of water
 
 ## Directions
 
