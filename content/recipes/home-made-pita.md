@@ -24,7 +24,7 @@ author: lior cohen
 * 1.5 tsp of salt
 * 1.5 cups of water
 
-## Directions
+## Instructions
 
 1. Mix the yeast with half a cup room temperature water in a glass.
 2. Place the flour, the yeast, the sugar, and the oil into a bowl, (if you have a standing mixer you can place it in the working bowl) and knead for five minutes.
