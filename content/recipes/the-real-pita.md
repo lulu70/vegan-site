@@ -1,5 +1,5 @@
 ---
-title: The Real Pita
+title: Home-made Pita
 date: 2020-04-27T07:10:15.695Z
 updatedDate: 2020-04-27T07:10:15.729Z
 description: "Easy and authentic pita recipe. "
