@@ -4,14 +4,14 @@ date: 2020-04-27T07:10:15.695Z
 updatedDate: 2020-04-27T07:10:15.729Z
 description: "Easy and authentic pita recipe. "
 featuredImage:
-  src: ../assets/images/img_3664.jpeg
+  src: ../assets/images/baked-pita.jpg
 tags:
   - Israel
   - Middle Eastern foods
   - bread
 author: lior cohen
 ---
-![pita](../assets/images/img_3664.jpeg "baked pita")
+![pita](../assets/images/baked-pita.jpg "baked pita")
 
 > 8 portions
 
@@ -39,10 +39,10 @@ author: lior cohen
 11. Place the pita's on the tray and bake for about 5 minutes until there is a bit of a color change.
 12. Take out, let it chill, enjoy right away.
 
-![dough](../assets/images/dough.png "dough")
+![dough](../assets/images/dough.jpg "dough")
 
-![pita balls](../assets/images/img_3658.jpeg "pita balls")
+![pita balls](../assets/images/pita-balls.jpg "pita balls")
 
-![two unbaked pitas](../assets/images/img_3657.jpeg "two unbaked pitas")
+![two unbaked pitas](../assets/images/two-unbaked-pitas.jpg "two unbaked pitas")
 
-![pitas](../assets/images/50cd4d2d-eae2-42a0-8edb-7a1c60ceceb7.jpeg "pitas")
+![pitas](../assets/images/pitas.jpg "pitas")
