@@ -11,6 +11,8 @@ tags:
   - bread
 author: lior cohen
 ---
+> ![]()
+>
 > 8 portions
 
 ## Ingredients
@@ -36,5 +38,11 @@ author: lior cohen
 10. Prepare a baking tray with baking paper and sprinkle some flour on it.
 11. Place the pita's on the tray and bake for about 5 minutes until there is a bit of a color change.    
 12. Take out, let it chill, enjoy right away.
- 
 
+![dough](../assets/images/img_3655.jpeg "dough")
+
+![pita balls](../assets/images/img_3658.jpeg "pita balls")
+
+![two unbaked pitas](../assets/images/img_3657.jpeg "two unbaked pitas")
+
+![pita](../assets/images/img_3664.jpeg "baked pita")
