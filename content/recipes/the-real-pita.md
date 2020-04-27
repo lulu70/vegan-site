@@ -28,13 +28,13 @@ author: lior cohen
 ## Directions
 
 1. Mix the yeast with half a cup room temperature water in a glass.
-2. Place the flour, the yeast, the sugar and the oil into a bowl, (if you have a standing mixer you can place it in the working bowl) and knead for five minutes.
-3. Add the salt and knead for like ten minutes until its a one beautiful piece of dough, add water gradually and carefully.
+2. Place the flour, the yeast, the sugar, and the oil into a bowl, (if you have a standing mixer you can place it in the working bowl) and knead for five minutes.
+3. Add the salt and knead for like ten minutes until you get a beautiful stable piece of dough, add water gradually and carefully.
 4. Place a cloth or a towel on top of the bowl and let it rest for an hour.
-5. Take the dough out of the bowl , place onto a floured workspace and form a round long shape (like a shape of a normal loaf of bread).
+5. Take the dough out of the bowl, place onto a floured workspace, and form a long round shape (like a shape of a normal loaf of bread).
 6. Cut eight even pieces and form each piece into a small round ball with a smooth top, pulling dough from the sides and tucking the ends underneath the bottom.
 7. Place a cloth or a towel on top of the balls and let them rest for 15 minutes.
-8. On a floured work space gently pat each ball flat using your hand and form a round pita shape using a rolling pin - the thickness should be around 6mm, 1/4 inch.
+8. On a floured workspace gently pat each ball flat using your hand and form a round pita shape using a rolling pin - the thickness should be around 6mm, 1/4 inch.
 9. Preheat the oven to 250 deg
 10. Prepare a baking tray with baking paper and sprinkle some flour on it.
 11. Place the pita's on the tray and bake for about 5 minutes until there is a bit of a color change.

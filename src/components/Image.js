@@ -12,7 +12,7 @@ const Error = styled.p`
 const Image = ({ avatar, fileName, small, style, ...props }) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
-      allFile(filter: { sourceInstanceName: { eq: "assets" } }) {
+      allFile(filter: { sourceInstanceName: { eq: "images" } }) {
         edges {
           node {
             name
