@@ -11,8 +11,8 @@ tags:
   - bread
 author: lior cohen
 ---
-> ![]()
->
+![pita](../assets/images/img_3664.jpeg "baked pita")
+
 > 8 portions
 
 ## Ingredients
@@ -45,4 +45,4 @@ author: lior cohen
 
 ![two unbaked pitas](../assets/images/img_3657.jpeg "two unbaked pitas")
 
-![pita](../assets/images/img_3664.jpeg "baked pita")
+![pitas](../assets/images/50cd4d2d-eae2-42a0-8edb-7a1c60ceceb7.jpeg "pitas")
