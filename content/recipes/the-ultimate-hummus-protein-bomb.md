@@ -15,17 +15,14 @@ tags:
   - plant based
 author: Roi Cohen
 ---
+![](../assets/images/img_20200428_153456~2.jpg)
+
 As a person who grew up in the center of Israel in a city between Jaffa and Ramla, I spent a lot of time in Hummus restaurants with family and friends. \
-Hummus stimulates serotonin in the brain and fills us with a pleasant and happy feeling.
-\
-The Israeli cuisine, which is composed of Jewish kitchens from all over the world, lovingly embraced the finest Israeli-Arab's hummus.
-\
-It didn't take too long for me to realize that I must know how to make delicious hummus at home.
-\
-Over the years in any opportunity I collected tips for improving the recipe, and finally I came up with a simple and perfect recipe.
-\
-I am happy to share the recipe with you because to me hummus is joy, hummus is love and harmony.
-\
+Hummus stimulates serotonin in the brain and fills us with a pleasant and happy feeling. \
+The Israeli cuisine, which is composed of Jewish kitchens from all over the world, lovingly embraced the finest Israeli-Arab's hummus. \
+It didn't take too long for me to realize that I must know how to make delicious hummus at home. \
+Over the years in any opportunity I collected tips for improving the recipe, and finally I came up with a simple and perfect recipe. \
+I am happy to share the recipe with you because to me hummus is joy, hummus is love and harmony. \
 Hummus is Vegan!
 
 # **Ingredients:**
@@ -59,9 +56,7 @@ Nutritional values per serving:\
 * Fresh parsley  
 * ½ fresh lemon juice
 
-
-
-## Lets start - 
+## Lets start -
 
 First, mix the Baking soda powder in a cup of water and stir to dissolve.\
 Then pour the chickpeas into a large bowl, add the water with the Baking soda powder and add more fresh water to cover the chickpeas, let them soak overnight for a minimum of 12 hours.
@@ -79,10 +74,8 @@ Now let’s place our filtered ingredients in a strong food processor, but keep 
 
 ![](../assets/images/img_20200428_144252~3.jpg)
 
-
 add the salt, cumin, black pepper and tahini to it. Add the lemon juice too. \
-Now we will use the stock we kept before, we will start adding 1/2 cup to it and turn the food processor on.
-The blend should get creamy, smooth, but not too liquid. continue to add small amounts of the stock water to get your desired mash results. 
+Now we will use the stock we kept before, we will start adding 1/2 cup to it and turn the food processor on. The blend should get creamy, smooth, but not too liquid. continue to add small amounts of the stock water to get your desired mash results. 
 
 ![](../assets/images/img_20200428_145014~2.jpg)
 
@@ -103,12 +96,7 @@ You can decorate with a bit of paprika or cumin powder on top to make it look ev
 
 ![](../assets/images/img_20200428_153456~2.jpg)
 
-
-
-
-
 As a siders we add some black olives and green chili paste, and of course a pita bread to wipe the delicious Hummus.
-
 
 ![](../assets/images/img_20200428_150824~2.jpg)
 
