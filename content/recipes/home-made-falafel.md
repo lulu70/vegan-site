@@ -10,24 +10,25 @@ tags:
   - Middle Eastern food
 author: lior cohen
 ---
+
 ![falafel-ready](../assets/images/falafel-ready.jpg "falafel-ready")
 
 > 30 balls
 
 ## Ingredients
 
-* 2.5 cups of dry chickpeas
-* 1 onion 
-* 2 garlic cloves 
-* 1/4 cup of chopped fresh parsley
-* 1/2 cup of chopped fresh coriander 
-* 1 tsp of baking powder
-* 1.5 tsp of salt
-* 2 tsp of cumin
-* 1 tsp of black pepper 
-* 0.5 tsp of chili pepper powder or chips 
-* 1.5 tsp of coriander seeds
-* vegetable oil for frying
+- 2.5 cups of dry chickpeas
+- 1 onion
+- 2 garlic cloves
+- 1/4 cup of chopped fresh parsley
+- 1/2 cup of chopped fresh coriander
+- 1 tsp of baking powder
+- 1.5 tsp of salt
+- 2 tsp of cumin
+- 1 tsp of black pepper
+- 0.5 tsp of chili pepper powder or chips
+- 1.5 tsp of coriander seeds
+- vegetable oil for frying
 
 ## Instructions
 
@@ -37,16 +38,14 @@ author: lior cohen
 
 ![falafel-ingredients](../assets/images/falafel-ingredients.jpg "falafel-ingredients")
 
-￼
-
-4. Process all the ingredients together until the mixture reaches a texture that looks like tabouli salad or couscous, do not over-process it, we want to end up with small chunks and not a paste. 
+4. Process all the ingredients together until the mixture reaches a texture that looks like tabouli salad or couscous, do not over-process it, we want to end up with small chunks and not a paste.
 
 ![falafel-mix](../assets/images/falafel-mix.jpg "falafel-mix")
 
 5. Cover the bowl and let it rest for 15 minutes.   ￼
-6. Grab a bit of the mixture with a big tablespoon and form a ball-shaped using your hands, set it aside, and repeat as many times you fancy. 
-7. Pour the oil into a small frying pan so it will be deep enough to cover the balls you prepared, heat until it reaches a high temperature that is enough for frying, you can trow in a really small amount of the falafel mix inside if it is bubbling you are ready to go.  
-8. Trow the balls (a few at a time, depending on the size of the pan) in the oil and turn the heat down, it should still bubble but a bit less aggressive than the beginning, fry for around five minutes.  
+6. Grab a bit of the mixture with a big tablespoon and form a ball-shaped using your hands, set it aside, and repeat as many times you fancy.
+7. Pour the oil into a small frying pan so it will be deep enough to cover the balls you prepared, heat until it reaches a high temperature that is enough for frying, you can throw in a really small amount of the falafel mix inside if it is bubbling you are ready to go.
+8. Throw the balls (a few at a time, depending on the size of the pan) in the oil and turn the heat down, it should still bubble but a bit less aggressive than the beginning, fry for around five minutes.
 
 ![frying-falafel](../assets/images/frying-falafel.jpg "frying-falafel")
 

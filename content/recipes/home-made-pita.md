@@ -41,11 +41,12 @@ author: lior cohen
 
 ![pita balls](../assets/images/pita-balls.jpg "pita balls")
 
+9. Preheat the oven to 250 deg
+10. Prepare a baking tray with baking paper, sprinkle some flour on it, and place the pita's on.
+
 ![two unbaked pitas](../assets/images/two-unbaked-pitas.jpg "two unbaked pitas")
 
-9. Preheat the oven to 250 deg
-10. Prepare a baking tray with baking paper and sprinkle some flour on it.
-11. Place the pita's on the tray and bake for about 5 minutes until there is a bit of a color change.
+11. Bake for about 5 minutes until there is a bit of a color change.
 12. Take out, let it chill, enjoy right away.
 
 ![pitas](../assets/images/pitas.jpg "pitas")

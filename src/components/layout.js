@@ -35,6 +35,16 @@ const Main = styled.main`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 20rem 0 0;
+  @media (max-width: 900px) {
+    margin: 0 1rem;
+  }
+  .gatsby-resp-image-wrapper {
+    width: 80%;
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
 `
 const StyledRightSide = styled(RightSide)`
   flex: 1;

@@ -21,6 +21,9 @@ const Container = styled.div`
   max-width: ${rhythm(40)};
   align-items: center;
   color: white;
+  @media (max-width: 900px) {
+    margin: 0 1rem;
+  }
 `
 
 const SearchButton = styled.button`
