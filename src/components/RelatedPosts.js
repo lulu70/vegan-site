@@ -4,7 +4,7 @@ import StyledLink from "./StyledLink"
 const RelatedPosts = ({ relatedPosts }) => {
   return (
     <div>
-      <h4>Related Posts:</h4>
+      <h4>Related:</h4>
       {relatedPosts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
