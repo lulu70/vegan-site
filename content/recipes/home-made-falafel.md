@@ -8,6 +8,13 @@ featuredImage:
 tags:
   - Israel
   - Middle Eastern food
+  - hummus
+  - vegan
+  - chickpeas
+  - tahini
+  - pita bread
+  - protein
+  - plant based
 author: lior cohen
 ---
 

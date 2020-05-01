@@ -7,8 +7,14 @@ featuredImage:
   src: ../assets/images/baked-pita.jpg
 tags:
   - Israel
-  - Middle Eastern foods
-  - bread
+  - Middle Eastern food
+  - hummus
+  - vegan
+  - chickpeas
+  - tahini
+  - pita bread
+  - protein
+  - plant based
 author: lior cohen
 ---
 
