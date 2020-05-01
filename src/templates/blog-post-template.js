@@ -18,6 +18,10 @@ const DateParagraph = styled.p`
 `
 const Article = styled.article`
   width: 100%;
+  margin-right: 15rem;
+  @media (max-width: 900px) {
+    margin: 0;
+  }
 `
 const EndLine = styled.hr`
   margin-bottom: ${rhythm(1)};
