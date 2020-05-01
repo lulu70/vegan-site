@@ -18,10 +18,10 @@ const Image = ({ avatar, fileName, small, style, ...props }) => {
             name
             childImageSharp {
               fixed(width: 50, height: 50) {
-                ...GatsbyImageSharpFixed_tracedSVG
+                ...GatsbyImageSharpFixed
               }
               fluid {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid
               }
             }
           }
