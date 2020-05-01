@@ -18,10 +18,10 @@ const Image = ({ avatar, fileName, small, style, ...props }) => {
             name
             childImageSharp {
               fixed(width: 50, height: 50) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
               fluid {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
