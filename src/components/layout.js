@@ -35,6 +35,9 @@ const Main = styled.main`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 900px) {
+    margin: 0 1rem;
+  }
   .gatsby-resp-image-wrapper {
     width: 80%;
     @media (max-width: 900px) {
