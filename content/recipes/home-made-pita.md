@@ -29,13 +29,13 @@ author: lior cohen
 - 1 tbsp of sugar
 - 2.5 tbsp of olive oil
 - 1.5 tsp of salt
-- 1.5 cups of water
+- 1 cup of water
 
 ## Instructions
 
 1. Mix the yeast with half a cup room temperature water in a glass.
 2. Place the flour, the yeast, the sugar, and the oil into a bowl, (if you have a standing mixer you can place it in the working bowl) and knead for five minutes.
-3. Add the salt and knead for like ten minutes until you get a beautiful stable piece of dough, add water gradually and carefully.
+3. Add the salt and knead until you get a beautiful nonsticky stable piece of dough, add the other half a cup of water gradually and carefully.
 4. Place a cloth or a towel on top of the bowl and let it rest for an hour.
 5. Take the dough out of the bowl, place onto a floured workspace, and form a long round shape (like a shape of a normal loaf of bread).
 
@@ -48,7 +48,7 @@ author: lior cohen
 <Image filename="pita-balls" />
 
 9. Preheat the oven to 250 deg
-10. Prepare a baking tray with baking paper, sprinkle some flour on it, and place the pita's on.
+10. Prepare a baking tray with baking paper, sprinkle some flour on it, and place the pitas on.
 
 <Image filename="two-unbaked-pitas" />
 
