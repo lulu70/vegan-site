@@ -48,7 +48,7 @@ const Recipes = ({ data, location }) => {
               to={post.childMdx.fields.slug}
             >
               <Image
-                fileName={post.childMdx.frontmatter.featuredImage.src.name}
+                filename={post.childMdx.frontmatter.featuredImage.src.name}
               />
             </StyledLink>
             <header>

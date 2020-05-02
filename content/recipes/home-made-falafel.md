@@ -18,7 +18,7 @@ tags:
 author: lior cohen
 ---
 
-![falafel-ready](../assets/images/falafel-ready.jpg "falafel-ready")
+<Image filename='falafel-ready'/>
 
 > 30 balls
 
@@ -43,19 +43,19 @@ author: lior cohen
 2. Drain and rinse the chickpeas, place them into a food processor.
 3. Place all rest of the ingredients ( exclude the oil, we're going to use it only for frying ) into the food processor.
 
-![falafel-ingredients](../assets/images/falafel-ingredients.jpg "falafel-ingredients")
+<Image filename='falafel-ingredients'/>
 
 4. Process all the ingredients together until the mixture reaches a texture that looks like tabouli salad or couscous, do not over-process it, we want to end up with small chunks and not a paste.
 
-![falafel-mix](../assets/images/falafel-mix.jpg "falafel-mix")
+<Image filename='falafel-mix'/>
 
 5. Cover the bowl and let it rest for 15 minutes.   ￼
 6. Grab a bit of the mixture with a big tablespoon and form a ball-shaped using your hands, set it aside, and repeat as many times you fancy.
 7. Pour the oil into a small frying pan so it will be deep enough to cover the balls you prepared, heat until it reaches a high temperature that is enough for frying, you can throw in a really small amount of the falafel mix inside if it is bubbling you are ready to go.
 8. Throw the balls (a few at a time, depending on the size of the pan) in the oil and turn the heat down, it should still bubble but a bit less aggressive than the beginning, fry for around five minutes.
 
-![frying-falafel](../assets/images/frying-falafel.jpg "frying-falafel")
+<Image filename='frying-falafel'/>
 
 9. When the balls look ready, place them on a sheet of paper towels and enjoy right away.
 
-![falafel-ready](../assets/images/falafel-ready.jpg "falafel-ready")
+<Image filename='falafel-ready'/>

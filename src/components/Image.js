@@ -4,12 +4,15 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const StyledImage = styled(GatsbyImage)`
-  width: ${props => (props.small ? "250px" : "")};
+  width: 80%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `
 const Error = styled.p`
   color: red;
 `
-const Image = ({ avatar, fileName, small, style, ...props }) => {
+const Image = ({ avatar, filename, style, ...props }) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
       allFile(filter: { sourceInstanceName: { eq: "images" } }) {
@@ -29,21 +32,22 @@ const Image = ({ avatar, fileName, small, style, ...props }) => {
       }
     }
   `)
-  const edge = data.allFile.edges.find(({ node }) => node.name === fileName)
+  const edge = data.allFile.edges.find(({ node }) => node.name === filename)
   return edge ? (
     avatar ? (
       <StyledImage
         fixed={edge.node.childImageSharp.fixed}
         {...props}
-        alt={fileName}
+        title={props.title || filename}
+        alt={props.alt || filename}
         style={{ ...style }}
       />
     ) : (
       <StyledImage
         fluid={edge.node.childImageSharp.fluid}
         {...props}
-        alt={fileName}
-        small={small}
+        title={props.title || filename}
+        alt={props.alt || filename}
         style={{ ...style }}
       />
     )

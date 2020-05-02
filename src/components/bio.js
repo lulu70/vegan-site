@@ -20,13 +20,7 @@ const StyledP = styled.p`
 const Bio = ({ author }) => {
   return (
     <Container>
-      <StyledImage
-        fileName={author.image.name}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-        avatar
-      />
+      <StyledImage filename={author.image.name} avatar />
       <StyledP>
         Written by <strong>{author.title}</strong>.
       </StyledP>

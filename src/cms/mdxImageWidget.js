@@ -10,7 +10,7 @@ export default {
     { label: "Small", name: "small", widget: "boolean", default: false },
   ],
   // Pattern to identify a block as being an instance of this component
-  pattern: /<Image fileName=".*" small={.+} \/>/,
+  pattern: /<Image filename=".*" small={.+} \/>/,
   //   // Function to extract data elements from the regexp match
   fromBlock: function(pattern) {
     const matchSmall = pattern[0].match(/{.+}/)[0]
@@ -31,7 +31,7 @@ export default {
     const fileName = obj.src
       ? obj.src.replace("../assets/images/", "").split(".")[0]
       : ""
-    return `<Image fileName="${fileName}" small={${obj.small}} />`
+    return `<Image filename="${fileName}" small={${obj.small}} />`
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)

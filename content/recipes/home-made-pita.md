@@ -18,7 +18,7 @@ tags:
 author: lior cohen
 ---
 
-![pita](../assets/images/baked-pita.jpg "baked pita")
+<Image filename="baked-pita" />
 
 > 8 portions
 
@@ -39,20 +39,20 @@ author: lior cohen
 4. Place a cloth or a towel on top of the bowl and let it rest for an hour.
 5. Take the dough out of the bowl, place onto a floured workspace, and form a long round shape (like a shape of a normal loaf of bread).
 
-![dough](../assets/images/dough.jpg "dough")
+<Image filename="dough" />
 
 6. Cut eight even pieces and form each piece into a small round ball with a smooth top, pulling dough from the sides and tucking the ends underneath the bottom.
 7. Place a cloth or a towel on top of the balls and let them rest for 15 minutes.
 8. On a floured workspace gently pat each ball flat using your hand and form a round pita shape using a rolling pin - the thickness should be around 6mm, 1/4 inch.
 
-![pita balls](../assets/images/pita-balls.jpg "pita balls")
+<Image filename="pita-balls" />
 
 9. Preheat the oven to 250 deg
 10. Prepare a baking tray with baking paper, sprinkle some flour on it, and place the pita's on.
 
-![two unbaked pitas](../assets/images/two-unbaked-pitas.jpg "two unbaked pitas")
+<Image filename="two-unbaked-pitas" />
 
 11. Bake for about 5 minutes until there is a bit of a color change.
 12. Take out, let it chill, enjoy right away.
 
-![pitas](../assets/images/pitas.jpg "pitas")
+<Image filename="pitas" />
