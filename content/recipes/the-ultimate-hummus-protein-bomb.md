@@ -13,6 +13,18 @@ tags:
   - pita bread
   - protein
   - plant based
+
+ingredients:
+  - chickpeas
+  - onion
+  - garlic
+  - lemon
+  - cumin
+  - himalaya salt
+  - black pepper
+  - baking soda
+  - tahini
+
 author: Roi Cohen
 ---
 

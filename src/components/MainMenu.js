@@ -2,7 +2,7 @@ import React from "react"
 import StyledLink from "./StyledLink"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
-import { upperCase } from "../utils/helpers"
+import { makePretty } from "../utils/helpers"
 const Ul = styled.ul`
   display: flex;
   flex: 1;
@@ -40,7 +40,7 @@ const MainMenu = () => {
           {data.pages.nodes.map(page => (
             <Li key={page.id}>
               <StyledLink color="white" to={page.fields.slug}>
-                {upperCase(page.name)}
+                {makePretty(page.name)}
               </StyledLink>
             </Li>
           ))}
