@@ -15,6 +15,12 @@ tags:
   - pita bread
   - protein
   - plant based
+ingredients:
+  - chickpeas
+  - onion
+  - garlic
+  - parsley
+  - coriander
 author: lior cohen
 ---
 
