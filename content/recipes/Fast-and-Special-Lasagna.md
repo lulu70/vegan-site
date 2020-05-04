@@ -1,5 +1,5 @@
 ---
-title: Little Venice Lasagna
+title: Fast & Special Lasagna
 date: 2020-05-04
 updatedDate: 2020-05-04
 description: Easy to make delicious Lasagna
@@ -22,7 +22,7 @@ tags:
   - Carrot
 
 ingredients:
-  - lasagne sheets
+  - lasagna pasta sheets
   - onion
   - garlic
   - oregano
@@ -37,8 +37,15 @@ ingredients:
   - nutritional yeast
   - basil
   - thyme
-  - Rosemary
+  - oregano
   - Carrot
+  - red wine
+  - rosemary
+  - cashew nuts
+  - oat milk
+  - lemon juice
+  - garlic powder
+  - onion powder
 
 author: Roi Cohen
 ---
@@ -46,9 +53,10 @@ author: Roi Cohen
 <Image filename="lasagna-plate"/>
 
 Sometimes we just want to make something fast and simple with some random ingredients we have at home.
-a one-tray-dish is a perfect solution to this situation and what can be so delicious as a quick and easy to make Lasagna?!
+A one-tray-dish is a perfect solution to this situation and what can be so delicious as a quick and easy to make Lasagna?!
 
 **6 servings**
+
 Nutritional values per serving:
 
 **Cal**: 483 | **Protein**: 20 | **Carbs**: 60 | **Fat**: 18
@@ -59,7 +67,7 @@ Nutritional values per serving:
 - 1 tbsp extra virgin olive oil
 - 2 onions
 - 4 garlic cloves minced
-- 250 gr mushrooms
+- 250 gr. mushrooms
 - 3 celery sticks
 - 2 carrots 
 - 1 big zucchini
@@ -78,7 +86,7 @@ Nutritional values per serving:
 
 ## Bechamel Sauce: 
 
-- 200 gr cashew nuts
+- 200 gr. cashew nuts
 - 3/4 cup oat milk
 - 1 tbsp lemon juice
 - 1 tsp garlic powder
@@ -90,25 +98,25 @@ Nutritional values per serving:
 ## Lets start -
 
 Preheat oven to 180ºc.
-soak the cashew nuts in water for 1 hour.
+Soak the cashew nuts in water for 1 hour.
 Choose a large pan or a wok and heat the oil in it.
-cut the onions, carrots, and the celery to dices and fry it 3-5 minutes until its golden.
-cut the zucchini, mushrooms, and dry tomatoes to dices and add it to the pan with the garlic, and continue to fry for another 5 minutes.
-now chop the tomatoes to dices or use a canned version and add it to the pan with the tomato puree and stir.
-add the salt, pepper, oregano, thyme, rosemary and basil to the pan and stir.
-add the vegetable broth and the red wine to the pan, stir and cook it covered for 10 minutes.
+Cut the onions, carrots, and the celery to dices and fry it 3-5 minutes until its golden.
+Cut the zucchini, mushrooms, and dry tomatoes to dices and add it to the pan with the garlic, and continue to fry for another 5 minutes.
+Now chop the tomatoes to dices or use a canned version and add it to the pan with the tomato puree and stir.
+Add the salt, pepper, oregano, thyme, rosemary and basil to the pan and stir.
+Add the vegetable broth and the red wine to the pan, stir and cook it covered for 10 minutes.
 
 <Image filename="vegetables-pan"/>
 
-meanwhile, rinse and drain the cashew and place it in a food processor.
-add the oat milk, lemon juice and all the bechamel spices to it and blend 1-2 minutes to get a creamy texture.
-you can add more milk if it's too thick.
+Meanwhile, rinse and drain the cashew and place it in a food processor.
+Add the oat milk, lemon juice and all the bechamel spices to it and blend 1-2 minutes to get a creamy texture.
+You can add more milk if it's too thick.
 
 <Image filename="cashew-bechamel"/>
 
 Take the pan off the heat and get ready to start the layers art.
 In a casserole dish, 25/35cm (+/-), sprinkle olive oil and pour the first layer of the vegetables sauce.
-try to flat it to a thickness of 1 cm and cover it with a layer of pasta sheets.
+Try to flat it to a thickness of 1 cm and cover it with a layer of pasta sheets.
 Now cover the pasta sheets with a layer of the bechamel we made, try to get a ½ cm layer.
 
 <Image filename="first-three-layers"/>
