@@ -14,4 +14,4 @@ author: AUTHOR_NAME
 The body of the post
 
 - image example:
-  <Image filename="NAME_OF_THE_FILE_WITHOUT_EXTENSION">
+  <Image filename="NAME_OF_THE_FILE_WITHOUT_EXTENSION" />
