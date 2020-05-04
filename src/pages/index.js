@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 import StyledLink from "../components/StyledLink"
 import { graphql } from "gatsby"
-import { upperCase } from "../utils/helpers"
+import { makePretty } from "../utils/helpers"
 const MainHeader = styled.h1`
   width: 100%;
   text-align: center;
@@ -22,7 +22,7 @@ const index = ({ data, location }) => {
       </MainHeader>
       {data.pages.nodes.map(({ name, fields, id }) => (
         <StyledLink key={id} className="index__linkToBlog" to={fields.slug}>
-          <h2>{upperCase(name)}</h2>
+          <h2>{makePretty(name)}</h2>
         </StyledLink>
       ))}
     </Layout>

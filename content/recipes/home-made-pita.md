@@ -19,6 +19,7 @@ ingredients:
   - flour
   - yeast
   - sugar
+  - olive oil
   - salt
   - water
 

@@ -21,6 +21,13 @@ ingredients:
   - garlic
   - parsley
   - coriander
+  - baking powder
+  - salt
+  - cumin
+  - black pepper
+  - chilli pepper
+  - coriander seeds
+  - vegetable oil
 author: lior cohen
 ---
 

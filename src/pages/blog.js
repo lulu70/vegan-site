@@ -31,7 +31,6 @@ const Article = styled.article`
 `
 
 const Blog = ({ data, location }) => {
-  console.log(data)
   const posts = data.allFile.nodes
   return (
     <Layout full location={location}>
