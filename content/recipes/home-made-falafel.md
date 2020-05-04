@@ -18,8 +18,6 @@ tags:
 author: lior cohen
 ---
 
-add a test
-
 <Image filename='falafel-ready'/>
 
 > 30 balls
