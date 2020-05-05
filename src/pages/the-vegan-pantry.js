@@ -3,6 +3,14 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import StyledLink from "../components/StyledLink"
+import { usePantryDispatch, usePantryState } from "../context/ContextProvider"
+import {
+  setIngredients,
+  setFilteredIngredients,
+  setFilterInput,
+  setSelectedIngredients,
+  setFilteredRecipes,
+} from "../context/reducers/pantryReducer"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,21 +31,33 @@ const Container = styled.div`
 `
 const TheVeganPantry = ({ location, data }) => {
   const recipes = data.allFile.nodes
-  const allIngredients = recipes.reduce((acc, recipe) => {
-    const ingredients = recipe.childMdx.frontmatter.ingredients
-    if (ingredients) return [...acc, ...ingredients]
-    return acc
-  }, [])
-  const uniqueIngredients = allIngredients
-    .filter((ingredient, index) => allIngredients.indexOf(ingredient) === index)
-    .map(word => word.toLowerCase())
 
-  const [filterInput, setFilterInput] = React.useState("")
-  const [filteredIngredients, setFilteredIngredients] = React.useState(
-    uniqueIngredients
-  )
-  const [filteredRecipes, setFilteredRecipes] = React.useState([])
-  const [selectedIngredients, setSelectedIngredients] = React.useState([])
+  const pantryDispatch = usePantryDispatch()
+  const {
+    ingredients,
+    filteredIngredients,
+    filterInput,
+    selectedIngredients,
+    filteredRecipes,
+  } = usePantryState()
+
+  React.useEffect(() => {
+    const allIngredients = recipes.reduce((acc, recipe) => {
+      const ingredients = recipe.childMdx.frontmatter.ingredients
+      if (ingredients) return [...acc, ...ingredients]
+      return acc
+    }, [])
+
+    const uniqueIngredients = allIngredients
+      .filter(
+        (ingredient, index) => allIngredients.indexOf(ingredient) === index
+      )
+      .map(word => word.toLowerCase())
+      .sort()
+
+    setIngredients(pantryDispatch, uniqueIngredients)
+    setFilteredIngredients(pantryDispatch, uniqueIngredients)
+  }, [pantryDispatch, recipes])
 
   React.useEffect(() => {
     const filtered = recipes.filter(recipe => {
@@ -50,30 +70,32 @@ const TheVeganPantry = ({ location, data }) => {
       if (selectedIngredients.length < 1) return false
       return hasAllSelectedIngredients
     })
-    setFilteredRecipes(filtered)
-  }, [selectedIngredients, recipes])
+    setFilteredRecipes(pantryDispatch, filtered)
+  }, [selectedIngredients, recipes, pantryDispatch])
 
   const handleInputChange = e => {
-    setFilterInput(e.target.value)
-    const filtered = uniqueIngredients.filter(ingredient =>
+    setFilterInput(pantryDispatch, e.target.value)
+    const filtered = ingredients.filter(ingredient =>
       ingredient.includes(e.target.value.toLowerCase())
     )
-    setFilteredIngredients(filtered)
+    setFilteredIngredients(pantryDispatch, filtered)
   }
 
   const handleIngredientClick = ingredient => {
     const isUniqueIngredient = !selectedIngredients.includes(ingredient)
-    setSelectedIngredients(state => {
-      if (!isUniqueIngredient) return state
-      return [...state, ingredient]
-    })
+    if (isUniqueIngredient)
+      setSelectedIngredients(pantryDispatch, [
+        ...selectedIngredients,
+        ingredient,
+      ])
   }
 
   const handleRemoveSelectedIngredient = index => {
-    setSelectedIngredients(state => [
-      ...state.slice(0, index),
-      ...state.slice(index + 1),
-    ])
+    const newIngredients = [
+      ...selectedIngredients.slice(0, index),
+      ...selectedIngredients.slice(index + 1),
+    ]
+    setSelectedIngredients(pantryDispatch, newIngredients)
   }
   return (
     <Layout full location={location}>
