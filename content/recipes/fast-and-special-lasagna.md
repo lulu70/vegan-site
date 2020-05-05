@@ -50,7 +50,7 @@ ingredients:
 author: Roi Cohen
 ---
 
-<Image filename="lasagna-plate"/>
+<Image filename="vegan-lasagna"/>
 
 Sometimes we just want to make something fast and simple with some random ingredients we have at home.
 A one-tray-dish is a perfect solution to this situation and what can be so delicious as a quick and easy to make Lasagna?!
@@ -137,6 +137,6 @@ When it's ready, take out of the oven and let it cool down before serving.
 
 Cut to 6 portions and serve with fresh salat aside for the best experience!
 
-<Image filename="lasagna-serving"/>
+<Image filename="lasagna-serving"/> 
 
 Enjoy! 
