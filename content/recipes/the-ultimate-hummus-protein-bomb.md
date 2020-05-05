@@ -1,7 +1,7 @@
 ---
 title: The ultimate Hummus protein bomb!
-date: 2020-04-29T13:03:01.404Z
-updatedDate: 2020-04-29T13:03:01.502Z
+date: 2020-04-29
+updatedDate: 2020-04-29
 description: Easy to make delicious Hummus
 featuredImage:
   src: ../assets/images/delicious-hummus-plate.jpg

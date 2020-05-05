@@ -1,7 +1,7 @@
 ---
 title: Home-made falafel
-date: 2020-04-28T12:49:25.102Z
-updatedDate: 2020-04-28T12:49:25.155Z
+date: 2020-04-28
+updatedDate: 2020-04-28
 description: "Easy and authentic falafel recipe. "
 featuredImage:
   src: ../assets/images/falafel-ready.jpg

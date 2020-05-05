@@ -66,16 +66,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
-  const typeDefs = `
-    type Mdx implements Node {
-      frontmatter: Frontmatter
-    }
-    type Frontmatter {
-      updatedDate: Date! @dateformat(formatString: "DD-MM-YYYY")
-    }
-  `
-  createTypes(typeDefs)
-}

@@ -1,7 +1,7 @@
 ---
 title: Home-made pita
-date: 2020-04-27T07:10:15.695Z
-updatedDate: 2020-04-27T07:10:15.729Z
+date: 2020-04-27
+updatedDate: 2020-04-27
 description: "Easy and authentic pita recipe. "
 featuredImage:
   src: ../assets/images/baked-pita.jpg
