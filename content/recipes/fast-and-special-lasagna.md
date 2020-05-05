@@ -137,6 +137,6 @@ When it's ready, take out of the oven and let it cool down before serving.
 
 Cut to 6 portions and serve with fresh salat aside for the best experience!
 
-<Image filename="lasagna-serving"/>
+<Image filename="lasagna-serving"/> 
 
 Enjoy! 
