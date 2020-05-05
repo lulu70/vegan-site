@@ -1,5 +1,5 @@
 import React from "react"
-import { Context } from "../context/ContextProvider"
+import { useSearchState, useSearchDispatch } from "../context/ContextProvider"
 import {
   setSearchVisibility,
   resetSearchState,
@@ -54,7 +54,8 @@ const FeaturedImage = styled(Image)`
 `
 
 const Search = ({ posts }) => {
-  const { searchState, searchDispatch } = React.useContext(Context)
+  const searchState = useSearchState()
+  const searchDispatch = useSearchDispatch()
   const { filteredPosts, query } = searchState
 
   const [scrollHeight, setScrollHeight] = React.useState(null)

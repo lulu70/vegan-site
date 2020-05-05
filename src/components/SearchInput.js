@@ -1,5 +1,5 @@
 import React from "react"
-import { Context } from "../context/ContextProvider"
+import { useSearchState, useSearchDispatch } from "../context/ContextProvider"
 import { setPosts, setQuery } from "../context/reducers/searchReducer"
 import { rhythm } from "../utils/typography"
 import styled from "styled-components"
@@ -27,9 +27,9 @@ const Input = styled.input`
 `
 
 const SearchInput = ({ posts, close }) => {
-  const { searchState, searchDispatch } = React.useContext(Context)
+  const searchState = useSearchState()
+  const searchDispatch = useSearchDispatch()
   const { query } = searchState
-
   const handleInputChange = event => {
     const query = event.target.value
     const filteredPosts = posts.filter(post => {

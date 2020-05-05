@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import { rhythm } from "../utils/typography"
 import Search from "./Search"
-import { Context } from "../context/ContextProvider"
+import { useSearchState } from "../context/ContextProvider"
 import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
 import RightSide from "./RightSide"
@@ -54,7 +54,7 @@ const StyledRightSide = styled(RightSide)`
   }
 `
 const Layout = ({ children, location, relatedPosts, full, author }) => {
-  const { searchState } = React.useContext(Context)
+  const searchState = useSearchState()
   const { searchVisibility } = searchState
   const data = useStaticQuery(graphql`
     query {

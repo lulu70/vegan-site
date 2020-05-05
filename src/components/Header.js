@@ -3,7 +3,7 @@ import { scale, rhythm } from "../utils/typography"
 import { Link } from "gatsby"
 import Logo from "../../content/assets/Logo.svg"
 import SearchIcon from "../../content/assets/search.svg"
-import { Context } from "../context/ContextProvider"
+import { useSearchState, useSearchDispatch } from "../context/ContextProvider"
 import { setSearchVisibility } from "../context/reducers/searchReducer"
 import styled from "styled-components"
 import MainMenu from "./MainMenu"
@@ -35,7 +35,8 @@ const SearchButton = styled.button`
   margin-left: auto;
 `
 const Header = ({ color }) => {
-  const { searchState, searchDispatch } = React.useContext(Context)
+  const searchState = useSearchState()
+  const searchDispatch = useSearchDispatch()
   const { searchVisibility } = searchState
   return (
     <MainHeader color={color}>
