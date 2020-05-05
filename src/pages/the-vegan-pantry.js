@@ -28,9 +28,9 @@ const TheVeganPantry = ({ location, data }) => {
     if (ingredients) return [...acc, ...ingredients]
     return acc
   }, [])
-  const uniqueIngredients = allIngredients.filter(
-    (ingredient, index) => allIngredients.indexOf(ingredient) === index
-  )
+  const uniqueIngredients = allIngredients
+    .filter((ingredient, index) => allIngredients.indexOf(ingredient) === index)
+    .map(word => word.toLowerCase())
 
   const [filterInput, setFilterInput] = React.useState("")
   const [filteredIngredients, setFilteredIngredients] = React.useState(
