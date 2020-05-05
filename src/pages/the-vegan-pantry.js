@@ -41,7 +41,9 @@ const TheVeganPantry = ({ location, data }) => {
 
   React.useEffect(() => {
     const filtered = recipes.filter(recipe => {
-      const recipeIngredients = recipe.childMdx.frontmatter.ingredients
+      const recipeIngredients = recipe.childMdx.frontmatter.ingredients.map(
+        ingredient => ingredient.toLowerCase()
+      )
       const hasAllSelectedIngredients = selectedIngredients.every(selected =>
         recipeIngredients.includes(selected)
       )
