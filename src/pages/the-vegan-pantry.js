@@ -43,6 +43,10 @@ const Main = styled.main`
   display: flex;
   width: 100%;
   justify-content: space-between;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 const TheVeganPantry = ({ location, data }) => {
   const recipes = data.allFile.nodes

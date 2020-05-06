@@ -54,6 +54,7 @@ const Container = styled.div`
   }
   .pantry-ingredients__clear-button {
     fill: ${SECOND_COLOR};
+    cursor: pointer;
   }
 `
 

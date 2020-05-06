@@ -19,6 +19,7 @@ const Label = styled.label`
     fill: ${SECOND_COLOR};
     position: absolute;
     right: 0.5rem;
+    cursor: pointer;
   }
   input {
     flex: 1;
