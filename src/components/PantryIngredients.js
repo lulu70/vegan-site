@@ -3,17 +3,66 @@ import { usePantryDispatch, usePantryState } from "../context/ContextProvider"
 import {
   setIngredients,
   setFilteredIngredients,
-  setFilterInput,
   setSelectedIngredients,
+  setFilteredRecipes,
+  setShowSelectedIngredients,
 } from "../context/reducers/pantryReducer"
+import styled from "styled-components"
+import { MAIN_COLOR, SECOND_COLOR } from "../constants"
+import TickIcon from "../../content/assets/tick.svg"
+import PantryInput from "./PantryInput"
+import ClearIcon from "../../content/assets/clear.svg"
+
+const Container = styled.div`
+  border: solid 1px;
+  padding: 0.5rem;
+  width: 20rem;
+  flex: 1;
+  .pantry-ingredients__top-container {
+    min-height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  ul {
+    overflow-y: scroll;
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    width: 50%;
+    height: 5rem;
+  }
+  .pantry-ingredients__button {
+    position: relative;
+    background-color: ${MAIN_COLOR};
+    padding: 0.1rem;
+    color: ${SECOND_COLOR};
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  .pantry-ingredients__tick-icon {
+    fill: ${SECOND_COLOR};
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+  }
+  .pantry-ingredients__clear-button {
+    fill: ${SECOND_COLOR};
+  }
+`
+
 const PantryIngredients = ({ recipes }) => {
   const {
-    ingredients,
     filteredIngredients,
-    filterInput,
     selectedIngredients,
+    showSelectedIngredients,
   } = usePantryState()
-
   const pantryDispatch = usePantryDispatch()
 
   React.useEffect(() => {
@@ -34,15 +83,21 @@ const PantryIngredients = ({ recipes }) => {
     setFilteredIngredients(pantryDispatch, uniqueIngredients)
   }, [pantryDispatch, recipes])
 
-  const handleInputChange = e => {
-    setFilterInput(pantryDispatch, e.target.value)
-    const filtered = ingredients.filter(ingredient =>
-      ingredient.includes(e.target.value.toLowerCase())
-    )
-    setFilteredIngredients(pantryDispatch, filtered)
-  }
+  React.useEffect(() => {
+    const filtered = recipes.filter(recipe => {
+      const recipeIngredients = recipe.childMdx.frontmatter.ingredients.map(
+        ingredient => ingredient.toLowerCase()
+      )
+      const hasAllSelectedIngredients = selectedIngredients.every(selected =>
+        recipeIngredients.includes(selected)
+      )
+      if (selectedIngredients.length < 1) return false
+      return hasAllSelectedIngredients
+    })
+    setFilteredRecipes(pantryDispatch, filtered)
+  }, [selectedIngredients, recipes, pantryDispatch])
 
-  const handleIngredientClick = ingredient => {
+  const addSelectedIngredient = ingredient => {
     const isUniqueIngredient = !selectedIngredients.includes(ingredient)
     if (isUniqueIngredient)
       setSelectedIngredients(pantryDispatch, [
@@ -50,21 +105,56 @@ const PantryIngredients = ({ recipes }) => {
         ingredient,
       ])
   }
-
+  const removeSelectedIngredient = ingredient => {
+    const index = selectedIngredients.indexOf(ingredient)
+    const newIngredients = [
+      ...selectedIngredients.slice(0, index),
+      ...selectedIngredients.slice(index + 1),
+    ]
+    setSelectedIngredients(pantryDispatch, newIngredients)
+  }
+  const removeAllSelectedIngredient = () => {
+    setSelectedIngredients(pantryDispatch, [])
+    setShowSelectedIngredients(pantryDispatch, false)
+  }
+  const ingredientsToShow = showSelectedIngredients
+    ? selectedIngredients
+    : filteredIngredients
   return (
-    <div>
-      <h2>Ingredients</h2>
-      <input value={filterInput} onChange={handleInputChange} />
-      <ul className="ingredients-list">
-        {filteredIngredients.map(ingredient => (
-          <li key={ingredient}>
-            <button onClick={() => handleIngredientClick(ingredient)}>
-              {ingredient}
-            </button>
-          </li>
-        ))}
+    <Container>
+      <div className="pantry-ingredients__top-container">
+        {showSelectedIngredients ? (
+          <ClearIcon
+            className="pantry-ingredients__clear-button"
+            onClick={removeAllSelectedIngredient}
+          />
+        ) : (
+          <PantryInput />
+        )}
+      </div>
+      <ul>
+        {ingredientsToShow.map(ingredient => {
+          const isSelected = selectedIngredients.includes(ingredient)
+          return (
+            <li key={ingredient}>
+              <button
+                className="pantry-ingredients__button"
+                onClick={() =>
+                  isSelected
+                    ? removeSelectedIngredient(ingredient)
+                    : addSelectedIngredient(ingredient)
+                }
+              >
+                {ingredient}
+                {isSelected && (
+                  <TickIcon className="pantry-ingredients__tick-icon" />
+                )}
+              </button>
+            </li>
+          )
+        })}
       </ul>
-    </div>
+    </Container>
   )
 }
 

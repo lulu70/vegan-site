@@ -18,9 +18,6 @@ const PostContainer = styled.div`
   justify-content: space-between;
   opacity: 1;
   animation: fadeIn 0.2s ease-in;
-  img {
-    object-fit: cover;
-  }
   @keyframes fadeIn {
     0% {
       opacity: 0;

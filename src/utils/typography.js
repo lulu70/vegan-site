@@ -1,8 +1,11 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
-import { MAIN_COLOR } from "../constants"
+import { MAIN_COLOR, SECOND_COLOR } from "../constants"
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    "*": {
+      outlineColor: SECOND_COLOR,
+    },
     body: {
       fontWeight: "lighter",
       fontFamily: "Sans-Serif",

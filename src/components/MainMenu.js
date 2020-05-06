@@ -3,6 +3,7 @@ import StyledLink from "./StyledLink"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import { makePretty } from "../utils/helpers"
+import { SECOND_COLOR } from "../constants"
 const Ul = styled.ul`
   display: flex;
   flex: 1;
@@ -39,7 +40,11 @@ const MainMenu = () => {
         <Ul>
           {data.pages.nodes.map(page => (
             <Li key={page.id}>
-              <StyledLink color="white" to={page.fields.slug}>
+              <StyledLink
+                color="white"
+                to={page.fields.slug}
+                activeStyle={{ color: SECOND_COLOR }}
+              >
                 {makePretty(page.name)}
               </StyledLink>
             </Li>

@@ -114,7 +114,6 @@ const Search = ({ posts }) => {
                       {title}
                     </StyledLink>
                   </PostHeader>
-                  <small>{node.frontmatter.date}</small>
                 </header>
                 <section>
                   <p
