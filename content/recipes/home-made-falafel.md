@@ -35,6 +35,10 @@ author: lior cohen
 
 > 30 balls
 
+Nutritional values per ball:
+
+Cal: 63 | Protein: 2.2 | Carbs: 13 | Fat: 3
+
 ## Ingredients
 
 - 2.5 cups of dry chickpeas
