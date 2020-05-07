@@ -30,6 +30,10 @@ author: lior cohen
 
 > 8 portions
 
+Nutritional values per portion:
+
+Cal: 276 | Protein: 8 | Carbs: 50 | Fat: 4
+
 ## Ingredients
 
 - 4 cups of all-purpose flour
