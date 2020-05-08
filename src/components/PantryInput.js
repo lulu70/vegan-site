@@ -21,9 +21,9 @@ const Label = styled.label`
     right: 0.5rem;
     cursor: pointer;
   }
-  input {
-    flex: 1;
-  }
+`
+const Input = styled.input`
+  flex: 1;
 `
 
 const PantryInput = () => {
@@ -54,7 +54,7 @@ const PantryInput = () => {
       ) : (
         <SearchIcon className="pantry-input__icon" />
       )}
-      <input value={filterInput} id="input" onChange={handleInputChange} />
+      <Input value={filterInput} id="input" onChange={handleInputChange} />
     </Label>
   )
 }

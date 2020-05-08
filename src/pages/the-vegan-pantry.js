@@ -14,31 +14,29 @@ const Container = styled.div`
   align-items: center;
   color: ${MAIN_COLOR};
   flex: 1;
-  h1 {
-    text-align: center;
-  }
-  .the-vegan-pantry__menu {
-    display: flex;
-    margin-bottom: 1rem;
-    align-items: center;
-    font-size: 0.9rem;
-  }
-  .the-vegan-pantry__divider {
-    border: solid 1px;
-    height: 1.5rem;
-    margin: 0 0.2rem;
-  }
-  .the-vegan-pantry__button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    :disabled {
-      cursor: initial;
-      color: grey;
-    }
+`
+const Menu = styled.div`
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+`
+const Divider = styled.div`
+  border: solid 1px;
+  height: 1.5rem;
+  margin: 0 0.2rem;
+`
+const Button = styled.button`
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  :disabled {
+    cursor: initial;
+    color: grey;
   }
 `
+
 const Main = styled.main`
   display: flex;
   width: 100%;
@@ -56,26 +54,24 @@ const TheVeganPantry = ({ location, data }) => {
     <Layout full location={location}>
       <Container>
         <h1>The Vegan Pantry</h1>
-        <div className="the-vegan-pantry__menu">
-          <button
-            className="the-vegan-pantry__button"
+        <Menu>
+          <Button
             onClick={() => {
               setShowSelectedIngredients(pantryDispatch, false)
             }}
           >
             All items: {ingredients.length}
-          </button>
-          <div className="the-vegan-pantry__divider" />
-          <button
-            className="the-vegan-pantry__button"
+          </Button>
+          <Divider />
+          <Button
             disabled={selectedIngredients.length < 1}
             onClick={() => {
               setShowSelectedIngredients(pantryDispatch, true)
             }}
           >
             Selected items: {selectedIngredients.length}
-          </button>
-        </div>
+          </Button>
+        </Menu>
         <Main>
           <PantryIngredients recipes={recipes} />
           <PantryRecipes />

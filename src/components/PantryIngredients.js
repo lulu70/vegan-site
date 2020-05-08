@@ -18,44 +18,38 @@ const Container = styled.div`
   padding: 0.5rem;
   width: 20rem;
   flex: 1;
-  .pantry-ingredients__top-container {
-    min-height: 3rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
-  ul {
-    overflow-y: scroll;
-    height: 20rem;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    list-style: none;
-    width: 50%;
-    height: 5rem;
-  }
-  .pantry-ingredients__button {
-    position: relative;
-    background-color: ${MAIN_COLOR};
-    padding: 0.1rem;
-    color: ${SECOND_COLOR};
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-  }
-  .pantry-ingredients__tick-icon {
-    fill: ${SECOND_COLOR};
-    position: absolute;
-    bottom: 3px;
-    right: 3px;
-  }
-  .pantry-ingredients__clear-button {
-    fill: ${SECOND_COLOR};
-    cursor: pointer;
-  }
+`
+const Ul = styled.ul`
+  overflow-y: scroll;
+  height: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+`
+const Li = styled.li`
+  list-style: none;
+  width: 50%;
+  height: 5rem;
+`
+const Button = styled.button`
+  position: relative;
+  background-color: ${MAIN_COLOR};
+  padding: 0.1rem;
+  color: ${SECOND_COLOR};
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+`
+const StyledTickIcon = styled(TickIcon)`
+  fill: ${SECOND_COLOR};
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+`
+const StyledClearIcon = styled(ClearIcon)`
+  fill: ${SECOND_COLOR};
+  cursor: pointer;
 `
 
 const PantryIngredients = ({ recipes }) => {
@@ -123,23 +117,17 @@ const PantryIngredients = ({ recipes }) => {
     : filteredIngredients
   return (
     <Container>
-      <div className="pantry-ingredients__top-container">
-        {showSelectedIngredients ? (
-          <ClearIcon
-            className="pantry-ingredients__clear-button"
-            onClick={removeAllSelectedIngredient}
-          />
-        ) : (
-          <PantryInput />
-        )}
-      </div>
-      <ul>
+      {showSelectedIngredients ? (
+        <StyledClearIcon onClick={removeAllSelectedIngredient} />
+      ) : (
+        <PantryInput />
+      )}
+      <Ul>
         {ingredientsToShow.map(ingredient => {
           const isSelected = selectedIngredients.includes(ingredient)
           return (
-            <li key={ingredient}>
-              <button
-                className="pantry-ingredients__button"
+            <Li key={ingredient}>
+              <Button
                 onClick={() =>
                   isSelected
                     ? removeSelectedIngredient(ingredient)
@@ -147,14 +135,12 @@ const PantryIngredients = ({ recipes }) => {
                 }
               >
                 {ingredient}
-                {isSelected && (
-                  <TickIcon className="pantry-ingredients__tick-icon" />
-                )}
-              </button>
-            </li>
+                {isSelected && <StyledTickIcon />}
+              </Button>
+            </Li>
           )
         })}
-      </ul>
+      </Ul>
     </Container>
   )
 }
