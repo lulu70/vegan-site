@@ -14,6 +14,7 @@ const Container = styled.div`
   align-items: center;
   color: ${MAIN_COLOR};
   flex: 1;
+  padding-top: 1rem;
 `
 const Menu = styled.div`
   display: flex;
@@ -37,14 +38,12 @@ const Button = styled.button`
   }
 `
 
-const Main = styled.main`
+const Section = styled.section`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: center;
-  }
+  overflow-y: scroll;
+  height: 20rem;
 `
 const TheVeganPantry = ({ location, data }) => {
   const recipes = data.allFile.nodes
@@ -72,10 +71,10 @@ const TheVeganPantry = ({ location, data }) => {
             Selected items: {selectedIngredients.length}
           </Button>
         </Menu>
-        <Main>
+        <Section>
           <PantryIngredients recipes={recipes} />
           <PantryRecipes />
-        </Main>
+        </Section>
       </Container>
     </Layout>
   )

@@ -14,6 +14,8 @@ const MainHeader = styled.header`
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: ${WIDTH};
@@ -27,10 +29,13 @@ const Container = styled.div`
 const SearchButton = styled.button`
   background-color: transparent;
   border: 0;
+  top: 1rem;
   display: flex;
   cursor: pointer;
   padding: 0;
   margin-left: auto;
+  position: absolute;
+  right: 0;
 `
 const Header = ({ color }) => {
   const searchState = useSearchState()

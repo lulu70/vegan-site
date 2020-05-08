@@ -1,12 +1,18 @@
 import { createGlobalStyle } from "styled-components"
-import { MAIN_COLOR, SECOND_COLOR } from "./constants"
+import { MAIN_COLOR, SECOND_COLOR, BG_COLOR } from "./constants"
 const GlobalStyles = createGlobalStyle`
   * {
-    outline-color:${SECOND_COLOR};
+    :focus{
+      outline-color:${SECOND_COLOR};  
+      outline-style:solid;
+      outline-offset: 0.2rem;
+      outline-width: 2px;
+    }
   }
-  body {
+  html, body {
     font-Weight: lighter;
     font-Family: Sans-Serif;
+    background-color: ${BG_COLOR};
   }
   h1, h2, h3, h4, h5, h6  {
     font-Weight: lighter;

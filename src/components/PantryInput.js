@@ -1,20 +1,25 @@
 import React from "react"
 import { usePantryDispatch, usePantryState } from "../context/ContextProvider"
-import {
-  setFilteredIngredients,
-  setFilterInput,
-} from "../context/reducers/pantryReducer"
 import SearchIcon from "../../content/assets/search.svg"
 import ClearIcon from "../../content/assets/clear.svg"
 import styled from "styled-components"
 import { SECOND_COLOR } from "../constants"
+import {
+  setFilteredIngredients,
+  setSelectedIngredients,
+  setShowSelectedIngredients,
+  setFilterInput,
+} from "../context/reducers/pantryReducer"
 
 const Label = styled.label`
   display: flex;
   align-items: center;
-  position: relative;
   position: sticky;
-  flex: 1;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+  min-height: 3rem;
+  border-bottom: solid 1px lightgrey;
   .pantry-input__icon {
     fill: ${SECOND_COLOR};
     position: absolute;
@@ -23,11 +28,13 @@ const Label = styled.label`
   }
 `
 const Input = styled.input`
-  flex: 1;
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
 `
 
 const PantryInput = () => {
-  const { filterInput, ingredients } = usePantryState()
+  const { filterInput, ingredients, showSelectedIngredients } = usePantryState()
   const pantryDispatch = usePantryDispatch()
 
   const handleInputChange = e => {
@@ -42,19 +49,33 @@ const PantryInput = () => {
     setFilterInput(pantryDispatch, "")
     setFilteredIngredients(pantryDispatch, ingredients)
   }
+  const removeAllSelectedIngredient = () => {
+    setSelectedIngredients(pantryDispatch, [])
+    setShowSelectedIngredients(pantryDispatch, false)
+  }
 
   return (
     <Label htmlFor="input">
-      {filterInput ? (
+      {showSelectedIngredients ? (
         <ClearIcon
           className="pantry-input__icon"
-          onClick={handleClearClick}
           role="button"
+          onClick={removeAllSelectedIngredient}
         />
       ) : (
-        <SearchIcon className="pantry-input__icon" />
+        <>
+          <Input value={filterInput} id="input" onChange={handleInputChange} />
+          {filterInput ? (
+            <ClearIcon
+              className="pantry-input__icon"
+              onClick={handleClearClick}
+              role="button"
+            />
+          ) : (
+            <SearchIcon className="pantry-input__icon" />
+          )}
+        </>
       )}
-      <Input value={filterInput} id="input" onChange={handleInputChange} />
     </Label>
   )
 }

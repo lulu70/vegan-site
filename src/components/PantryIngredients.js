@@ -5,51 +5,44 @@ import {
   setFilteredIngredients,
   setSelectedIngredients,
   setFilteredRecipes,
-  setShowSelectedIngredients,
 } from "../context/reducers/pantryReducer"
 import styled from "styled-components"
-import { MAIN_COLOR, SECOND_COLOR } from "../constants"
+import { SECOND_COLOR } from "../constants"
 import TickIcon from "../../content/assets/tick.svg"
 import PantryInput from "./PantryInput"
-import ClearIcon from "../../content/assets/clear.svg"
 
 const Container = styled.div`
-  border: solid 1px;
-  padding: 0.5rem;
-  width: 20rem;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 25px -5px rgba(194, 194, 194, 1);
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
   flex: 1;
 `
 const Ul = styled.ul`
-  overflow-y: scroll;
-  height: 20rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 0;
   margin: 0;
+  width: 100%;
 `
 const Li = styled.li`
-  list-style: none;
-  width: 50%;
-  height: 5rem;
+  padding: 0.5rem 0;
+  margin: 0;
 `
 const Button = styled.button`
   position: relative;
-  background-color: ${MAIN_COLOR};
-  padding: 0.1rem;
-  color: ${SECOND_COLOR};
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   width: 100%;
-  height: 100%;
 `
 const StyledTickIcon = styled(TickIcon)`
   fill: ${SECOND_COLOR};
   position: absolute;
   bottom: 3px;
   right: 3px;
-`
-const StyledClearIcon = styled(ClearIcon)`
-  fill: ${SECOND_COLOR};
-  cursor: pointer;
 `
 
 const PantryIngredients = ({ recipes }) => {
@@ -108,20 +101,13 @@ const PantryIngredients = ({ recipes }) => {
     ]
     setSelectedIngredients(pantryDispatch, newIngredients)
   }
-  const removeAllSelectedIngredient = () => {
-    setSelectedIngredients(pantryDispatch, [])
-    setShowSelectedIngredients(pantryDispatch, false)
-  }
+
   const ingredientsToShow = showSelectedIngredients
     ? selectedIngredients
     : filteredIngredients
   return (
     <Container>
-      {showSelectedIngredients ? (
-        <StyledClearIcon onClick={removeAllSelectedIngredient} />
-      ) : (
-        <PantryInput />
-      )}
+      <PantryInput />
       <Ul>
         {ingredientsToShow.map(ingredient => {
           const isSelected = selectedIngredients.includes(ingredient)

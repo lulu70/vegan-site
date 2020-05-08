@@ -21,7 +21,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   color: black;
-  z-index: 1;
+  z-index: 2;
 
   opacity: 1;
   animation: fadeIn 0.1s ease-in;
