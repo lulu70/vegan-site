@@ -1,7 +1,6 @@
 import React from "react"
 import { useSearchState, useSearchDispatch } from "../context/ContextProvider"
 import { setPosts, setQuery } from "../context/reducers/searchReducer"
-import { rhythm } from "../utils/typography"
 import styled from "styled-components"
 
 const Label = styled.label`
@@ -17,13 +16,11 @@ const Container = styled.div`
 const CloseButton = styled.button`
   background-color: transparent;
   border: 0;
-  height: ${rhythm(1)};
   cursor: pointer;
 `
 const Input = styled.input`
   border: solid 2px grey;
-  border-radius: ${rhythm(0.1)};
-  padding: ${rhythm(0.3)};
+  padding: 0.5rem;
 `
 
 const SearchInput = ({ posts, close }) => {

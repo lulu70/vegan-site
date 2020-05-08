@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import Image from "../components/Image"
 import styled from "styled-components"
 import StyledLink from "../components/StyledLink"
@@ -10,11 +9,11 @@ import StyledLink from "../components/StyledLink"
 const MainHeader = styled.h1`
   width: 100%;
   text-align: center;
-  margin: ${rhythm(2)};
+  margin: 3rem;
   color: ${props => props.color};
 `
 const PostHeader = styled.h3`
-  margin-bottom: ${rhythm(1 / 4)};
+  margin-bottom: 0.5rem;
 `
 
 const Article = styled.article`

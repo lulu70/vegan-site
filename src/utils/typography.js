@@ -1,31 +1,5 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
-import { MAIN_COLOR, SECOND_COLOR } from "../constants"
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    "*": {
-      outlineColor: SECOND_COLOR,
-    },
-    body: {
-      fontWeight: "lighter",
-      fontFamily: "Sans-Serif",
-    },
-    " h1, h2, h3, h4, h5, h6 ": {
-      fontFamily: "Sans-Serif",
-      fontWeight: "lighter",
-      marginTop: typography.rhythm(1),
-      color: MAIN_COLOR,
-    },
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
-    },
-    a: { boxShadow: `none` },
-    "ul,ol, blockquote": {
-      paddingLeft: typography.rhythm(0.6),
-      marginLeft: 0,
-    },
-  }
-}
 
 delete Wordpress2016.googleFonts
 
@@ -37,5 +11,3 @@ if (process.env.NODE_ENV !== `production`) {
 }
 
 export default typography
-export const rhythm = typography.rhythm
-export const scale = typography.scale

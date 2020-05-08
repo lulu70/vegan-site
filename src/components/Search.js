@@ -5,12 +5,12 @@ import {
   resetSearchState,
   setPosts,
 } from "../context/reducers/searchReducer"
-import { rhythm } from "../utils/typography"
 import SearchInput from "./SearchInput"
 import debounce from "lodash.debounce"
 import Image from "../components/Image"
 import styled from "styled-components"
 import StyledLink from "./StyledLink"
+import { WIDTH } from "../constants"
 
 const Container = styled.div`
   position: absolute;
@@ -36,7 +36,7 @@ const Container = styled.div`
   }
 `
 const InnerContainer = styled.div`
-  width: ${rhythm(40)};
+  width: ${WIDTH};
   display: flex;
   flex-direction: column;
 `
@@ -46,11 +46,10 @@ const PostContainer = styled.div`
   justify-content: space-between;
 `
 const PostHeader = styled.h3`
-  margin-bottom: ${rhythm(1 / 4)};
+  margin-bottom: 1rem;
 `
 const FeaturedImage = styled(Image)`
   width: 150px;
-  margin-left: ${rhythm(1)};
 `
 
 const Search = ({ posts }) => {

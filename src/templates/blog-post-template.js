@@ -3,18 +3,15 @@ import { graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 
 const Header = styled.h1`
-  margin-top: ${rhythm(1)};
   margin-bottom: 0;
 `
-const DateParagraph = styled.p`
-  ${scale(-1 / 5)};
+const DateParagraph = styled.small`
   display: block;
-  margin-bottom: ${rhythm(1)};
+  margin-bottom: 2rem;
 `
 const Article = styled.article`
   width: 100%;
@@ -24,7 +21,7 @@ const Article = styled.article`
   }
 `
 const EndLine = styled.hr`
-  margin-bottom: ${rhythm(1)};
+  margin: 1rem 0;
 `
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx

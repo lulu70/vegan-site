@@ -1,15 +1,12 @@
 import React from "react"
-import { rhythm } from "../utils/typography"
 import styled from "styled-components"
 import { MAIN_COLOR } from "../constants"
 import Image from "../components/Image"
 const Container = styled.div`
   display: flex;
-  margin-top: ${rhythm(1)};
-  margin-bottom: ${rhythm(1)};
+  margin-top: 1.8rem;
 `
 const StyledImage = styled(Image)`
-  margin-right: ${rhythm(1 / 2)};
   margin-bottom: 0;
   min-width: 50;
   border-radius: 100%;

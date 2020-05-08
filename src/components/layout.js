@@ -1,18 +1,19 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
-import { rhythm } from "../utils/typography"
 import Search from "./Search"
 import { useSearchState } from "../context/ContextProvider"
 import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
 import RightSide from "./RightSide"
 import styled from "styled-components"
-import { MAIN_COLOR } from "../constants"
+import { MAIN_COLOR, WIDTH } from "../constants"
+import GlobalStyles from "../GlobalStyles"
+
 const PostContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
-  max-width: ${rhythm(40)};
+  max-width: ${WIDTH};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -44,8 +45,6 @@ const Main = styled.main`
 `
 const StyledRightSide = styled(RightSide)`
   flex: 1;
-  padding-left: ${rhythm(1)};
-
   @media (max-width: 900px) {
     display: none;
   }
@@ -89,6 +88,7 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
 
   return (
     <>
+      <GlobalStyles />
       <Header color={MAIN_COLOR} />
       {searchVisibility && <Search posts={posts} />}
       <PostContainer className="layout__postContainer">
