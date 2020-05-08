@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const StyledImage = styled(GatsbyImage)`
-  width: 100%;
+  width: ${({ full }) => (full ? "100%" : "70%")};
   @media (max-width: 900px) {
     width: 100%;
   }
@@ -12,7 +12,7 @@ const StyledImage = styled(GatsbyImage)`
 const Error = styled.p`
   color: red;
 `
-const Image = ({ avatar, filename, style, ...props }) => {
+const Image = ({ avatar, filename, style, full, ...props }) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
       allFile(filter: { sourceInstanceName: { eq: "images" } }) {
@@ -48,6 +48,7 @@ const Image = ({ avatar, filename, style, ...props }) => {
         {...props}
         title={props.title || filename}
         alt={props.alt || filename}
+        full={full}
         style={{ ...style }}
       />
     )

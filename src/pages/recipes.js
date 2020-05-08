@@ -19,7 +19,7 @@ const PostHeader = styled.h3`
 
 const Article = styled.article`
   @media (min-width: 900px) {
-    width: 30%;
+    width: 26%;
   }
 
   @media (max-width: 900px) {
@@ -49,6 +49,7 @@ const Recipes = ({ data, location }) => {
             >
               <Image
                 filename={post.childMdx.frontmatter.featuredImage.src.name}
+                full
               />
             </StyledLink>
             <header>
