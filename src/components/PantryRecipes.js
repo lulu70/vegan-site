@@ -2,12 +2,9 @@ import React from "react"
 import { usePantryState } from "../context/ContextProvider"
 import PostPreview from "./PostPreview"
 import styled from "styled-components"
+import ScrollArea from "./ScrollArea"
 
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  overflow-y: scroll;
+const ScrollContainer = styled(ScrollArea)`
   flex: 4;
   @media (max-width: 900px) {
     flex: 3;
@@ -16,16 +13,25 @@ const Container = styled.div`
     flex: 1;
   }
 `
-
+const H2 = styled.h2`
+  flex: 1;
+  text-align: center;
+`
 const PantryRecipes = () => {
   const { filteredRecipes } = usePantryState()
-
   return (
-    <Container>
+    <ScrollContainer
+      contentStyles={{
+        display: "flex",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
+      }}
+    >
+      {filteredRecipes.length < 1 && <H2>No match found</H2>}
       {filteredRecipes.map(recipe => (
         <PostPreview post={recipe} key={recipe.childMdx.fields.slug} />
       ))}
-    </Container>
+    </ScrollContainer>
   )
 }
 

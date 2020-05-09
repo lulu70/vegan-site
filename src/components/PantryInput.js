@@ -20,6 +20,7 @@ const Label = styled.label`
   z-index: 1;
   min-height: 3rem;
   border-bottom: solid 1px lightgrey;
+  padding: 0 0.5rem;
   .pantry-input__icon {
     fill: ${SECOND_COLOR};
     position: absolute;
@@ -30,7 +31,6 @@ const Label = styled.label`
 const Input = styled.input`
   width: 100%;
   border: none;
-  padding: 0.5rem;
 `
 
 const PantryInput = () => {

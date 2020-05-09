@@ -10,12 +10,14 @@ import { WIDTH } from "../constants"
 const MainHeader = styled.header`
   border-bottom: 1px solid grey;
   background-color: ${props => props.color};
+  position: sticky;
+  top: 0;
+  z-index: 2;
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: ${WIDTH};

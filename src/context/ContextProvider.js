@@ -1,6 +1,23 @@
 import React from "react"
 import { searchInitialState, searchReducer } from "./reducers/searchReducer"
 import { pantryInitialState, pantryReducer } from "./reducers/pantryReducer"
+import { generalInitialState, generalReducer } from "./reducers/generalReducer"
+const GeneralStateContext = React.createContext()
+export const useGeneralState = () => {
+  const context = React.useContext(GeneralStateContext)
+  if (context === undefined) {
+    throw new Error("useGeneralState must be used within a ContextProvider")
+  }
+  return context
+}
+const GeneralDispatchContext = React.createContext()
+export const useGeneralDispatch = () => {
+  const context = React.useContext(GeneralDispatchContext)
+  if (context === undefined) {
+    throw new Error("useGeneralDispatch must be used within a ContextProvider")
+  }
+  return context
+}
 
 const SearchStateContext = React.createContext()
 export const useSearchState = () => {
@@ -39,6 +56,10 @@ export const usePantryDispatch = () => {
 }
 
 const ContextProvider = ({ children }) => {
+  const [generalState, generalDispatch] = React.useReducer(
+    generalReducer,
+    generalInitialState
+  )
   const [searchState, searchDispatch] = React.useReducer(
     searchReducer,
     searchInitialState
@@ -48,15 +69,19 @@ const ContextProvider = ({ children }) => {
     pantryInitialState
   )
   return (
-    <SearchStateContext.Provider value={searchState}>
-      <SearchDispatchContext.Provider value={searchDispatch}>
-        <PantryStateContext.Provider value={pantryState}>
-          <PantryDispatchContext.Provider value={pantryDispatch}>
-            {children}
-          </PantryDispatchContext.Provider>
-        </PantryStateContext.Provider>
-      </SearchDispatchContext.Provider>
-    </SearchStateContext.Provider>
+    <GeneralStateContext.Provider value={generalState}>
+      <GeneralDispatchContext.Provider value={generalDispatch}>
+        <SearchStateContext.Provider value={searchState}>
+          <SearchDispatchContext.Provider value={searchDispatch}>
+            <PantryStateContext.Provider value={pantryState}>
+              <PantryDispatchContext.Provider value={pantryDispatch}>
+                {children}
+              </PantryDispatchContext.Provider>
+            </PantryStateContext.Provider>
+          </SearchDispatchContext.Provider>
+        </SearchStateContext.Provider>
+      </GeneralDispatchContext.Provider>
+    </GeneralStateContext.Provider>
   )
 }
 

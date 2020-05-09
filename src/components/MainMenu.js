@@ -11,7 +11,8 @@ const Ul = styled.ul`
 `
 const Li = styled.li`
   list-style-type: none;
-  padding: 1rem;
+  padding: 0 1rem;
+  margin: 0;
 `
 
 const MainMenu = () => {
