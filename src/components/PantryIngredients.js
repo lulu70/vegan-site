@@ -68,8 +68,10 @@ const PantryIngredients = ({ recipes }) => {
     filteredIngredients,
     selectedIngredients,
     showSelectedIngredients,
+    filterInput,
   } = usePantryState()
   const pantryDispatch = usePantryDispatch()
+
   React.useEffect(() => {
     const allIngredients = recipes.reduce((acc, recipe) => {
       const ingredients = recipe.childMdx.frontmatter.ingredients
@@ -118,9 +120,18 @@ const PantryIngredients = ({ recipes }) => {
     ]
     setSelectedIngredients(pantryDispatch, newIngredients)
   }
+
+  const unSelectedFilteredIngredients = filteredIngredients.filter(
+    ingredient => {
+      const isSelected = selectedIngredients.includes(ingredient)
+      return !isSelected
+    }
+  )
   const ingredientsToShow = showSelectedIngredients
     ? selectedIngredients
-    : filteredIngredients
+    : filterInput
+    ? filteredIngredients
+    : [...selectedIngredients, ...unSelectedFilteredIngredients]
   return (
     <ScrollContainer
       contentStyles={{

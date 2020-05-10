@@ -11,7 +11,6 @@ const Container = styled.div`
   width: 100%;
   position: sticky;
   bottom: 0;
-  background-color: white;
 `
 const Divider = styled.div`
   border: solid 1px;
