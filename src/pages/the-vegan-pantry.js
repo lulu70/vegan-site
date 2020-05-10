@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import PantryIngredients from "../components/PantryIngredients"
 import PantryRecipes from "../components/PantryRecipes"
 import { MAIN_COLOR } from "../constants"
+import PantryMenu from "../components/PantryMenu"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,6 +32,7 @@ const TheVeganPantry = ({ location, data }) => {
     <Layout full location={location}>
       <Container>
         <H1>Add Ingredients ang get recipes</H1>
+        <PantryMenu />
         <Section>
           <PantryIngredients recipes={recipes} />
           <PantryRecipes />

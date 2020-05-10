@@ -12,7 +12,6 @@ import TickIcon from "../../content/assets/tick.svg"
 import Circle from "../../content/assets/circle.svg"
 import PantryInput from "./PantryInput"
 import ScrollArea from "./ScrollArea"
-import PantryMenu from "../components/PantryMenu"
 
 const ScrollContainer = styled(ScrollArea)`
   box-shadow: 0px 0px 25px -5px rgba(194, 194, 194, 1);
@@ -151,7 +150,6 @@ const PantryIngredients = ({ recipes }) => {
           )
         })}
       </Ul>
-      <PantryMenu />
     </ScrollContainer>
   )
 }
