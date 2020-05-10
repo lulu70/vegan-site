@@ -6,6 +6,7 @@ import PantryIngredients from "../components/PantryIngredients"
 import PantryRecipes from "../components/PantryRecipes"
 import { MAIN_COLOR } from "../constants"
 import PantryMenu from "../components/PantryMenu"
+import SEO from "../components/seo"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -30,6 +31,7 @@ const TheVeganPantry = ({ location, data }) => {
 
   return (
     <Layout full location={location}>
+      <SEO title="The vegan pantry" />
       <Container>
         <H1>Add Ingredients ang get recipes</H1>
         <PantryMenu />

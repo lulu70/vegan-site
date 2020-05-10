@@ -14,7 +14,7 @@ const Recipes = ({ data, location }) => {
   const posts = data.allFile.nodes
   return (
     <Layout full location={location}>
-      <SEO title="Blog" />
+      <SEO title="Recipes" />
       <MainHeader className="recipes__mainHeader">
         {data.site.siteMetadata.recipesTitle}
       </MainHeader>
