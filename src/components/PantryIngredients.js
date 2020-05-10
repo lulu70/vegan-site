@@ -30,6 +30,7 @@ const Ul = styled.ul`
 const Li = styled.li`
   padding: 1px 0;
   margin: 0;
+  display: flex;
 `
 const Button = styled.button`
   border-top: 0;
