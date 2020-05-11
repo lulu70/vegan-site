@@ -29,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
     padding-left: 1rem;
     margin-left: 0;
   }
-
+  .drop-shadow {
+    box-shadow: 0px 0px 25px -5px rgba(194, 194, 194, 1);
+  }
 `
 export default GlobalStyles

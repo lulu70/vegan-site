@@ -6,26 +6,30 @@ import { useSearchState, useSearchDispatch } from "../context/ContextProvider"
 import { setSearchVisibility } from "../context/reducers/searchReducer"
 import styled from "styled-components"
 import MainMenu from "./MainMenu"
-import { WIDTH } from "../constants"
-const MainHeader = styled.header`
+import { WIDTH, MAIN_COLOR, BG_COLOR } from "../constants"
+
+const Container = styled.header`
   border-bottom: 1px solid grey;
-  background-color: ${props => props.color};
+  background-color: ${BG_COLOR};
   position: sticky;
   top: 0;
   z-index: 2;
-`
-
-const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: ${WIDTH};
   align-items: center;
-  color: white;
+  color: ${MAIN_COLOR};
+  max-width: ${WIDTH};
   @media (max-width: 900px) {
     margin: 0 1rem;
   }
+`
+
+const TopRow = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
 `
 
 const SearchButton = styled.button`
@@ -35,21 +39,28 @@ const SearchButton = styled.button`
   display: flex;
   cursor: pointer;
   padding: 0;
-  margin-left: auto;
   position: absolute;
   right: 0;
 `
-const Header = ({ color }) => {
+const StyledLogo = styled(Logo)`
+  path {
+    fill: ${MAIN_COLOR};
+  }
+`
+const StayledSearchIcon = styled(SearchIcon)`
+  fill: ${MAIN_COLOR};
+`
+
+const Header = () => {
   const searchState = useSearchState()
   const searchDispatch = useSearchDispatch()
   const { searchVisibility } = searchState
   return (
-    <MainHeader color={color}>
-      <Container>
+    <Container>
+      <TopRow>
         <Link to={`/`} aria-label="home">
-          <Logo />
+          <StyledLogo />
         </Link>
-        <MainMenu />
         {!searchVisibility && (
           <SearchButton
             type="submit"
@@ -58,11 +69,12 @@ const Header = ({ color }) => {
               setSearchVisibility(searchDispatch, true)
             }}
           >
-            <SearchIcon />
+            <StayledSearchIcon />
           </SearchButton>
         )}
-      </Container>
-    </MainHeader>
+      </TopRow>
+      <MainMenu />
+    </Container>
   )
 }
 

@@ -7,7 +7,7 @@ import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
 import RightSide from "./RightSide"
 import styled from "styled-components"
-import { MAIN_COLOR, WIDTH } from "../constants"
+import { WIDTH } from "../constants"
 import GlobalStyles from "../GlobalStyles"
 
 const PostContainer = styled.div`
@@ -83,7 +83,7 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
   return (
     <>
       <GlobalStyles />
-      <Header color={MAIN_COLOR} />
+      <Header />
       {searchVisibility && <Search posts={posts} />}
       <PostContainer className="layout__postContainer">
         <Main className="layout__main">
