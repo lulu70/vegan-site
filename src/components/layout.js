@@ -10,15 +10,19 @@ import styled from "styled-components"
 import { WIDTH } from "../constants"
 import GlobalStyles from "../GlobalStyles"
 
+const Container = styled.div``
+
 const PostContainer = styled.div`
-  margin-left: auto;
-  margin-right: auto;
   max-width: ${WIDTH};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   opacity: 1;
   animation: fadeIn 0.2s ease-in;
+  margin: 0 2rem;
+  @media (max-width: 900px) {
+    margin: 0 1rem;
+  }
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -33,9 +37,6 @@ const Main = styled.main`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media (max-width: 900px) {
-    margin: 0 1rem;
-  }
 `
 const StyledRightSide = styled(RightSide)`
   flex: 1;
@@ -81,7 +82,7 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
   const componentsForMdx = { Image }
 
   return (
-    <>
+    <Container>
       <GlobalStyles />
       <Header />
       {searchVisibility && <Search posts={posts} />}
@@ -98,7 +99,7 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
           />
         )}
       </PostContainer>
-    </>
+    </Container>
   )
 }
 

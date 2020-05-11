@@ -16,13 +16,12 @@ const Container = styled.header`
   z-index: 2;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
   color: ${MAIN_COLOR};
   max-width: ${WIDTH};
+  padding: 0 2rem;
   @media (max-width: 900px) {
-    margin: 0 1rem;
+    padding: 0 1rem;
   }
 `
 
@@ -40,7 +39,10 @@ const SearchButton = styled.button`
   cursor: pointer;
   padding: 0;
   position: absolute;
-  right: 0;
+  right: 2rem;
+  @media (max-width: 900px) {
+    padding: 0 1rem;
+  }
 `
 const StyledLogo = styled(Logo)`
   path {
