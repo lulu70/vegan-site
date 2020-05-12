@@ -25,7 +25,7 @@ const ingredients = {
   chickpeas: "chickpeas",
   parsley: "parsley",
   coriander: "coriander",
-  bakingPowder: "bakingPowder",
+  bakingPowder: "baking powder",
   salt: "salt",
   cumin: "cumin",
   chilliPepper: "chilli pepper",

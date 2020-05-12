@@ -10,14 +10,11 @@ import styled from "styled-components"
 import { SECOND_COLOR } from "../constants"
 import TickIcon from "../../content/assets/tick.svg"
 import Circle from "../../content/assets/circle.svg"
-import PantryInput from "./PantryInput"
 import ScrollArea from "./ScrollArea"
-import FlipMove from "react-flip-move"
 
 const ScrollContainer = styled(ScrollArea)`
-  margin-right: 1rem;
-  background-color: white;
   flex: 1;
+  max-width: 15rem;
 `
 const Ul = styled.ul`
   display: flex;
@@ -64,12 +61,7 @@ const StyledCircle = styled(Circle)`
 `
 
 const PantryIngredients = ({ recipes }) => {
-  const {
-    filteredIngredients,
-    selectedIngredients,
-    showSelectedIngredients,
-    filterInput,
-  } = usePantryState()
+  const { filteredIngredients, selectedIngredients } = usePantryState()
   const pantryDispatch = usePantryDispatch()
 
   React.useEffect(() => {
@@ -103,7 +95,7 @@ const PantryIngredients = ({ recipes }) => {
     })
     setFilteredRecipes(pantryDispatch, filtered)
   }, [selectedIngredients, recipes, pantryDispatch])
-  const [scrollTop, setScrollTop] = React.useState(0)
+
   const addSelectedIngredient = ingredient => {
     const isUniqueIngredient = !selectedIngredients.includes(ingredient)
     if (isUniqueIngredient)
@@ -111,7 +103,6 @@ const PantryIngredients = ({ recipes }) => {
         ...selectedIngredients,
         ingredient,
       ])
-    setScrollTop(0)
   }
   const removeSelectedIngredient = ingredient => {
     const index = selectedIngredients.indexOf(ingredient)
@@ -122,20 +113,8 @@ const PantryIngredients = ({ recipes }) => {
     setSelectedIngredients(pantryDispatch, newIngredients)
   }
 
-  const unSelectedFilteredIngredients = filteredIngredients.filter(
-    ingredient => {
-      const isSelected = selectedIngredients.includes(ingredient)
-      return !isSelected
-    }
-  )
-  const ingredientsToShow = showSelectedIngredients
-    ? selectedIngredients
-    : filterInput
-    ? filteredIngredients
-    : [...selectedIngredients, ...unSelectedFilteredIngredients]
   return (
     <ScrollContainer
-      scrollTop={scrollTop}
       className="drop-shadow"
       contentStyles={{
         display: "flex",
@@ -143,32 +122,29 @@ const PantryIngredients = ({ recipes }) => {
         justifyContent: "space-between",
       }}
     >
-      <PantryInput />
       <Ul>
-        <FlipMove enterAnimation="none" leaveAnimation="none">
-          {ingredientsToShow.map(ingredient => {
-            const isSelected = selectedIngredients.includes(ingredient)
-            return (
-              <Li key={ingredient}>
-                <Button
-                  onClick={e => {
-                    e.target.blur()
-                    isSelected
-                      ? removeSelectedIngredient(ingredient)
-                      : addSelectedIngredient(ingredient)
-                  }}
-                >
-                  {isSelected ? (
-                    <StyledTickIcon className="pantry-ingredients__icon" />
-                  ) : (
-                    <StyledCircle className="pantry-ingredients__icon" />
-                  )}
-                  {ingredient}
-                </Button>
-              </Li>
-            )
-          })}
-        </FlipMove>
+        {filteredIngredients.map(ingredient => {
+          const isSelected = selectedIngredients.includes(ingredient)
+          return (
+            <Li key={ingredient}>
+              <Button
+                onClick={e => {
+                  e.target.blur()
+                  isSelected
+                    ? removeSelectedIngredient(ingredient)
+                    : addSelectedIngredient(ingredient)
+                }}
+              >
+                {isSelected ? (
+                  <StyledTickIcon className="pantry-ingredients__icon" />
+                ) : (
+                  <StyledCircle className="pantry-ingredients__icon" />
+                )}
+                {ingredient}
+              </Button>
+            </Li>
+          )
+        })}
       </Ul>
     </ScrollContainer>
   )

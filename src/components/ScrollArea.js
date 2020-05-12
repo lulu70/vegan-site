@@ -2,11 +2,10 @@ import React from "react"
 import RSC from "react-scrollbars-custom"
 import PropTypes from "prop-types"
 
-const ScrollArea = ({ contentStyles, scrollTop, ...rest }) => {
+const ScrollArea = ({ contentStyles, ...rest }) => {
   return (
     <RSC
       {...rest}
-      scrollTop={scrollTop}
       disableTracksWidthCompensation
       trackYProps={{
         style: {
@@ -29,7 +28,6 @@ const ScrollArea = ({ contentStyles, scrollTop, ...rest }) => {
 
 ScrollArea.propTypes = {
   contentStyles: PropTypes.object,
-  scrollTop: PropTypes.number,
 }
 
 export default ScrollArea

@@ -4,7 +4,6 @@ export const pantryInitialState = {
   filteredIngredients: [],
   filteredRecipes: [],
   selectedIngredients: [],
-  showSelectedIngredients: false,
 }
 
 const types = {
@@ -13,7 +12,6 @@ const types = {
   setFilterInput: "SET_FILTER_INPUT",
   setSelectedIngredients: "SET_SELECTED_INGREDIENTS",
   setFilteredRecipes: "SET_FILTERED_RECIPES",
-  setShowSelectedIngredients: "SET_SHOW_SELECTED_INGREDIENTS",
 }
 
 export const setIngredients = (dispatch, payload) => {
@@ -43,12 +41,6 @@ export const setSelectedIngredients = (dispatch, payload) => {
 export const setFilteredRecipes = (dispatch, payload) => {
   dispatch({
     type: types.setFilteredRecipes,
-    payload,
-  })
-}
-export const setShowSelectedIngredients = (dispatch, payload) => {
-  dispatch({
-    type: types.setShowSelectedIngredients,
     payload,
   })
 }
@@ -86,12 +78,7 @@ export const pantryReducer = (state, { type, payload }) => {
         filteredRecipes: payload,
       }
     }
-    case types.setShowSelectedIngredients: {
-      return {
-        ...state,
-        showSelectedIngredients: payload,
-      }
-    }
+
     default: {
       return state
     }

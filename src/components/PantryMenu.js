@@ -1,55 +1,28 @@
 import React from "react"
 import styled from "styled-components"
-import { usePantryState, usePantryDispatch } from "../context/ContextProvider"
-import { setShowSelectedIngredients } from "../context/reducers/pantryReducer"
+import { usePantryState } from "../context/ContextProvider"
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
   font-size: 0.9rem;
-  width: 100%;
-  position: sticky;
-  bottom: 0;
+  margin-bottom: 1rem;
 `
 const Divider = styled.div`
   border: solid 1px;
-  height: 1.5rem;
+  height: 1.3rem;
   margin: 0 0.2rem;
 `
-
-const Button = styled.button`
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  :disabled {
-    cursor: initial;
-    color: grey;
-  }
-`
 const PantryMenu = () => {
-  const { selectedIngredients, ingredients } = usePantryState()
-  const pantryDispatch = usePantryDispatch()
+  const { selectedIngredients, ingredients, filteredRecipes } = usePantryState()
 
   return (
     <Container>
-      <Button
-        onClick={() => {
-          setShowSelectedIngredients(pantryDispatch, false)
-        }}
-      >
-        All items: {ingredients.length}
-      </Button>
+      <small>All items: {ingredients.length}</small>
       <Divider />
-      <Button
-        disabled={selectedIngredients.length < 1}
-        onClick={() => {
-          setShowSelectedIngredients(pantryDispatch, true)
-        }}
-      >
-        Selected items: {selectedIngredients.length}
-      </Button>
+      <small>Selected items: {selectedIngredients.length}</small>
+      <Divider />
+      <small>Matched recipes: {filteredRecipes.length}</small>
     </Container>
   )
 }
