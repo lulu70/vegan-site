@@ -20,33 +20,6 @@ tags:
   - thyme
   - Rosemary
   - Carrot
-
-ingredients:
-  - lasagna pasta sheets
-  - onion
-  - garlic
-  - oregano
-  - zucchini
-  - mushrooms
-  - himalaya salt
-  - black pepper
-  - chopped canned tomatoes
-  - tomato
-  - tomato puree
-  - dried tomatoes
-  - nutritional yeast
-  - basil
-  - thyme
-  - oregano
-  - Carrot
-  - red wine
-  - rosemary
-  - cashew nuts
-  - oat milk
-  - lemon juice
-  - garlic powder
-  - onion powder
-
 author: Roi Cohen
 ---
 
@@ -69,7 +42,7 @@ Nutritional values per serving:
 - 4 garlic cloves minced
 - 250 gr. mushrooms
 - 3 celery sticks
-- 2 carrots 
+- 2 carrots
 - 1 big zucchini
 - 6 tomatoes or 1 can of chopped tomatoes
 - 4 tbsp tomato paste
@@ -84,7 +57,7 @@ Nutritional values per serving:
 - 1 tsp Himalaya salt
 - 5 tbsp nutritional yeast
 
-## Bechamel Sauce: 
+## Bechamel Sauce:
 
 - 200 gr. cashew nuts
 - 3/4 cup oat milk
@@ -93,7 +66,6 @@ Nutritional values per serving:
 - 1 tsp onion powder
 - 1/2 tsp Himalaya salt
 - 1/2 tsp ground black pepper
-
 
 ## Lets start -
 
@@ -121,7 +93,7 @@ Now cover the pasta sheets with a layer of the bechamel we made, try to get a ½
 
 <Image filename="first-three-layers"/>
 
-Now just repeat it again and again at least 2 more sets of layers. 
+Now just repeat it again and again at least 2 more sets of layers.
 
 <Image filename="seconed-layer"/>
 
@@ -137,6 +109,6 @@ When it's ready, take out of the oven and let it cool down before serving.
 
 Cut to 6 portions and serve with fresh salat aside for the best experience!
 
-<Image filename="lasagna-serving"/> 
+<Image filename="lasagna-serving"/>
 
-Enjoy! 
+Enjoy!

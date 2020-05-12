@@ -15,14 +15,6 @@ tags:
   - pita bread
   - protein
   - plant based
-ingredients:
-  - flour
-  - yeast
-  - sugar
-  - olive oil
-  - salt
-  - water
-
 author: lior cohen
 ---
 

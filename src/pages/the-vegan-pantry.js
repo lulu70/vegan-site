@@ -7,6 +7,7 @@ import PantryRecipes from "../components/PantryRecipes"
 import { MAIN_COLOR } from "../constants"
 import PantryMenu from "../components/PantryMenu"
 import SEO from "../components/seo"
+import recipesIngredients from "../../content/recipesIngredients"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,6 +30,13 @@ const Section = styled.section`
 const TheVeganPantry = ({ location, data }) => {
   const recipes = data.allFile.nodes
 
+  const recipesWithIngredients = recipes.reduce((acc, recipe) => {
+    const name = recipe.name
+    const key = Object.keys(recipesIngredients).find(key => key === name)
+    const ingredients = recipesIngredients[key]
+    return [...acc, { ...recipe, ingredients }]
+  }, [])
+
   return (
     <Layout full location={location}>
       <SEO title="The vegan pantry" />
@@ -36,7 +44,7 @@ const TheVeganPantry = ({ location, data }) => {
         <H1>Add Ingredients ang get recipes</H1>
         <PantryMenu />
         <Section>
-          <PantryIngredients recipes={recipes} />
+          <PantryIngredients recipes={recipesWithIngredients} />
           <PantryRecipes />
         </Section>
       </Container>
@@ -50,10 +58,10 @@ export const pageQuery = graphql`
   query {
     allFile(filter: { sourceInstanceName: { eq: "recipes" } }) {
       nodes {
+        name
         childMdx {
           id
           frontmatter {
-            ingredients
             title
             description
             featuredImage {

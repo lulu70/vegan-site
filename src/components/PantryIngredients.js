@@ -74,7 +74,7 @@ const PantryIngredients = ({ recipes }) => {
 
   React.useEffect(() => {
     const allIngredients = recipes.reduce((acc, recipe) => {
-      const ingredients = recipe.childMdx.frontmatter.ingredients
+      const ingredients = recipe.ingredients
       if (ingredients) return [...acc, ...ingredients]
       return acc
     }, [])
@@ -92,8 +92,8 @@ const PantryIngredients = ({ recipes }) => {
 
   React.useEffect(() => {
     const filtered = recipes.filter(recipe => {
-      const recipeIngredients = recipe.childMdx.frontmatter.ingredients.map(
-        ingredient => ingredient.toLowerCase()
+      const recipeIngredients = recipe.ingredients.map(ingredient =>
+        ingredient.toLowerCase()
       )
       const hasAllSelectedIngredients = selectedIngredients.every(selected =>
         recipeIngredients.includes(selected)
