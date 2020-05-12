@@ -20,6 +20,11 @@ tags:
   - thyme
   - Rosemary
   - Carrot
+nutritionValues:
+  cal: 483
+  protein: 20
+  carbs: 60
+  fat: 18
 author: Roi Cohen
 ---
 
@@ -31,8 +36,7 @@ A one-tray-dish is a perfect solution to this situation and what can be so delic
 **6 servings**
 
 Nutritional values per serving:
-
-**Cal**: 483 | **Protein**: 20 | **Carbs**: 60 | **Fat**: 18
+<NutritionValues fileName="fast-and-special-lasagna"/>
 
 # **Ingredients:**
 

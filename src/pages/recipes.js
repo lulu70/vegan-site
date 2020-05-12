@@ -50,6 +50,12 @@ export const pageQuery = graphql`
             title
             description
             tags
+            nutritionValues {
+              cal
+              protein
+              carbs
+              fat
+            }
             featuredImage {
               src {
                 name

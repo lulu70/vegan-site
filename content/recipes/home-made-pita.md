@@ -15,6 +15,11 @@ tags:
   - pita bread
   - protein
   - plant based
+nutritionValues:
+  cal: 276
+  protein: 8
+  carbs: 50
+  fat: 4
 author: lior cohen
 ---
 
@@ -24,7 +29,7 @@ author: lior cohen
 
 Nutritional values per portion:
 
-Cal: 276 | Protein: 8 | Carbs: 50 | Fat: 4
+<NutritionValues fileName="home-made-pita"/>
 
 ## Ingredients
 

@@ -4,7 +4,6 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import PantryIngredients from "../components/PantryIngredients"
 import PantryRecipes from "../components/PantryRecipes"
-import { MAIN_COLOR } from "../constants"
 import PantryMenu from "../components/PantryMenu"
 import SEO from "../components/seo"
 import recipesIngredients from "../../content/recipesIngredients"
@@ -12,7 +11,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: ${MAIN_COLOR};
   flex: 1;
   padding-top: 1rem;
   margin-bottom: 1rem;
@@ -64,6 +62,14 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
+            date(formatString: "MMMM DD, YYYY")
+            updatedDate(formatString: "MMMM DD, YYYY")
+            nutritionValues {
+              cal
+              protein
+              carbs
+              fat
+            }
             featuredImage {
               src {
                 name

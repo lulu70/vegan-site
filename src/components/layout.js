@@ -9,7 +9,7 @@ import RightSide from "./RightSide"
 import styled from "styled-components"
 import { WIDTH } from "../constants"
 import GlobalStyles from "../GlobalStyles"
-
+import NutritionValues from "./NutritionValues"
 const Container = styled.div``
 
 const PostContainer = styled.div`
@@ -79,7 +79,7 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
   `)
 
   const posts = data.allMdx.edges
-  const componentsForMdx = { Image }
+  const componentsForMdx = { Image, NutritionValues }
 
   return (
     <Container>

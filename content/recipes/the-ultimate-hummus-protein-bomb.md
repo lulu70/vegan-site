@@ -13,6 +13,11 @@ tags:
   - pita bread
   - protein
   - plant based
+nutritionValues:
+  cal: 508
+  protein: 27
+  carbs: 32
+  fat: 17
 author: Roi Cohen
 ---
 
@@ -30,7 +35,7 @@ Hummus is Vegan!
 
 Nutritional values per serving:
 
-**Cal**: 508 | **Protein**: 27 | **Carbs**: 32 | **Fat**: 17
+<NutritionValues fileName="the-ultimate-hummus-protein-bomb"/>
 
 - 500 gr. (2 cups) of dry chickpeas
 - 1 big onion
@@ -50,7 +55,7 @@ Nutritional values per serving:
 
 Nutritional values per serving:
 
-**Cal**: 60 | **Protein**: 4.2 | **Carbs**: 10 | **Fat**: 5
+<NutritionValues values={{cal: 60, protein: 4.2, carbs: 10, fat: 5}}/>
 
 - 1 can (300 gr.) of cooked Fava beans
 - ½ tbs Red Chili flakes

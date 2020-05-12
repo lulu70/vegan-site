@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const StyledImage = styled(GatsbyImage)`
-  width: ${({ full }) => (full ? "100%" : "70%")};
+  width: ${({ full }) => (full ? "100%" : "50%")};
   @media (max-width: 900px) {
     width: 100%;
   }

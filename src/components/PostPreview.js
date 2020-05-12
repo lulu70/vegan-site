@@ -4,15 +4,17 @@ import StyledLink from "./StyledLink"
 import Image from "./Image"
 import PropTypes from "prop-types"
 import { AnimationWrapper } from "react-hover-animation"
+import NutritionValues from "./NutritionValues"
+
 const AnimatedContainer = styled(AnimationWrapper)`
   display: flex;
   flex-direction: column;
   width: 26%;
   margin-bottom: 1rem;
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     width: 45%;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     width: 100%;
   }
 `
@@ -20,8 +22,13 @@ const StyledImage = styled(Image)`
   padding-top: 47.61905%;
   height: 0;
 `
-const SmallRow = styled.div`
+const SmallRow = styled.small`
   padding: 0 1rem;
+  display: flex;
+  /* justify-content: space-evenly; */
+  p {
+    margin: 0;
+  }
 `
 const BigRow = styled.div`
   background-color: white;
@@ -32,6 +39,7 @@ const BigRow = styled.div`
 const PostHeader = styled.h3`
   margin-bottom: 0.5rem;
 `
+
 const PostPreview = ({ post }) => {
   return (
     <AnimatedContainer
@@ -50,12 +58,7 @@ const PostPreview = ({ post }) => {
         />
       </StyledLink>
       <SmallRow>
-        <small>
-          {post.childMdx.frontmatter.date ===
-          post.childMdx.frontmatter.updatedDate
-            ? post.childMdx.frontmatter.date
-            : `Updated at: ${post.childMdx.frontmatter.updatedDate}`}
-        </small>
+        <NutritionValues values={post.childMdx.frontmatter.nutritionValues} />
       </SmallRow>
       <BigRow>
         <PostHeader>

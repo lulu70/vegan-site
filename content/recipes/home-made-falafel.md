@@ -15,6 +15,11 @@ tags:
   - pita bread
   - protein
   - plant based
+nutritionValues:
+  cal: 63
+  protein: 2.2
+  carbs: 13
+  fat: 3
 author: lior cohen
 ---
 
@@ -24,7 +29,7 @@ author: lior cohen
 
 Nutritional values per ball:
 
-Cal: 63 | Protein: 2.2 | Carbs: 13 | Fat: 3
+<NutritionValues fileName="home-made-falafel"/>
 
 ## Ingredients
 
