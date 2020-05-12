@@ -32,7 +32,7 @@ const NutritionValues = ({ values, fileName }) => {
   }
   const valuesKeys = Object.keys(nutritionValues)
   return (
-    <p className="nutritionValues__p">
+    <p>
       {valuesKeys.map((key, index) => (
         <React.Fragment key={key}>
           <span>
