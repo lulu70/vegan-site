@@ -51,6 +51,9 @@ const recipesIngredients = {
     i.bakingSoda,
     i.tahini,
   ],
+  "new-test": [
+    i.salt,
+  ]
 }
 
 export default recipesIngredients
