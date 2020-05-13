@@ -51,6 +51,7 @@ const recipesIngredients = {
     i.bakingSoda,
     i.tahini,
   ],
+  "test": [i.bakingPowder]
 }
 
 export default recipesIngredients
