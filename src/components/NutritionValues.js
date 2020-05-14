@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { upperCase } from "../utils/helpers"
 const NutritionValues = ({ values, fileName }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -30,18 +31,23 @@ const NutritionValues = ({ values, fileName }) => {
   if (values) {
     nutritionValues = values
   }
-  const valuesKeys = Object.keys(nutritionValues)
+  const keys = Object.keys(nutritionValues)
   return (
     <p>
-      {valuesKeys.map((key, index) => (
-        <React.Fragment key={key}>
-          <span>
-            <strong>{key.slice(0, 1).toUpperCase() + key.slice(1)}: </strong>
-            {nutritionValues[key]}
-          </span>
-          {index !== valuesKeys.length - 1 && " | "}
-        </React.Fragment>
-      ))}
+      {keys.map((key, index) => {
+        const value = nutritionValues[key]
+        const hasNextValue = nutritionValues[keys[index + 1]]
+        if (!value) return null
+        return (
+          <React.Fragment key={key}>
+            <span>
+              <strong>{upperCase(key)}: </strong>
+              {value}
+            </span>
+            {hasNextValue && " | "}
+          </React.Fragment>
+        )
+      })}
     </p>
   )
 }
