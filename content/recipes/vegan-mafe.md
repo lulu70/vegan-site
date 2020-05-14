@@ -29,7 +29,7 @@ Nutritional values per portion:
 
 When traveling around the globe and attending food and music festivals, I was amazed to discover this amazingly simple dish that can be easily made completely vegan.
 It is a traditional senegalese stew usually made with meat, based on tomato sauce and peanut butter.
-To make it vegan all I did is added soya chunks that can be found anywhere, nice and easy.
+To make it vegan all I did is added soy chunks that can be found anywhere, nice and easy.
 The result is so nice tasty and creamy that you wouldn't believe it.
 
 ## The peanut butter
@@ -57,7 +57,7 @@ I decided to add vegan cheese spread, inspired by the Ethiopian cuisine.
 - 1/2 tsp of salt (or by taste)
 - 1/2 tsp black pepper
 - 1 tsp cumin
-- 1/2 cup of soya chunks
+- 1/2 cup of soy chunks
 
 ## For side suggestion
 
@@ -88,12 +88,12 @@ Nutritional values per serving:
 
 <Image filename='mafe-peanut-sauce'/>
 
-7. Add the soya chunks and the rest of the water.
+7. Add the soy chunks and the rest of the water.
 
-<Image filename='mafe-soya-chunks'/>
+<Image filename='mafe-soy-chunks'/>
 
 8. Add the salt, pepper, and cumin.
-9. Cook on a small flame until soya chunks reach a soft and nice texture.
+9. Cook on a small flame until soy chunks reach a soft and nice texture.
 
 <Image filename='mafe-ready'/>
 

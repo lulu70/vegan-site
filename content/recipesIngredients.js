@@ -62,7 +62,7 @@ const recipesIngredients = {
     i.cumin,
     i.blackPepper,
     i.bayLeaves,
-    i.soyaChunks,
+    i.soyChunks,
     i.veganCheeseSpread,
     i.berbereSpiceMix,
     i.lemonJuice,
