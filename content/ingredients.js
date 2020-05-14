@@ -39,6 +39,12 @@ const ingredients = {
   lemon: "lemon",
   bakingSoda: "baking soda",
   tahini: "tahini",
+  ginger: "ginger",
+  peanutButter: "peanut butter",
+  bayLeaves: "bay leaves",
+  soyaChunks: "soya chunks",
+  veganCheeseSpread: "vegan cheese spread",
+  berbereSpiceMix: "berbere spice mix",
 }
 
 export default ingredients

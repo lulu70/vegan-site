@@ -51,6 +51,21 @@ const recipesIngredients = {
     i.bakingSoda,
     i.tahini,
   ],
+  "vegan-mafe": [
+    i.garlic,
+    i.onion,
+    i.ginger,
+    i.tomatoPuree,
+    i.peanutButter,
+    i.water,
+    i.salt,
+    i.cumin,
+    i.blackPepper,
+    i.bayLeaves,
+    i.soyaChunks,
+    i.veganCheeseSpread,
+    i.berbereSpiceMix,
+  ],
 }
 
 export default recipesIngredients
