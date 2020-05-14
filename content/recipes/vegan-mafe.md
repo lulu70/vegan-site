@@ -1,5 +1,5 @@
 ---
-title: Vegan Mafe - west African peanut stew
+title: Vegan mafe - west african peanut stew
 date: 2020-05-14
 updatedDate: 2020-05-14
 description: West african "meat" dish in peanut sauce
@@ -25,10 +25,10 @@ author: lior cohen
 Nutritional values per portion:
 <NutritionValues fileName="vegan-mafe"/>
 
-## A gift from Africa
+## A gift from africa
 
 When traveling around the globe and attending food and music festivals, I was amassed to discover this amazingly simple dish that can be easily made completely vegan.
-It is a traditional Senegalese stew usually made with meat, based on tomato sauce and peanut butter.
+It is a traditional senegalese stew usually made with meat, based on tomato sauce and peanut butter.
 To make it vegan all I did is added soya chunks that can be found anywhere, nice and easy.
 The result is so nice tasty and creamy that you wouldn't believe it.
 
