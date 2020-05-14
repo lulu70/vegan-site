@@ -23,11 +23,11 @@ author: Roi Cohen
 
 <Image filename="delicious-hummus-plate"/>
 
-As a person who grew up in the center of Israel in a city between Jaffa and Ramla, I spent a lot of time in Hummus restaurants with family and friends. Hummus stimulates serotonin in the brain and fills us with a pleasant and happy feeling. The Israeli cuisine, which is composed of Jewish kitchens from all over the world, lovingly embraced the finest Israeli-Arab's hummus.
+As a person who grew up in the center of Israel in a city between Jaffa and Ramla, I spent a lot of time in hummus restaurants with family and friends. Hummus stimulates serotonin in the brain and fills us with a pleasant and happy feeling. The israeli cuisine, which is composed of jewish kitchens from all over the world, lovingly embraced the finest israeli-arab's hummus.
 It didn't take too long for me to realize that I must know how to make delicious hummus at home.
 Over the years in any opportunity, I collected tips for improving the recipe, and finally, I came up with a simple and perfect recipe.
 I am happy to share the recipe with you because to me hummus is joy, hummus is love and harmony.
-Hummus is Vegan!
+hummus is Vegan!
 
 # **Ingredients:**
 
@@ -66,32 +66,36 @@ Nutritional values per serving:
 
 ## Lets start -
 
-First, mix the Baking soda powder in a cup of water and stir to dissolve. Then pour the chickpeas into a large bowl, add the water with the Baking soda powder and add more fresh water to cover the chickpeas, let them soak overnight for a minimum of 12 hours.
-
-Drain and rinse the chickpeas, place it in a pot and cover with fresh water. Cut the onion to big portions and add it with the garlic cloves to the pot. Place the pot on the stove and let it boil with lead half covered.
-When it boils, lower the stove to its low heat and continue the cook for 1½ hours with lead fully covered.
-When its done, check if the chickpeas are ready, it should be very soft.
+1. Put chickpeas into a large bowl, add the baking soda powder and water to cover the chickpeas, let them soak overnight for a minimum of 12 hours.
+2. Drain and rinse the chickpeas, place it in a pot and fill in fresh water to cover the chickpeas. 
+3. Cut the onion to big portions and add it with the garlic cloves to the pot. place the pot on the stove and let it boil with lead half covered.
+4. When it boils, lower the stove to a low heat and continue the cook for 1½ hours with lead fully covered.
 
 <Image filename="cooking-chickpeas"/>
 
-Use a strainer to filter the contents of the pot and keep the cooking stock in a separate bowl, we will use it soon. Now let’s place our filtered ingredients in a strong food processor, but keep ½ cup of the chickpeas separate for topping later.
+5. Take the pot out of the fire and check if the chickpeas are ready, they should be very soft.
+6. Use a strainer to filter the contents of the pot and keep the cooking stock in a separate bowl, we will use it soon. 
+7. Place the filtered ingredients in a strong food processor, but keep ½ cup of the chickpeas separate for topping later. add also the salt, cumin, black pepper, tahini and lemon juice to it. 
 
 <Image filename="chickpeas-in-food-processor"/>
-
-add the salt, cumin, black pepper and tahini to it. Add the lemon juice too. Now we will use the stock we kept before, we will start adding 1/2 cup to it and turn the food processor on. The blend should get creamy, smooth, but not too liquid. continue to add small amounts of the stock water to get your desired mash results.
+ 
+8. Use the stock we kept before, start to add 1/2 cup of it and turn the food processor on. the blend should become creamy, smooth, but not too liquid. continue to add small amounts of the stock to get your desired mash results.
 
 <Image filename="mashed-hummus"/>
 
-For the toppings, you can use many variations such as mushrooms, eggplants, etc. In this recipe, we will use cooked Fava beans, but you can choose whatever you like to finalize this super tasty Hummus plate.
+For the toppings, you can use many variations such as mushrooms, eggplants, etc. in this recipe, we will use cooked fava beans, but you can choose whatever you like to finalize this super tasty hummus plate.
 
 <Image filename="cooking-fava-beans"/>
 
-Empty the cooked fava beans can in a small saucepan and let it boil. At the boiling time add ¼ cup of the stock water, ½ fresh lemon juice, 1 mashed garlic clove and the chili flakes. Lower the stove heat and stir. Cook it for another 5 minutes.
+1. Empty the cooked fava beans can in a small saucepan and let it boil. 
+2. Add ¼ cup of the stock water, ½ fresh lemon juice, 1 mashed garlic clove and the chili flakes. 
+3. Turn to a low heat and stir. Cook it for another 5 minutes.
 
 <Image filename="mashed-fava-beans"/>
 
-Now pour 5-7 tbsp of the Hummus mash to a deep round plate, spread it and make a hole in the center. Pour the fava beans to this hole and finish with some cooked chickpeas on top and 3 fresh parsley leaves. Sprinkle olive oil on top of everything, as much as you like, we use 2 tbsp.
-You can decorate with a bit of paprika or cumin powder on top to make it look even better 😊
+**Serving suggestion -**
+pour 5-7 tbsp of the hummus mash to a deep round plate, spread it and make a hole in the center. pour the fava beans to the hole and finish with some cooked chickpeas on top and few fresh parsley leaves. sprinkle olive oil on top of everything, as much as you like, we use 2 tsp.
+you can decorate with a bit of paprika or cumin powder on top to make it look even better 😊
 
 <Image filename="delicious-hummus-plate" />
 
