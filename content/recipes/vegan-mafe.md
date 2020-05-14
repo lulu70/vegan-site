@@ -27,7 +27,7 @@ Nutritional values per portion:
 
 ## A gift from africa
 
-When traveling around the globe and attending food and music festivals, I was amassed to discover this amazingly simple dish that can be easily made completely vegan.
+When traveling around the globe and attending food and music festivals, I was amazed to discover this amazingly simple dish that can be easily made completely vegan.
 It is a traditional senegalese stew usually made with meat, based on tomato sauce and peanut butter.
 To make it vegan all I did is added soya chunks that can be found anywhere, nice and easy.
 The result is so nice tasty and creamy that you wouldn't believe it.
@@ -69,6 +69,7 @@ Nutritional values per serving:
 
 - 2 tbsp vegan cheese spread (homemade or not).
 - 1 tsp of berbere spice mix.
+- 1 tsp of lemon juice
 
 ## Instructions
 
@@ -98,6 +99,6 @@ Nutritional values per serving:
 
 ## Side suggestion instructions
 
-1. Mix the vegan cheese spread and spice mix till you get a smooth texture, serve right away.
+1. Mix the vegan cheese spread, the lemon juice, and the spice mix till you get a smooth texture, serve right away.
 
 <Image filename='mafe-cheese-spread'/>

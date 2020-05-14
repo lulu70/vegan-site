@@ -65,6 +65,7 @@ const recipesIngredients = {
     i.soyaChunks,
     i.veganCheeseSpread,
     i.berbereSpiceMix,
+    i.lemonJuice,
   ],
 }
 
