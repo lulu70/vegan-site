@@ -36,7 +36,7 @@ Nutritional values per serving:
 
 - 12 red chili peppers
 - 6 garlic cloves
-- 5 cm peeled ginger root 
+- 5 cm peeled ginger root
 - 1 cup chopped fresh mint
 - 1 cup chopped coriander
 - 3 tbsp 100% natural dates syrop
@@ -47,7 +47,7 @@ Nutritional values per serving:
 - 1/2 tsp salt
 - 1/2 tsp sweet paprika
 
-## Lets start 
+## Lets start
 
 1. Cut the peppers and take the kernels out of them.
 
@@ -63,9 +63,9 @@ Nutritional values per serving:
 
 <Image filename="red-green-chili-paste-jars"/>
 
-5. Serve alongside any other dish and enjoy the fresh aromas and spices. 
+5. Serve alongside any other dish and enjoy the fresh aromas and spices.
 
-Try also our green chili sauce 🌶️
+Try also our <Link to="/recipes/green-chili-sauce"> green chili sauce 🌶️</Link>
 
 <Image filename="green-red-chili-paste-saucer"/>
 

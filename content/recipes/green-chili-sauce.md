@@ -47,7 +47,7 @@ Nutritional values per serving:
 - 1/2 tsp salt
 - 1/2 tsp sweet paprika
 
-## Lets start 
+## Lets start
 
 1. Cut the peppers and take the kernels out of them.
 
@@ -67,7 +67,7 @@ Nutritional values per serving:
 
 5. Serve alongside any other dish and enjoy the fresh aromas and spices.
 
-Try also our red chili sauce 🌶️
+Try also our <Link to="/recipes/red-chili-sauce"> red chili sauce 🌶️</Link>
 
 <Image filename="green-red-chili-paste-saucer"/>
 

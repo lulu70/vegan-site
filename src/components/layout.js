@@ -10,6 +10,7 @@ import styled from "styled-components"
 import { WIDTH } from "../constants"
 import GlobalStyles from "../GlobalStyles"
 import NutritionValues from "./NutritionValues"
+import StyledLink from "./StyledLink"
 const Container = styled.div``
 
 const PostContainer = styled.div`
@@ -79,7 +80,7 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
   `)
 
   const posts = data.allMdx.edges
-  const componentsForMdx = { Image, NutritionValues }
+  const componentsForMdx = { Image, NutritionValues, Link: StyledLink }
 
   return (
     <Container>
