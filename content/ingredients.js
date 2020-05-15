@@ -45,6 +45,13 @@ const ingredients = {
   soyChunks: "soy chunks",
   veganCheeseSpread: "vegan cheese spread",
   berbereSpiceMix: "berbere spice mix",
+  greenChiliPeppers: "green chili pepper",
+  thaiRedChiliPepper: "Thai red chili pepper",
+  cardamom: "cardamom",
+  sweetPaprika: "sweet paprika",
+  redChiliPepper: "red chili pepper",
+  mint: "mint",
+  dateSyrup: "date syrop",
 }
 
 export default ingredients

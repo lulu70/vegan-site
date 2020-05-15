@@ -29,7 +29,7 @@ Over the years in any opportunity, I collected tips for improving the recipe, an
 I am happy to share the recipe with you because to me hummus is joy, hummus is love and harmony.
 hummus is Vegan!
 
-# **Ingredients:**
+## Ingredients
 
 **5 servings**
 
@@ -49,7 +49,7 @@ Nutritional values per serving:
 
 <Image filename="lemon-chickpeas-tahini"/>
 
-## For The Toppings:
+## For The Toppings
 
 **5 servings**
 
@@ -64,7 +64,7 @@ Nutritional values per serving:
 - Fresh parsley
 - ½ fresh lemon juice
 
-## Lets start -
+## Lets start 
 
 1. Put chickpeas into a large bowl, add the baking soda powder and water to cover the chickpeas, let them soak overnight for a minimum of 12 hours.
 2. Drain and rinse the chickpeas, place it in a pot and fill in fresh water to cover the chickpeas. 

@@ -67,6 +67,34 @@ const recipesIngredients = {
     i.berbereSpiceMix,
     i.lemonJuice,
   ],
+  "green-chili-sauce": [
+    i.greenChiliPeppers,
+    i.thaiRedChiliPepper,
+    i.garlic,
+    i.parsley,
+    i.coriander,
+    i.oliveOil,
+    i.cardamom,
+    i.corianderSeeds,
+    i.cumin,
+    i.salt,
+    i.sweetPaprika,
+    i.lemonJuice,
+  ],
+  "red-chili-sauce": [
+    i.redChiliPepper,
+    i.garlic,
+    i.ginger,
+    i.coriander,
+    i.mint,
+    i.oliveOil,
+    i.dateSyrup,
+    i.corianderSeeds,
+    i.cumin,
+    i.salt,
+    i.sweetPaprika,
+    i.lemonJuice,
+  ]
 }
 
 export default recipesIngredients
