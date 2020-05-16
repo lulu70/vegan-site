@@ -52,6 +52,11 @@ const ingredients = {
   redChiliPepper: "red chili pepper",
   mint: "mint",
   dateSyrup: "date syrup",
+  cinnamon: "cinnamon",
+  instantCoffee: "instant coffee",
+  brownSugar: "brown sugar",
+  almondExtract: "almond extract",
+  applePuree: "apple puree",
 }
 
 export default ingredients
