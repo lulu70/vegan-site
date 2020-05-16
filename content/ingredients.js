@@ -51,7 +51,7 @@ const ingredients = {
   sweetPaprika: "sweet paprika",
   redChiliPepper: "red chili pepper",
   mint: "mint",
-  dateSyrup: "date syrop",
+  dateSyrup: "date syrup",
 }
 
 export default ingredients

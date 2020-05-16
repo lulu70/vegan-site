@@ -39,7 +39,7 @@ Nutritional values per serving:
 - 5 cm peeled ginger root
 - 1 cup chopped fresh mint
 - 1 cup chopped coriander
-- 3 tbsp 100% natural dates syrop
+- 3 tbsp 100% natural dates syrup
 - 1 tbsp olive oil
 - 1 tbsp lemon juice
 - 2 tsp ground coriander seeds
