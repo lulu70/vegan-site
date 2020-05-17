@@ -61,3 +61,5 @@ Nutritional values per portion:
 
 8. Leave the cake in the oven for 20 more minutes without opening the oven door.
 9. Take it out of the oven, cut it, and enjoy right away.
+
+<Image filename="vegan-honey-cake-cuts" />
