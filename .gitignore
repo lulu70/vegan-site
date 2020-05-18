@@ -69,4 +69,4 @@ yarn-error.log
 .yarn-integrity
  
 # cypress
- cypress
+ cypress/
