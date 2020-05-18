@@ -48,7 +48,10 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "cypress": "^4.5.0",
+    "husky": "^4.2.5",
+    "prettier": "^1.19.1",
+    "start-server-and-test": "^1.11.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -62,13 +65,22 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop -H 0.0.0.0",
+    "develop": "gatsby develop -H 0.0.0.0 ",
     "cleandevelop": "gatsby clean && gatsby develop  -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "yarn develop --scripts-prepend-node-path",
-    "cleanstart": "yarn cleandevelop --scripts-prepend-node-path",
+    "start": "yarn develop",
+    "cleanstart": "yarn cleandevelop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec cypress/integration/pages.spec.js",
+    "test:e2e:open": "start-server-and-test develop http://localhost:8000 cy:open",
+    "test:e2e:run": "start-server-and-test develop http://localhost:8000 cy:run"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn cy:run"
+    }
   }
 }

@@ -44,6 +44,7 @@ const PostPreview = ({ post }) => {
   return (
     <AnimatedContainer
       className="drop-shadow"
+      data-testing="postPreview__container"
       config={{
         opacity: {
           initial: 1,
