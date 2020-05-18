@@ -80,7 +80,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test:e2e:run"
+      "pre-push": "yarn test:e2e:run"
     }
   }
 }
