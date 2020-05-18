@@ -95,18 +95,18 @@ const recipesIngredients = {
     i.sweetPaprika,
     i.lemonJuice,
   ],
-  // "vegan-sweet-honey-cake": [
-  //   i.flour,
-  //   i.bakingSoda,
-  //   i.bakingPowder,
-  //   i.cinnamon,
-  //   i.instantCoffee,
-  //   i.brownSugar,
-  //   i.almondExtract,
-  //   i.applePuree,
-  //   i.dateSyrup,
-  //   i.vegetableOil,
-  // ],
+  "vegan-sweet-honey-cake": [
+    i.flour,
+    i.bakingSoda,
+    i.bakingPowder,
+    i.cinnamon,
+    i.instantCoffee,
+    i.brownSugar,
+    i.almondExtract,
+    i.applePuree,
+    i.dateSyrup,
+    i.vegetableOil,
+  ],
 }
 
 export default recipesIngredients
