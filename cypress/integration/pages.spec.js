@@ -1,32 +1,36 @@
 /// <reference types="cypress" />
 
-describe("Pages", () => {
+describe("Pages loading", () => {
   beforeEach(() => {
     cy.visit("/")
+    cy.waitForRouteChange()
   })
+
   it("Home page is loaded", () => {
-    cy.get("h1").should("exist")
+    cy.url().should("exist")
+    cy.get("h1").should("be.visible")
   })
 
   it("Blog-page is loaded", () => {
-    cy.get("[data-testing=mainMenu__link]")
-      .contains(/blog/i)
+    cy.findAllByText(/blog/i)
+      .first()
       .click()
-    cy.get("h1").should("exist")
+    cy.get("h1").should("be.visible")
+    cy.url().should("include", "/blog")
   })
 
   it("Recipes-page is loaded", () => {
-    cy.get("[data-testing=mainMenu__link]")
-      .contains(/recipes/i)
+    cy.findAllByText(/recipes/i)
+      .first()
       .click()
-    cy.get("h1").should("exist")
-    cy.get("[data-testing=postPreview__container]").should("exist")
+    cy.get("h1").should("be.visible")
+    cy.findAllByTestId("postPreview__container").should("be.visible")
   })
 
   it("The vegan pantry-page is loaded", () => {
-    cy.get("[data-testing=mainMenu__link]")
-      .contains(/the vegan pantry/i)
+    cy.findAllByText(/the vegan pantry/i)
+      .first()
       .click()
-    cy.get("[data-testing=the-vegan-pantry__container]").should("exist")
+    cy.findByTestId("the-vegan-pantry__container").should("exist")
   })
 })

@@ -45,7 +45,6 @@ const MainMenu = () => {
                 color={MAIN_COLOR}
                 to={page.fields.slug}
                 activeStyle={{ color: SECOND_COLOR }}
-                data-testing="mainMenu__link"
               >
                 {makePretty(page.name)}
               </StyledLink>
