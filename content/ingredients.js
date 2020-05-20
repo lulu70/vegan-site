@@ -57,6 +57,8 @@ const ingredients = {
   brownSugar: "brown sugar",
   almondExtract: "almond extract",
   applePuree: "apple puree",
+  pistachios: "pistachios",
+  pasta: "pasta",
 }
 
 export default ingredients

@@ -107,6 +107,14 @@ const recipesIngredients = {
     i.dateSyrup,
     i.vegetableOil,
   ],
+  "pistachio-pasta": [
+    i.pistachios,
+    i.oliveOil,
+    i.garlic,
+    i.pasta,
+    i.salt,
+    i.blackPepper,
+  ],
 }
 
 export default recipesIngredients
