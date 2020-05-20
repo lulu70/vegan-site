@@ -36,7 +36,7 @@ const BlogPostTemplate = ({ data, location }) => {
       <Article>
         <header>
           <Header>{post.frontmatter.title}</Header>
-          <DateParagraph>
+          <DateParagraph data-test-id="blogPostTemplate__date">
             {post.frontmatter.date === post.frontmatter.updatedDate
               ? post.frontmatter.date
               : `Updated at: ${post.frontmatter.updatedDate}`}

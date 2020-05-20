@@ -36,7 +36,7 @@ const BigRow = styled.div`
   padding: 1rem;
 `
 
-const PostHeader = styled.h3`
+const PostHeader = styled.h2`
   margin-bottom: 0.5rem;
 `
 
@@ -52,7 +52,10 @@ const PostPreview = ({ post }) => {
         },
       }}
     >
-      <StyledLink to={post.childMdx.fields.slug}>
+      <StyledLink
+        to={post.childMdx.fields.slug}
+        data-test-id="postPreview__link"
+      >
         <StyledImage
           filename={post.childMdx.frontmatter.featuredImage.src.name}
           full

@@ -13,7 +13,7 @@ import NutritionValues from "./NutritionValues"
 import StyledLink from "./StyledLink"
 const Container = styled.div``
 
-const PostContainer = styled.div`
+const Main = styled.main`
   max-width: ${WIDTH};
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +33,7 @@ const PostContainer = styled.div`
     }
   }
 `
-const Main = styled.main`
+const LeftSide = styled.div`
   flex: 3;
   display: flex;
   flex-wrap: wrap;
@@ -87,10 +87,10 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
       <GlobalStyles />
       <Header />
       {searchVisibility && <Search posts={posts} />}
-      <PostContainer className="layout__postContainer">
-        <Main className="layout__main">
+      <Main className="layout__main">
+        <LeftSide className="layout__leftSide">
           <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
-        </Main>
+        </LeftSide>
         {!full && (
           <StyledRightSide
             className="layout__rightSide"
@@ -99,7 +99,7 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
             author={author}
           />
         )}
-      </PostContainer>
+      </Main>
     </Container>
   )
 }

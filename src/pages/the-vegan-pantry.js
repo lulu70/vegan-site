@@ -18,6 +18,9 @@ const Container = styled.div`
   padding-top: 1rem;
   margin-bottom: 1rem;
 `
+const H1 = styled.h1`
+  display: none;
+`
 const TopSection = styled.section`
   display: flex;
   width: 100%;
@@ -45,6 +48,7 @@ const TheVeganPantry = ({ location, data }) => {
     <Layout full location={location}>
       <SEO title="The vegan pantry" />
       <Container data-test-id="the-vegan-pantry__container">
+        <H1>The vegan pantry</H1>
         <PantryMenu />
         <PantryInput />
         <TopSection>

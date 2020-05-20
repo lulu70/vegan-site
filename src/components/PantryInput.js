@@ -51,7 +51,12 @@ const PantryInput = () => {
 
   return (
     <Label htmlFor="input">
-      <Input value={filterInput} id="input" onChange={handleInputChange} />
+      <Input
+        value={filterInput}
+        id="input"
+        aria-label="search-ingredients"
+        onChange={handleInputChange}
+      />
       {filterInput ? (
         <ClearIcon
           className="pantry-input__icon"
