@@ -11,10 +11,10 @@ tags:
   - honey
   - cake
 nutritionValues:
-  cal: 1
-  protein: 1
-  carbs: 1
-  fat: 1
+  cal: 2226
+  protein: 24
+  carbs: 260
+  fat: 112
 author: lior cohen
 ---
 

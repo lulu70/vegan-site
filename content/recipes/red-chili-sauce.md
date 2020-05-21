@@ -20,16 +20,18 @@ tags:
   - cumin
   - olive oil
 nutritionValues:
-  cal: 1
-  protein: 1
-  carbs: 1
-  fat: 1
+  cal: 454
+  protein: 13
+  carbs: 102
+  fat: 2
 author: Roi Cohen
 ---
 
 <Image filename="red-chili-paste"/>
 
-Nutritional values per serving:
+**3 small jars**
+
+Nutritional values:
 <NutritionValues fileName="red-chili-sauce"/>
 
 ## Ingredients

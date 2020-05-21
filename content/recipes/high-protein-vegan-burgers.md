@@ -69,8 +69,8 @@ Nutritional values per serving:
 
 ## Lets start 
 
-1. cook the black lentils in water till its soft.
-2. cook the spelt with 1¾ cups of water. when it boils cover the pot and cook on low heat until the water is evaporated.
+1. Cook the black lentils in water till its soft.
+2. Cook the spelt with 1¾ cups of water. when it boils cover the pot and cook on low heat until the water is evaporated.
 3. Put the chia and the flax seeds in a bowl with ½ cup of boiled water and let it rest. it should get thick and sticky in 15 minutes.
 
 <Image filename="flax-chia-seeds"/>
@@ -97,12 +97,12 @@ the onion and the garlic should be well chopped.
 
 <Image filename="vegan-burgers-blend"/>
 
-12. with wet palms, make 12 even balls and flat them to a burger shape, about 2 cm thick.
-13. heat a non-stick pan and sprinkle a bit of olive oil, then fry the burgers 3-4 minutes on each side with a cover.
+12. With wet palms, make 12 even balls and flat them to a burger shape, about 2 cm thick.
+13. Heat a non-stick pan and sprinkle a bit of olive oil, then fry the burgers 3-4 minutes on each side with a cover.
 
 <Image filename="frying-burgers-pan"/>
 
-14. serve it hot in a bun or any way you like.
+14. Serve it hot in a bun or any way you like.
 
 <Image filename="ready-burgers"/>
 

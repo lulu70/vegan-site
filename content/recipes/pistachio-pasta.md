@@ -9,10 +9,10 @@ tags:
   - creamy
   - pasta
 nutritionValues:
-  cal: 1
-  protein: 1
-  carbs: 1
-  fat: 1
+  cal: 1190
+  protein: 28
+  carbs: 136
+  fat: 65
 author: lior cohen
 ---
 

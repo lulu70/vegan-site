@@ -11,10 +11,10 @@ tags:
   - peanut sauce
   - peanuts
 nutritionValues:
-  cal: 1
-  protein: 1
-  carbs: 1
-  fat: 1
+  cal: 175
+  protein: 10
+  carbs: 8
+  fat: 12
 author: lior cohen
 ---
 
@@ -65,7 +65,7 @@ I decided to add vegan cheese spread, inspired by the Ethiopian cuisine.
 
 Nutritional values per serving:
 
-<NutritionValues values={{cal: 1, protein: 1, carbs: 1, fat: 1}}/>
+<NutritionValues values={{cal: 140, protein: 4, carbs: 4, fat: 10}}/>
 
 - 2 tbsp vegan cheese spread (homemade or not).
 - 1 tsp of berbere spice mix.
