@@ -11,16 +11,16 @@ tags:
   - honey
   - cake
 nutritionValues:
-  cal: 2226
-  protein: 24
-  carbs: 260
-  fat: 112
+  cal: 226
+  protein: 3
+  carbs: 26
+  fat: 11
 author: lior cohen
 ---
 
 <Image filename="vegan-honey-cake" />
 
-**1 loaf cake**
+**1 loaf cake - 10 portions**
 
 Nutritional values per portion:
 <NutritionValues fileName="vegan-sweet-honey-cake"/>
