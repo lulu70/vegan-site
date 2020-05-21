@@ -18,8 +18,8 @@ tags:
   - tomato puree
   - basil
   - thyme
-  - Rosemary
-  - Carrot
+  - rosemary
+  - carrot
 nutritionValues:
   cal: 483
   protein: 20
@@ -50,26 +50,26 @@ Nutritional values per serving:
 - 1 big zucchini
 - 6 tomatoes or 1 can of chopped tomatoes
 - 4 tbsp tomato paste
-- 1/2 cup sun-dried tomatoes
+- ½ cup sun-dried tomatoes
 - 1 cup vegetable broth or water
-- 1/4 cup red wine
-- 1/2 cup chopped fresh basil
+- ¼ cup red wine
+- ½ cup chopped fresh basil
 - 2 tbsp fresh chopped thyme
 - 2 tbsp fresh chopped rosemary
 - 1 tbsp dried oregano
-- 1/2 tsp ground black pepper
+- ½ tsp ground black pepper
 - 1 tsp Himalaya salt
 - 5 tbsp nutritional yeast
 
 ## Bechamel Sauce
 
 - 200 gr. cashew nuts
-- 3/4 cup oat milk
+- ¾ cup oat milk
 - 1 tbsp lemon juice
 - 1 tsp garlic powder
 - 1 tsp onion powder
-- 1/2 tsp Himalaya salt
-- 1/2 tsp ground black pepper
+- ½ tsp Himalaya salt
+- ½ tsp ground black pepper
 
 ## Lets start 
 
@@ -99,7 +99,7 @@ now cover the pasta sheets with a layer of the bechamel we made, try to get a ½
 
 12. Repeat it again and again at least 2 more sets of layers.
 
-<Image filename="seconed-layer"/>
+<Image filename="second-layer"/>
 
 13. For the last layer we want to cover the pasta sheets completely with the vegetable sauce. this way they will get soft and not dry hard in the oven.
 on top, we will spread the nutritional yeast equally and finally place the dish in the oven.

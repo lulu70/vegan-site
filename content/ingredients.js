@@ -59,6 +59,17 @@ const ingredients = {
   applePuree: "apple puree",
   pistachios: "pistachios",
   pasta: "pasta",
+  blackLentils: "black lentils",
+  spelt: "spelt",
+  chickpeaFlour: "chickpea flour",
+  wheatGluten: "wheat gluten",
+  chiaSeeds: "chia seeds",
+  flaxSeeds: "flax seeds",
+  wholeSpeltFlour: "whole spelt flour",
+  walnuts: "walnuts",
+  soySauce: "soy sauce",
+  liquidSmoke: "liquid smoke",
+  beets: "beets"
 }
 
 export default ingredients

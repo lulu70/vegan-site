@@ -115,6 +115,30 @@ const recipesIngredients = {
     i.salt,
     i.blackPepper,
   ],
+  "high-protein-vegan-burgers": [
+    i.blackLentils,
+    i.spelt,
+    i.mushrooms,
+    i.chickpeaFlour,
+    i.wheatGluten,
+    i.chiaSeeds,
+    i.flaxSeeds,
+    i.wholeSpeltFlour,
+    i.walnuts,
+    i.onion,
+    i.garlic,
+    i.tomatoPuree,
+    i.soySauce,
+    i.liquidSmoke,
+    i.beets,
+    i.tahini,
+    i.oliveOil,
+    i.cumin,
+    i.salt,
+    i.blackPepper,
+    i.sweetPaprika,
+    i.chilliPepper,
+  ]
 }
 
 export default recipesIngredients

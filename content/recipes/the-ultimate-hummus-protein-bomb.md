@@ -68,8 +68,8 @@ Nutritional values per serving:
 
 1. Put chickpeas into a large bowl, add the baking soda powder and water to cover the chickpeas, let them soak overnight for a minimum of 12 hours.
 2. Drain and rinse the chickpeas, place it in a pot and fill in fresh water to cover the chickpeas. 
-3. Cut the onion to big portions and add it with the garlic cloves to the pot. place the pot on the stove and let it boil with lead half covered.
-4. When it boils, lower the stove to a low heat and continue the cook for 1½ hours with lead fully covered.
+3. Cut the onion to big portions and add it with the garlic cloves to the pot. place the pot on the stove and let it boil with lid half covered.
+4. When it boils, lower the stove to a low heat and continue the cook for 1½ hours with lid fully covered.
 
 <Image filename="cooking-chickpeas"/>
 
