@@ -46,7 +46,7 @@ const ingredients = {
   veganCheeseSpread: "vegan cheese spread",
   berbereSpiceMix: "berbere spice mix",
   greenChiliPeppers: "green chili pepper",
-  thaiRedChiliPepper: "Thai red chili pepper",
+  thaiRedChiliPepper: "thai red chili pepper",
   cardamom: "cardamom",
   sweetPaprika: "sweet paprika",
   redChiliPepper: "red chili pepper",

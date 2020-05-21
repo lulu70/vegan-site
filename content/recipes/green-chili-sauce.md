@@ -35,7 +35,7 @@ Nutritional values per serving:
 ## Ingredients
 
 - 12 green chili peppers
-- 6 Thai red chili peppers
+- 6 thai red chili peppers
 - 6 garlic cloves
 - 1 cup chopped parsley
 - 1 cup chopped coriander
