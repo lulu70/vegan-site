@@ -3,7 +3,6 @@
 describe("Pages loading", () => {
   beforeEach(() => {
     cy.visit("/")
-    cy.waitForRouteChange()
   })
 
   it("Home page is loaded", () => {
@@ -43,7 +42,6 @@ describe("Pages loading", () => {
       cy.findAllByText(new RegExp(recipeHeader, "i"))
         .first()
         .click()
-      cy.waitForRouteChange()
       cy.get("h1").should("be.visible")
       cy.findByTestId("blogPostTemplate__date")
         .should("be.visible")
@@ -51,7 +49,6 @@ describe("Pages loading", () => {
         .and("have.length.greaterThan", 1)
       cy.get("img").should("have.length.greaterThan", 1)
       cy.findByText(/recipes/i).click()
-      cy.waitForRouteChange()
     })
   })
 })
