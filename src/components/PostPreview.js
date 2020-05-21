@@ -65,7 +65,7 @@ const PostPreview = ({ post }) => {
         <NutritionValues values={post.childMdx.frontmatter.nutritionValues} />
       </SmallRow>
       <BigRow>
-        <PostHeader>
+        <PostHeader data-test-id="postPreview__header">
           <StyledLink to={post.childMdx.fields.slug}>
             {post.childMdx.frontmatter.title}
           </StyledLink>
