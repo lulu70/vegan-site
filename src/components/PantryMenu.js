@@ -19,8 +19,8 @@ const PantryMenu = () => {
   return (
     <Container>
       <small>All items: {ingredients.length}</small>
-      <Divider />
-      <small>Selected items: {selectedIngredients.length}</small>
+       <Divider />
+              <small>Selected items: {selectedIngredients.length}</small>
       <Divider />
       <small>Matched recipes: {filteredRecipes.length}</small>
     </Container>
