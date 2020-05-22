@@ -116,6 +116,7 @@ const PantryIngredients = ({ recipes }) => {
   return (
     <ScrollContainer
       className="drop-shadow"
+      data-test-id="pantryIngredients__container"
       contentStyles={{
         display: "flex",
         flexDirection: "column",
