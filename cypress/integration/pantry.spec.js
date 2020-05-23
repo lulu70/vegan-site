@@ -3,7 +3,6 @@ import random from "lodash.random"
 const ingredientsArray = Object.keys(ingredients)
   .map(key => ingredients[key])
   .sort()
-
 const randomIngredient = () => {
   const randomNumber = random(0, ingredientsArray.length - 1)
   return ingredientsArray[randomNumber]
@@ -20,7 +19,7 @@ describe("Pantry", () => {
       .should("have.length", ingredientsArray.length)
     cy.findByTestId("pantryMenu__allItems")
       .find("span")
-      .should("have.text", ingredientsArray.length)
+      .should("have.text", ingredientsArray.length.toString())
   })
 
   it("type in search and clear it", () => {
@@ -70,11 +69,11 @@ describe("Pantry", () => {
     cy.findByTestId("pantryMenu__selectedItems")
       .find("span")
       .as("selectedItemsInMenu")
-      .should("have.text", 1)
+      .should("have.text", "1")
     cy.findByTestId("pantryMenu__matchedRecipes")
       .find("span")
       .as("matchedRecipesInMenu")
-      .should("not.have.text", 0)
+      .should("not.have.text", "0")
 
     cy.findByTestId("pantryRecipes__container")
       .findAllByTestId("postPreview__container")
@@ -83,8 +82,8 @@ describe("Pantry", () => {
       .click()
       .should("not.exist")
     cy.findByTestId("pantry-ingredients__tickIcon").should("not.exist")
-    cy.get("@selectedItemsInMenu").should("have.text", 0)
-    cy.get("@matchedRecipesInMenu").should("have.text", 0)
+    cy.get("@selectedItemsInMenu").should("have.text", "0")
+    cy.get("@matchedRecipesInMenu").should("have.text", "0")
   })
 
   it("click on a recipe and navigate to it", () => {
