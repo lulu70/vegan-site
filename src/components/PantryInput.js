@@ -60,6 +60,7 @@ const PantryInput = () => {
       {filterInput ? (
         <ClearIcon
           className="pantry-input__icon"
+          data-test-id="pantry-input__icon"
           onClick={handleClearClick}
           role="button"
         />

@@ -39,7 +39,7 @@ describe("Pages loading", () => {
       .first()
       .click()
     cy.findAllByTestId("postPreview__header").then(headers => {
-      const randomNumber = random(0, headers.length)
+      const randomNumber = random(0, headers.length - 1)
       const randomHeaderText = headers.eq(randomNumber).text()
       cy.findAllByText(randomHeaderText)
         .first()

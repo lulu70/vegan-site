@@ -21,6 +21,7 @@ const PantryRecipes = () => {
   const { filteredRecipes } = usePantryState()
   return (
     <ScrollContainer
+      data-test-id="pantryRecipes__container"
       contentStyles={{
         display: "flex",
         justifyContent: "space-between",

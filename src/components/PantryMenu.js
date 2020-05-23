@@ -18,11 +18,17 @@ const PantryMenu = () => {
 
   return (
     <Container>
-      <small>All items: {ingredients.length}</small>
-       <Divider />
-              <small>Selected items: {selectedIngredients.length}</small>
+      <small data-test-id="pantryMenu__allItems">
+        All items: <span>{ingredients.length}</span>
+      </small>
       <Divider />
-      <small>Matched recipes: {filteredRecipes.length}</small>
+      <small data-test-id="pantryMenu__selectedItems">
+        Selected items: <span>{selectedIngredients.length}</span>
+      </small>
+      <Divider />
+      <small data-test-id="pantryMenu__matchedRecipes">
+        Matched recipes: <span>{filteredRecipes.length}</span>
+      </small>
     </Container>
   )
 }

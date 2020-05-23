@@ -137,7 +137,10 @@ const PantryIngredients = ({ recipes }) => {
                 }}
               >
                 {isSelected ? (
-                  <StyledTickIcon className="pantry-ingredients__icon" />
+                  <StyledTickIcon
+                    className="pantry-ingredients__icon"
+                    data-test-id="pantry-ingredients__tickIcon"
+                  />
                 ) : (
                   <StyledCircle className="pantry-ingredients__icon" />
                 )}
