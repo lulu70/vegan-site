@@ -69,7 +69,11 @@ const ingredients = {
   walnuts: "walnuts",
   soySauce: "soy sauce",
   liquidSmoke: "liquid smoke",
-  beets: "beets"
+  beets: "beets",
+  celery: "celery",
+  eggplant: "eggplant",
+  soyFlakes: "soy flakes",
+  vegetableStock: "vegetable stock",
 }
 
 export default ingredients

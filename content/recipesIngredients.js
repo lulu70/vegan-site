@@ -138,6 +138,27 @@ const recipesIngredients = {
     i.blackPepper,
     i.sweetPaprika,
     i.chilliPepper,
+  ],
+  "vegan-rustic-bolognese":[
+    i.pasta,
+    i.celery,
+    i.onion,
+    i.garlic,
+    i.carrot,
+    i.eggplant,
+    i.zucchini,
+    i.tomatoPuree,
+    i.tomato,
+    i.soyFlakes,
+    i.redWine,
+    i.vegetableStock,
+    i.oliveOil,
+    i.salt,
+    i.blackPepper,
+    i.sweetPaprika,
+    i.oregano,
+    i.basil,
+    i.thyme,
   ]
 }
 
