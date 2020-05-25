@@ -10,22 +10,20 @@ import debounce from "lodash.debounce"
 import Image from "../components/Image"
 import styled from "styled-components"
 import StyledLink from "./StyledLink"
-import { WIDTH } from "../constants"
+import { WIDTH, BG_COLOR } from "../constants"
 
 const Container = styled.div`
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: ${BG_COLOR};
   display: flex;
   justify-content: center;
   color: black;
   z-index: 2;
-
   opacity: 1;
   animation: fadeIn 0.1s ease-in;
-
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -37,8 +35,15 @@ const Container = styled.div`
 `
 const InnerContainer = styled.div`
   width: ${WIDTH};
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
+`
+const StickyContainer = styled.div`
+  position: sticky;
+  top: 0;
+  background-color: ${BG_COLOR};
+  z-index: 1;
 `
 const PostContainer = styled.div`
   display: flex;
@@ -50,6 +55,9 @@ const PostHeader = styled.h3`
 `
 const FeaturedImage = styled(Image)`
   width: 150px;
+`
+const Divider = styled.div`
+  height: 1.3rem;
 `
 
 const Search = ({ posts }) => {
@@ -74,6 +82,9 @@ const Search = ({ posts }) => {
       window.removeEventListener("resize", handleResize)
     }
   }, [searchDispatch])
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const close = () => {
     resetSearchState(searchDispatch)
     setSearchVisibility(searchDispatch, false)
@@ -81,20 +92,23 @@ const Search = ({ posts }) => {
   return (
     <Container className="search__container" style={{ height: scrollHeight }}>
       <InnerContainer className="search__innerContainer">
-        <SearchInput posts={posts} close={close} />
-        {query && (
-          <>
-            <p>
-              Your search for <strong>"{query}"</strong> returned{" "}
-              {filteredPosts.length}{" "}
-              {filteredPosts.length > 1 ? "results" : "result"}
-              ...
-            </p>
-            {filteredPosts.length < 1 && (
-              <span>Try searching for something else...</span>
-            )}
-          </>
-        )}
+        <StickyContainer>
+          <SearchInput posts={posts} close={close} />
+          {query && (
+            <>
+              <div>
+                Your search for <strong>"{query}"</strong> returned{" "}
+                {filteredPosts.length}{" "}
+                {filteredPosts.length > 1 ? "results" : "result"}
+                ...
+              </div>
+              {filteredPosts.length < 1 && (
+                <span>Try searching for something else...</span>
+              )}
+            </>
+          )}
+          <Divider />
+        </StickyContainer>
         {filteredPosts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

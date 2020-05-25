@@ -20,6 +20,7 @@ const CloseButton = styled.button`
 `
 const Input = styled.input`
   border: solid 2px grey;
+  background-color: transparent;
   padding: 0.5rem;
 `
 
