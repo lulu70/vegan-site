@@ -37,10 +37,6 @@ describe("Search working", () => {
       .should("include.text", "Try searching for something else")
     cy.findAllByTestId("postPreview__container").should("not.be.visible")
   })
-  it("navigates to post page", () => {
-    cy.findByText(/home-made pita/i).click()
-    cy.url().should("contain", "home-made-pita")
-  })
   it("close", () => {
     cy.findByTestId("searchInput__closeButton").click()
     cy.findByText(/search/i).should("not.exist")
