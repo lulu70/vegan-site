@@ -82,7 +82,11 @@ const Search = ({ posts }) => {
     setSearchVisibility(searchDispatch, false)
   }
   return (
-    <Container className="search__container" style={{ height: scrollHeight }}>
+    <Container
+      className="search__container"
+      style={{ height: scrollHeight }}
+      role="search"
+    >
       <InnerContainer className="search__innerContainer">
         <StickyContainer>
           <SearchInput posts={posts} close={close} />

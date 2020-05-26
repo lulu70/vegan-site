@@ -5,10 +5,10 @@ const recipes = Object.keys(recipesIngredients)
 describe("Search working", () => {
   beforeEach(() => {
     cy.visit("/")
-      .get("main")
-      .injectAxe()
-      .wait(500)
     cy.findByTestId("header__searchIcon").click()
+    cy.get("main")
+    cy.injectAxe()
+    cy.wait(500)
   })
   it("loads", () => {
     cy.findByText(/search/i).should("be.visible")
@@ -18,6 +18,7 @@ describe("Search working", () => {
       "have.length",
       recipes.length
     )
+    cy.checkA11y()
   })
   it("types matched term", () => {
     const searchTerm = "vegan"
@@ -26,6 +27,7 @@ describe("Search working", () => {
       .type(searchTerm)
     cy.findByText(/your search/i).should("include.text", searchTerm)
     cy.findAllByTestId("postPreview__container").should("be.visible")
+    cy.checkA11y()
   })
   it("types unmatched term", () => {
     const searchTerm = "botox"
@@ -36,6 +38,7 @@ describe("Search working", () => {
       .parent()
       .should("include.text", "Try searching for something else")
     cy.findAllByTestId("postPreview__container").should("not.be.visible")
+    cy.checkA11y()
   })
   it("close", () => {
     cy.findByTestId("searchInput__closeButton").click()
