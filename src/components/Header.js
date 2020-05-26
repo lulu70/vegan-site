@@ -71,7 +71,7 @@ const Header = () => {
               setSearchVisibility(searchDispatch, true)
             }}
           >
-            <StayledSearchIcon />
+            <StayledSearchIcon data-test-id="header__searchIcon" />
           </SearchButton>
         )}
       </TopRow>

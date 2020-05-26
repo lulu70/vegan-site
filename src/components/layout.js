@@ -55,22 +55,27 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
           title
         }
       }
-      allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-        edges {
-          node {
-            excerpt
-            fields {
-              slug
+      allMdx(sort: { fields: frontmatter___updatedDate, order: DESC }) {
+        nodes {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            updatedDate(formatString: " MMMM DD, YYYY")
+            title
+            tags
+            description
+            nutritionValues {
+              cal
+              fat
+              protein
+              carbs
             }
-            frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              title
-              description
-              tags
-              featuredImage {
-                src {
-                  name
-                }
+            featuredImage {
+              src {
+                name
               }
             }
           }
@@ -79,7 +84,7 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
     }
   `)
 
-  const posts = data.allMdx.edges
+  const posts = data.allMdx.nodes
   const componentsForMdx = { Image, NutritionValues, Link: StyledLink }
 
   return (

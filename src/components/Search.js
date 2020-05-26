@@ -7,10 +7,9 @@ import {
 } from "../context/reducers/searchReducer"
 import SearchInput from "./SearchInput"
 import debounce from "lodash.debounce"
-import Image from "../components/Image"
 import styled from "styled-components"
-import StyledLink from "./StyledLink"
 import { WIDTH, BG_COLOR } from "../constants"
+import PostPreview from "./PostPreview"
 
 const Container = styled.div`
   position: absolute;
@@ -45,21 +44,14 @@ const StickyContainer = styled.div`
   background-color: ${BG_COLOR};
   z-index: 1;
 `
-const PostContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`
-const PostHeader = styled.h3`
-  margin-bottom: 1rem;
-`
-const FeaturedImage = styled(Image)`
-  width: 150px;
-`
 const Divider = styled.div`
   height: 1.3rem;
 `
-
+const PreviewsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`
 const Search = ({ posts }) => {
   const searchState = useSearchState()
   const searchDispatch = useSearchDispatch()
@@ -109,46 +101,12 @@ const Search = ({ posts }) => {
           )}
           <Divider />
         </StickyContainer>
-        {filteredPosts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <PostContainer
-              key={node.fields.slug}
-              className="search__postContainer"
-            >
-              <article>
-                <header>
-                  <PostHeader className="search__postHeader">
-                    <StyledLink
-                      className="search__postHeaderLink"
-                      to={node.fields.slug}
-                      onClick={close}
-                    >
-                      {title}
-                    </StyledLink>
-                  </PostHeader>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </section>
-              </article>
-              <StyledLink
-                to={node.fields.slug}
-                onClick={close}
-                className="search__featuredImageLink"
-              >
-                <FeaturedImage
-                  filename={node.frontmatter.featuredImage.src.name}
-                  className="search__featuredImage"
-                />
-              </StyledLink>
-            </PostContainer>
-          )
-        })}
+        <PreviewsContainer>
+          {filteredPosts.map(post => {
+            const formattedPost = { childMdx: post }
+            return <PostPreview post={formattedPost} key={post.fields.slug} />
+          })}
+        </PreviewsContainer>
       </InnerContainer>
     </Container>
   )

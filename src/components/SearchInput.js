@@ -31,7 +31,7 @@ const SearchInput = ({ posts, close }) => {
   const handleInputChange = event => {
     const query = event.target.value
     const filteredPosts = posts.filter(post => {
-      const { description, title, tags } = post.node.frontmatter
+      const { description, title, tags } = post.frontmatter
       if (!query) return ""
       return (
         description.toLowerCase().includes(query.toLowerCase()) ||
@@ -55,6 +55,7 @@ const SearchInput = ({ posts, close }) => {
             close()
           }}
           className="searchInput__closeButton"
+          data-test-id="searchInput__closeButton"
         >
           close X
         </CloseButton>
