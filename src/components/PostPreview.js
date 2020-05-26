@@ -40,7 +40,7 @@ const PostHeader = styled.h2`
   margin-bottom: 0.5rem;
 `
 
-const PostPreview = ({ post }) => {
+const PostPreview = ({ post, onClick }) => {
   return (
     <AnimatedContainer
       className="drop-shadow"
@@ -55,6 +55,7 @@ const PostPreview = ({ post }) => {
       <StyledLink
         to={post.childMdx.fields.slug}
         data-test-id="postPreview__link"
+        onClick={onClick}
       >
         <StyledImage
           filename={post.childMdx.frontmatter.featuredImage.src.name}
@@ -66,7 +67,7 @@ const PostPreview = ({ post }) => {
       </SmallRow>
       <BigRow>
         <PostHeader data-test-id="postPreview__header">
-          <StyledLink to={post.childMdx.fields.slug}>
+          <StyledLink to={post.childMdx.fields.slug} onClick={onClick}>
             {post.childMdx.frontmatter.title}
           </StyledLink>
         </PostHeader>

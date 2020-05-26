@@ -106,9 +106,15 @@ const Search = ({ posts }) => {
           <Divider />
         </StickyContainer>
         <PreviewsContainer>
-          {filteredPosts.map(post => {
+          {filteredPosts.map((post) => {
             const formattedPost = { childMdx: post }
-            return <PostPreview post={formattedPost} key={post.fields.slug} />
+            return (
+              <PostPreview
+                post={formattedPost}
+                key={post.fields.slug}
+                onClick={close}
+              />
+            )
           })}
         </PreviewsContainer>
       </InnerContainer>

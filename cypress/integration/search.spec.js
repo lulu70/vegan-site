@@ -22,25 +22,25 @@ describe("Search working", () => {
   })
   it("types matched term", () => {
     const searchTerm = "vegan"
-    cy.get("input")
-      .focus()
-      .type(searchTerm)
+    cy.get("input").focus().type(searchTerm)
     cy.findByText(/your search/i).should("include.text", searchTerm)
     cy.findAllByTestId("postPreview__container").should("be.visible")
     cy.checkA11y()
   })
   it("types unmatched term", () => {
     const searchTerm = "botox"
-    cy.get("input")
-      .focus()
-      .type(searchTerm)
+    cy.get("input").focus().type(searchTerm)
     cy.findByText(/your search/i)
       .parent()
       .should("include.text", "Try searching for something else")
     cy.findAllByTestId("postPreview__container").should("not.be.visible")
     cy.checkA11y()
   })
-  it("close", () => {
+  it.only("closes after click on post", () => {
+    cy.findAllByTestId("postPreview__link").first().click()
+    cy.findAllByTestId("postPreview__link").should("have.length", 0)
+  })
+  it("closes with close button", () => {
     cy.findByTestId("searchInput__closeButton").click()
     cy.findByText(/search/i).should("not.exist")
   })
