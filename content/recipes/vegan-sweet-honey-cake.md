@@ -42,7 +42,7 @@ Nutritional values per portion:
 ## Let's start
 
 1. Put the instant coffee in a cup and mix it with one tbsp of boiled water until all the coffee is melted.
-2. Add cold water to the coffee until you get 1/2 a cup of room temperature coffee.
+2. Add cold water to the coffee until you get ½ a cup of room temperature coffee.
 3. Mix all dry ingredients in a mixing bowl until you get a solid colored powder.
 
 <Image filename="vegan-honey-cake-powder" />

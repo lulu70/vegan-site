@@ -47,7 +47,7 @@ Nutritional values per portion:
 
 6. Cut eight even pieces and form each piece into a small round ball with a smooth top, pulling dough from the sides and tucking the ends underneath the bottom.
 7. Place a cloth or a towel on top of the balls and let them rest for 15 minutes.
-8. On a floured workspace gently pat each ball flat using your hand and form a round pita shape using a rolling pin - the thickness should be around 6mm, 1/4 inch.
+8. On a floured workspace gently pat each ball flat using your hand and form a round pita shape using a rolling pin - the thickness should be around 6 mm (¼ inch).
 
 <Image filename="pita-balls" />
 

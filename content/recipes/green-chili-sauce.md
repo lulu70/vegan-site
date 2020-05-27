@@ -39,8 +39,8 @@ Nutritional values:
 - 2 tsp ground cardamom
 - 2 tsp ground coriander seeds
 - 1 tsp cumin
-- 1/2 tsp salt
-- 1/2 tsp sweet paprika
+- ½ tsp salt
+- ½ tsp sweet paprika
 
 ## Let's start
 

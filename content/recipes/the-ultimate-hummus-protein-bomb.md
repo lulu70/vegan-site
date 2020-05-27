@@ -79,7 +79,7 @@ Nutritional values per serving:
 
 <Image filename="chickpeas-in-food-processor"/>
  
-8. Use the stock we kept before, start to add 1/2 cup of it and turn the food processor on. the blend should become creamy, smooth, but not too liquid. continue to add small amounts of the stock to get your desired mash results.
+8. Use the stock we kept before, start to add ½ cup of it and turn the food processor on. the blend should become creamy, smooth, but not too liquid. continue to add small amounts of the stock to get your desired mash results.
 
 <Image filename="mashed-hummus"/>
 
