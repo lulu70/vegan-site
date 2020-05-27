@@ -7,12 +7,12 @@ featuredImage:
   src: ../assets/images/delicious-hummus-plate.jpg
 tags:
   - hummus
-  - vegan
   - chickpeas
   - tahini
   - pita bread
-  - protein
-  - plant based
+  - protein rich
+  - high protein
+  - Middle Eastern
 nutritionValues:
   cal: 508
   protein: 27
@@ -64,7 +64,7 @@ Nutritional values per serving:
 - Fresh parsley
 - ½ fresh lemon juice
 
-## Lets start 
+## Let's start 
 
 1. Put chickpeas into a large bowl, add the baking soda powder and water to cover the chickpeas, let them soak overnight for a minimum of 12 hours.
 2. Drain and rinse the chickpeas, place it in a pot and fill in fresh water to cover the chickpeas. 

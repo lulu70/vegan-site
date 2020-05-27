@@ -7,46 +7,43 @@ featuredImage:
   src: ../assets/images/falafel-ready.jpg
 tags:
   - Israel
-  - Middle Eastern food
+  - Middle Eastern
   - hummus
-  - vegan
   - chickpeas
   - tahini
   - pita bread
-  - protein
-  - plant based
 nutritionValues:
-  cal: 63
-  protein: 2.2
-  carbs: 13
-  fat: 3
+  cal: 315
+  protein: 11
+  carbs: 65
+  fat: 15
 author: lior cohen
 ---
 
 <Image filename='falafel-ready'/>
 
-> 30 balls
+> 30 balls / 6 servings
 
-Nutritional values per ball:
+Nutritional values per serving (5 balls):
 
 <NutritionValues fileName="home-made-falafel"/>
 
 ## Ingredients
 
-- 2.5 cups of dry chickpeas
+- 2½ cups of dry chickpeas
 - 1 onion
 - 2 garlic cloves
-- 1/4 cup of chopped fresh parsley
-- 1/2 cup of chopped fresh coriander
+- ¼ cup of chopped fresh parsley
+- ½ cup of chopped fresh coriander
 - 1 tsp of baking powder
-- 1.5 tsp of salt
+- 1½ tsp of salt
 - 2 tsp of cumin
 - 1 tsp of black pepper
-- 0.5 tsp of chili pepper powder or chips
-- 1.5 tsp of coriander seeds
+- ½ tsp of chili pepper powder or chips
+- 1½ tsp of coriander seeds
 - vegetable oil for frying
 
-## Instructions
+## Let's start
 
 1. Pour the chickpeas into a large bowl and cover them with water, let them soak overnight.
 2. Drain and rinse the chickpeas, place them into a food processor.
@@ -58,7 +55,7 @@ Nutritional values per ball:
 
 <Image filename='falafel-mix'/>
 
-5. Cover the bowl and let it rest for 15 minutes.   ￼
+5. Cover the bowl and let it rest for 15 minutes.￼
 6. Grab a bit of the mixture with a big tablespoon and form a ball-shaped using your hands, set it aside, and repeat as many times you fancy.
 7. Pour the oil into a small frying pan so it will be deep enough to cover the balls you prepared, heat until it reaches a high temperature that is enough for frying, you can throw in a really small amount of the falafel mix inside if it is bubbling you are ready to go.
 8. Throw the balls (a few at a time, depending on the size of the pan) in the oil and turn the heat down, it should still bubble but a bit less aggressive than the beginning, fry for around five minutes.

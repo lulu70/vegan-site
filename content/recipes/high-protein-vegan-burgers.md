@@ -6,27 +6,15 @@ description: Protein rich vegan burgers
 featuredImage:
   src: ../assets/images/vegan-burger-bun.jpg
 tags:
-  - black lentils 
-  - vegan
-  - spelt 
-  - chickpea flour
   - wheat gluten
-  - protein
-  - plant based
-  - mushrooms
-  - chia seeds
-  - tomato puree
-  - flax seeds
-  - walnuts
-  - onion
-  - garlic
-  - soy sauce
+  - protein rich
   - liquid smoke
-  - beets
-  - tahini
-  - chili pepper flakes
-  - sweet paprika
-  - whole spelt flour
+  - burger
+  - veggie burger
+  - bbq
+  - grill
+  - american
+  - high protein
 nutritionValues:
   cal: 286
   protein: 20
@@ -67,7 +55,7 @@ Nutritional values per serving:
 - 1 tsp sweet paprika
 - 1 tsp chili pepper flakes
 
-## Lets start 
+## Let's start 
 
 1. Cook the black lentils in water till its soft.
 2. Cook the spelt with 1¾ cups of water. when it boils cover the pot and cook on low heat until the water is evaporated.

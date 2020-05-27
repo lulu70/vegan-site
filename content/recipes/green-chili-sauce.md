@@ -7,18 +7,11 @@ featuredImage:
   src: ../assets/images/green-chili-paste.jpg
 tags:
   - green chili peppers
-  - vegan
   - Thai red chili peppers
   - green chili sauce
-  - parsley
-  - coriander
   - hot chili
-  - plant based
-  - cardamom
-  - sweet paprika
-  - lemon juice
-  - cumin
-  - olive oil
+  - spicy
+  - Sauces and Dips
 nutritionValues:
   cal: 755
   protein: 14
@@ -49,7 +42,7 @@ Nutritional values:
 - 1/2 tsp salt
 - 1/2 tsp sweet paprika
 
-## Lets start
+## Let's start
 
 1. Cut the peppers and take the kernels out of them.
 

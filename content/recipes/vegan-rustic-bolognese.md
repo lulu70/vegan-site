@@ -7,21 +7,13 @@ featuredImage:
   src: ../assets/images/vegan-bolognese.jpg
 tags:
   - pasta
-  - vegan
   - bolognese
   - soy flakes
-  - zucchini
-  - protein
-  - plant based
-  - eggplant
-  - tomato
-  - tomato puree
-  - basil
-  - thyme
-  - oregano
-  - carrot
   - low fat
   - red wine
+  - Mediterranean
+  - Protein rich
+  - high protein
 nutritionValues:
   cal: 523
   protein: 26
@@ -49,17 +41,17 @@ Nutritional values per serving:
 - 6 tomatoes
 - 4 tbsp tomatoes puree
 - 100 gr. soy flakes
-- 1/4 cup red wine
+- ¼ cup red wine
 - 1 cup vegetable stock or water
 - 2 tsp olive oil
 - 1 tsp salt
 - 1 tsp sweet paprika
-- 1/2 tsp black pepper
+- ½ tsp black pepper
 - 1 tbsp dry or fresh oregano
 - 1 tbsp dry or fresh basil
 - 1 tsp dry or fresh thyme
 
-## Lets start
+## Let's start
 
 1. Put the soy flake in a bowl with hot water for 10 minutes, then drain the water.
 2. Mince the garlic cloves and chop all the other vegetables to 1-2 cm cubes.

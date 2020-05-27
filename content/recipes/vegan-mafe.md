@@ -10,6 +10,7 @@ tags:
   - african food
   - peanut sauce
   - peanuts
+  - soy chunks
 nutritionValues:
   cal: 175
   protein: 10
@@ -52,12 +53,12 @@ I decided to add vegan cheese spread, inspired by the Ethiopian cuisine.
 - 1 tbsp of chopped or minced ginger
 - 3 tbsp of tomato puree
 - 4 bay leaves
-- 3/4 cup of boiled water
+- ¾ cup of boiled water
 - 3 tbsp of creamy unsalted peanut butter
-- 1/2 tsp of salt (or by taste)
-- 1/2 tsp black pepper
+- ½ tsp of salt (or by taste)
+- ½ tsp black pepper
 - 1 tsp cumin
-- 1/2 cup of soy chunks
+- ½ cup of soy chunks
 
 ## For side suggestion
 
@@ -71,7 +72,7 @@ Nutritional values per serving:
 - 1 tsp of berbere spice mix.
 - 1 tsp of lemon juice
 
-## Instructions
+## Let's start
 
 1. Mince the onion, garlic, and ginger and set aside.
 

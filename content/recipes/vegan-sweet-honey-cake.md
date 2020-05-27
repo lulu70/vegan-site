@@ -10,6 +10,7 @@ tags:
   - baked
   - honey
   - cake
+  - dessert
 nutritionValues:
   cal: 226
   protein: 3
@@ -27,18 +28,18 @@ Nutritional values per portion:
 
 ## Ingredients
 
-- 1.5 cups of all-purpose flour
+- 1½ cups of all-purpose flour
 - 1 tsp of baking soda
 - 1 tsp of baking powder
-- 0.5 tsp of cinnamon
-- 0.5 tsp of instant coffee
+- ½ tsp of cinnamon
+- ½ tsp of instant coffee
 - 4 tbsp of brown sugar
-- 1/2 tsp of almond extract
-- 1/2 a cup of apple puree
-- 1/2 a cup of date syrup
-- 1/2 a cup of vegetable oil
+- ½ tsp of almond extract
+- ½ a cup of apple puree
+- ½ a cup of date syrup
+- ½ a cup of vegetable oil
 
-## Instructions
+## Let's start
 
 1. Put the instant coffee in a cup and mix it with one tbsp of boiled water until all the coffee is melted.
 2. Add cold water to the coffee until you get 1/2 a cup of room temperature coffee.

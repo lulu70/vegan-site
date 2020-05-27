@@ -7,14 +7,9 @@ featuredImage:
   src: ../assets/images/baked-pita.jpg
 tags:
   - Israel
-  - Middle Eastern food
-  - hummus
-  - vegan
-  - chickpeas
-  - tahini
+  - Middle Eastern
+  - breads and pastries
   - pita bread
-  - protein
-  - plant based
 nutritionValues:
   cal: 276
   protein: 8
@@ -34,17 +29,17 @@ Nutritional values per portion:
 ## Ingredients
 
 - 4 cups of all-purpose flour
-- 1.5 tsp of active dry yeast
+- 1½ tsp of active dry yeast
 - 1 tbsp of sugar
-- 2.5 tbsp of olive oil
-- 1.5 tsp of salt
+- 2½ tbsp of olive oil
+- 1½ tsp of salt
 - 1 cup of water
 
-## Instructions
+## Let's start
 
 1. Mix the yeast with half a cup room temperature water in a glass.
 2. Place the flour, the yeast, the sugar, and the oil into a bowl, (if you have a standing mixer you can place it in the working bowl) and knead for five minutes.
-3. Add the salt and knead until you get a beautiful nonsticky stable piece of dough, add the other half a cup of water gradually and carefully.
+3. Add the salt and knead until you get a beautiful non-sticky stable piece of dough, add the other half a cup of water gradually and carefully.
 4. Place a cloth or a towel on top of the bowl and let it rest for an hour.
 5. Take the dough out of the bowl, place onto a floured workspace, and form a long round shape (like a shape of a normal loaf of bread).
 

@@ -8,6 +8,9 @@ featuredImage:
 tags:
   - creamy
   - pasta
+  - Pistachio
+  - 5 ingredients meal
+  - Mediterranean
 nutritionValues:
   cal: 1190
   protein: 28
@@ -25,14 +28,14 @@ Nutritional values per portion:
 
 ## Ingredients
 
-- 1/2 a cup of pistachios without the shells
-- 1/3 a cup of olive oil
+- ½ a cup of pistachios without the shells
+- ⅓ a cup of olive oil
 - 2 garlic cloves
 - 4 cups of pasta of choice
-- 1/2 tsp of salt
-- 1/4 tsp of black pepper
+- ½ tsp of salt
+- ¼ tsp of black pepper
 
-## Instructions
+## Let's start
 
 1. Prepare half a cup of pistachios without the shells, you can find them without shells or just separate them yourself.
 

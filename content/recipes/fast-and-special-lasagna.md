@@ -7,19 +7,10 @@ featuredImage:
   src: ../assets/images/vegan-lasagna-plate.jpg
 tags:
   - pasta
-  - vegan
   - lasagna
-  - tomato sauce
-  - zucchini
-  - protein
-  - plant based
-  - mushrooms
-  - tomato
-  - tomato puree
-  - basil
-  - thyme
-  - rosemary
-  - carrot
+  - pasta sheets
+  - red wine
+  - Mediterranean
 nutritionValues:
   cal: 483
   protein: 20
@@ -71,7 +62,7 @@ Nutritional values per serving:
 - ½ tsp Himalaya salt
 - ½ tsp ground black pepper
 
-## Lets start 
+## Let's start 
 
 1. Soak the cashew nuts in water for 1 hour.
 2. Preheat oven to 180ºc.

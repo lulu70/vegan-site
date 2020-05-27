@@ -7,18 +7,10 @@ featuredImage:
   src: ../assets/images/red-chili-paste.jpg
 tags:
   - red chili peppers
-  - vegan
   - red chili sauce
   - hot chili
-  - parsley
-  - coriander
-  - plant based
-  - date syrup
-  - ginger
-  - sweet paprika
-  - lemon juice
-  - cumin
-  - olive oil
+  - spicy
+  - Sauces and Dips
 nutritionValues:
   cal: 454
   protein: 13
@@ -46,10 +38,10 @@ Nutritional values:
 - 1 tbsp lemon juice
 - 2 tsp ground coriander seeds
 - 1 tsp cumin
-- 1/2 tsp salt
-- 1/2 tsp sweet paprika
+- ½ tsp salt
+- ½ tsp sweet paprika
 
-## Lets start
+## Let's start
 
 1. Cut the peppers and take the kernels out of them.
 
