@@ -67,11 +67,12 @@ const Header = () => {
           <SearchButton
             type="submit"
             aria-label="search"
+            data-test-id="header__searchButton"
             onClick={() => {
               setSearchVisibility(searchDispatch, true)
             }}
           >
-            <StayledSearchIcon data-test-id="header__searchIcon" />
+            <StayledSearchIcon />
           </SearchButton>
         )}
       </TopRow>
