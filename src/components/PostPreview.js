@@ -9,7 +9,7 @@ import NutritionValues from "./NutritionValues"
 const AnimatedContainer = styled(AnimationWrapper)`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 49%;
   margin-bottom: 1rem;
 `
 const StyledImage = styled(Image)`
@@ -21,16 +21,23 @@ const SmallRow = styled.small`
   display: flex;
   p {
     margin: 0;
+    padding: 0;
   }
 `
 const BigRow = styled.div`
   background-color: white;
   flex: 1;
-  padding: 1rem;
+  padding: 0.2rem;
+  text-align: center;
 `
-
+const P = styled.p`
+  padding: 0;
+  margin: 0;
+  font-size: 0.7rem;
+`
 const PostHeader = styled.h2`
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.1rem 0;
+  font-size: 0.8rem;
 `
 
 const PostPreview = ({ post, onClick }) => {
@@ -63,7 +70,7 @@ const PostPreview = ({ post, onClick }) => {
             {post.childMdx.frontmatter.title}
           </StyledLink>
         </PostHeader>
-        <p
+        <P
           dangerouslySetInnerHTML={{
             __html:
               post.childMdx.frontmatter.description || post.childMdx.excerpt,
