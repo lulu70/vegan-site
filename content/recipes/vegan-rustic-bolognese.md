@@ -45,7 +45,7 @@ Nutritional values per serving:
 - 3 garlic cloves
 - 2 carrots
 - 1 eggplant
-- 1 zucchini 
+- 1 zucchini
 - 6 tomatoes
 - 4 tbsp tomatoes puree
 - 100 gr. soy flakes
@@ -59,11 +59,11 @@ Nutritional values per serving:
 - 1 tbsp dry or fresh basil
 - 1 tsp dry or fresh thyme
 
-## Lets start 
+## Lets start
 
 1. Put the soy flake in a bowl with hot water for 10 minutes, then drain the water.
 2. Mince the garlic cloves and chop all the other vegetables to 1-2 cm cubes.
-3. In a large pan heat olive oil and fry the onion, garlic and the soy flakes for 5 minutes. 
+3. In a large pan heat olive oil and fry the onion, garlic and the soy flakes for 5 minutes.
 
 <Image filename="onion-garlic-soy-flakes"/>
 
@@ -71,7 +71,7 @@ Nutritional values per serving:
 
 <Image filename="carrot-celery-fry"/>
 
-5. Add the eggplant and the zucchini and continue to fry for another 5 minutes. 
+5. Add the eggplant and the zucchini and continue to fry for another 5 minutes.
 
 <Image filename="eggplant-zucchini-fry"/>
 
@@ -79,13 +79,13 @@ Nutritional values per serving:
 
 <Image filename="red-wine-bolognese-pan"/>
 
-7. Add the vegetable stock and the red wine, stir and cook on low heat for 10 minutes partly covered. 
+7. Add the vegetable stock and the red wine, stir and cook on low heat for 10 minutes partly covered.
 
 <Image filename="bolognese-cooking"/>
 
 8. Cook the pasta “al dente” and drain the water.
 
-9. Put warm pasta in a plate and on top of it pour the hot bolognese sauce. 
+9. Put warm pasta in a plate and on top of it pour the hot bolognese sauce.
 
 <Image filename="vegan-bolognese"/>
 

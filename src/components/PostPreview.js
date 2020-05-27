@@ -9,14 +9,8 @@ import NutritionValues from "./NutritionValues"
 const AnimatedContainer = styled(AnimationWrapper)`
   display: flex;
   flex-direction: column;
-  width: 26%;
+  width: 100%;
   margin-bottom: 1rem;
-  @media (max-width: 1200px) {
-    width: 45%;
-  }
-  @media (max-width: 650px) {
-    width: 100%;
-  }
 `
 const StyledImage = styled(Image)`
   padding-top: 47.61905%;
@@ -25,7 +19,6 @@ const StyledImage = styled(Image)`
 const SmallRow = styled.small`
   padding: 0 1rem;
   display: flex;
-  /* justify-content: space-evenly; */
   p {
     margin: 0;
   }
@@ -59,7 +52,6 @@ const PostPreview = ({ post, onClick }) => {
       >
         <StyledImage
           filename={post.childMdx.frontmatter.featuredImage.src.name}
-          full
         />
       </StyledLink>
       <SmallRow>

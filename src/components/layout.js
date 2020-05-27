@@ -7,45 +7,30 @@ import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
 import RightSide from "./RightSide"
 import styled from "styled-components"
-import { WIDTH } from "../constants"
 import GlobalStyles from "../GlobalStyles"
 import NutritionValues from "./NutritionValues"
 import StyledLink from "./StyledLink"
+import { MAIN_WIDTH, GREY } from "../constants"
 const Container = styled.div``
 
 const Main = styled.main`
-  max-width: ${WIDTH};
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   opacity: 1;
-  animation: fadeIn 0.2s ease-in;
-  margin: 0 2rem;
-  @media (max-width: 900px) {
-    margin: 0 1rem;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 `
 const LeftSide = styled.div`
-  flex: 3;
+  width: ${MAIN_WIDTH};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-`
-const StyledRightSide = styled(RightSide)`
-  flex: 1;
+  align-items: flex-start;
+  border-right: solid 1px ${GREY};
   @media (max-width: 900px) {
-    display: none;
+    border-right: none;
   }
 `
-const Layout = ({ children, location, relatedPosts, full, author }) => {
+const Layout = ({ children, relatedPosts, author }) => {
   const searchState = useSearchState()
   const { searchVisibility } = searchState
   const data = useStaticQuery(graphql`
@@ -96,14 +81,11 @@ const Layout = ({ children, location, relatedPosts, full, author }) => {
         <LeftSide className="layout__leftSide">
           <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
         </LeftSide>
-        {!full && (
-          <StyledRightSide
-            className="layout__rightSide"
-            location={location}
-            relatedPosts={relatedPosts}
-            author={author}
-          />
-        )}
+        <RightSide
+          className="layout__rightSide"
+          relatedPosts={relatedPosts}
+          author={author}
+        />
       </Main>
     </Container>
   )

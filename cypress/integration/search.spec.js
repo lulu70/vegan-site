@@ -36,7 +36,7 @@ describe("Search working", () => {
     cy.findAllByTestId("postPreview__container").should("not.be.visible")
     cy.checkA11y()
   })
-  it.only("closes after click on post", () => {
+  it("closes after click on post", () => {
     cy.findAllByTestId("postPreview__link").first().click()
     cy.findAllByTestId("postPreview__link").should("have.length", 0)
   })

@@ -9,17 +9,18 @@ import SEO from "../components/seo"
 import recipesIngredients from "../../content/recipesIngredients"
 import PantrySelectedIngredients from "../components/PantrySelectedIngredients"
 import PantryInput from "../components/PantryInput"
+import PostHeader from "../components/PostHeader"
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex: 1;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
 `
-const H1 = styled.h1`
-  display: none;
+const Content = styled.div`
+  padding: 1rem 1rem 0 0;
+  @media (max-width: 900px) {
+    padding: 1rem 0 0 0;
+  }
 `
 const TopSection = styled.section`
   display: flex;
@@ -34,30 +35,32 @@ const SecondSection = styled.section`
   justify-content: space-between;
   height: 20rem;
 `
-const TheVeganPantry = ({ location, data }) => {
+const TheVeganPantry = ({ data }) => {
   const recipes = data.allFile.nodes
 
   const recipesWithIngredients = recipes.reduce((acc, recipe) => {
     const name = recipe.name
-    const key = Object.keys(recipesIngredients).find(key => key === name)
+    const key = Object.keys(recipesIngredients).find((key) => key === name)
     const ingredients = recipesIngredients[key]
     return [...acc, { ...recipe, ingredients }]
   }, [])
 
   return (
-    <Layout full location={location}>
+    <Layout>
       <SEO title="The vegan pantry" />
       <Container data-test-id="the-vegan-pantry__container">
-        <H1>The vegan pantry</H1>
-        <PantryMenu />
-        <PantryInput />
-        <TopSection>
-          <PantryIngredients recipes={recipesWithIngredients} />
-          <PantrySelectedIngredients />
-        </TopSection>
-        <SecondSection>
-          <PantryRecipes />
-        </SecondSection>
+        <PostHeader title="The vegan pantry" />
+        <Content>
+          <PantryMenu />
+          <PantryInput />
+          <TopSection>
+            <PantryIngredients recipes={recipesWithIngredients} />
+            <PantrySelectedIngredients />
+          </TopSection>
+          <SecondSection>
+            <PantryRecipes />
+          </SecondSection>
+        </Content>
       </Container>
     </Layout>
   )

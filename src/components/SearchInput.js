@@ -2,10 +2,12 @@ import React from "react"
 import { useSearchState, useSearchDispatch } from "../context/ContextProvider"
 import { setPosts, setQuery } from "../context/reducers/searchReducer"
 import styled from "styled-components"
+import { GREY, MAIN_WIDTH } from "../constants"
 
 const Label = styled.label`
   display: flex;
   flex-direction: column;
+  width: ${MAIN_WIDTH};
 `
 const Container = styled.div`
   display: flex;
@@ -19,7 +21,7 @@ const CloseButton = styled.button`
   cursor: pointer;
 `
 const Input = styled.input`
-  border: solid 2px grey;
+  border: solid 2px ${GREY};
   background-color: transparent;
   padding: 0.5rem;
 `
@@ -28,18 +30,15 @@ const SearchInput = ({ posts, close }) => {
   const searchState = useSearchState()
   const searchDispatch = useSearchDispatch()
   const { query } = searchState
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     const query = event.target.value
-    const filteredPosts = posts.filter(post => {
+    const filteredPosts = posts.filter((post) => {
       const { description, title, tags } = post.frontmatter
       if (!query) return ""
       return (
         description.toLowerCase().includes(query.toLowerCase()) ||
         title.toLowerCase().includes(query.toLowerCase()) ||
-        tags
-          .join("")
-          .toLowerCase()
-          .includes(query.toLowerCase())
+        tags.join("").toLowerCase().includes(query.toLowerCase())
       )
     })
     setPosts(searchDispatch, filteredPosts)

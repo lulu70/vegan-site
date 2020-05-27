@@ -1,24 +1,27 @@
 import React from "react"
-import Bio from "./bio"
 import RelatedPosts from "./RelatedPosts"
+import PostHeader from "./PostHeader"
+import styled from "styled-components"
 
-const RightSide = ({ location, relatedPosts, style, className, author }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isIndexPage = location.pathname === rootPath
+const Container = styled.div`
+  @media (max-width: 900px) {
+    display: none;
+  }
+`
+const Content = styled.div`
+  padding: 1rem;
+`
 
+const RightSide = ({ relatedPosts }) => {
   return (
-    <div style={style} className={className}>
-      {isIndexPage ? (
-        <span />
-      ) : (
-        <>
-          <Bio author={author} />
-          {relatedPosts && relatedPosts.length > 0 && (
-            <RelatedPosts relatedPosts={relatedPosts} />
-          )}
-        </>
-      )}
-    </div>
+    <Container>
+      <PostHeader aside />
+      <Content>
+        {relatedPosts && relatedPosts.length > 0 && (
+          <RelatedPosts relatedPosts={relatedPosts} />
+        )}
+      </Content>
+    </Container>
   )
 }
 

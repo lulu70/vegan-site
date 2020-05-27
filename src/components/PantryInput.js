@@ -16,7 +16,6 @@ const Label = styled.label`
   top: 0;
   z-index: 1;
   min-height: 3rem;
-  padding: 0 0.5rem;
   background-color: ${BG_COLOR};
   margin-bottom: 1rem;
   .pantry-input__icon {
@@ -36,9 +35,9 @@ const PantryInput = () => {
   const { filterInput, ingredients } = usePantryState()
   const pantryDispatch = usePantryDispatch()
 
-  const handleInputChange = e => {
+  const handleInputChange = (e) => {
     setFilterInput(pantryDispatch, e.target.value)
-    const filtered = ingredients.filter(ingredient =>
+    const filtered = ingredients.filter((ingredient) =>
       ingredient.includes(e.target.value.toLowerCase())
     )
     setFilteredIngredients(pantryDispatch, filtered)

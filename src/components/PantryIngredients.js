@@ -7,7 +7,7 @@ import {
   setFilteredRecipes,
 } from "../context/reducers/pantryReducer"
 import styled from "styled-components"
-import { SECOND_COLOR } from "../constants"
+import { SECOND_COLOR, GREY } from "../constants"
 import TickIcon from "../../content/assets/tick.svg"
 import Circle from "../../content/assets/circle.svg"
 import ScrollArea from "./ScrollArea"
@@ -15,6 +15,7 @@ import ScrollArea from "./ScrollArea"
 const ScrollContainer = styled(ScrollArea)`
   flex: 1;
   max-width: 15rem;
+  margin-right: 1rem;
 `
 const Ul = styled.ul`
   display: flex;
@@ -34,7 +35,7 @@ const Button = styled.button`
   border-left: 0;
   border-right: 0;
   border-style: solid;
-  border-color: lightgrey;
+  border-color: ${GREY};
   cursor: pointer;
   width: 100%;
   padding: 0.5rem;
@@ -75,7 +76,7 @@ const PantryIngredients = ({ recipes }) => {
       .filter(
         (ingredient, index) => allIngredients.indexOf(ingredient) === index
       )
-      .map(word => word.toLowerCase())
+      .map((word) => word.toLowerCase())
       .sort()
 
     setIngredients(pantryDispatch, uniqueIngredients)
@@ -83,11 +84,11 @@ const PantryIngredients = ({ recipes }) => {
   }, [pantryDispatch, recipes])
 
   React.useEffect(() => {
-    const filtered = recipes.filter(recipe => {
-      const recipeIngredients = recipe.ingredients.map(ingredient =>
+    const filtered = recipes.filter((recipe) => {
+      const recipeIngredients = recipe.ingredients.map((ingredient) =>
         ingredient.toLowerCase()
       )
-      const hasAllSelectedIngredients = selectedIngredients.every(selected =>
+      const hasAllSelectedIngredients = selectedIngredients.every((selected) =>
         recipeIngredients.includes(selected)
       )
       if (selectedIngredients.length < 1) return false
@@ -96,7 +97,7 @@ const PantryIngredients = ({ recipes }) => {
     setFilteredRecipes(pantryDispatch, filtered)
   }, [selectedIngredients, recipes, pantryDispatch])
 
-  const addSelectedIngredient = ingredient => {
+  const addSelectedIngredient = (ingredient) => {
     const isUniqueIngredient = !selectedIngredients.includes(ingredient)
     if (isUniqueIngredient)
       setSelectedIngredients(pantryDispatch, [
@@ -104,7 +105,7 @@ const PantryIngredients = ({ recipes }) => {
         ingredient,
       ])
   }
-  const removeSelectedIngredient = ingredient => {
+  const removeSelectedIngredient = (ingredient) => {
     const index = selectedIngredients.indexOf(ingredient)
     const newIngredients = [
       ...selectedIngredients.slice(0, index),
@@ -124,12 +125,12 @@ const PantryIngredients = ({ recipes }) => {
       }}
     >
       <Ul>
-        {filteredIngredients.map(ingredient => {
+        {filteredIngredients.map((ingredient) => {
           const isSelected = selectedIngredients.includes(ingredient)
           return (
             <Li key={ingredient}>
               <Button
-                onClick={e => {
+                onClick={(e) => {
                   e.target.blur()
                   isSelected
                     ? removeSelectedIngredient(ingredient)

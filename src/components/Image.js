@@ -3,16 +3,11 @@ import GatsbyImage from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-const StyledImage = styled(GatsbyImage)`
-  width: ${({ full }) => (full ? "100%" : "50%")};
-  @media (max-width: 900px) {
-    width: 100%;
-  }
-`
+const StyledImage = styled(GatsbyImage)``
 const Error = styled.p`
   color: red;
 `
-const Image = ({ avatar, filename, style, full, ...props }) => {
+const Image = ({ avatar, filename, style, ...props }) => {
   const data = useStaticQuery(graphql`
     query ImageQuery {
       allFile(filter: { sourceInstanceName: { eq: "images" } }) {
@@ -48,7 +43,6 @@ const Image = ({ avatar, filename, style, full, ...props }) => {
         {...props}
         title={props.title || filename}
         alt={props.alt || filename}
-        full={full}
         style={{ ...style }}
       />
     )

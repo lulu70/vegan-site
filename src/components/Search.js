@@ -8,7 +8,7 @@ import {
 import SearchInput from "./SearchInput"
 import debounce from "lodash.debounce"
 import styled from "styled-components"
-import { WIDTH, BG_COLOR } from "../constants"
+import { BG_COLOR, MAIN_WIDTH } from "../constants"
 import PostPreview from "./PostPreview"
 
 const Container = styled.div`
@@ -22,27 +22,23 @@ const Container = styled.div`
   color: black;
   z-index: 2;
   opacity: 1;
-  animation: fadeIn 0.1s ease-in;
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 `
 const InnerContainer = styled.div`
-  width: ${WIDTH};
   margin: 0 2rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  align-items: center;
 `
 const StickyContainer = styled.div`
   position: sticky;
   top: 0;
   background-color: ${BG_COLOR};
   z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 `
 const Divider = styled.div`
   height: 1.3rem;
@@ -51,6 +47,7 @@ const PreviewsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: ${MAIN_WIDTH};
 `
 const Search = ({ posts }) => {
   const searchState = useSearchState()

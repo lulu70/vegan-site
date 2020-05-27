@@ -6,11 +6,11 @@ import { useSearchState, useSearchDispatch } from "../context/ContextProvider"
 import { setSearchVisibility } from "../context/reducers/searchReducer"
 import styled from "styled-components"
 import MainMenu from "./MainMenu"
-import { WIDTH, MAIN_COLOR, BG_COLOR } from "../constants"
+import { MAIN_COLOR, BG_COLOR, GREY } from "../constants"
 
 const Container = styled.header`
-  border-bottom: 1px solid grey;
   background-color: ${BG_COLOR};
+  border-bottom: 1px solid ${GREY};
   position: sticky;
   top: 0;
   z-index: 2;
@@ -18,8 +18,8 @@ const Container = styled.header`
   flex-direction: column;
   align-items: center;
   color: ${MAIN_COLOR};
-  max-width: ${WIDTH};
   padding: 0 2rem;
+  margin-bottom: 1rem;
   @media (max-width: 900px) {
     padding: 0 1rem;
   }

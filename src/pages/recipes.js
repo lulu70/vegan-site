@@ -1,26 +1,28 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styled from "styled-components"
 import { graphql } from "gatsby"
 import PostPreview from "../components/PostPreview"
-const MainHeader = styled.h1`
-  width: 100%;
-  text-align: center;
-  margin: 3rem;
-  color: ${props => props.color};
+import PostHeader from "../components/PostHeader"
+import styled from "styled-components"
+
+const Container = styled.div`
+  padding: 1rem 1rem 0 0;
+  @media (max-width: 900px) {
+    padding: 1rem 0 0 0;
+  }
 `
 const Recipes = ({ data, location }) => {
   const posts = data.allFile.nodes
   return (
-    <Layout full location={location}>
+    <Layout location={location}>
       <SEO title="Recipes" />
-      <MainHeader className="recipes__mainHeader">
-        {data.site.siteMetadata.recipesTitle}
-      </MainHeader>
-      {posts.map(post => {
-        return <PostPreview post={post} key={post.childMdx.fields.slug} />
-      })}
+      <PostHeader title={data.site.siteMetadata.recipesTitle} />
+      <Container>
+        {posts.map((post) => {
+          return <PostPreview post={post} key={post.childMdx.fields.slug} />
+        })}
+      </Container>
     </Layout>
   )
 }

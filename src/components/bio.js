@@ -4,7 +4,6 @@ import { MAIN_COLOR } from "../constants"
 import Image from "../components/Image"
 const Container = styled.div`
   display: flex;
-  margin-top: 1.8rem;
 `
 const StyledImage = styled(Image)`
   margin-bottom: 0;

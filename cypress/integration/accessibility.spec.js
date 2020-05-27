@@ -3,11 +3,7 @@
 describe("Accessibility tests", () => {
   const checkAccessibilityOnPage = ({ path, name, only }) => {
     const injectBody = () => {
-      cy.visit(path)
-        .get("main")
-        .injectAxe()
-        .wait(500)
-        .checkA11y()
+      cy.visit(path).get("main").injectAxe().wait(500).checkA11y()
     }
     if (only) {
       it.only(`Has no detectable accessibility violations on ${name} page`, () => {

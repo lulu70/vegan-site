@@ -12,9 +12,7 @@ describe("Pages loading", () => {
   })
 
   it("Blog-page is loaded", () => {
-    cy.findAllByText(/blog/i)
-      .first()
-      .click()
+    cy.findAllByText(/blog/i).first().click()
     cy.get("h1").should("be.visible")
     cy.url().should("include", "/blog")
   })
@@ -38,14 +36,13 @@ describe("Pages loading", () => {
     cy.findAllByText(/recipes/i)
       .first()
       .click()
-    cy.findAllByTestId("postPreview__header").then(headers => {
+    cy.findAllByTestId("postPreview__header").then((headers) => {
       const randomNumber = random(0, headers.length - 1)
       const randomHeaderText = headers.eq(randomNumber).text()
-      cy.findAllByText(randomHeaderText)
-        .first()
-        .click()
-      cy.findByTestId("blogPostTemplate__header").should("be.visible")
-      cy.findByTestId("blogPostTemplate__date")
+      cy.findAllByText(randomHeaderText).first().click()
+      cy.findByTestId("postHeader__h1").should("be.visible")
+      cy.findByTestId("postHeader__description").should("be.visible")
+      cy.findByTestId("postHeader__date")
         .should("be.visible")
         .invoke("text")
         .and("have.length.greaterThan", 1)

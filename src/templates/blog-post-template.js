@@ -5,19 +5,18 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
+import PostHeader from "../components/PostHeader"
 
-const Header = styled.h1`
-  margin-bottom: 0;
-`
-const DateParagraph = styled.small`
-  display: block;
-  margin-bottom: 2rem;
-`
 const Article = styled.article`
   width: 100%;
-  margin-right: 15rem;
   @media (max-width: 900px) {
     margin: 0;
+  }
+`
+const MdxWrapper = styled.div`
+  padding: 1rem 1rem 0 0;
+  @media (max-width: 900px) {
+    padding: 1rem 0 0 0;
   }
 `
 const EndLine = styled.hr`
@@ -34,17 +33,10 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <Article>
-        <header>
-          <Header data-test-id="blogPostTemplate__header">
-            {post.frontmatter.title}
-          </Header>
-          <DateParagraph data-test-id="blogPostTemplate__date">
-            {post.frontmatter.date === post.frontmatter.updatedDate
-              ? post.frontmatter.date
-              : `Updated at: ${post.frontmatter.updatedDate}`}
-          </DateParagraph>
-        </header>
-        <MDXRenderer>{post.body}</MDXRenderer>
+        <PostHeader post={post} />
+        <MdxWrapper>
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </MdxWrapper>
         <EndLine />
         <footer>
           <Bio author={author} />
