@@ -51,7 +51,7 @@ Nutritional values per serving (5 balls):
 
 <Image filename='falafel-ingredients'/>
 
-4. Process all the ingredients together until the mixture reaches a texture that looks like tabouli salad or couscous, do not over-process it, we want to end up with small chunks and not a paste.
+4. Process all the ingredients together until the mixture reaches a texture that looks like tabbouleh salad or couscous, do not over-process it, we want to end up with small chunks and not a paste.
 
 <Image filename='falafel-mix'/>
 
