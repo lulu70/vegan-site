@@ -2,8 +2,10 @@ import React from "react"
 import RelatedPosts from "./RelatedPosts"
 import PostHeader from "./PostHeader"
 import styled from "styled-components"
+import { ASIDE_WIDTH } from "../constants"
 
 const Container = styled.div`
+  min-width: ${ASIDE_WIDTH};
   @media (max-width: 900px) {
     display: none;
   }
