@@ -5,7 +5,7 @@ const recipes = Object.keys(recipesIngredients)
 describe("Search working", () => {
   beforeEach(() => {
     cy.visit("/")
-    cy.findByTestId("header__searchIcon").click()
+    cy.findByTestId("header__searchButton").click()
     cy.get("main")
     cy.injectAxe()
     cy.wait(500)

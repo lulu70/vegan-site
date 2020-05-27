@@ -1,6 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { upperCase } from "../utils/helpers"
+import styled from "styled-components"
+
+const P = styled.p`
+  font-size: 0.6rem;
+`
+
 const NutritionValues = ({ values, fileName }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -33,7 +39,7 @@ const NutritionValues = ({ values, fileName }) => {
   }
   const keys = Object.keys(nutritionValues)
   return (
-    <p>
+    <P>
       {keys.map((key, index) => {
         const value = nutritionValues[key]
         const hasNextValue = nutritionValues[keys[index + 1]]
@@ -48,7 +54,7 @@ const NutritionValues = ({ values, fileName }) => {
           </React.Fragment>
         )
       })}
-    </p>
+    </P>
   )
 }
 

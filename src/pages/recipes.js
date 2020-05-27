@@ -7,6 +7,9 @@ import PostHeader from "../components/PostHeader"
 import styled from "styled-components"
 
 const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 1rem 1rem 0 0;
   @media (max-width: 900px) {
     padding: 1rem 0 0 0;
