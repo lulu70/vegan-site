@@ -61,6 +61,7 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         plugins: [`gatsby-remark-images`],
+
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-autolink-headers`,
@@ -90,6 +91,9 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-smartypants`,
+          },
+          {
+            resolve: `gatsby-remark-bracketed-spans`,
           },
         ],
       },
