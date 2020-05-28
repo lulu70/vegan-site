@@ -24,21 +24,15 @@ const Container = styled.div`
   opacity: 1;
 `
 const InnerContainer = styled.div`
-  margin: 0 2rem;
+  width: ${MAIN_WIDTH};
   display: flex;
   flex-direction: column;
-  flex: 1;
-  align-items: center;
 `
 const StickyContainer = styled.div`
   position: sticky;
   top: 0;
   background-color: ${BG_COLOR};
   z-index: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
 `
 const Divider = styled.div`
   height: 1.3rem;
@@ -47,7 +41,6 @@ const PreviewsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: ${MAIN_WIDTH};
 `
 const Search = ({ posts }) => {
   const searchState = useSearchState()

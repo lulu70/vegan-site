@@ -2,12 +2,10 @@ import React from "react"
 import { useSearchState, useSearchDispatch } from "../context/ContextProvider"
 import { setPosts, setQuery } from "../context/reducers/searchReducer"
 import styled from "styled-components"
-import { GREY, MAIN_WIDTH } from "../constants"
 
 const Label = styled.label`
   display: flex;
   flex-direction: column;
-  width: ${MAIN_WIDTH};
 `
 const Container = styled.div`
   display: flex;
@@ -21,7 +19,7 @@ const CloseButton = styled.button`
   cursor: pointer;
 `
 const Input = styled.input`
-  border: solid 2px ${GREY};
+  border: solid 2px grey;
   background-color: transparent;
   padding: 0.5rem;
 `
