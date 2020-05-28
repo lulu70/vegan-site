@@ -29,12 +29,7 @@ const PantrySelectedIngredients = () => {
   }
 
   return (
-    <StyledScrollArea
-      data-test-id="pantrySelectedIngredients__container"
-      // contentStyles={{
-      //   padding: "0 1rem",
-      // }}
-    >
+    <StyledScrollArea data-test-id="pantrySelectedIngredients__container">
       {selectedIngredients.map((ingredient, index) => (
         <Li
           role="button"

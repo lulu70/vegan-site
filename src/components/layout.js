@@ -11,6 +11,8 @@ import GlobalStyles from "../GlobalStyles"
 import NutritionValues from "./NutritionValues"
 import StyledLink from "./StyledLink"
 import { MAIN_WIDTH, GREY } from "../constants"
+import Gallery from "./Gallery"
+
 const Container = styled.div``
 
 const Main = styled.main`
@@ -28,6 +30,7 @@ const LeftSide = styled.div`
   border-right: solid 1px ${GREY};
   @media (max-width: 900px) {
     border-right: none;
+    width: 95%;
   }
 `
 const Layout = ({ children, relatedPosts, author }) => {
@@ -70,7 +73,7 @@ const Layout = ({ children, relatedPosts, author }) => {
   `)
 
   const posts = data.allMdx.nodes
-  const componentsForMdx = { Image, NutritionValues, Link: StyledLink }
+  const componentsForMdx = { Image, NutritionValues, Gallery, Link: StyledLink }
 
   return (
     <Container>

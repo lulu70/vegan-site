@@ -19,7 +19,15 @@ nutritionValues:
 author: lior cohen
 ---
 
-<Image filename="vegan-mafe" />
+<Gallery images={[
+'vegan-mafe',
+'onion-garlic-ginger',
+'mafe-tomato-sauce',
+'mafe-peanut-sauce',
+'mafe-soy-chunks',
+'mafe-ready',
+'mafe-cheese-spread'
+]}/>
 
 **4 servings**
 

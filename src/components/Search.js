@@ -27,6 +27,9 @@ const InnerContainer = styled.div`
   width: ${MAIN_WIDTH};
   display: flex;
   flex-direction: column;
+  @media (max-width: 900px) {
+    width: 95%;
+  }
 `
 const StickyContainer = styled.div`
   position: sticky;
