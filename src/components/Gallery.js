@@ -1,20 +1,41 @@
 import React from "react"
 import Image from "./Image"
 import styled from "styled-components"
-import { SECOND_COLOR } from "../constants"
+import { SECOND_COLOR, GREY } from "../constants"
 import ScrollArea from "./ScrollArea"
+import NextSvg from "../../content/assets/next.svg"
+import BackSvg from "../../content/assets/back.svg"
 
+const Container = styled.div`
+  margin-bottom: 1rem;
+`
+const ImageContainer = styled.div`
+  position: relative;
+  margin-bottom: 0.2rem;
+`
 const StyledImage = styled(Image)`
   padding-top: 50%;
   height: 0;
+  z-index: 1;
+`
+const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
 `
 const ThumbnailRow = styled.div`
   height: 60px;
 `
-const ImageWrapper = styled.div``
+const ImageButton = styled.button`
+  padding: 0.1rem;
+  z-index: 2;
+  border: none;
+`
 
 const ThumbnailImage = styled(Image)`
-  margin: 0.2rem 0.2rem 0 0;
   width: 80px;
   height: 50px;
   border-bottom: ${(props) =>
@@ -23,18 +44,57 @@ const ThumbnailImage = styled(Image)`
     padding-bottom: 1px;
   }
 `
+const Button = styled.button`
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+`
+const StyledBackSvg = styled(BackSvg)`
+  path {
+    stroke: ${(props) => (props.disabled ? GREY : SECOND_COLOR)};
+  }
+`
+const StyledNextSvg = styled(NextSvg)`
+  path {
+    stroke: ${(props) => (props.disabled ? GREY : SECOND_COLOR)};
+  }
+`
 const Gallery = ({ images }) => {
   const [currentImage, setCurrentImage] = React.useState(
     images ? images[0] : ""
   )
   if (!images) return null
+  const currentImageIndex = images.findIndex((img) => img === currentImage)
   return (
-    <>
-      <StyledImage filename={currentImage} />
+    <Container>
+      <ImageContainer>
+        <StyledImage filename={currentImage} />
+        <Overlay>
+          <Button
+            onClick={() => {
+              setCurrentImage(images[currentImageIndex - 1])
+            }}
+            disabled={currentImageIndex === 0}
+            title="back"
+          >
+            <StyledBackSvg disabled={currentImageIndex === 0} />
+          </Button>
+          <Button
+            onClick={() => {
+              setCurrentImage(images[currentImageIndex + 1])
+            }}
+            disabled={currentImageIndex === images.length - 1}
+            title="next"
+          >
+            <StyledNextSvg disabled={currentImageIndex === images.length - 1} />
+          </Button>
+        </Overlay>
+      </ImageContainer>
       <ThumbnailRow>
         <ScrollArea contentStyles={{ display: "inline-flex" }} noScrollY>
           {images.map((image, index) => (
-            <ImageWrapper
+            <ImageButton
               key={index}
               onClick={() => {
                 setCurrentImage(image)
@@ -45,11 +105,11 @@ const Gallery = ({ images }) => {
                 unlink
                 activeImage={image === currentImage}
               />
-            </ImageWrapper>
+            </ImageButton>
           ))}
         </ScrollArea>
       </ThumbnailRow>
-    </>
+    </Container>
   )
 }
 

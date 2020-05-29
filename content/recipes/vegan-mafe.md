@@ -20,6 +20,16 @@ nutritionValues:
 author: lior cohen
 ---
 
+<Gallery images={[
+'vegan-mafe',
+'onion-garlic-ginger',
+'mafe-tomato-sauce',
+'mafe-peanut-sauce',
+'mafe-soy-chunks',
+'mafe-ready',
+'mafe-cheese-spread'
+]}/>
+
 ## A gift from africa
 
 When traveling around the globe and attending food and music festivals, I was amazed to discover this amazingly simple dish that can be easily made completely vegan.
@@ -38,15 +48,5 @@ I really recommend to try and find one, and if you don't, you can always just ma
 For side, for a dish like this one, the normal go-to for me is white rice.
 For this occasion, I wanted to add something else to make it a bit more special.
 I decided to add vegan cheese spread, inspired by the Ethiopian cuisine.
-
-<Gallery images={[
-'vegan-mafe',
-'onion-garlic-ginger',
-'mafe-tomato-sauce',
-'mafe-peanut-sauce',
-'mafe-soy-chunks',
-'mafe-ready',
-'mafe-cheese-spread'
-]}/>
 
 <PrintView fileName="vegan-mafe"/>

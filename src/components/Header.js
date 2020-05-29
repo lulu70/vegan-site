@@ -13,7 +13,7 @@ const Container = styled.header`
   border-bottom: 1px solid ${GREY};
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,7 +5,8 @@ const GlobalStyles = createGlobalStyle`
     :focus{
       outline-color:${SECOND_COLOR};  
       outline-style:solid;
-      outline-width: 2px;
+      outline-width: 1px;
+      outline-offset: -1px;
     }
   }
   html, body {

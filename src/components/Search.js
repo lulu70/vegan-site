@@ -20,7 +20,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   color: black;
-  z-index: 2;
+  z-index: 3;
   opacity: 1;
 `
 const InnerContainer = styled.div`
@@ -35,7 +35,7 @@ const StickyContainer = styled.div`
   position: sticky;
   top: 0;
   background-color: ${BG_COLOR};
-  z-index: 1;
+  z-index: 3;
 `
 const Divider = styled.div`
   height: 1.3rem;

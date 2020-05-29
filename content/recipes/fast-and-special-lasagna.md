@@ -62,7 +62,7 @@ Nutritional values per serving:
 - ½ tsp Himalaya salt
 - ½ tsp ground black pepper
 
-## Let's start 
+## Let's start
 
 1. Soak the cashew nuts in water for 1 hour.
 2. Preheat oven to 180ºc.
@@ -76,15 +76,15 @@ Nutritional values per serving:
 <Image filename="vegetables-pan"/>
 
 9. Meanwhile, rinse and drain the cashew and place it in a food processor.
-add the oat milk, lemon juice and all the bechamel spices to it and blend 1-2 minutes to get a creamy texture.
-if it's too thick add more oat milk.
+   add the oat milk, lemon juice and all the bechamel spices to it and blend 1-2 minutes to get a creamy texture.
+   if it's too thick add more oat milk.
 
 <Image filename="cashew-bechamel"/>
 
 10. Take the pan off the stove and get ready to start the layers art.
 11. In a casserole dish, 25/35cm (+/-), sprinkle olive oil and pour the first layer of the vegetables sauce.
-try to flat it to a thickness of 1 cm and cover it with a layer of pasta sheets.
-now cover the pasta sheets with a layer of the bechamel we made, try to get a ½ cm layer.
+    try to flat it to a thickness of 1 cm and cover it with a layer of pasta sheets.
+    now cover the pasta sheets with a layer of the bechamel we made, try to get a ½ cm layer.
 
 <Image filename="first-three-layers"/>
 
@@ -93,12 +93,11 @@ now cover the pasta sheets with a layer of the bechamel we made, try to get a ½
 <Image filename="second-layer"/>
 
 13. For the last layer we want to cover the pasta sheets completely with the vegetable sauce. this way they will get soft and not dry hard in the oven.
-on top, we will spread the nutritional yeast equally and finally place the dish in the oven.
+    on top, we will spread the nutritional yeast equally and finally place the dish in the oven.
 
 <Image filename="top-layer-nutritional-yeast"/>
 
 14. Bake for 45 minutes and check with a knife if the pasta sheets are soft enough, if not, you can cover it with aluminum foil and bake for another 10 minutes.
-
 
 <Image filename="ready-lasagna"/>
 
