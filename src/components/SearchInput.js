@@ -31,7 +31,7 @@ const SearchInput = ({ posts, close }) => {
   const handleInputChange = (event) => {
     const query = event.target.value
     const filteredPosts = posts.filter((post) => {
-      const { description, title, tags } = post.frontmatter
+      const { description, title, tags } = post.childMdx.frontmatter
       if (!query) return ""
       return (
         description.toLowerCase().includes(query.toLowerCase()) ||

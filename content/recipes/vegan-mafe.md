@@ -12,27 +12,13 @@ tags:
   - peanuts
   - soy chunks
 nutritionValues:
+  title: "Nutritional values per serving (4 servings):"
   cal: 175
   protein: 10
   carbs: 8
   fat: 12
 author: lior cohen
 ---
-
-<Gallery images={[
-'vegan-mafe',
-'onion-garlic-ginger',
-'mafe-tomato-sauce',
-'mafe-peanut-sauce',
-'mafe-soy-chunks',
-'mafe-ready',
-'mafe-cheese-spread'
-]}/>
-
-**4 servings**
-
-Nutritional values per portion:
-<NutritionValues fileName="vegan-mafe"/>
 
 ## A gift from africa
 
@@ -53,61 +39,14 @@ For side, for a dish like this one, the normal go-to for me is white rice.
 For this occasion, I wanted to add something else to make it a bit more special.
 I decided to add vegan cheese spread, inspired by the Ethiopian cuisine.
 
-## Ingredients
+<Gallery images={[
+'vegan-mafe',
+'onion-garlic-ginger',
+'mafe-tomato-sauce',
+'mafe-peanut-sauce',
+'mafe-soy-chunks',
+'mafe-ready',
+'mafe-cheese-spread'
+]}/>
 
-- vegetable oil for frying
-- 1 onion (shallot is recommended)
-- 3 garlic cloves
-- 1 tbsp of chopped or minced ginger
-- 3 tbsp of tomato puree
-- 4 bay leaves
-- ¾ cup of boiled water
-- 3 tbsp of creamy unsalted peanut butter
-- ½ tsp of salt (or by taste)
-- ½ tsp black pepper
-- 1 tsp cumin
-- ½ cup of soy chunks
-
-## For side suggestion
-
-**1 serving**
-
-Nutritional values per serving:
-
-<NutritionValues values={{cal: 140, protein: 4, carbs: 4, fat: 10}}/>
-
-- 2 tbsp vegan cheese spread (homemade or not).
-- 1 tsp of berbere spice mix.
-- 1 tsp of lemon juice
-
-## Let's start
-
-1. Mince the onion, garlic, and ginger and set aside.
-
-<Image filename='onion-garlic-ginger'/>
-
-2. Heat the vegetable oil in a pot and start with frying the onion for a few minutes until there is a bit of color change.
-3. Add the garlic and ginger and continue frying for 3-5 more minutes.
-4. Add the tomato puree and bay leaves and fry together for 3 minutes.
-
-<Image filename='mafe-tomato-sauce'/>
-
-5. Add some of the water, stir a bit till you get a nice sauce.
-6. Add the peanut butter.
-
-<Image filename='mafe-peanut-sauce'/>
-
-7. Add the soy chunks and the rest of the water.
-
-<Image filename='mafe-soy-chunks'/>
-
-8. Add the salt, pepper, and cumin.
-9. Cook on a small flame until soy chunks reach a soft and nice texture.
-
-<Image filename='mafe-ready'/>
-
-## Side suggestion instructions
-
-1. Mix the vegan cheese spread, the lemon juice, and the spice mix till you get a smooth texture, serve right away.
-
-<Image filename='mafe-cheese-spread'/>
+<PrintView fileName="vegan-mafe"/>

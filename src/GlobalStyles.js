@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     font-Family: Sans-Serif; 
     margin-top: 1rem;
     color: ${MAIN_COLOR};
+    text-transform:initial;
   }
   .gatsby-resp-image-link {
     box-shadow:none;

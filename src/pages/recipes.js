@@ -56,6 +56,7 @@ export const pageQuery = graphql`
             description
             tags
             nutritionValues {
+              title
               cal
               protein
               carbs

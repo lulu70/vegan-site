@@ -7,7 +7,7 @@ import {
   setFilteredRecipes,
 } from "../context/reducers/pantryReducer"
 import styled from "styled-components"
-import { SECOND_COLOR, GREY } from "../constants"
+import { SECOND_COLOR, GREY, MAIN_FONT_SIZE } from "../constants"
 import TickIcon from "../../content/assets/tick.svg"
 import Circle from "../../content/assets/circle.svg"
 import ScrollArea from "./ScrollArea"
@@ -43,7 +43,7 @@ const Button = styled.button`
   text-align: left;
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: ${MAIN_FONT_SIZE};
   .pantry-ingredients__icon {
     width: 15px;
     pointer-events: none;

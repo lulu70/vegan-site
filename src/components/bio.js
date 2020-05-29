@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import { MAIN_COLOR } from "../constants"
+import { MAIN_COLOR, MAIN_FONT_SIZE } from "../constants"
 import Image from "../components/Image"
 const Container = styled.div`
   display: flex;
+  font-size: ${MAIN_FONT_SIZE};
 `
 const StyledImage = styled(Image)`
   margin-bottom: 0;

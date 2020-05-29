@@ -6,6 +6,13 @@ import SEO from "../components/seo"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import PostHeader from "../components/PostHeader"
+import {
+  MAIN_FONT_SIZE,
+  MEDIUM_HEADER_SIZE,
+  SMALL_HEADER_SIZE,
+  SMALL_FONT_SIZE,
+} from "../constants"
+import NutritionValues from "../components/NutritionValues"
 
 const Article = styled.article`
   width: 100%;
@@ -15,6 +22,31 @@ const Article = styled.article`
 `
 const MdxWrapper = styled.div`
   padding: 1rem 1rem 0 0;
+  font-size: ${MAIN_FONT_SIZE};
+  ul,
+  ol {
+    padding: 0;
+    margin: 0 0 1rem 1rem;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: ${MEDIUM_HEADER_SIZE};
+    margin: 0 0 0.5rem 0;
+  }
+  h3 {
+    font-size: ${SMALL_HEADER_SIZE};
+    margin: 0 0 0.5rem 0;
+  }
+  h4 {
+    font-size: ${SMALL_FONT_SIZE};
+    margin: 0 0 0.5rem 0;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
   @media (max-width: 900px) {
     padding: 1rem 0 0 0;
   }
@@ -35,6 +67,7 @@ const BlogPostTemplate = ({ data, location }) => {
       <Article>
         <PostHeader post={post} />
         <MdxWrapper>
+          <NutritionValues values={post.frontmatter.nutritionValues} />
           <MDXRenderer>{post.body}</MDXRenderer>
         </MdxWrapper>
         <EndLine />
@@ -61,6 +94,13 @@ export const pageQuery = graphql`
         description
         tags
         author
+        nutritionValues {
+          title
+          cal
+          fat
+          protein
+          carbs
+        }
       }
     }
     author: authorsJson(title: { eq: $author }) {

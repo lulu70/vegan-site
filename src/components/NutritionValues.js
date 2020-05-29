@@ -2,12 +2,14 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { upperCase } from "../utils/helpers"
 import styled from "styled-components"
+import { SMALL_FONT_SIZE } from "../constants"
 
-const P = styled.p`
-  font-size: 0.6rem;
+const Container = styled.div`
+  font-size: ${SMALL_FONT_SIZE};
+  margin-bottom: 0.5rem;
 `
 
-const NutritionValues = ({ values, fileName }) => {
+const NutritionValues = ({ values, title, fileName, noTitle }) => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { sourceInstanceName: { eq: "recipes" } }) {
@@ -16,6 +18,7 @@ const NutritionValues = ({ values, fileName }) => {
           childMdx {
             frontmatter {
               nutritionValues {
+                title
                 cal
                 protein
                 carbs
@@ -37,9 +40,14 @@ const NutritionValues = ({ values, fileName }) => {
   if (values) {
     nutritionValues = values
   }
-  const keys = Object.keys(nutritionValues)
+  const keys = Object.keys(nutritionValues).filter((key) => key !== "title")
   return (
-    <P>
+    <Container>
+      {!noTitle && (
+        <div>
+          {title || nutritionValues["title"] || "Nutrition values per serving:"}
+        </div>
+      )}
       {keys.map((key, index) => {
         const value = nutritionValues[key]
         const hasNextValue = nutritionValues[keys[index + 1]]
@@ -54,7 +62,7 @@ const NutritionValues = ({ values, fileName }) => {
           </React.Fragment>
         )
       })}
-    </P>
+    </Container>
   )
 }
 

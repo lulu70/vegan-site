@@ -1,7 +1,7 @@
 import ingredients from "../../content/ingredients"
 import random from "lodash.random"
 const ingredientsArray = Object.keys(ingredients)
-  .map(key => ingredients[key])
+  .map((key) => ingredients[key])
   .sort()
 const randomIngredient = () => {
   const randomNumber = random(0, ingredientsArray.length - 1)
@@ -23,9 +23,7 @@ describe("Pantry", () => {
   })
 
   it("type in search and clear it", () => {
-    cy.get("input")
-      .type("test typing")
-      .should("have.value", "test typing")
+    cy.get("input").type("test typing").should("have.value", "test typing")
     cy.findAllByTestId("pantry-input__icon").click()
     cy.get("input").should("have.value", "")
   })
@@ -78,9 +76,7 @@ describe("Pantry", () => {
     cy.findByTestId("pantryRecipes__container")
       .findAllByTestId("postPreview__container")
       .should("have.length.greaterThan", 0)
-    cy.get("@selectedItem")
-      .click()
-      .should("not.exist")
+    cy.get("@selectedItem").click().should("not.exist")
     cy.findByTestId("pantry-ingredients__tickIcon").should("not.exist")
     cy.get("@selectedItemsInMenu").should("have.text", "0")
     cy.get("@matchedRecipesInMenu").should("have.text", "0")
@@ -93,6 +89,8 @@ describe("Pantry", () => {
       .click()
     cy.findByTestId("pantryRecipes__container")
       .findAllByTestId("postPreview__container")
+      .first()
+      .find("a")
       .first()
       .click()
     cy.url().should("include", "/recipes/")

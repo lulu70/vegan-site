@@ -5,6 +5,7 @@ import Image from "./Image"
 import PropTypes from "prop-types"
 import { AnimationWrapper } from "react-hover-animation"
 import NutritionValues from "./NutritionValues"
+import { MAIN_FONT_SIZE, SMALL_FONT_SIZE } from "../constants"
 
 const AnimatedContainer = styled(AnimationWrapper)`
   display: flex;
@@ -19,6 +20,7 @@ const StyledImage = styled(Image)`
 const SmallRow = styled.small`
   padding: 0 1rem;
   display: flex;
+  justify-content: center;
   p {
     margin: 0;
     padding: 0;
@@ -33,11 +35,11 @@ const BigRow = styled.div`
 const P = styled.p`
   padding: 0;
   margin: 0;
-  font-size: 0.7rem;
+  font-size: ${SMALL_FONT_SIZE};
 `
 const PostHeader = styled.h2`
   margin: 0 0 0.1rem 0;
-  font-size: 0.8rem;
+  font-size: ${MAIN_FONT_SIZE};
 `
 
 const PostPreview = ({ post, onClick }) => {
@@ -59,10 +61,14 @@ const PostPreview = ({ post, onClick }) => {
       >
         <StyledImage
           filename={post.childMdx.frontmatter.featuredImage.src.name}
+          unlink
         />
       </StyledLink>
       <SmallRow>
-        <NutritionValues values={post.childMdx.frontmatter.nutritionValues} />
+        <NutritionValues
+          values={post.childMdx.frontmatter.nutritionValues}
+          noTitle
+        />
       </SmallRow>
       <BigRow>
         <PostHeader data-test-id="postPreview__header">

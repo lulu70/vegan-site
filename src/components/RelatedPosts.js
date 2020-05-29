@@ -1,12 +1,12 @@
 import React from "react"
 import StyledLink from "./StyledLink"
 import styled from "styled-components"
-import { GREY } from "../constants"
+import { GREY, MAIN_FONT_SIZE, SMALL_FONT_SIZE } from "../constants"
 
 const H3 = styled.h3`
   margin-top: 0;
   margin-bottom: 0.4rem;
-  font-size: 1rem;
+  font-size: ${MAIN_FONT_SIZE};
 `
 const Ul = styled.ul`
   padding: 0;
@@ -20,7 +20,7 @@ const Li = styled.li`
   line-height: 1.4rem;
 `
 const RelatedLink = styled(StyledLink)`
-  font-size: 0.7rem;
+  font-size: ${SMALL_FONT_SIZE};
 `
 
 const RelatedPosts = ({ relatedPosts }) => {

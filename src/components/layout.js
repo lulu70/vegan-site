@@ -12,7 +12,7 @@ import NutritionValues from "./NutritionValues"
 import StyledLink from "./StyledLink"
 import { MAIN_WIDTH, GREY } from "../constants"
 import Gallery from "./Gallery"
-
+import PrintView from "./PrintView"
 const Container = styled.div``
 
 const Main = styled.main`
@@ -43,27 +43,33 @@ const Layout = ({ children, relatedPosts, author }) => {
           title
         }
       }
-      allMdx(sort: { fields: frontmatter___updatedDate, order: DESC }) {
+      allFile(
+        filter: { sourceInstanceName: { eq: "recipes" } }
+        sort: { fields: childMdx___frontmatter___updatedDate, order: DESC }
+      ) {
         nodes {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            updatedDate(formatString: " MMMM DD, YYYY")
-            title
-            tags
-            description
-            nutritionValues {
-              cal
-              fat
-              protein
-              carbs
+          childMdx {
+            excerpt
+            fields {
+              slug
             }
-            featuredImage {
-              src {
-                name
+            frontmatter {
+              date(formatString: "MMMM DD, YYYY")
+              updatedDate(formatString: " MMMM DD, YYYY")
+              title
+              tags
+              description
+              nutritionValues {
+                title
+                cal
+                fat
+                protein
+                carbs
+              }
+              featuredImage {
+                src {
+                  name
+                }
               }
             }
           }
@@ -72,8 +78,14 @@ const Layout = ({ children, relatedPosts, author }) => {
     }
   `)
 
-  const posts = data.allMdx.nodes
-  const componentsForMdx = { Image, NutritionValues, Gallery, Link: StyledLink }
+  const posts = data.allFile.nodes
+  const componentsForMdx = {
+    Image,
+    NutritionValues,
+    Gallery,
+    Link: StyledLink,
+    PrintView,
+  }
 
   return (
     <Container>

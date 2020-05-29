@@ -81,6 +81,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             updatedDate(formatString: "MMMM DD, YYYY")
             nutritionValues {
+              title
               cal
               protein
               carbs

@@ -9,12 +9,13 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
+        allFile(
+          filter: { sourceInstanceName: { in: ["recipes"] } }
+          sort: { fields: childMdx___frontmatter___updatedDate, order: DESC }
           limit: 1000
         ) {
-          edges {
-            node {
+          nodes {
+            childMdx {
               fields {
                 slug
               }
@@ -35,16 +36,16 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMdx.edges
+  const posts = result.data.allFile.nodes
 
-  posts.forEach(post => {
+  posts.forEach((post) => {
     createPage({
-      path: post.node.fields.slug,
+      path: post.childMdx.fields.slug,
       component: blogPost,
       context: {
-        slug: post.node.fields.slug,
-        tags: post.node.frontmatter.tags,
-        author: post.node.frontmatter.author,
+        slug: post.childMdx.fields.slug,
+        tags: post.childMdx.frontmatter.tags,
+        author: post.childMdx.frontmatter.author,
       },
     })
   })

@@ -100,11 +100,10 @@ const Search = ({ posts }) => {
         </StickyContainer>
         <PreviewsContainer>
           {filteredPosts.map((post) => {
-            const formattedPost = { childMdx: post }
             return (
               <PostPreview
-                post={formattedPost}
-                key={post.fields.slug}
+                post={post}
+                key={post.childMdx.fields.slug}
                 onClick={close}
               />
             )

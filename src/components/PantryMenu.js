@@ -1,11 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import { usePantryState } from "../context/ContextProvider"
+import { MAIN_FONT_SIZE } from "../constants"
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: ${MAIN_FONT_SIZE};
   margin-bottom: 1rem;
 `
 const Divider = styled.div`

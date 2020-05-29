@@ -1,6 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-import { GREY } from "../constants"
+import {
+  GREY,
+  MAIN_FONT_SIZE,
+  SMALL_FONT_SIZE,
+  MAIN_HEADER_SIZE,
+} from "../constants"
 import PropTypes from "prop-types"
 
 const Header = styled.header`
@@ -12,23 +17,23 @@ const Header = styled.header`
   width: 100%;
 `
 const H1 = styled.h1`
-  font-size: 1.3rem;
+  font-size: ${MAIN_HEADER_SIZE};
   margin-top: 0;
   margin-bottom: 0.5rem;
 `
 const H2 = styled.h2`
-  font-size: 1.3rem;
+  font-size: ${MAIN_HEADER_SIZE};
   margin-top: 0;
   margin-bottom: 0.5rem;
 `
 const Description = styled.div`
-  font-size: 0.8rem;
+  font-size: ${MAIN_FONT_SIZE};
 `
 const Small = styled.small`
   position: absolute;
   bottom: 0;
   left: 0;
-  font-size: 0.7rem;
+  font-size: ${SMALL_FONT_SIZE};
 `
 
 const PostHeader = ({ post, title, description, aside }) => {
