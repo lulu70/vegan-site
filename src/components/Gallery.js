@@ -61,11 +61,9 @@ const StyledNextSvg = styled(NextSvg)`
   }
 `
 const Gallery = ({ images }) => {
-  const [currentImage, setCurrentImage] = React.useState(
-    images ? images[0] : ""
-  )
+  const [currentImageIndex, setCurrentImageIndex] = React.useState(0)
+  const currentImage = images[currentImageIndex]
   if (!images) return null
-  const currentImageIndex = images.findIndex((img) => img === currentImage)
   return (
     <Container>
       <ImageContainer>
@@ -73,7 +71,7 @@ const Gallery = ({ images }) => {
         <Overlay>
           <Button
             onClick={() => {
-              setCurrentImage(images[currentImageIndex - 1])
+              setCurrentImageIndex(currentImageIndex - 1)
             }}
             disabled={currentImageIndex === 0}
             title="back"
@@ -82,7 +80,7 @@ const Gallery = ({ images }) => {
           </Button>
           <Button
             onClick={() => {
-              setCurrentImage(images[currentImageIndex + 1])
+              setCurrentImageIndex(currentImageIndex + 1)
             }}
             disabled={currentImageIndex === images.length - 1}
             title="next"
@@ -97,7 +95,7 @@ const Gallery = ({ images }) => {
             <ImageButton
               key={index}
               onClick={() => {
-                setCurrentImage(image)
+                setCurrentImageIndex(index)
               }}
             >
               <ThumbnailImage

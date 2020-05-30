@@ -21,7 +21,7 @@ const Image = ({ avatar, filename, style, unlink, ...props }) => {
               fixed(width: 50, height: 50) {
                 ...GatsbyImageSharpFixed_withWebp_noBase64
               }
-              fluid {
+              fluid(maxWidth: 500, quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }

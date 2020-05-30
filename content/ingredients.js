@@ -74,6 +74,7 @@ const ingredients = {
   eggplant: "eggplant",
   soyFlakes: "soy flakes",
   vegetableStock: "vegetable stock",
+  potatoes: "potatoes",
 }
 
 export default ingredients

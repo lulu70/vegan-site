@@ -51,7 +51,7 @@ Nutritional values per portion:
 
 <Image filename="pita-balls" />
 
-9. Preheat the oven to 250 deg
+9. Preheat the oven to 250℃.
 10. Prepare a baking tray with baking paper, sprinkle some flour on it, and place the pitas on.
 
 <Image filename="two-unbaked-pitas" />

@@ -139,7 +139,7 @@ const recipesIngredients = {
     i.sweetPaprika,
     i.chilliPepper,
   ],
-  "vegan-rustic-bolognese":[
+  "vegan-rustic-bolognese": [
     i.pasta,
     i.celery,
     i.onion,
@@ -159,7 +159,16 @@ const recipesIngredients = {
     i.oregano,
     i.basil,
     i.thyme,
-  ]
+  ],
+  "smashed-potatoes": [
+    i.potatoes,
+    i.oliveOil,
+    i.garlic,
+    i.thyme,
+    i.chilliPepper,
+    i.salt,
+    i.blackPepper,
+  ],
 }
 
 export default recipesIngredients
