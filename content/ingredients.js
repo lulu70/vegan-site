@@ -75,6 +75,10 @@ const ingredients = {
   soyFlakes: "soy flakes",
   vegetableStock: "vegetable stock",
   potatoes: "potatoes",
+  sweetPotatoes: "sweet potatoes",
+  leek: "leek",
+  sage: "sage",
+  gratedNutmeg: "grated nutmeg",
 }
 
 export default ingredients

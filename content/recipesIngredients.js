@@ -169,6 +169,17 @@ const recipesIngredients = {
     i.salt,
     i.blackPepper,
   ],
+  "orange-comfort-dish": [
+    i.sweetPotatoes,
+    i.carrot,
+    i.leek,
+    i.cashewNuts,
+    i.oliveOil,
+    i.sage,
+    i.gratedNutmeg,
+    i.salt,
+    i.blackPepper,
+  ],
 }
 
 export default recipesIngredients
