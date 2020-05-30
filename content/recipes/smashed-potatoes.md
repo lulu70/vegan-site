@@ -17,9 +17,9 @@ author: lior cohen
 
 <Gallery images={[
 'smashed-potatoes-ready',
-'potatoes-smashing',
 'thyme',
 'potatoes-spice-mix',
+'potatoes-smashing',
 'potatoes-pre-oven',
 'smashed-potatoes-ready',
 ]}/>

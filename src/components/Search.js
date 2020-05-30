@@ -27,7 +27,7 @@ const InnerContainer = styled.div`
   width: ${MAIN_WIDTH};
   display: flex;
   flex-direction: column;
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     width: 95%;
   }
 `

@@ -28,7 +28,7 @@ const LeftSide = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   border-right: solid 1px ${GREY};
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     border-right: none;
     width: 95%;
   }

@@ -34,5 +34,8 @@ const GlobalStyles = createGlobalStyle`
   .drop-shadow {
     box-shadow: 0px 0px 25px -5px rgba(194, 194, 194, 1);
   }
+  button {
+    touch-action: manipulation;
+  }
 `
 export default GlobalStyles
