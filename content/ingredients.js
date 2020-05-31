@@ -10,7 +10,7 @@ const ingredients = {
   choppedCannedTomatoes: "chopped canned tomatoes",
   tomato: "tomato",
   tomatoPuree: "tomato puree",
-  driedTomatoes: "dried tomatoes",
+  sunDriedTomatoes: "sun-dried tomatoes",
   nutritionalYeast: "nutritional yeast",
   basil: "basil",
   thyme: "thyme",
@@ -79,6 +79,12 @@ const ingredients = {
   leek: "leek",
   sage: "sage",
   gratedNutmeg: "grated nutmeg",
+  whiteBeans: "white beans",
+  cherryTomatoes: "cherry tomatoes",
+  redOnion: "red onion",
+  arugula: "arugula",
+  dijonMustard: "dijon mustard",
+  nigellaSeeds: "nigella seeds",
 }
 
 export default ingredients
