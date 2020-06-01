@@ -1,14 +1,25 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { upperCase } from "../utils/helpers"
 import styled from "styled-components"
 import { SMALL_FONT_SIZE } from "../constants"
 
 const Container = styled.div`
   font-size: ${SMALL_FONT_SIZE};
   margin-bottom: 0.5rem;
+  display: flex;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `
-
+const Span = styled.span`
+  padding: 0 0.2rem;
+  border-right: ${(props) => (props.noBorder ? "none" : "solid 1px")};
+  @media (max-width: 600px) {
+    :last-child {
+      border-right: none;
+    }
+  }
+`
 const NutritionValues = ({ values, title, fileName, noTitle }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -40,7 +51,6 @@ const NutritionValues = ({ values, title, fileName, noTitle }) => {
   if (values) {
     nutritionValues = values
   }
-  const keys = Object.keys(nutritionValues).filter((key) => key !== "title")
   return (
     <Container>
       {!noTitle && (
@@ -48,20 +58,26 @@ const NutritionValues = ({ values, title, fileName, noTitle }) => {
           {title || nutritionValues["title"] || "Nutrition values per serving:"}
         </div>
       )}
-      {keys.map((key, index) => {
-        const value = nutritionValues[key]
-        const hasNextValue = nutritionValues[keys[index + 1]]
-        if (!value) return null
-        return (
-          <React.Fragment key={key}>
-            <span>
-              <strong>{upperCase(key)}: </strong>
-              {value}
-            </span>
-            {hasNextValue && " | "}
-          </React.Fragment>
-        )
-      })}
+      <div>
+        <Span>
+          <strong>cal: </strong>
+          {nutritionValues.cal}
+        </Span>
+        <Span>
+          <strong>protein: </strong>
+          {nutritionValues.protein}
+        </Span>
+      </div>
+      <div>
+        <Span>
+          <strong> carbs: </strong>
+          {nutritionValues.carbs}
+        </Span>
+        <Span noBorder>
+          <strong>fat: </strong>
+          {nutritionValues.fat}
+        </Span>
+      </div>
     </Container>
   )
 }
