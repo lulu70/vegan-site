@@ -9,10 +9,10 @@ tags:
   - oven dish
 nutritionValues:
   title: "Nutritional values per serving (2 servings):"
-  cal: 448
-  protein: 21
-  carbs: 82
-  fat: 7
+  cal: 470
+  protein: 16
+  carbs: 74
+  fat: 16
 author: Roi Cohen
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: Beans n pasta spring salad
+title: Beans & pasta spring salad
 date: 2020-05-31
 updatedDate: 2020-05-31
-description: Refreshing pasta and beans cold salad
+description: Refreshing beans and pasta cold salad
 featuredImage:
   src: ../assets/images/pasta-beans-salad-serving.jpg
 tags:
@@ -12,10 +12,10 @@ tags:
   - refreshing
 nutritionValues:
   title: "Nutritional values per serving (2 servings):"
-  cal: 470
-  protein: 16
-  carbs: 74
-  fat: 16
+  cal: 448
+  protein: 20
+  carbs: 80
+  fat: 7
 author: Roi Cohen
 ---
 
