@@ -84,6 +84,7 @@
     "test:dev:open": "CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 cy:open",
     "test:build:open": "CYPRESS_SUPPORT=y yarn build && start-server-and-test serve http://localhost:8000 cy:open",
     "test:build:run": "CYPRESS_SUPPORT=y yarn build && start-server-and-test serve http://localhost:8000 cy:run",
-    "deploy:netlify:prod": "ntl deploy --prod --message \"DEFAULT_MESSAGE\""
+    "deploy:netlify:prod": "ntl deploy --prod --message \"DEPLOYED_LOCALLY\"",
+    "deploy:netlify": "yarn test:build:run && yarn run deploy:netlify:prod"
   }
 }
