@@ -4,7 +4,7 @@ date: 2020-05-31
 updatedDate: 2020-05-31
 description: Orange mashed veggies with leeks and cashew nuts
 featuredImage:
-  src: ../assets/images/orange-veggies-ready.jpg
+  src: ../assets/images/orange-veggies-plate.jpg
 tags:
   - main
 nutritionValues:
@@ -16,7 +16,7 @@ author: lior cohen
 ---
 
 <Gallery images={[
-'orange-veggies-ready',
+'orange-veggies-plate',
 'orange-veggies-cubes',
 'orange-veggies-leeks',
 'orange-veggies-sage',
