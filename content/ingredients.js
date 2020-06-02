@@ -85,6 +85,9 @@ const ingredients = {
   arugula: "arugula",
   dijonMustard: "dijon mustard",
   nigellaSeeds: "nigella seeds",
+  quinoa: "quinoa",
+  indianCurryPowder: "indian curry powder",
+  coconutMilk: "coconut milk",
 }
 
 export default ingredients

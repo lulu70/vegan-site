@@ -71,11 +71,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0 ",
-    "cleandevelop": "gatsby clean && gatsby develop  -H 0.0.0.0",
+    "clean:develop": "gatsby clean && gatsby develop  -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "yarn develop",
     "start:test": "yarn test:dev:open",
-    "cleanstart": "yarn cleandevelop",
+    "clean:start": "yarn clean:develop",
     "serve": "gatsby serve -p 8000",
     "clean": "gatsby clean",
     "cy:open": "cypress open",

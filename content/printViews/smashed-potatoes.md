@@ -4,7 +4,7 @@
 - ¼ a cup of olive oil
 - 2 garlic cloves
 - 3 tbsp of fresh thyme
-- ½ tsp of chili pepper powder or chips
+- ½ tsp of chili pepper powder or flakes
 - salt, to taste
 - black pepper, to taste
 

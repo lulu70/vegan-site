@@ -210,6 +210,20 @@ const recipesIngredients = {
     i.parsley,
     i.lemonJuice,
   ],
+  "quinoa-curry": [
+    i.quinoa,
+    i.vegetableOil,
+    i.onion,
+    i.carrot,
+    i.chickpeas,
+    i.zucchini,
+    i.indianCurryPowder,
+    i.cumin,
+    i.chilliPepper,
+    i.coconutMilk,
+    i.salt,
+    i.water,
+  ],
 }
 
 export default recipesIngredients

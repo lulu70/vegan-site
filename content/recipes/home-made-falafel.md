@@ -39,7 +39,7 @@ Nutritional values per serving (5 balls):
 - 1½ tsp of salt
 - 2 tsp of cumin
 - 1 tsp of black pepper
-- ½ tsp of chili pepper powder or chips
+- ½ tsp of chili pepper powder or flakes
 - 1½ tsp of coriander seeds
 - vegetable oil for frying
 
