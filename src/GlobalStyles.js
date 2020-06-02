@@ -10,12 +10,10 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   html, body {
-    font-Weight: lighter;
     font-Family: Sans-Serif;
     background-color: ${BG_COLOR};
   }
   h1, h2, h3, h4, h5, h6  {
-    font-Weight: lighter;
     font-Family: Sans-Serif; 
     margin-top: 1rem;
     color: ${MAIN_COLOR};
