@@ -6,6 +6,8 @@ import { SMALL_FONT_SIZE } from "../constants"
 const Container = styled.div`
   font-size: ${SMALL_FONT_SIZE};
   margin-bottom: 0.5rem;
+`
+const ValuesContainer = styled.div`
   display: flex;
   @media (max-width: 600px) {
     flex-direction: column;
@@ -58,26 +60,28 @@ const NutritionValues = ({ values, title, fileName, noTitle }) => {
           {title || nutritionValues["title"] || "Nutrition values per serving:"}
         </div>
       )}
-      <div>
-        <Span>
-          <strong>cal: </strong>
-          {nutritionValues.cal}
-        </Span>
-        <Span>
-          <strong>protein: </strong>
-          {nutritionValues.protein}
-        </Span>
-      </div>
-      <div>
-        <Span>
-          <strong> carbs: </strong>
-          {nutritionValues.carbs}
-        </Span>
-        <Span noBorder>
-          <strong>fat: </strong>
-          {nutritionValues.fat}
-        </Span>
-      </div>
+      <ValuesContainer>
+        <div>
+          <Span>
+            <strong>cal: </strong>
+            {nutritionValues.cal}
+          </Span>
+          <Span>
+            <strong>protein: </strong>
+            {nutritionValues.protein}
+          </Span>
+        </div>
+        <div>
+          <Span>
+            <strong> carbs: </strong>
+            {nutritionValues.carbs}
+          </Span>
+          <Span noBorder>
+            <strong>fat: </strong>
+            {nutritionValues.fat}
+          </Span>
+        </div>
+      </ValuesContainer>
     </Container>
   )
 }
