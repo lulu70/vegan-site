@@ -26,11 +26,11 @@ author: lior cohen
 
 ## The best way to bake potatoes in the oven
 
-For a snack, a side dish, or main, baked potatoes are always an awesome choice.<br/>
+For a snack, a side dish, or main, baked potatoes are always an awesome choice.
 The method in this recipe is so nice and easy to make and the result is amazing,
-if you never heard about it, you will be surprised how good it is.<br/>
+if you never heard about it, you will be surprised how good it is.
 The potatoes are boiled in water before the baking begins, that makes them so nice and soft
-inside and the baking makes them crispy outside.<br />
+inside and the baking makes them crispy outside.
 follow this method and you've got an easy vegan _can't go wrong recipe_.
 
 <PrintView fileName="smashed-potatoes"/>

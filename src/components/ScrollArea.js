@@ -1,7 +1,7 @@
 import React from "react"
 import RSC from "react-scrollbars-custom"
 import PropTypes from "prop-types"
-import { GREY } from "../constants"
+import { GREY, SECOND_COLOR } from "../constants"
 
 const ScrollArea = ({ contentStyles, ...rest }) => {
   return (
@@ -11,13 +11,13 @@ const ScrollArea = ({ contentStyles, ...rest }) => {
       trackYProps={{
         style: {
           backgroundColor: "transparent",
-          width: "2px",
+          width: "8px",
         },
       }}
       thumbYProps={{
         style: {
-          backgroundColor: GREY,
-          width: "2px",
+          backgroundColor: SECOND_COLOR,
+          width: "8px",
         },
       }}
       trackXProps={{
