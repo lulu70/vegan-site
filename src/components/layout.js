@@ -5,32 +5,40 @@ import Search from "./Search"
 import { useSearchState } from "../context/ContextProvider"
 import { MDXProvider } from "@mdx-js/react"
 import Image from "./Image"
-import RightSide from "./RightSide"
+import RightColumn from "./RightColumn"
 import styled from "styled-components"
 import GlobalStyles from "../GlobalStyles"
 import NutritionValues from "./NutritionValues"
 import StyledLink from "./StyledLink"
-import { MAIN_WIDTH, GREY } from "../constants"
+import { MAIN_WIDTH, GREY, ASIDE_WIDTH } from "../constants"
 import Gallery from "./Gallery"
 import PrintView from "./PrintView"
 const Container = styled.div``
 
 const Main = styled.main`
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   opacity: 1;
 `
-const LeftSide = styled.div`
+const CenterColumn = styled.div`
   width: ${MAIN_WIDTH};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   border-right: solid 1px ${GREY};
+  border-left: solid 1px ${GREY};
+  @media (max-width: 900px) {
+    border: none;
+  }
   @media (max-width: 600px) {
-    border-right: none;
     width: 95%;
+  }
+`
+const LeftColumn = styled.div`
+  width: ${ASIDE_WIDTH};
+  @media (max-width: 900px) {
+    display: none;
   }
 `
 const Layout = ({ children, relatedPosts, author }) => {
@@ -93,11 +101,12 @@ const Layout = ({ children, relatedPosts, author }) => {
       <Header />
       {searchVisibility && <Search posts={posts} />}
       <Main className="layout__main">
-        <LeftSide className="layout__leftSide">
+        <LeftColumn />
+        <CenterColumn className="layout__centerColumn">
           <MDXProvider components={componentsForMdx}>{children}</MDXProvider>
-        </LeftSide>
-        <RightSide
-          className="layout__rightSide"
+        </CenterColumn>
+        <RightColumn
+          className="layout__rightColumn"
           relatedPosts={relatedPosts}
           author={author}
         />

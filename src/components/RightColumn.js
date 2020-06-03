@@ -14,7 +14,7 @@ const Content = styled.div`
   padding: 1rem;
 `
 
-const RightSide = ({ relatedPosts }) => {
+const RightColumn = ({ relatedPosts }) => {
   return (
     <Container>
       <PostHeader aside />
@@ -27,4 +27,4 @@ const RightSide = ({ relatedPosts }) => {
   )
 }
 
-export default RightSide
+export default RightColumn

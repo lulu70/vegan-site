@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem 1rem 0 0;
+  padding: 1rem 1rem 0 1rem;
   @media (max-width: 900px) {
     padding: 1rem 0 0 0;
   }

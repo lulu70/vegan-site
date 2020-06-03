@@ -9,7 +9,7 @@ import {
 import PropTypes from "prop-types"
 
 const Header = styled.header`
-  border-bottom: solid 1px ${GREY};
+  border-bottom: ${(props) => (props.aside ? "none" : `solid 1px ${GREY}`)};
   text-align: center;
   position: relative;
   padding: 1rem;
@@ -32,13 +32,16 @@ const Description = styled.div`
 const Small = styled.small`
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 1rem;
   font-size: ${SMALL_FONT_SIZE};
+  @media (max-width: 900px) {
+    left: 0;
+  }
 `
 
 const PostHeader = ({ post, title, description, aside }) => {
   return (
-    <Header>
+    <Header aside={aside}>
       {post ? (
         <>
           <H1 data-test-id="postHeader__h1">{post.frontmatter.title}</H1>

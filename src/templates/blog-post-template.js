@@ -21,7 +21,7 @@ const Article = styled.article`
   }
 `
 const MdxWrapper = styled.div`
-  padding: 1rem 1rem 0 0;
+  padding: 1rem 1rem 0 1rem;
   font-size: ${MAIN_FONT_SIZE};
   ul,
   ol {
