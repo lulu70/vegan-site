@@ -3,8 +3,14 @@ title: Smashed potatoes
 date: 2020-05-30
 updatedDate: 2020-05-30
 description: The best way to bake potatoes in the oven
-featuredImage:
-  src: ../assets/images/smashed-potatoes-ready.jpg
+images:
+  - ../assets/images/smashed-potatoes-ready.jpg
+  - ../assets/images/thyme.jpg
+  - ../assets/images/potatoes-spice-mix.jpg
+  - ../assets/images/potatoes-smashing.jpg
+  - ../assets/images/potatoes-pre-oven.jpg
+  - ../assets/images/smashed-potatoes-ready.jpg
+
 tags:
   - oven dish
 nutritionValues:
@@ -14,15 +20,6 @@ nutritionValues:
   fat: 1
 author: lior cohen
 ---
-
-<Gallery images={[
-'smashed-potatoes-ready',
-'thyme',
-'potatoes-spice-mix',
-'potatoes-smashing',
-'potatoes-pre-oven',
-'smashed-potatoes-ready',
-]}/>
 
 ## The best way to bake potatoes in the oven
 

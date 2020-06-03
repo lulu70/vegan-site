@@ -1,10 +1,10 @@
 import React from "react"
-import Image from "./Image"
 import styled from "styled-components"
 import { SECOND_COLOR, GREY, BG_COLOR } from "../constants"
 import ScrollArea from "./ScrollArea"
 import NextSvg from "../../content/assets/next.svg"
 import BackSvg from "../../content/assets/back.svg"
+import GatsbyImage from "gatsby-image"
 
 const Container = styled.div`
   margin-bottom: 1rem;
@@ -13,12 +13,12 @@ const ImageContainer = styled.div`
   position: relative;
   margin-bottom: 0.2rem;
 `
-const StyledImage = styled(Image)`
+const StyledImage = styled(GatsbyImage)`
   padding-top: 50%;
   height: 0;
   z-index: 1;
 `
-const ThumbnailImage = styled(Image)`
+const ThumbnailImage = styled(GatsbyImage)`
   width: 80px;
   height: 50px;
   border-bottom: ${(props) =>
@@ -72,8 +72,17 @@ const Gallery = ({ images }) => {
   return (
     <Container>
       <ImageContainer>
-        <StyledImage filename={currentImage} />
-        {/* <Overlay></Overlay> */}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={currentImage.childImageSharp.original.src}
+        >
+          <StyledImage
+            fluid={currentImage.childImageSharp.fluid}
+            title={currentImage.name}
+            alt={currentImage.name}
+          />
+        </a>
       </ImageContainer>
       <ThumbnailRow>
         <NavigateButton
@@ -95,8 +104,9 @@ const Gallery = ({ images }) => {
               }}
             >
               <ThumbnailImage
-                filename={image}
-                unlink
+                fluid={image.childImageSharp.fluid}
+                title={image.name}
+                alt={image.name}
                 activeImage={index === currentImageIndex}
               />
             </ImageButton>

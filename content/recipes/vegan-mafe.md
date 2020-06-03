@@ -3,8 +3,14 @@ title: Vegan mafe - west african peanut stew
 date: 2020-05-14
 updatedDate: 2020-05-14
 description: West african "meat" dish in peanut sauce
-featuredImage:
-  src: ../assets/images/vegan-mafe.jpg
+images:
+  - ../assets/images/vegan-mafe.jpg
+  - ../assets/images/onion-garlic-ginger.jpg
+  - ../assets/images/mafe-tomato-sauce.jpg
+  - ../assets/images/mafe-peanut-sauce.jpg
+  - ../assets/images/mafe-soy-chunks.jpg
+  - ../assets/images/mafe-ready.jpg
+  - ../assets/images/mafe-cheese-spread.jpg
 tags:
   - africa
   - african food
@@ -19,16 +25,6 @@ nutritionValues:
   fat: 12
 author: lior cohen
 ---
-
-<Gallery images={[
-'vegan-mafe',
-'onion-garlic-ginger',
-'mafe-tomato-sauce',
-'mafe-peanut-sauce',
-'mafe-soy-chunks',
-'mafe-ready',
-'mafe-cheese-spread'
-]}/>
 
 ## A gift from africa
 

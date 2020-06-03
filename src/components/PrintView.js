@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import { SECOND_COLOR } from "../constants"
-import Image from "../components/Image"
 import NutritionValues from "./NutritionValues"
 import { useStaticQuery, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import GatsbyImage from "gatsby-image"
 
 const Container = styled.div`
   border: dashed 1px ${SECOND_COLOR};
@@ -21,7 +21,7 @@ const TopColumn = styled.div`
   display: flex;
   flex-direction: column;
 `
-const StyledImage = styled(Image)`
+const StyledImage = styled(GatsbyImage)`
   width: 80px;
   height: 80px;
 `
@@ -41,9 +41,12 @@ const PrintView = ({ fileName }) => {
                 carbs
                 fat
               }
-              featuredImage {
-                src {
-                  name
+              images {
+                name
+                childImageSharp {
+                  fluid(maxWidth: 500, quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
                 }
               }
             }
@@ -78,7 +81,11 @@ const PrintView = ({ fileName }) => {
             title={post.frontmatter.nutritionValues.title}
           />
         </TopColumn>
-        <StyledImage filename={post.frontmatter.featuredImage.src.name} />
+        <StyledImage
+          fluid={post.frontmatter.images[0].childImageSharp.fluid}
+          title={post.frontmatter.images[0].name}
+          alt={post.frontmatter.images[0].name}
+        />
       </TopRow>
       <MDXRenderer>{printView.body}</MDXRenderer>
     </Container>

@@ -3,8 +3,13 @@ title: Vegan sweet honey cake
 date: 2020-05-16
 updatedDate: 2020-05-16
 description: Easy and quick delicious 'honey' cake
-featuredImage:
-  src: ../assets/images/vegan-honey-cake-cuts.jpg
+images:
+  - ../assets/images/vegan-honey-cake-cuts.jpg
+  - ../assets/images/vegan-honey-cake-powder.jpg
+  - ../assets/images/vegan-honey-cake-liquid.jpg
+  - ../assets/images/vegan-honey-cake-mix.jpg
+  - ../assets/images/vegan-honey-cake-in-loaf-cake-container.jpg
+  - ../assets/images/vegan-honey-cake.jpg
 tags:
   - sweet
   - baked
@@ -19,14 +24,5 @@ nutritionValues:
   fat: 11
 author: lior cohen
 ---
-
-<Gallery images={[
-'vegan-honey-cake-cuts',
-'vegan-honey-cake-powder',
-'vegan-honey-cake-liquid',
-'vegan-honey-cake-mix',
-'vegan-honey-cake-in-loaf-cake-container',
-'vegan-honey-cake'
-]}/>
 
 <PrintView fileName="vegan-sweet-honey-cake"/>

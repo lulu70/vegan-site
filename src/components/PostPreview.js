@@ -1,11 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import StyledLink from "./StyledLink"
-import Image from "./Image"
-import PropTypes from "prop-types"
 import { AnimationWrapper } from "react-hover-animation"
 import NutritionValues from "./NutritionValues"
 import { MAIN_FONT_SIZE, SMALL_FONT_SIZE } from "../constants"
+import GatsbyImage from "gatsby-image"
 
 const AnimatedContainer = styled(AnimationWrapper)`
   display: flex;
@@ -13,7 +12,7 @@ const AnimatedContainer = styled(AnimationWrapper)`
   width: 49%;
   margin-bottom: 1rem;
 `
-const StyledImage = styled(Image)`
+const StyledImage = styled(GatsbyImage)`
   padding-top: 47.61905%;
   height: 0;
 `
@@ -60,8 +59,9 @@ const PostPreview = ({ post, onClick }) => {
         onClick={onClick}
       >
         <StyledImage
-          filename={post.childMdx.frontmatter.featuredImage.src.name}
-          unlink
+          fluid={post.childMdx.frontmatter.images[0].childImageSharp.fluid}
+          title={post.childMdx.frontmatter.images[0].name}
+          alt={post.childMdx.frontmatter.images[0].name}
         />
       </StyledLink>
       <SmallRow>
@@ -88,7 +88,3 @@ const PostPreview = ({ post, onClick }) => {
 }
 
 export default PostPreview
-
-PostPreview.propTypes = {
-  post: PropTypes.object.isRequired,
-}

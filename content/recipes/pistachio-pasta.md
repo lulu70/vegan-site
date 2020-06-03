@@ -3,8 +3,12 @@ title: Pistachio pasta
 date: 2020-05-19
 updatedDate: 2020-05-19
 description: Amazing quick and easy pasta
-featuredImage:
-  src: ../assets/images/pistachio-pasta-plate.jpg
+images:
+  - ../assets/images/pistachio-pasta-plate.jpg
+  - ../assets/images/pistachio-pasta-pistachios.jpg
+  - ../assets/images/pistachio-pasta-garlic.jpg
+  - ../assets/images/pistachio-pasta-sauce.jpg
+  - ../assets/images/pistachio-pasta-ready.jpg
 tags:
   - creamy
   - pasta
@@ -19,13 +23,5 @@ nutritionValues:
   fat: 65
 author: lior cohen
 ---
-
-<Gallery images={[
-'pistachio-pasta-plate',
-'pistachio-pasta-pistachios',
-'pistachio-pasta-garlic',
-'pistachio-pasta-sauce',
-'pistachio-pasta-ready'
-]}/>
 
 <PrintView fileName="pistachio-pasta"/>

@@ -3,8 +3,16 @@ title: Quinoa curry
 date: 2020-06-03
 updatedDate: 2020-06-03
 description: Simple and delicious curry, made with quinoa.
-featuredImage:
-  src: ../assets/images/quinoa-curry-plate.jpg
+images:
+  - ../assets/images/quinoa-curry-plate.jpg
+  - ../assets/images/quinoa-curry-grains.jpg
+  - ../assets/images/quinoa-curry-frying-oil.jpg
+  - ../assets/images/quinoa-curry-carrots.jpg
+  - ../assets/images/quinoa-curry-chickpeas.jpg
+  - ../assets/images/quinoa-curry-veggies.jpg
+  - ../assets/images/quinoa-curry-in-pan.jpg
+  - ../assets/images/quinoa-curry-in-pan-with-milk.jpg
+  - ../assets/images/quinoa-curry-plate-two.jpg
 tags:
   - fast ans simple
   - quinoa
@@ -17,16 +25,4 @@ nutritionValues:
 author: lior cohen
 ---
 
-<Gallery images={[
-'quinoa-curry-plate',
-'quinoa-curry-grains',
-'quinoa-curry-frying-oil',
-'quinoa-curry-carrots',
-'quinoa-curry-chickpeas',
-'quinoa-curry-veggies',
-'quinoa-curry-in-pan',
-'quinoa-curry-in-pan-with-milk',
-'quinoa-curry-plate-two',
-]}/>
-
-<PrintView fileName="quinoa-curry"/>
+<PrintView fileName="quinoa-curry" />

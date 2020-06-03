@@ -3,8 +3,16 @@ title: Lentils canoe
 date: 2020-05-31
 updatedDate: 2020-05-31
 description: Sweet potato with black lentils stew
-featuredImage:
-  src: ../assets/images/sweet-potato-lentils-dish.jpg
+images:
+  - ../assets/images/sweet-potato-lentils-dish.jpg
+  - ../assets/images/sweet-potato-lentils-ready-stew.jpg
+  - ../assets/images/sweet-potato-alu-foil.jpg
+  - ../assets/images/sweet-potato-halves.jpg
+  - ../assets/images/sweet-potato-ready.jpg
+  - ../assets/images/black-lentils.jpg
+  - ../assets/images/black-lentils-tahini-stew.jpg
+  - ../assets/images/sweet-potato-lentils-ready.jpg
+  - ../assets/images/sweet-potato-lentils-portion.jpg
 tags:
   - oven dish
 nutritionValues:
@@ -15,17 +23,5 @@ nutritionValues:
   fat: 16
 author: Roi Cohen
 ---
-
-<Gallery images={[
-'sweet-potato-lentils-dish',
-'sweet-potato-lentils-ready-stew',
-'sweet-potato-alu-foil',
-'sweet-potato-halves',
-'sweet-potato-ready',
-'black-lentils',
-'black-lentils-tahini-stew',
-'sweet-potato-lentils-ready',
-'sweet-potato-lentils-portion',
-]}/>
 
 <PrintView fileName="lentils-canoe"/>

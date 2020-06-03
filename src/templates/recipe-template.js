@@ -13,6 +13,7 @@ import {
   SMALL_FONT_SIZE,
 } from "../constants"
 import NutritionValues from "../components/NutritionValues"
+import Gallery from "../components/Gallery"
 
 const Article = styled.article`
   width: 100%;
@@ -54,10 +55,11 @@ const MdxWrapper = styled.div`
 const EndLine = styled.hr`
   margin: 1rem 0;
 `
-const BlogPostTemplate = ({ data, location }) => {
+const RecipeTemplate = ({ data, location }) => {
   const post = data.mdx
   const author = data.author
   const relatedPosts = data.relatedPosts.edges
+  const images = post.frontmatter.images
   return (
     <Layout location={location} relatedPosts={relatedPosts} author={author}>
       <SEO
@@ -68,6 +70,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <PostHeader post={post} />
         <MdxWrapper>
           <NutritionValues values={post.frontmatter.nutritionValues} />
+          <Gallery images={images} />
           <MDXRenderer>{post.body}</MDXRenderer>
         </MdxWrapper>
         <EndLine />
@@ -79,7 +82,7 @@ const BlogPostTemplate = ({ data, location }) => {
   )
 }
 
-export default BlogPostTemplate
+export default RecipeTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!, $tags: [String], $author: String!) {
@@ -101,12 +104,28 @@ export const pageQuery = graphql`
           protein
           carbs
         }
+        images {
+          name
+          childImageSharp {
+            original {
+              src
+            }
+            fluid(maxWidth: 500, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
       }
     }
     author: authorsJson(title: { eq: $author }) {
       title
       image {
         name
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
       }
     }
     relatedPosts: allMdx(

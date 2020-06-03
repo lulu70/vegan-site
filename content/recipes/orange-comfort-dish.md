@@ -3,8 +3,14 @@ title: Orange comfort dish
 date: 2020-05-31
 updatedDate: 2020-05-31
 description: Orange mashed veggies with leeks and cashew nuts
-featuredImage:
-  src: ../assets/images/orange-veggies-plate.jpg
+images:
+  - ../assets/images/orange-veggies-plate.jpg
+  - ../assets/images/orange-veggies-cubes.jpg
+  - ../assets/images/orange-veggies-leeks.jpg
+  - ../assets/images/orange-veggies-sage.jpg
+  - ../assets/images/orange-veggies-mashed.jpg
+  - ../assets/images/orange-veggies-frying.jpg
+  - ../assets/images/orange-veggies-ready.jpg
 tags:
   - main
 nutritionValues:
@@ -14,15 +20,5 @@ nutritionValues:
   fat: 1
 author: lior cohen
 ---
-
-<Gallery images={[
-'orange-veggies-plate',
-'orange-veggies-cubes',
-'orange-veggies-leeks',
-'orange-veggies-sage',
-'orange-veggies-mashed',
-'orange-veggies-frying',
-'orange-veggies-ready',
-]}/>
 
 <PrintView fileName="orange-comfort-dish"/>

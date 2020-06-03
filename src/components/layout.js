@@ -4,14 +4,12 @@ import Header from "./Header"
 import Search from "./Search"
 import { useSearchState } from "../context/ContextProvider"
 import { MDXProvider } from "@mdx-js/react"
-import Image from "./Image"
 import RightColumn from "./RightColumn"
 import styled from "styled-components"
 import GlobalStyles from "../GlobalStyles"
 import NutritionValues from "./NutritionValues"
 import StyledLink from "./StyledLink"
 import { MAIN_WIDTH, GREY, ASIDE_WIDTH } from "../constants"
-import Gallery from "./Gallery"
 import PrintView from "./PrintView"
 const Container = styled.div``
 
@@ -74,9 +72,12 @@ const Layout = ({ children, relatedPosts, author }) => {
                 protein
                 carbs
               }
-              featuredImage {
-                src {
-                  name
+              images {
+                name
+                childImageSharp {
+                  fluid(maxWidth: 500, quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
                 }
               }
             }
@@ -88,9 +89,7 @@ const Layout = ({ children, relatedPosts, author }) => {
 
   const posts = data.allFile.nodes
   const componentsForMdx = {
-    Image,
     NutritionValues,
-    Gallery,
     Link: StyledLink,
     PrintView,
   }

@@ -3,8 +3,16 @@ title: Fast & Special Lasagna
 date: 2020-05-04
 updatedDate: 2020-05-04
 description: Easy to make delicious Lasagna
-featuredImage:
-  src: ../assets/images/vegan-lasagna-plate.jpg
+images:
+  - ../assets/images/vegan-lasagna-plate.jpg
+  - ../assets/images/lasagna-serving.jpg
+  - ../assets/images/vegetables-pan.jpg
+  - ../assets/images/cashew-bechamel.jpg
+  - ../assets/images/first-three-layers.jpg
+  - ../assets/images/second-layer.jpg
+  - ../assets/images/top-layer-nutritional-yeast.jpg
+  - ../assets/images/ready-lasagna.jpg
+  - ../assets/images/vegan-lasagna.jpg
 tags:
   - pasta
   - lasagna
@@ -19,17 +27,6 @@ nutritionValues:
   fat: 18
 author: Roi Cohen
 ---
-
-<Gallery images={[
-'lasagna-serving', 
-'vegetables-pan',
-'cashew-bechamel',
-'first-three-layers',
-'second-layer',
-'top-layer-nutritional-yeast',
-'ready-lasagna',
-'vegan-lasagna',
-]}/>
 
 Sometimes we just want to make something fast and simple with some random ingredients we have at home.
 A one-tray-dish is a perfect solution to this situation and what can be so delicious as a quick and easy to make Lasagna?!

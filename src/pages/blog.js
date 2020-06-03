@@ -49,11 +49,6 @@ export const pageQuery = graphql`
             title
             description
             tags
-            featuredImage {
-              src {
-                name
-              }
-            }
           }
         }
       }
