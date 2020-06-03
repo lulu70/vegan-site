@@ -16,15 +16,10 @@
 ## Let's start
 
 1. Cut the peppers and take the kernels out of them.
-
-2) Place the peppers in a food processor and add all the other ingredients.
-
+2. Place the peppers in a food processor and add all the other ingredients.
 3. Grind for at least two minutes until everything is chopped really thin.
-
-4) Arrange in small jars and keep in the fridge.
-
-5. Serve alongside any other dish and enjoy the fresh aromas and spices.
+4. Arrange in small jars and keep in the fridge.
+5. Serve alongside any other dish and enjoy the fresh aromas and spices.<br/>
+enjoy!
 
 Try also our <Link to="/recipes/red-chili-sauce"> red chili sauce 🌶️</Link>
-
-Enjoy!

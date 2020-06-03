@@ -34,7 +34,7 @@
 ### Let's start
 
 1. Soak the cashew nuts in water for 1 hour.
-2. Preheat oven to 180ºc.
+2. Preheat oven to 180℃.
 3. Choose a large pan or a wok and heat the oil in it.
 4. Cut the onions, carrots and the celery to dices and fry it 3-5 minutes until its golden.
 5. Cut the zucchini, mushrooms, and dry tomatoes to dices and add it and the minced garlic to the pan. continue to fry for another 5 minutes.
@@ -52,5 +52,5 @@
 13. For the last layer we want to cover the pasta sheets completely with the vegetable sauce. this way they will get soft and not dry hard in the oven.
     on top, we will spread the nutritional yeast equally and finally place the dish in the oven.
 14. Bake for 45 minutes and check with a knife if the pasta sheets are soft enough, if not, you can cover it with aluminum foil and bake for another 10 minutes.
-When it's ready, take it out of the oven and let it cool down before serving.
-Enjoy!
+When it's ready, take it out of the oven and let it cool down before serving.<br/>
+enjoy!

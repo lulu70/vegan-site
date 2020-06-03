@@ -17,5 +17,5 @@
 5. Prepare a baking tray with baking paper, and oil it a bit using some olive oil.
 6. Place the boiled potatoes on the tray and gently smash each one of them separately using a hand potato masher, be careful not to break them apart.
 7. Drizzle evenly all the spiced oil mixture that you made before on the potatoes.
-8. Preheat the oven to 220 ℃.
+8. Preheat the oven to 220℃.
 9. Bake the potatoes for about 30 minutes until they look nice and crispy, enjoy right away.

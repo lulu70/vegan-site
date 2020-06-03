@@ -40,6 +40,5 @@
 11. Add the chickpea flour, wheat gluten and spelt flour, stir to get a well blended mixture.
 12. With wet palms, make 12 even balls and flat them to a burger shape, about 2 cm thick.
 13. Heat a non-stick pan and sprinkle a bit of olive oil, then fry the burgers 3-4 minutes on each side with a cover.
-14. Serve it hot in a bun or any way you like.
-
-Enjoy!
+14. Serve it hot in a bun or any way you like.<br/>
+enjoy!

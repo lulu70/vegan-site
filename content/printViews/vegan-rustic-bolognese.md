@@ -32,5 +32,5 @@
 8. Cook the pasta “al dente” and drain the water.
 9. Put warm pasta in a plate and on top of it pour the hot bolognese sauce.
 
-We recommend finishing with vegan parmesan on top.
-Enjoy!
+We recommend finishing with vegan parmesan on top.<br/>
+enjoy!

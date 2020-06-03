@@ -12,11 +12,7 @@
 
 ### For The Toppings
 
-**5 servings**
-
-Nutritional values per serving:
-
-<NutritionValues values={{cal: 60, protein: 4.2, carbs: 10, fat: 5}}/>
+<NutritionValues values={{title: "Nutritional values per serving (5 servings):",cal: 60, protein: 4.2, carbs: 10, fat: 5}}/>
 
 - 1 can (300 gr.) of cooked Fava beans
 - ½ tbs Red Chili flakes
@@ -47,6 +43,5 @@ For the toppings, you can add many things like mushrooms, eggplants, etc. in thi
 pour 5-7 tbsp of the hummus mash to a deep round plate, spread it and make a hole in the center. pour the fava beans to the hole and finish with some cooked chickpeas on top and few fresh parsley leaves. sprinkle olive oil on top of everything, as much as you like, we use 2 tsp.
 you can decorate with a bit of paprika or cumin powder on top to make it look even better 😊
 
-As a siders we add some black olives and our <Link to="/recipes/green-chili-sauce">green chili sauce</Link>, and of course a <Link to="/recipes/home-made-pita">home made pita</Link> to wipe the delicious Hummus.
-
-Enjoy!
+As a siders we add some black olives and our <Link to="/recipes/green-chili-sauce">green chili sauce</Link>, and of course a <Link to="/recipes/home-made-pita">home made pita</Link> to wipe the delicious Hummus.<br/>
+enjoy!
