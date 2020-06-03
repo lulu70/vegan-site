@@ -14,7 +14,7 @@ const ImageContainer = styled.div`
   margin-bottom: 0.2rem;
 `
 const StyledImage = styled(GatsbyImage)`
-  padding-top: 50%;
+  padding-top: 56.25%;
   height: 0;
   z-index: 1;
 `

@@ -16,9 +16,6 @@ images:
 tags:
   - wheat gluten
   - protein rich
-  - liquid smoke
-  - burger
-  - veggie burger
   - bbq
   - grill
   - american

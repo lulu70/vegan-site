@@ -13,7 +13,6 @@ tags:
   - Israel
   - Middle Eastern
   - breads and pastries
-  - pita bread
 nutritionValues:
   cal: 276
   protein: 8

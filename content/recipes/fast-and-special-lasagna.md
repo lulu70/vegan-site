@@ -16,8 +16,6 @@ images:
 tags:
   - pasta
   - lasagna
-  - pasta sheets
-  - red wine
   - Mediterranean
 nutritionValues:
   title: "Nutritional values per serving (6 servings):"

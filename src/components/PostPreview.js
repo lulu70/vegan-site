@@ -13,7 +13,7 @@ const AnimatedContainer = styled(AnimationWrapper)`
   margin-bottom: 1rem;
 `
 const StyledImage = styled(GatsbyImage)`
-  padding-top: 47.61905%;
+  padding-top: 56.25%;
   height: 0;
 `
 const SmallRow = styled.small`

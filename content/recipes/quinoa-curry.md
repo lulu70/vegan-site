@@ -18,10 +18,10 @@ tags:
   - quinoa
 nutritionValues:
   title: "Nutrition values per serving (4 servings):"
-  cal: 1
-  protein: 1
-  carbs: 1
-  fat: 1
+  cal: 395
+  protein: 14
+  carbs: 55
+  fat: 13
 author: lior cohen
 ---
 

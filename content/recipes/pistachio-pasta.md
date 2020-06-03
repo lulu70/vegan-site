@@ -10,7 +10,6 @@ images:
   - ../assets/images/pistachio-pasta-sauce.jpg
   - ../assets/images/pistachio-pasta-ready.jpg
 tags:
-  - creamy
   - pasta
   - Pistachio
   - 5 ingredients meal

@@ -12,9 +12,6 @@ images:
 
 tags:
   - red chili peppers
-  - red chili sauce
-  - hot chili
-  - spicy
   - Sauces and Dips
 nutritionValues:
   cal: 454

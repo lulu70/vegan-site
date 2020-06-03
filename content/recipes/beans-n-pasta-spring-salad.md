@@ -13,8 +13,7 @@ images:
 tags:
   - pasta
   - salad
-  - spring
-  - refreshing
+
 nutritionValues:
   title: "Nutritional values per serving (2 servings):"
   cal: 448

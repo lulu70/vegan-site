@@ -12,12 +12,14 @@ images:
   - ../assets/images/orange-veggies-frying.jpg
   - ../assets/images/orange-veggies-ready.jpg
 tags:
-  - main
+  - fast ans simple
+  - sweet potato 
 nutritionValues:
-  cal: 1
-  protein: 1
-  carbs: 1
-  fat: 1
+  title: "Nutritional values per serving (2 servings):"
+  cal: 440
+  protein: 11
+  carbs: 60
+  fat: 19
 author: lior cohen
 ---
 

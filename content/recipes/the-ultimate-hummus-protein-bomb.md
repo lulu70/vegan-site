@@ -14,10 +14,7 @@ images:
   - ../assets/images/delicious-hummus-plate.jpg
   - ../assets/images/pita-bread-olives-green-chili-paste.jpg
 tags:
-  - hummus
   - chickpeas
-  - tahini
-  - pita bread
   - protein rich
   - high protein
   - Middle Eastern

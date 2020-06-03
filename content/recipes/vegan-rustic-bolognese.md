@@ -13,10 +13,7 @@ images:
   - ../assets/images/vegan-bolognese-parmesan.jpg
 tags:
   - pasta
-  - bolognese
   - soy flakes
-  - low fat
-  - red wine
   - Mediterranean
   - Protein rich
   - high protein

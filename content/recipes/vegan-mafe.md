@@ -12,10 +12,8 @@ images:
   - ../assets/images/mafe-ready.jpg
   - ../assets/images/mafe-cheese-spread.jpg
 tags:
-  - africa
   - african food
   - peanut sauce
-  - peanuts
   - soy chunks
 nutritionValues:
   title: "Nutritional values per serving (4 servings):"

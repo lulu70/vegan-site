@@ -11,11 +11,7 @@ images:
   - ../assets/images/vegan-honey-cake-in-loaf-cake-container.jpg
   - ../assets/images/vegan-honey-cake.jpg
 tags:
-  - sweet
-  - baked
-  - honey
-  - cake
-  - dessert
+  - cakes and desserts
 nutritionValues:
   title: "Nutrition values per serving (1 loaf cake - 10 portions): "
   cal: 226

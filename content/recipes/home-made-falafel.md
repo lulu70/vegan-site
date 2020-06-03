@@ -11,10 +11,7 @@ images:
 tags:
   - Israel
   - Middle Eastern
-  - hummus
   - chickpeas
-  - tahini
-  - pita bread
 nutritionValues:
   title: "Nutritional values per serving (5 balls):"
   cal: 315

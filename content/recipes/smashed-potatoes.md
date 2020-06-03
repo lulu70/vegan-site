@@ -13,11 +13,13 @@ images:
 
 tags:
   - oven dish
+  - potato
 nutritionValues:
-  cal: 1
-  protein: 1
-  carbs: 1
-  fat: 1
+  title: "Nutritional values per serving (4 servings):"
+  cal: 411
+  protein: 7
+  carbs: 70
+  fat: 13
 author: lior cohen
 ---
 

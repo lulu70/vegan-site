@@ -12,10 +12,6 @@ images:
   - ../assets/images/green-red-chili-paste-saucer.jpg
 tags:
   - green chili peppers
-  - Thai red chili peppers
-  - green chili sauce
-  - hot chili
-  - spicy
   - Sauces and Dips
 nutritionValues:
   title: "Nutritional values per serving (4 small jars):"

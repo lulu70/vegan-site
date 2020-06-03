@@ -15,11 +15,12 @@ images:
   - ../assets/images/sweet-potato-lentils-portion.jpg
 tags:
   - oven dish
+  - lentils
 nutritionValues:
   title: "Nutritional values per serving (2 servings):"
-  cal: 470
-  protein: 16
-  carbs: 74
+  cal: 436
+  protein: 15
+  carbs: 63
   fat: 16
 author: Roi Cohen
 ---
