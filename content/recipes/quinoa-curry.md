@@ -26,6 +26,7 @@ author: lior cohen
 'quinoa-curry-veggies',
 'quinoa-curry-in-pan',
 'quinoa-curry-in-pan-with-milk',
+'quinoa-curry-plate-two',
 ]}/>
 
 <PrintView fileName="quinoa-curry"/>
