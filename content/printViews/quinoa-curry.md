@@ -4,7 +4,7 @@
 - 2 tbsp of vegetable oil
 - 1 chopped onion
 - ½ a cup of chopped carrots
-- 1 cup of cooked chickpeas (you can use a can or cook it yourself with the same method described in our <Link to="/recipes/the-ultimate-hummus-protein-bomb/#lets-start">hummus</Link> recipe)
+- 1 cup of cooked chickpeas (you can use a can or cook it yourself)
 - 1 zucchini
 - 2 tsp of Indian curry powder
 - 1 tsp of cumin

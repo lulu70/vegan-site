@@ -23,6 +23,7 @@ const MainMenu = () => {
           sourceInstanceName: { eq: "pages" }
           name: { nin: ["404", "index"] }
         }
+        sort: { fields: fields___slug, order: ASC }
       ) {
         nodes {
           name
@@ -39,7 +40,7 @@ const MainMenu = () => {
     <div className="MainMenu__navWrapper">
       <nav>
         <Ul>
-          {data.pages.nodes.map(page => (
+          {data.pages.nodes.map((page) => (
             <Li key={page.id}>
               <StyledLink
                 color={MAIN_COLOR}
