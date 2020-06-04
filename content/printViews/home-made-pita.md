@@ -1,6 +1,6 @@
 ## Ingredients
 
-- 4 cups of all-purpose flour
+- 4 cups of all-purpose flour, (you can also use spelt flour for a healthier choice)
 - 1½ tsp of active dry yeast
 - 1 tbsp of sugar
 - 2½ tbsp of olive oil
