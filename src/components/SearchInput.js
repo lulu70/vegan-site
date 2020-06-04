@@ -27,6 +27,11 @@ const Input = styled.input`
 const SearchInput = ({ posts, close }) => {
   const searchState = useSearchState()
   const searchDispatch = useSearchDispatch()
+  const inputRef = React.useRef()
+  React.useEffect(() => {
+    inputRef.current.focus()
+  }, [])
+
   const { query } = searchState
   const handleInputChange = (event) => {
     const query = event.target.value
@@ -59,6 +64,7 @@ const SearchInput = ({ posts, close }) => {
       </Container>
       <Input
         className="searchInput__input"
+        ref={inputRef}
         type="search"
         id="search"
         onChange={handleInputChange}
