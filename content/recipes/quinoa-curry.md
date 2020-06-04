@@ -17,7 +17,7 @@ tags:
   - fast ans simple
   - quinoa
 nutritionValues:
-  title: "Nutrition values per serving (4 servings):"
+  servingsText: "4 servings"
   cal: 395
   protein: 14
   carbs: 55

@@ -15,7 +15,7 @@ tags:
   - oven dish
   - potato
 nutritionValues:
-  title: "Nutritional values per serving (4 servings):"
+  servingsText: "4 servings"
   cal: 411
   protein: 7
   carbs: 70

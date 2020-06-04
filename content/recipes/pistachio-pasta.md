@@ -15,7 +15,7 @@ tags:
   - 5 ingredients meal
   - Mediterranean
 nutritionValues:
-  title: "Nutritional values per serving (2 servings):"
+  servingsText: "2 servings"
   cal: 1190
   protein: 28
   carbs: 136

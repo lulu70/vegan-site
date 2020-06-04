@@ -15,7 +15,7 @@ tags:
   - fast ans simple
   - sweet potato 
 nutritionValues:
-  title: "Nutritional values per serving (2 servings):"
+  servingsText: "2 servings"
   cal: 440
   protein: 11
   carbs: 60

@@ -21,4 +21,5 @@
 6. Preheat the oven to 180℃.
 7. Place everything into a cake container and bake in the oven for 55 minutes.
 8. Leave the cake in the oven for 20 more minutes without opening the oven door.
-9. Take it out of the oven, cut it, and enjoy right away.
+9. Take it out of the oven and let it cool down for a few minutes, cut it and serve right away.<br/>
+enjoy!

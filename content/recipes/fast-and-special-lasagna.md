@@ -18,15 +18,15 @@ tags:
   - lasagna
   - Mediterranean
 nutritionValues:
-  title: "Nutritional values per serving (6 servings):"
+  servingsText: "6 servings"
   cal: 483
   protein: 20
   carbs: 60
   fat: 18
 author: Roi Cohen
 ---
-
+## All-in lasagna
 Sometimes we just want to make something fast and simple with some random ingredients we have at home.
-A one-tray-dish is a perfect solution to this situation and what can be so delicious as a quick and easy to make Lasagna?!
+a one-tray-dish is a perfect solution to this situation. this time we will make a simple and quick delicious lasagna using most of the vegetables we found in our fridge.
 
 <PrintView fileName="fast-and-special-lasagna"/>

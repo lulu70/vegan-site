@@ -18,4 +18,6 @@
 4. Cut the leeks to thin slices and fry them with 1 tsp of olive oil, until their color becomes transparent.
 5. Add the cashew nuts, the sage leaves, and some salt and black pepper on top of the leeks, mix and fry together for 2 more minutes.
 6. Drain almost all the water from the sweet potatoes and carrots and mash them together, add the grated nutmeg some salt and pepper.
-7. Serve side by side, enjoy right away.
+7. Serve side by side.<br/>
+enjoy!
+

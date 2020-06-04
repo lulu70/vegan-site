@@ -18,13 +18,12 @@ tags:
   - Protein rich
   - high protein
 nutritionValues:
+  servingsText: "5 servings"
   cal: 523
   protein: 26
   carbs: 94
   fat: 5
 author: Roi Cohen
 ---
-
-**5 servings**
 
 <PrintView fileName="vegan-rustic-bolognese"/>

@@ -15,7 +15,7 @@ tags:
   - salad
 
 nutritionValues:
-  title: "Nutritional values per serving (2 servings):"
+  servingsText: "2 servings"
   cal: 448
   protein: 20
   carbs: 80

@@ -4,10 +4,10 @@ date: 2020-05-21
 updatedDate: 2020-05-21
 description: Protein rich vegan burgers
 images:
+  - ../assets/images/burger-whole-wheat-bun.jpg
+  - ../assets/images/burger-bun-sliced.jpg
   - ../assets/images/vegan-burger-bun.jpg
-  - ../assets/images/burger-bun.jpg
   - ../assets/images/flax-chia-seeds.jpg
-  - ../assets/images/mushrooms-walnuts.jpg
   - ../assets/images/black-lentils-food-processor.jpg
   - ../assets/images/bowl-gluten-chickpeas.jpg
   - ../assets/images/vegan-burgers-blend.jpg
@@ -21,7 +21,8 @@ tags:
   - american
   - high protein
 nutritionValues:
-  title: "Nutritional values per serving (12 burgers):"
+  servingsText: "12 burgers"
+  title: "Nutritional values per burger:"
   cal: 286
   protein: 20
   carbs: 31

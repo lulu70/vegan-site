@@ -35,4 +35,6 @@
 
 ### Side suggestion instructions
 
-1. Mix the vegan cheese spread, the lemon juice, and the spice mix till you get a smooth texture, serve right away.
+1. Mix the vegan cheese spread, the lemon juice, and the spice mix till you get a smooth texture, serve right away.<br/>
+enjoy!
+

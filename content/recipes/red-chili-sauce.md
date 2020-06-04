@@ -14,10 +14,12 @@ tags:
   - red chili peppers
   - Sauces and Dips
 nutritionValues:
-  cal: 454
-  protein: 13
-  carbs: 102
-  fat: 2
+  servingsText: "3 small jars"
+  title: "Nutritional values per jar:"
+  cal: 151
+  protein: 4
+  carbs: 34
+  fat: 1
 author: Roi Cohen
 ---
 

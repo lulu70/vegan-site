@@ -13,7 +13,8 @@ images:
 tags:
   - cakes and desserts
 nutritionValues:
-  title: "Nutrition values per serving (1 loaf cake - 10 portions): "
+  servingsText: "1 loaf cake - 10 portions"
+  title: "Nutrition values per portion:"
   cal: 226
   protein: 3
   carbs: 26

@@ -14,11 +14,12 @@ tags:
   - green chili peppers
   - Sauces and Dips
 nutritionValues:
-  title: "Nutritional values per serving (4 small jars):"
-  cal: 755
-  protein: 14
-  carbs: 56
-  fat: 61
+  servingsText: "4 small jars"
+  title: "Nutritional values per jar:"
+  cal: 193
+  protein: 4
+  carbs: 14
+  fat: 15
 author: Roi Cohen
 ---
 

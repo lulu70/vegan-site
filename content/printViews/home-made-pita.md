@@ -20,4 +20,6 @@
 9. Preheat the oven to 250℃.
 10. Prepare a baking tray with baking paper, sprinkle some flour on it, and place the pitas on.
 11. Bake for about 5 minutes until there is a bit of a color change.
-12. Take out, let it chill, enjoy right away.
+12. Take out, let it chill a few minutes.<br/>
+enjoy!
+

@@ -14,13 +14,13 @@ tags:
   - Middle Eastern
   - breads and pastries
 nutritionValues:
+  servingsText: "8 portions"
+  title: "Nutritional values per portion:"
   cal: 276
   protein: 8
   carbs: 50
   fat: 4
 author: lior cohen
 ---
-
-> 8 portions
 
 <PrintView fileName="home-made-pita"/>

@@ -22,4 +22,6 @@
 5. Add the carrots and zucchini and fry for 5 minutes.
 6. Add the chickpeas, the rest of the curry, cumin, chili flakes, and some salt.
 7. Boil the water and pour it in, cover the pan, and cook for 10 minutes.
-8. After the 10 minutes, add the coconut milk, mix it in and keep frying for 2 more minutes, enjoy right away.
+8. After the 10 minutes, add the coconut milk, mix it in and keep frying for 2 more minutes.<br/>
+enjoy!
+
