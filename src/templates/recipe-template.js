@@ -98,6 +98,7 @@ export const pageQuery = graphql`
         tags
         author
         nutritionValues {
+          servingsText
           title
           cal
           fat

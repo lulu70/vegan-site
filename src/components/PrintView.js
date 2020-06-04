@@ -35,6 +35,7 @@ const PrintView = ({ fileName }) => {
             frontmatter {
               title
               nutritionValues {
+                servingsText
                 title
                 cal
                 protein
@@ -79,6 +80,7 @@ const PrintView = ({ fileName }) => {
               fat: post.frontmatter.nutritionValues.fat,
             }}
             title={post.frontmatter.nutritionValues.title}
+            servingsText={post.frontmatter.nutritionValues.servingsText}
           />
         </TopColumn>
         <StyledImage

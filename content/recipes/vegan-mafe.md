@@ -16,7 +16,7 @@ tags:
   - peanut sauce
   - soy chunks
 nutritionValues:
-  title: "Nutritional values per serving (4 servings):"
+  servingsText: "4 servings"
   cal: 175
   protein: 10
   carbs: 8

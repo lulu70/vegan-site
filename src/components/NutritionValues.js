@@ -1,11 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import { SMALL_FONT_SIZE } from "../constants"
+import { SMALL_FONT_SIZE, TINY_FONT_SIZE } from "../constants"
 
 const Container = styled.div`
   font-size: ${SMALL_FONT_SIZE};
   margin-bottom: 0.5rem;
+`
+const Title = styled.div`
+  font-size: ${TINY_FONT_SIZE};
 `
 const ValuesContainer = styled.div`
   display: flex;
@@ -22,7 +25,14 @@ const Span = styled.span`
     }
   }
 `
-const NutritionValues = ({ values, title, fileName, noTitle }) => {
+const NutritionValues = ({
+  values,
+  title,
+  servingsText,
+  fileName,
+  noTitle,
+  noServingsText,
+}) => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { sourceInstanceName: { eq: "recipes" } }) {
@@ -31,6 +41,7 @@ const NutritionValues = ({ values, title, fileName, noTitle }) => {
           childMdx {
             frontmatter {
               nutritionValues {
+                servingsText
                 title
                 cal
                 protein
@@ -55,10 +66,13 @@ const NutritionValues = ({ values, title, fileName, noTitle }) => {
   }
   return (
     <Container>
+      {!noServingsText && (
+        <strong>{servingsText || nutritionValues.servingsText}</strong>
+      )}
       {!noTitle && (
-        <div>
-          {title || nutritionValues["title"] || "Nutrition values per serving:"}
-        </div>
+        <Title>
+          {title || nutritionValues.title || "Nutrition values per serving:"}
+        </Title>
       )}
       <ValuesContainer>
         <div>
