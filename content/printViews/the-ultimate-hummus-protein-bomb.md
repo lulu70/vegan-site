@@ -12,7 +12,7 @@
 
 ### For The Toppings
 
-<NutritionValues values={{title: "Nutritional values per serving (5 servings):",cal: 60, protein: 4.2, carbs: 10, fat: 5}}/>
+<NutritionValues servingsText="5 servings" values={{cal: 60, protein: 4.2, carbs: 10, fat: 5}} />
 
 - 1 can (300 gr.) of cooked Fava beans
 - ½ tbs Red Chili flakes
@@ -32,7 +32,8 @@
 7. Place the filtered ingredients in a strong food processor, but keep ½ cup of the chickpeas separate for topping later. add also the salt, cumin, black pepper, tahini and lemon juice to it.
 8. Use the stock we kept before, start to add ½ cup of it and turn the food processor on. the blend should become creamy, smooth, but not too liquid. continue to add small amounts of the stock to get your desired mash results.
 
-### For the toppings 
+### For the toppings
+
 You can add many things like mushrooms, eggplants, etc. in this recipe, we will use cooked fava beans, but you can choose whatever you like to complete this super tasty hummus plate.
 
 1. Empty the cooked fava beans can in a small saucepan and let it boil.

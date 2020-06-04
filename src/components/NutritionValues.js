@@ -17,7 +17,8 @@ const ValuesContainer = styled.div`
   }
 `
 const Span = styled.span`
-  padding: 0 0.2rem;
+  padding-right: 0.2rem;
+  padding-left: ${(props) => (props.first ? "0" : "0.2rem")};
   border-right: ${(props) => (props.noBorder ? "none" : "solid 1px")};
   @media (max-width: 600px) {
     :last-child {
@@ -76,7 +77,7 @@ const NutritionValues = ({
       )}
       <ValuesContainer>
         <div>
-          <Span>
+          <Span first>
             <strong>cal: </strong>
             {nutritionValues.cal}
           </Span>
