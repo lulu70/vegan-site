@@ -1,12 +1,23 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import { SMALL_FONT_SIZE, TINY_FONT_SIZE } from "../constants"
-
+import { SMALL_FONT_SIZE, TINY_FONT_SIZE, SECOND_COLOR } from "../constants"
+import DishSvg from "../../content/assets/dish-spoon-knife.svg"
 const Container = styled.div`
   font-size: ${SMALL_FONT_SIZE};
   margin-bottom: 0.5rem;
 `
+const ServingsContainer = styled.div`
+  display: flex;
+  align-items: center;
+`
+const StyledDishSvg = styled(DishSvg)`
+  margin-right: 0.3rem;
+  path {
+    fill: ${SECOND_COLOR};
+  }
+`
+
 const Title = styled.div`
   font-size: ${TINY_FONT_SIZE};
 `
@@ -68,7 +79,10 @@ const NutritionValues = ({
   return (
     <Container>
       {!noServingsText && (
-        <strong>{servingsText || nutritionValues.servingsText}</strong>
+        <ServingsContainer>
+          <StyledDishSvg />
+          <strong>{servingsText || nutritionValues.servingsText}</strong>
+        </ServingsContainer>
       )}
       {!noTitle && (
         <Title>
