@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
     {
