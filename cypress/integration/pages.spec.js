@@ -47,6 +47,11 @@ describe("Pages loading", () => {
         .invoke("text")
         .and("have.length.greaterThan", 1)
       cy.get("img").should("have.length.greaterThan", 1)
+      cy.findByTestId("printView__printLink").then((el) => {
+        const href = el.prop("href")
+        cy.visit(href)
+        cy.url().should("include", "app/print/")
+      })
     })
   })
 })

@@ -21,7 +21,7 @@ const MainMenu = () => {
       pages: allFile(
         filter: {
           sourceInstanceName: { eq: "pages" }
-          name: { nin: ["404", "index"] }
+          name: { nin: ["404", "index", "app"] }
         }
         sort: { fields: fields___slug, order: ASC }
       ) {

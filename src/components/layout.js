@@ -39,7 +39,7 @@ const LeftColumn = styled.div`
     display: none;
   }
 `
-const Layout = ({ children, relatedPosts, author }) => {
+const Layout = ({ children, relatedPosts, author, noHeader }) => {
   const searchState = useSearchState()
   const { searchVisibility } = searchState
   const data = useStaticQuery(graphql`
@@ -97,7 +97,7 @@ const Layout = ({ children, relatedPosts, author }) => {
   return (
     <Container>
       <GlobalStyles />
-      <Header />
+      {!noHeader && <Header />}
       {searchVisibility && <Search posts={posts} />}
       <Main className="layout__main">
         <LeftColumn />
