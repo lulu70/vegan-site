@@ -29,9 +29,10 @@ const ValuesContainer = styled.div`
 `
 const Span = styled.span`
   padding-right: 0.2rem;
-  padding-left: ${(props) => (props.first ? "0" : "0.2rem")};
+  padding-left: ${(props) => (props.cal ? "0" : "0.2rem")};
   border-right: ${(props) => (props.noBorder ? "none" : "solid 1px")};
   @media (max-width: 600px) {
+    padding-left: ${(props) => (props.cal || props.carbs ? 0 : "0.2rem")};
     :last-child {
       border-right: none;
     }
@@ -91,7 +92,7 @@ const NutritionValues = ({
       )}
       <ValuesContainer>
         <div>
-          <Span first>
+          <Span cal>
             <strong>cal: </strong>
             {nutritionValues.cal}
           </Span>
@@ -101,7 +102,7 @@ const NutritionValues = ({
           </Span>
         </div>
         <div>
-          <Span>
+          <Span carbs>
             <strong> carbs: </strong>
             {nutritionValues.carbs}
           </Span>

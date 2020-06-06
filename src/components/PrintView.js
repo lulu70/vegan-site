@@ -46,6 +46,7 @@ const Container = styled.div`
 const TopRow = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   border-bottom: dashed 1px;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
@@ -89,6 +90,9 @@ const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
                 childImageSharp {
                   fluid(maxWidth: 500, quality: 100) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
+                  original {
+                    src
                   }
                 }
               }
@@ -143,14 +147,20 @@ const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
             </PrintLink>
           )}
         </TopColumn>
-        <StyledImage
-          fluid={post.frontmatter.images[0].childImageSharp.fluid}
-          title={post.frontmatter.images[0].name}
-          alt={post.frontmatter.images[0].name}
-          onLoad={() => {
-            if (setImageLoaded) setImageLoaded(true)
-          }}
-        />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={post.frontmatter.images[0].childImageSharp.original.src}
+        >
+          <StyledImage
+            fluid={post.frontmatter.images[0].childImageSharp.fluid}
+            title={post.frontmatter.images[0].name}
+            alt={post.frontmatter.images[0].name}
+            onLoad={() => {
+              if (setImageLoaded) setImageLoaded(true)
+            }}
+          />
+        </a>
       </TopRow>
       <MDXRenderer>{printView.body}</MDXRenderer>
     </Container>
