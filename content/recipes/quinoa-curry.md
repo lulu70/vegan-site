@@ -14,7 +14,7 @@ images:
   - ../assets/images/quinoa-curry-in-pan-with-milk.jpg
   - ../assets/images/quinoa-curry-plate-two.jpg
 tags:
-  - fast ans simple
+  - fast and simple
   - quinoa
 nutritionValues:
   servingsText: "4 servings"

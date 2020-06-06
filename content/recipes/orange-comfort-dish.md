@@ -12,8 +12,8 @@ images:
   - ../assets/images/orange-veggies-frying.jpg
   - ../assets/images/orange-veggies-ready.jpg
 tags:
-  - fast ans simple
-  - sweet potato 
+  - fast and simple
+  - sweet potato
 nutritionValues:
   servingsText: "2 servings"
   cal: 440

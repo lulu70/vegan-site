@@ -88,6 +88,10 @@ const ingredients = {
   quinoa: "quinoa",
   indianCurryPowder: "indian curry powder",
   coconutMilk: "coconut milk",
+  redPepper: "red pepper",
+  mustard: "mustard",
+  curcuma: "curcuma",
+  tortilla: "tortilla",
 }
 
 export default ingredients

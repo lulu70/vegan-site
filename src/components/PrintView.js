@@ -64,8 +64,8 @@ const PrintLink = styled.a`
   margin-bottom: 0.5rem;
 `
 const StyledImage = styled(GatsbyImage)`
-  width: 80px;
-  height: 80px;
+  width: 128px;
+  height: 72px;
 `
 const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
   const data = useStaticQuery(graphql`

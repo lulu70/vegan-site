@@ -15,7 +15,7 @@
 
 ### Let's start
 
-1. Preheat the oven for 220℃. 
+1. Preheat the oven for 220℃.
 2. Cook the black lentils in boiled water till it gets soft. when ready, drain and rinse them and set aside.
 3. Wash the sweet potato and use a fork to make small holes in it. cover it with aluminum foil and place it in the oven for 30 min.
 4. Take off the aluminum foil from the sweet potato and cut it lengthwise into halves and make a cut in the center of each half.
@@ -24,4 +24,4 @@
 7. Add the raw tahini, water, tomato puree, lemon juice, and stir well to get a thick mixture.
 8. Add the lentils, cumin, salt, pepper, and stir well. continue to cook on low heat for 1-3 minutes.
 9. On a plate, place 1 half of ready sweet potato and pour the lentils on top to fill the cut. garnish with the parsley and a raw tahini drizzle.<br/>
-enjoy!
+   enjoy!

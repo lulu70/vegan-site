@@ -224,6 +224,19 @@ const recipesIngredients = {
     i.salt,
     i.water,
   ],
+  "omelet-on-tortilla": [
+    i.chickpeaFlour,
+    i.water,
+    i.oliveOil,
+    i.redPepper,
+    i.mustard,
+    i.blackPepper,
+    i.chilliPepper,
+    i.cumin,
+    i.curcuma,
+    i.salt,
+    i.tortilla,
+  ],
 }
 
 export default recipesIngredients
