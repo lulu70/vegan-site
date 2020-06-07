@@ -30,10 +30,12 @@ const MdxWrapper = styled.div`
     padding: 1rem 0 0 0;
   }
 `
-const RecipeTemplate = ({ data, location }) => {
+const RecipeTemplate = ({ data, location, pageContext }) => {
   const post = data.mdx
   const author = data.author
-  const relatedPosts = data.relatedPosts.edges
+  const relatedPosts = data.relatedPosts.edges.filter(
+    (edge) => edge.node.fields.slug !== pageContext.slug
+  )
   const images = post.frontmatter.images
   return (
     <Layout location={location} relatedPosts={relatedPosts} author={author}>
@@ -106,7 +108,7 @@ export const pageQuery = graphql`
     relatedPosts: allMdx(
       filter: {
         frontmatter: { tags: { in: $tags } }
-        fields: { slug: { ne: $slug } }
+        # fields: { slug: { ne: $slug } }
       }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
