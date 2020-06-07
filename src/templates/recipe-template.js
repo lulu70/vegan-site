@@ -1,12 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import PostHeader from "../components/PostHeader"
-import { MAIN_FONT_SIZE, MEDIUM_HEADER_SIZE } from "../constants"
+import { MAIN_FONT_SIZE, SECOND_COLOR, GREY } from "../constants"
 import NutritionValues from "../components/NutritionValues"
 import Gallery from "../components/Gallery"
 
@@ -16,22 +15,20 @@ const Article = styled.article`
     margin: 0;
   }
 `
+const JumpToRecipeLink = styled.a`
+  color: ${SECOND_COLOR};
+  background-color: ${GREY};
+  display: inline-flex;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+`
 const MdxWrapper = styled.div`
   padding: 1rem 1rem 0 1rem;
   font-size: ${MAIN_FONT_SIZE};
-  h2 {
-    font-size: ${MEDIUM_HEADER_SIZE};
-    margin: 0 0 0.5rem 0;
-  }
-  p {
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
   @media (max-width: 900px) {
     padding: 1rem 0 0 0;
   }
-`
-const EndLine = styled.hr`
-  margin: 1rem 0;
 `
 const RecipeTemplate = ({ data, location }) => {
   const post = data.mdx
@@ -48,13 +45,12 @@ const RecipeTemplate = ({ data, location }) => {
         <PostHeader post={post} />
         <MdxWrapper>
           <NutritionValues values={post.frontmatter.nutritionValues} />
+          <JumpToRecipeLink href="#printView__innerContainer">
+            Jump to recipe
+          </JumpToRecipeLink>
           <Gallery images={images} />
           <MDXRenderer>{post.body}</MDXRenderer>
         </MdxWrapper>
-        <EndLine />
-        <footer>
-          <Bio author={author} />
-        </footer>
       </Article>
     </Layout>
   )

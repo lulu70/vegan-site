@@ -1,47 +1,21 @@
 import React from "react"
 import styled from "styled-components"
-import {
-  SECOND_COLOR,
-  MEDIUM_HEADER_SIZE,
-  SMALL_HEADER_SIZE,
-  SMALL_FONT_SIZE,
-  MAIN_FONT_SIZE,
-  GREY,
-} from "../constants"
+import { SECOND_COLOR, MAIN_FONT_SIZE, GREY } from "../constants"
 import NutritionValues from "./NutritionValues"
 import { useStaticQuery, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import GatsbyImage from "gatsby-image"
 import PrintSvg from "../../content/assets/print.svg"
+import ExternalLink from "./ExternalLink"
 
 const Container = styled.div`
+  padding-top: 6rem;
+  margin-top: -6rem;
+`
+const InnerContainer = styled.div`
   font-size: ${MAIN_FONT_SIZE};
   border: dashed 1px ${SECOND_COLOR};
   padding: 1rem;
-  ul,
-  ol {
-    padding: 0;
-    margin: 0 0 1rem 1rem;
-  }
-  li {
-    margin: 0;
-    padding: 0;
-  }
-  h2 {
-    font-size: ${MEDIUM_HEADER_SIZE};
-    margin: 0 0 0.5rem 0;
-  }
-  h3 {
-    font-size: ${SMALL_HEADER_SIZE};
-    margin: 0 0 0.5rem 0;
-  }
-  h4 {
-    font-size: ${SMALL_FONT_SIZE};
-    margin: 0 0 0.5rem 0;
-  }
-  p {
-    margin-bottom: 1rem;
-  }
 `
 const TopRow = styled.div`
   display: flex;
@@ -121,48 +95,48 @@ const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
   const post = matchedPost.childMdx
   const printView = matchedPrintView.childMdx
   return (
-    <Container>
-      <TopRow>
-        <TopColumn>
-          <h2>{post.frontmatter.title}</h2>
-          <NutritionValues
-            values={{
-              cal: post.frontmatter.nutritionValues.cal,
-              protein: post.frontmatter.nutritionValues.protein,
-              carbs: post.frontmatter.nutritionValues.carbs,
-              fat: post.frontmatter.nutritionValues.fat,
-            }}
-            title={post.frontmatter.nutritionValues.title}
-            servingsText={post.frontmatter.nutritionValues.servingsText}
-          />
-          {!noPrintButton && (
-            <PrintLink
-              href={`/app/print/${fileName}`}
-              target="_blank"
-              rel="noreferrer"
-              data-test-id="printView__printLink"
-            >
-              Print
-              <PrintSvg />
-            </PrintLink>
-          )}
-        </TopColumn>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={post.frontmatter.images[0].childImageSharp.original.src}
-        >
-          <StyledImage
-            fluid={post.frontmatter.images[0].childImageSharp.fluid}
-            title={post.frontmatter.images[0].name}
-            alt={post.frontmatter.images[0].name}
-            onLoad={() => {
-              if (setImageLoaded) setImageLoaded(true)
-            }}
-          />
-        </a>
-      </TopRow>
-      <MDXRenderer>{printView.body}</MDXRenderer>
+    <Container id="printView__innerContainer">
+      <InnerContainer>
+        <TopRow>
+          <TopColumn>
+            <h2>{post.frontmatter.title}</h2>
+            <NutritionValues
+              values={{
+                cal: post.frontmatter.nutritionValues.cal,
+                protein: post.frontmatter.nutritionValues.protein,
+                carbs: post.frontmatter.nutritionValues.carbs,
+                fat: post.frontmatter.nutritionValues.fat,
+              }}
+              title={post.frontmatter.nutritionValues.title}
+              servingsText={post.frontmatter.nutritionValues.servingsText}
+            />
+            {!noPrintButton && (
+              <PrintLink
+                href={`/app/print/${fileName}`}
+                target="_blank"
+                rel="noreferrer"
+                data-test-id="printView__printLink"
+              >
+                Print
+                <PrintSvg />
+              </PrintLink>
+            )}
+          </TopColumn>
+          <ExternalLink
+            to={post.frontmatter.images[0].childImageSharp.original.src}
+          >
+            <StyledImage
+              fluid={post.frontmatter.images[0].childImageSharp.fluid}
+              title={post.frontmatter.images[0].name}
+              alt={post.frontmatter.images[0].name}
+              onLoad={() => {
+                if (setImageLoaded) setImageLoaded(true)
+              }}
+            />
+          </ExternalLink>
+        </TopRow>
+        <MDXRenderer>{printView.body}</MDXRenderer>
+      </InnerContainer>
     </Container>
   )
 }

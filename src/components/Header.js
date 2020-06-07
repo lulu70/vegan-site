@@ -49,7 +49,7 @@ const StyledLogo = styled(Logo)`
     fill: ${MAIN_COLOR};
   }
 `
-const StayledSearchIcon = styled(SearchIcon)`
+const StyledSearchIcon = styled(SearchIcon)`
   fill: ${MAIN_COLOR};
 `
 
@@ -72,7 +72,7 @@ const Header = () => {
               setSearchVisibility(searchDispatch, true)
             }}
           >
-            <StayledSearchIcon />
+            <StyledSearchIcon />
           </SearchButton>
         )}
       </TopRow>

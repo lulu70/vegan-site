@@ -5,6 +5,7 @@ import ScrollArea from "./ScrollArea"
 import NextSvg from "../../content/assets/next.svg"
 import BackSvg from "../../content/assets/back.svg"
 import GatsbyImage from "gatsby-image"
+import ExternalLink from "./ExternalLink"
 
 const Container = styled.div`
   margin-bottom: 1rem;
@@ -72,17 +73,13 @@ const Gallery = ({ images }) => {
   return (
     <Container>
       <ImageContainer>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={currentImage.childImageSharp.original.src}
-        >
+        <ExternalLink to={currentImage.childImageSharp.original.src}>
           <StyledImage
             fluid={currentImage.childImageSharp.fluid}
             title={currentImage.name}
             alt={currentImage.name}
           />
-        </a>
+        </ExternalLink>
       </ImageContainer>
       <ThumbnailRow>
         <NavigateButton

@@ -11,6 +11,7 @@ import NutritionValues from "./NutritionValues"
 import StyledLink from "./StyledLink"
 import { MAIN_WIDTH, GREY, ASIDE_WIDTH } from "../constants"
 import PrintView from "./PrintView"
+import ExternalLink from "./ExternalLink"
 const Container = styled.div``
 
 const Main = styled.main`
@@ -91,6 +92,7 @@ const Layout = ({ children, relatedPosts, author, noHeader }) => {
   const componentsForMdx = {
     NutritionValues,
     Link: StyledLink,
+    ExternalLink,
     PrintView,
   }
 
