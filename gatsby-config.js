@@ -6,6 +6,7 @@ module.exports = {
     author: `Lior Cohen`,
     description: `A Vegan website`,
     siteUrl: `https://the-vegan-home.netlify.app/`,
+    image: `/content/assets/Logo.png`,
   },
   plugins: [
     `gatsby-plugin-netlify`,

@@ -42,6 +42,7 @@ const RecipeTemplate = ({ data, location, pageContext }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        image={post.frontmatter.images[0].publicURL}
       />
       <Article>
         <PostHeader post={post} />
