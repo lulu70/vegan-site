@@ -6,7 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import PostHeader from "../components/PostHeader"
 import { MAIN_FONT_SIZE, SECOND_COLOR, GREY } from "../constants"
-import NutritionValues from "../components/NutritionValues"
+import NutritionalValues from "../components/NutritionalValues"
 import Gallery from "../components/Gallery"
 
 const Article = styled.article`
@@ -46,7 +46,7 @@ const RecipeTemplate = ({ data, location, pageContext }) => {
       <Article>
         <PostHeader post={post} />
         <MdxWrapper>
-          <NutritionValues values={post.frontmatter.nutritionValues} />
+          <NutritionalValues values={post.frontmatter.nutritionalValues} />
           <JumpToRecipeLink href="#printView__innerContainer">
             Jump to recipe
           </JumpToRecipeLink>
@@ -73,7 +73,7 @@ export const pageQuery = graphql`
         description
         tags
         author
-        nutritionValues {
+        nutritionalValues {
           servingsText
           title
           cal

@@ -16,7 +16,7 @@ images:
 tags:
   - fast and simple
   - quinoa
-nutritionValues:
+nutritionalValues:
   servingsText: "4 servings"
   cal: 395
   protein: 14

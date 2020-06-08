@@ -12,7 +12,7 @@
 
 ### For The Toppings
 
-<NutritionValues servingsText="5 servings" values={{cal: 60, protein: 4.2, carbs: 10, fat: 5}} />
+<NutritionalValues servingsText="5 servings" values={{cal: 60, protein: 4.2, carbs: 10, fat: 5}} />
 
 - 1 can (300 gr.) of cooked Fava beans
 - ½ tbs Red Chili flakes

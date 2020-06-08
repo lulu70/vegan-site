@@ -13,7 +13,7 @@ images:
 tags:
   - green chili peppers
   - Sauces and Dips
-nutritionValues:
+nutritionalValues:
   servingsText: "4 small jars"
   title: "Nutritional values per jar:"
   cal: 193

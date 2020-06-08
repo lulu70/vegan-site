@@ -12,9 +12,9 @@ images:
   - ../assets/images/vegan-honey-cake.jpg
 tags:
   - cakes and desserts
-nutritionValues:
+nutritionalValues:
   servingsText: "1 loaf cake - 10 portions"
-  title: "Nutrition values per portion:"
+  title: "Nutritional values per portion:"
   cal: 226
   protein: 3
   carbs: 26

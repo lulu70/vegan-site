@@ -16,7 +16,7 @@ tags:
   - protein rich
   - high protein
   - Middle Eastern
-nutritionValues:
+nutritionalValues:
   servingsText: "5 servings"
   cal: 508
   protein: 27
@@ -24,7 +24,8 @@ nutritionValues:
   fat: 17
 author: Roi Cohen
 ---
-## Hummus - a perfection of simplicity 
+
+## Hummus - a perfection of simplicity
 
 As a person who grew up in the center of Israel in a city between Jaffa and Ramla, I spent a lot of time in hummus restaurants with family and friends. Hummus stimulates serotonin in the brain and fills us with a pleasant and happy feeling. The israeli cuisine, which is composed of jewish kitchens from all over the world, lovingly embraced the finest israeli-arab's hummus.
 It didn't take too long for me to realize that I must know how to make delicious hummus at home.

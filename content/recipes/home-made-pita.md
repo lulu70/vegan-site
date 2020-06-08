@@ -13,7 +13,7 @@ tags:
   - Israel
   - Middle Eastern
   - breads and pastries
-nutritionValues:
+nutritionalValues:
   servingsText: "8 portions"
   title: "Nutritional values per portion:"
   cal: 276

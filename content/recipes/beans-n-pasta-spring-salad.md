@@ -14,7 +14,7 @@ tags:
   - pasta
   - salad
 
-nutritionValues:
+nutritionalValues:
   servingsText: "2 servings"
   cal: 448
   protein: 20

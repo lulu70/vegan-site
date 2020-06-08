@@ -55,7 +55,7 @@ export const pageQuery = graphql`
             title
             description
             tags
-            nutritionValues {
+            nutritionalValues {
               cal
               protein
               carbs

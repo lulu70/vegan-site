@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { SECOND_COLOR, MAIN_FONT_SIZE, GREY } from "../constants"
-import NutritionValues from "./NutritionValues"
+import NutritionalValues from "./NutritionalValues"
 import { useStaticQuery, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import GatsbyImage from "gatsby-image"
@@ -51,7 +51,7 @@ const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
           childMdx {
             frontmatter {
               title
-              nutritionValues {
+              nutritionalValues {
                 servingsText
                 title
                 cal
@@ -98,15 +98,15 @@ const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
         <TopRow>
           <TopColumn>
             <h2>{post.frontmatter.title}</h2>
-            <NutritionValues
+            <NutritionalValues
               values={{
-                cal: post.frontmatter.nutritionValues.cal,
-                protein: post.frontmatter.nutritionValues.protein,
-                carbs: post.frontmatter.nutritionValues.carbs,
-                fat: post.frontmatter.nutritionValues.fat,
+                cal: post.frontmatter.nutritionalValues.cal,
+                protein: post.frontmatter.nutritionalValues.protein,
+                carbs: post.frontmatter.nutritionalValues.carbs,
+                fat: post.frontmatter.nutritionalValues.fat,
               }}
-              title={post.frontmatter.nutritionValues.title}
-              servingsText={post.frontmatter.nutritionValues.servingsText}
+              title={post.frontmatter.nutritionalValues.title}
+              servingsText={post.frontmatter.nutritionalValues.servingsText}
             />
             {!noPrintButton && (
               <PrintLink

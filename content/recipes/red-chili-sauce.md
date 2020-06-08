@@ -13,7 +13,7 @@ images:
 tags:
   - red chili peppers
   - Sauces and Dips
-nutritionValues:
+nutritionalValues:
   servingsText: "3 small jars"
   title: "Nutritional values per jar:"
   cal: 151

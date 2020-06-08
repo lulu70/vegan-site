@@ -16,8 +16,8 @@ images:
 tags:
   - oven dish
   - lentils
-nutritionValues:
-  servingsText: "2 servings"  
+nutritionalValues:
+  servingsText: "2 servings"
   cal: 436
   protein: 15
   carbs: 63

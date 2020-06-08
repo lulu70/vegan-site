@@ -14,7 +14,7 @@ images:
 tags:
   - oven dish
   - potato
-nutritionValues:
+nutritionalValues:
   servingsText: "4 servings"
   cal: 411
   protein: 7

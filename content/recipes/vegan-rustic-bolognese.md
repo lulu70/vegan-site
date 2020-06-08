@@ -17,7 +17,7 @@ tags:
   - Mediterranean
   - Protein rich
   - high protein
-nutritionValues:
+nutritionalValues:
   servingsText: "5 servings"
   cal: 523
   protein: 26

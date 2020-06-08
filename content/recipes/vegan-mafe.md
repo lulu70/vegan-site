@@ -15,7 +15,7 @@ tags:
   - african food
   - peanut sauce
   - soy chunks
-nutritionValues:
+nutritionalValues:
   servingsText: "4 servings"
   cal: 175
   protein: 10

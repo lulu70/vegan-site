@@ -80,7 +80,7 @@ export const pageQuery = graphql`
             description
             date(formatString: "MMMM DD, YYYY")
             updatedDate(formatString: "MMMM DD, YYYY")
-            nutritionValues {
+            nutritionalValues {
               title
               cal
               protein

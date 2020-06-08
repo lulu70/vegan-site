@@ -14,7 +14,7 @@ tags:
   - Pistachio
   - 5 ingredients meal
   - Mediterranean
-nutritionValues:
+nutritionalValues:
   servingsText: "2 servings"
   cal: 1190
   protein: 28

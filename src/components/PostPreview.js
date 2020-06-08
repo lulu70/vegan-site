@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import StyledLink from "./StyledLink"
 import { AnimationWrapper } from "react-hover-animation"
-import NutritionValues from "./NutritionValues"
+import NutritionalValues from "./NutritionalValues"
 import { MAIN_FONT_SIZE, SMALL_FONT_SIZE } from "../constants"
 import GatsbyImage from "gatsby-image"
 
@@ -65,8 +65,8 @@ const PostPreview = ({ post, onClick }) => {
         />
       </StyledLink>
       <SmallRow>
-        <NutritionValues
-          values={post.childMdx.frontmatter.nutritionValues}
+        <NutritionalValues
+          values={post.childMdx.frontmatter.nutritionalValues}
           noTitle
           noServingsText
         />

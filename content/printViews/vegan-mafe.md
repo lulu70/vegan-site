@@ -15,7 +15,7 @@
 
 ### For side suggestion
 
-<NutritionValues values={{cal: 140, protein: 4, carbs: 4, fat: 10}}/>
+<NutritionalValues values={{cal: 140, protein: 4, carbs: 4, fat: 10}}/>
 
 - 2 tbsp vegan cheese spread (homemade or not).
 - 1 tsp of berbere spice mix.
@@ -36,5 +36,4 @@
 ### Side suggestion instructions
 
 1. Mix the vegan cheese spread, the lemon juice, and the spice mix till you get a smooth texture, serve right away.<br/>
-enjoy!
-
+   enjoy!

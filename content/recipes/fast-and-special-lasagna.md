@@ -17,7 +17,7 @@ tags:
   - pasta
   - lasagna
   - Mediterranean
-nutritionValues:
+nutritionalValues:
   servingsText: "6 servings"
   cal: 483
   protein: 20
@@ -25,7 +25,9 @@ nutritionValues:
   fat: 18
 author: Roi Cohen
 ---
+
 ## All-in lasagna
+
 Sometimes we just want to make something fast and simple with some random ingredients we have at home.
 a one-tray-dish is a perfect solution to this situation. this time we will make a simple and quick delicious lasagna using most of the vegetables we found in our fridge.
 

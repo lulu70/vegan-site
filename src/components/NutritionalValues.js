@@ -38,7 +38,7 @@ const Span = styled.span`
     }
   }
 `
-const NutritionValues = ({
+const NutritionalValues = ({
   values,
   title,
   servingsText,
@@ -53,7 +53,7 @@ const NutritionValues = ({
           name
           childMdx {
             frontmatter {
-              nutritionValues {
+              nutritionalValues {
                 servingsText
                 title
                 cal
@@ -67,48 +67,50 @@ const NutritionValues = ({
       }
     }
   `)
-  let nutritionValues
+  let nutritionalValues
   if (fileName) {
     const matchedRecipe = data.allFile.nodes.find(
       ({ name }) => name === fileName
     )
-    nutritionValues = matchedRecipe.childMdx.frontmatter.nutritionValues
+    nutritionalValues = matchedRecipe.childMdx.frontmatter.nutritionalValues
   }
   if (values) {
-    nutritionValues = values
+    nutritionalValues = values
   }
   return (
     <Container>
       {!noServingsText && (
         <ServingsContainer>
           <StyledDishSvg />
-          <strong>{servingsText || nutritionValues.servingsText}</strong>
+          <strong>{servingsText || nutritionalValues.servingsText}</strong>
         </ServingsContainer>
       )}
       {!noTitle && (
         <Title>
-          {title || nutritionValues.title || "Nutrition values per serving:"}
+          {title ||
+            nutritionalValues.title ||
+            "Nutritional values per serving:"}
         </Title>
       )}
       <ValuesContainer>
         <div>
           <Span cal>
             <strong>cal: </strong>
-            {nutritionValues.cal}
+            {nutritionalValues.cal}
           </Span>
           <Span>
             <strong>protein: </strong>
-            {nutritionValues.protein}
+            {nutritionalValues.protein}
           </Span>
         </div>
         <div>
           <Span carbs>
             <strong> carbs: </strong>
-            {nutritionValues.carbs}
+            {nutritionalValues.carbs}
           </Span>
           <Span noBorder>
             <strong>fat: </strong>
-            {nutritionValues.fat}
+            {nutritionalValues.fat}
           </Span>
         </div>
       </ValuesContainer>
@@ -116,4 +118,4 @@ const NutritionValues = ({
   )
 }
 
-export default NutritionValues
+export default NutritionalValues

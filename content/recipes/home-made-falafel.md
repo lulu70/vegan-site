@@ -12,7 +12,7 @@ tags:
   - Israel
   - Middle Eastern
   - chickpeas
-nutritionValues:
+nutritionalValues:
   servingsText: "30 balls / 6 servings"
   cal: 315
   protein: 11

@@ -14,7 +14,7 @@ images:
 tags:
   - fast and simple
   - sweet potato
-nutritionValues:
+nutritionalValues:
   servingsText: "2 servings"
   cal: 440
   protein: 11

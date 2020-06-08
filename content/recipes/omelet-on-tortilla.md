@@ -16,7 +16,7 @@ tags:
   - fast and simple
   - chickpea flour
 
-nutritionValues:
+nutritionalValues:
   servingsText: "1 serving"
   cal: 1
   protein: 1
@@ -36,7 +36,7 @@ If you take a look at where chickpea flour is normally used you can find it in m
 The chickpeas are legumes that are high in protein and fiber as well as several minerals and B vitamins.
 It is the main ingredient in <Link to="/recipes/the-ultimate-hummus-protein-bomb">Hummus</Link> and it is widely used all over the globe. Some might say they are highly addictive, I agree.
 
-### Nutrition values
+### Nutritional values
 
 Chickpea flour is gluten-free and has lots of protein and fiber.
 With 356 calories per cup of flour (this recipe uses ¼ of a cup per serving), there is 21g of protein, 10g of fiber, 53g of carbs and 6g of fat.

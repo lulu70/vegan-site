@@ -20,7 +20,7 @@ tags:
   - grill
   - american
   - high protein
-nutritionValues:
+nutritionalValues:
   servingsText: "12 burgers"
   title: "Nutritional values per burger:"
   cal: 286
