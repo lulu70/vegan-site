@@ -11,12 +11,6 @@ describe("Pages loading", () => {
     cy.get("h1").should("be.visible")
   })
 
-  it("Blog-page is loaded", () => {
-    cy.findAllByText(/blog/i).first().click()
-    cy.get("h1").should("be.visible")
-    cy.url().should("include", "/blog")
-  })
-
   it("Recipes-page is loaded", () => {
     cy.findAllByText(/recipes/i)
       .first()

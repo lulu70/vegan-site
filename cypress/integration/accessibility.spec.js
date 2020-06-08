@@ -16,7 +16,6 @@ describe("Accessibility tests", () => {
     }
   }
   checkAccessibilityOnPage({ path: "/", name: "home" })
-  checkAccessibilityOnPage({ path: "/blog", name: "blog" })
   checkAccessibilityOnPage({ path: "/recipes", name: "recipes" })
   checkAccessibilityOnPage({
     path: "/recipes/vegan-mafe",
