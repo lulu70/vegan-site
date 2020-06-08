@@ -5,7 +5,7 @@ module.exports = {
     recipesTitle: `Vegan Recipes`,
     author: `Lior Cohen`,
     description: `A Vegan website`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://the-vegan-home.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-netlify`,

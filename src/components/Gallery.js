@@ -73,7 +73,7 @@ const Gallery = ({ images }) => {
   return (
     <Container>
       <ImageContainer>
-        <ExternalLink to={currentImage.childImageSharp.original.src}>
+        <ExternalLink to={currentImage.publicURL}>
           <StyledImage
             fluid={currentImage.childImageSharp.fluid}
             title={currentImage.name}

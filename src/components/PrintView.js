@@ -61,12 +61,10 @@ const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
               }
               images {
                 name
+                publicURL
                 childImageSharp {
                   fluid(maxWidth: 500, quality: 100) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64
-                  }
-                  original {
-                    src
                   }
                 }
               }
@@ -122,9 +120,7 @@ const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
               </PrintLink>
             )}
           </TopColumn>
-          <ExternalLink
-            to={post.frontmatter.images[0].childImageSharp.original.src}
-          >
+          <ExternalLink to={post.frontmatter.images[0].publicURL}>
             <StyledImage
               fluid={post.frontmatter.images[0].childImageSharp.fluid}
               title={post.frontmatter.images[0].name}

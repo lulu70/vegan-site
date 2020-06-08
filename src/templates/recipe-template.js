@@ -83,10 +83,8 @@ export const pageQuery = graphql`
         }
         images {
           name
+          publicURL
           childImageSharp {
-            original {
-              src
-            }
             fluid(maxWidth: 500, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }
@@ -106,10 +104,7 @@ export const pageQuery = graphql`
       }
     }
     relatedPosts: allMdx(
-      filter: {
-        frontmatter: { tags: { in: $tags } }
-        # fields: { slug: { ne: $slug } }
-      }
+      filter: { frontmatter: { tags: { in: $tags } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
