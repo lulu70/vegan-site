@@ -19,31 +19,43 @@ function SEO({ description, lang, meta, title, image }) {
             title
             description
             author
-            # image
+            image
+            siteUrl
           }
         }
       }
     `
   )
-
+  const metaTitle = title ? title : site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = image || site.siteMetadata.image
-
+  const siteUrl = site.siteMetadata.siteUrl
+  const metaImageUrl = image
+    ? `${siteUrl}${image.publicURL}`
+    : `${siteUrl}${site.siteMetadata.image}`
+  const metaImageWidth = image ? image.childImageSharp.original.width : 1920
+  const metaImageHeight = image ? image.childImageSharp.original.height : 1080
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      // titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={metaTitle}
       meta={[
         {
           name: `image`,
-          content: metaImage,
+          content: metaImageUrl,
         },
         {
-          name: `og:image`,
-          content: metaImage,
+          property: `og:image`,
+          content: metaImageUrl,
+        },
+        {
+          property: `og:image:width`,
+          content: metaImageWidth,
+        },
+        {
+          property: `og:image:height`,
+          content: metaImageHeight,
         },
         {
           name: `description`,

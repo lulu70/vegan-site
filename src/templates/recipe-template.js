@@ -42,7 +42,7 @@ const RecipeTemplate = ({ data, location, pageContext }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={post.frontmatter.images[0].publicURL}
+        image={post.frontmatter.images[0]}
       />
       <Article>
         <PostHeader post={post} />
@@ -86,6 +86,10 @@ export const pageQuery = graphql`
           name
           publicURL
           childImageSharp {
+            original {
+              width
+              height
+            }
             fluid(maxWidth: 500, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }

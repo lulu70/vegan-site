@@ -7,11 +7,7 @@ import PostHeader from "../components/PostHeader"
 const index = ({ data }) => {
   return (
     <Layout>
-      <SEO
-        title={data.site.siteMetadata.title}
-        description={data.site.siteMetadata.description}
-        image={data.site.siteMetadata.image}
-      />
+      <SEO title={data.site.siteMetadata.title} />
       <PostHeader title={data.site.siteMetadata.title} />
     </Layout>
   )
@@ -24,8 +20,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        description
-        image
       }
     }
   }
