@@ -237,6 +237,24 @@ const recipesIngredients = {
     i.salt,
     i.tortilla,
   ],
+  "vegan-cabbage-rolls": [
+    i.whiteCabbage,
+    i.oliveOil,
+    i.onion,
+    i.celery,
+    i.garlic,
+    i.tomato,
+    i.walnuts,
+    i.pumpkinSeeds,
+    i.driedCranberries,
+    i.parsley,
+    i.coriander,
+    i.whiteRice,
+    i.lemon,
+    i.paprikaPowder,
+    i.salt,
+    i.blackPepper,
+  ],
 }
 
 export default recipesIngredients

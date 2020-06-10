@@ -92,6 +92,11 @@ const ingredients = {
   mustard: "mustard",
   curcuma: "curcuma",
   tortilla: "tortilla",
+  whiteCabbage: "white cabbage",
+  pumpkinSeeds: "pumpkin seeds",
+  driedCranberries: "dried cranberries",
+  whiteRice: "white rice",
+  paprikaPowder: "paprika powder",
 }
 
 export default ingredients
