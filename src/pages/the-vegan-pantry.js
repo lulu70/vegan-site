@@ -22,14 +22,14 @@ const Content = styled.div`
     padding: 1rem 0 0 0;
   }
 `
-const TopSection = styled.section`
+const TopSection = styled.div`
   display: flex;
   width: 100%;
   height: 10rem;
   margin-bottom: 1rem;
 `
 
-const SecondSection = styled.section`
+const SecondSection = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
