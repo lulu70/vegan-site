@@ -43,7 +43,7 @@ const MainMenu = () => {
           {data.pages.nodes.map((page) => (
             <Li key={page.id}>
               <StyledLink
-                fontColor={MAIN_COLOR}
+                $fontColor={MAIN_COLOR}
                 to={page.fields.slug}
                 activeStyle={{ color: SECOND_COLOR }}
               >

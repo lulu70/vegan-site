@@ -34,7 +34,7 @@ const ThumbnailRow = styled.div`
   justify-content: space-between;
   align-items: center;
 `
-const ImageButton = styled.button`
+const ThumbnailImageContainer = styled.div`
   padding: 0.1rem;
   z-index: 2;
   border: none;
@@ -54,12 +54,12 @@ const NavigateButton = styled.button`
 `
 const StyledBackSvg = styled(BackSvg)`
   path {
-    stroke: ${(props) => (props.disabled ? GREY : SECOND_COLOR)};
+    stroke: ${(props) => (props.$disabled ? GREY : SECOND_COLOR)};
   }
 `
 const StyledNextSvg = styled(NextSvg)`
   path {
-    stroke: ${(props) => (props.disabled ? GREY : SECOND_COLOR)};
+    stroke: ${(props) => (props.$disabled ? GREY : SECOND_COLOR)};
   }
 `
 const Gallery = ({ images }) => {
@@ -89,16 +89,18 @@ const Gallery = ({ images }) => {
           disabled={currentImageIndex === 0}
           title="back"
         >
-          <StyledBackSvg disabled={currentImageIndex === 0} />
+          <StyledBackSvg $disabled={currentImageIndex === 0} />
         </NavigateButton>
         <ScrollArea contentStyles={{ display: "inline-flex" }} noScrollY>
           {images.map((image, index) => (
-            <ImageButton
+            <ThumbnailImageContainer
               key={index}
               ref={thumbnailsRef.current[index]}
               onClick={() => {
                 setCurrentImageIndex(index)
               }}
+              tabIndex={0}
+              role="button"
             >
               <ThumbnailImage
                 fluid={image.childImageSharp.fluid}
@@ -106,7 +108,7 @@ const Gallery = ({ images }) => {
                 alt={image.name}
                 activeImage={index === currentImageIndex}
               />
-            </ImageButton>
+            </ThumbnailImageContainer>
           ))}
         </ScrollArea>
         <NavigateButton
@@ -117,7 +119,7 @@ const Gallery = ({ images }) => {
           disabled={currentImageIndex === images.length - 1}
           title="next"
         >
-          <StyledNextSvg disabled={currentImageIndex === images.length - 1} />
+          <StyledNextSvg $disabled={currentImageIndex === images.length - 1} />
         </NavigateButton>
       </ThumbnailRow>
     </Container>

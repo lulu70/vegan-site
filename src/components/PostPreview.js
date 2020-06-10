@@ -16,7 +16,7 @@ const StyledImage = styled(GatsbyImage)`
   padding-top: 56.25%;
   height: 0;
 `
-const SmallRow = styled.small`
+const SmallRow = styled.div`
   padding: 0 1rem;
   display: flex;
   justify-content: center;
