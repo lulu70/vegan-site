@@ -41,6 +41,10 @@ describe("Pages loading", () => {
         .invoke("text")
         .and("have.length.greaterThan", 1)
       cy.get("img").should("have.length.greaterThan", 1)
+      cy.findAllByTestId("relatedPosts__ul").should(
+        "not.contain.text",
+        randomHeaderText
+      )
       cy.findByTestId("printView__printLink").then((el) => {
         const href = el.prop("href")
         cy.visit(href)

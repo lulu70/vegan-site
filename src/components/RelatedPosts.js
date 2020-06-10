@@ -30,7 +30,7 @@ const RelatedPosts = ({ relatedPosts }) => {
       {relatedPosts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <Ul key={node.fields.slug}>
+          <Ul key={node.fields.slug} data-test-id="relatedPosts__ul">
             <Li>
               <RelatedLink to={node.fields.slug}>{title}</RelatedLink>
             </Li>

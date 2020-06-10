@@ -33,9 +33,11 @@ const MdxWrapper = styled.div`
 const RecipeTemplate = ({ data, location, pageContext }) => {
   const post = data.mdx
   const author = data.author
+
   const relatedPosts = data.relatedPosts.edges.filter(
     (edge) => edge.node.fields.slug !== pageContext.slug
   )
+
   const images = post.frontmatter.images
   return (
     <Layout location={location} relatedPosts={relatedPosts} author={author}>
