@@ -83,7 +83,6 @@ const ingredients = {
   cherryTomatoes: "cherry tomatoes",
   redOnion: "red onion",
   arugula: "arugula",
-  dijonMustard: "dijon mustard",
   nigellaSeeds: "nigella seeds",
   quinoa: "quinoa",
   indianCurryPowder: "indian curry powder",

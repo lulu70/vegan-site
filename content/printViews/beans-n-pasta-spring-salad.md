@@ -21,7 +21,7 @@
 1. Cook the pasta in water till its soft, then rinse and drain with cold water and let it cool down.
 2. Chop all the vegetables to your desired size.
 3. Place the white beans in a large bowl and add the basil, arugula,  the pasta and the chopped vegetables.
-4. Add the olive oil, lemon juice, dijon mustard, nigella seeds, cumin, salt and pepper.
+4. Add the olive oil, lemon juice, mustard, nigella seeds, cumin, salt and pepper.
 5. Mix it well and serve cold and fresh.<br/>
 enjoy!
 

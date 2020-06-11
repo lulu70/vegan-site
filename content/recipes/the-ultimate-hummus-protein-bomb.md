@@ -1,5 +1,5 @@
 ---
-title: The ultimate Hummus protein bomb!
+title: The ultimate hummus protein bomb!
 date: 2020-04-29
 updatedDate: 2020-04-29
 description: Easy to make delicious Hummus
@@ -25,12 +25,26 @@ nutritionalValues:
 author: Roi Cohen
 ---
 
-## Hummus - a perfection of simplicity
+## Hummus -
 
 As a person who grew up in the center of Israel in a city between Jaffa and Ramla, I spent a lot of time in hummus restaurants with family and friends. Hummus stimulates serotonin in the brain and fills us with a pleasant and happy feeling. The israeli cuisine, which is composed of jewish kitchens from all over the world, lovingly embraced the finest israeli-arab's hummus.
 It didn't take too long for me to realize that I must know how to make delicious hummus at home.
 Over the years in any opportunity, I collected tips for improving the recipe, and finally, I came up with a simple and perfect recipe.
 I am happy to share the recipe with you because to me hummus is joy, hummus is love and harmony.
 hummus is Vegan!
+
+## What is hummus?
+
+## What is tahini?
+
+## The origin of hummus
+
+## Pita
+
+## Freshness
+
+## The process 
+
+## Nutritional values
 
 <PrintView fileName="the-ultimate-hummus-protein-bomb"/>

@@ -1,5 +1,5 @@
 ---
-title: Green Chili Sauce
+title: Green chili sauce
 date: 2020-05-15
 updatedDate: 2020-05-15
 description: Easy to make green chili sauce

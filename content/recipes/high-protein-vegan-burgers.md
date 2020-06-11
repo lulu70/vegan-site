@@ -1,5 +1,5 @@
 ---
-title: High Protein Vegan Burgers
+title: High protein vegan burgers
 date: 2020-05-21
 updatedDate: 2020-05-21
 description: Protein rich vegan burgers

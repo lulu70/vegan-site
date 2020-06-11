@@ -16,11 +16,11 @@ tags:
   - cabbage
 
 nutritionalValues:
-  servingsText: "2 servings"
-  cal: 536
-  protein: 15
-  carbs: 62
-  fat: 29
+  servingsText: "16 rolls / 4 servings"
+  cal: 268
+  protein: 8
+  carbs: 31
+  fat: 15
 author: lior cohen
 ---
 

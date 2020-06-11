@@ -18,7 +18,7 @@
 - 2 tbsp fresh chopped rosemary
 - 1 tbsp dried oregano
 - ½ tsp ground black pepper
-- 1 tsp Himalaya salt
+- 1 tsp salt
 - 5 tbsp nutritional yeast
 
 ### Bechamel Sauce

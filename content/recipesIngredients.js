@@ -191,7 +191,7 @@ const recipesIngredients = {
     i.arugula,
     i.lemonJuice,
     i.oliveOil,
-    i.dijonMustard,
+    i.mustard,
     i.nigellaSeeds,
     i.cumin,
     i.salt,

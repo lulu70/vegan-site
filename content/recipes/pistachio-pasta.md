@@ -15,11 +15,11 @@ tags:
   - 5 ingredients meal
   - mediterranean
 nutritionalValues:
-  servingsText: "2 servings"
-  cal: 1190
-  protein: 28
-  carbs: 136
-  fat: 65
+  servingsText: "3 servings"
+  cal: 790
+  protein: 19
+  carbs: 91
+  fat: 43
 author: lior cohen
 ---
 

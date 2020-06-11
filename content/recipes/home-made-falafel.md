@@ -21,4 +21,18 @@ nutritionalValues:
 author: lior cohen
 ---
 
+## What is falafel?
+
+## Where is falafel bread from?
+
+## Varieties
+
+## Chickpeas
+
+## Pita bread
+
+## Modern modifications
+
+## frozen and fresh
+
 <PrintView fileName="home-made-falafel"/>

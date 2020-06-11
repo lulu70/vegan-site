@@ -23,4 +23,16 @@ nutritionalValues:
 author: lior cohen
 ---
 
+## What is pita bread?
+
+## Where is pita bread from?
+
+## How to cut pita bread?
+
+## Different grain same pita bread
+
+## How to create the pocket of the pita?
+
+## How long does it takes to make a pita bread?
+
 <PrintView fileName="home-made-pita"/>

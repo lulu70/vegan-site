@@ -1,5 +1,5 @@
 ---
-title: Vegan Rustic Bolognese
+title: Vegan rustic bolognese
 date: 2020-05-25
 updatedDate: 2020-05-25
 description: Low fat easy to make bolognese
