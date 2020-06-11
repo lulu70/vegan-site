@@ -15,7 +15,7 @@
 
 ### For side suggestion
 
-<NutritionalValues servingsText="1 small bowl", values={{cal: 140, protein: 4, carbs: 4, fat: 10}}/>
+<NutritionalValues servingsText="1 small bowl" values={{cal: 140, protein: 4, carbs: 4, fat: 10}}/>
 
 - 2 tbsp vegan cheese spread (homemade or not).
 - 1 tsp of berbere spice mix.
