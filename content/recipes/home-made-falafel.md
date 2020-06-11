@@ -9,8 +9,8 @@ images:
   - ../assets/images/falafel-mix.jpg
   - ../assets/images/frying-falafel.jpg
 tags:
-  - Israel
-  - Middle Eastern
+  - israel
+  - middle Eastern
   - chickpeas
 nutritionalValues:
   servingsText: "30 balls / 6 servings"

@@ -12,7 +12,7 @@ images:
   - ../assets/images/green-red-chili-paste-saucer.jpg
 tags:
   - green chili peppers
-  - Sauces and Dips
+  - sauces and dips
 nutritionalValues:
   servingsText: "4 small jars"
   title: "Nutritional values per jar:"

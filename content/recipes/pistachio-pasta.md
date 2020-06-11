@@ -11,9 +11,9 @@ images:
   - ../assets/images/pistachio-pasta-ready.jpg
 tags:
   - pasta
-  - Pistachio
+  - pistachio
   - 5 ingredients meal
-  - Mediterranean
+  - mediterranean
 nutritionalValues:
   servingsText: "2 servings"
   cal: 1190

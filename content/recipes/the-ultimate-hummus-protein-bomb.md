@@ -15,7 +15,7 @@ tags:
   - chickpeas
   - protein rich
   - high protein
-  - Middle Eastern
+  - middle Eastern
 nutritionalValues:
   servingsText: "5 servings"
   cal: 508

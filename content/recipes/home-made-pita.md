@@ -10,8 +10,8 @@ images:
   - ../assets/images/two-unbaked-pitas.jpg
   - ../assets/images/pitas.jpg
 tags:
-  - Israel
-  - Middle Eastern
+  - israel
+  - middle eastern
   - breads and pastries
 nutritionalValues:
   servingsText: "8 portions"

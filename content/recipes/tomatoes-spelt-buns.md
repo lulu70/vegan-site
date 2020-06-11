@@ -14,7 +14,7 @@ images:
   - ../assets/images/whole-spelt-buns.jpg
 tags:
   - whole spelt flour
-  - Breads and pastries
+  - breads and pastries
 
 nutritionalValues:
   servingsText: "5 buns"

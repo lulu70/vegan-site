@@ -14,8 +14,8 @@ images:
 tags:
   - pasta
   - soy flakes
-  - Mediterranean
-  - Protein rich
+  - mediterranean
+  - protein rich
   - high protein
 nutritionalValues:
   servingsText: "5 servings"
