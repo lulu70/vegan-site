@@ -18,10 +18,10 @@ tags:
 
 nutritionalValues:
   servingsText: "1 serving"
-  cal: 1
-  protein: 1
-  carbs: 1
-  fat: 1
+  cal: 320
+  protein: 8
+  carbs: 31
+  fat: 14
 author: lior cohen
 ---
 

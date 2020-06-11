@@ -255,6 +255,34 @@ const recipesIngredients = {
     i.salt,
     i.blackPepper,
   ],
+  "peanuts-cream-tofu":[
+    i.tofu,
+    i.zucchini,
+    i.leek,
+    i.garlic,
+    i.peanutButter,
+    i.peanuts,
+    i.oatMilk,
+    i.coconutOil,
+    i.oliveOil,
+    i.cumin,
+    i.sweetPaprika,
+    i.salt,
+    i.turmeric,
+    i.blackPepper,
+  ],
+  "tomatoes-spelt-buns":[
+    i.wholeSpeltFlour,
+    i.speltFlour,
+    i.sunDriedTomatoes,
+    i.yeast,
+    i.thyme,
+    i.salt,
+    i.corianderSeeds,
+    i.brownSugar,
+    i.oliveOil,
+    i.water,
+  ]
 }
 
 export default recipesIngredients

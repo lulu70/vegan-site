@@ -17,10 +17,10 @@ tags:
   - soy chunks
 nutritionalValues:
   servingsText: "4 servings"
-  cal: 175
-  protein: 10
-  carbs: 8
-  fat: 12
+  cal: 100
+  protein: 8
+  carbs: 4
+  fat: 6
 author: lior cohen
 ---
 

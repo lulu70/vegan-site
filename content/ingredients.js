@@ -97,6 +97,12 @@ const ingredients = {
   driedCranberries: "dried cranberries",
   whiteRice: "white rice",
   paprikaPowder: "paprika powder",
+  tofu: "tofu",
+  coconutOil: "coconut oil",
+  peanuts: "peanuts",
+  turmeric: "turmeric",
+  speltFlour: "spelt flour",
+  
 }
 
 export default ingredients
