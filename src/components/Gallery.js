@@ -96,6 +96,9 @@ const Gallery = ({ images }) => {
             <ThumbnailImageContainer
               key={index}
               ref={thumbnailsRef.current[index]}
+              onKeyPress={(e) => {
+                if (e.charCode === 13) setCurrentImageIndex(index)
+              }}
               onClick={() => {
                 setCurrentImageIndex(index)
               }}

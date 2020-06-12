@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { usePantryState, usePantryDispatch } from "../context/ContextProvider"
 import { setSelectedIngredients } from "../context/reducers/pantryReducer"
 import ScrollArea from "./ScrollArea"
-import { GREY } from "../constants"
+import { GREY, MAIN_FONT_SIZE, BG_COLOR } from "../constants"
 
 const StyledScrollArea = styled(ScrollArea)`
   flex: 1;
@@ -12,7 +12,13 @@ const StyledScrollArea = styled(ScrollArea)`
 const Li = styled.li`
   list-style: none;
   background-color: ${GREY};
-  padding: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: ${BG_COLOR};
+  font-size: ${MAIN_FONT_SIZE};
+  padding: 0.5rem;
   flex: 1;
   text-align: center;
   cursor: pointer;
@@ -29,7 +35,10 @@ const PantrySelectedIngredients = () => {
   }
 
   return (
-    <StyledScrollArea data-test-id="pantrySelectedIngredients__container">
+    <StyledScrollArea
+      className="drop-shadow"
+      data-test-id="pantrySelectedIngredients__container"
+    >
       {selectedIngredients.map((ingredient, index) => (
         <Li
           role="button"

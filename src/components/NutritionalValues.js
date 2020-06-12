@@ -25,6 +25,7 @@ const ValuesContainer = styled.div`
   display: flex;
   @media (max-width: 600px) {
     flex-direction: column;
+    text-align: center;
   }
 `
 const Span = styled.span`
