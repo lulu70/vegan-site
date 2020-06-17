@@ -37,7 +37,7 @@ It is commonly used in Mexican cuisine and it is used in famous dishes like the 
 ## The vegan omelet
 
 Omelet is a dish that is normally made with beaten eggs, fried in a frying pan, and kept in the shape of the pan, usually a circle shape. For many people, it is considered the basic breakfast and there are many varieties to it.
-For vegan option omelet, I came across many versions, using all kinds of ingredients like lentils flour, tofu, silken tofu, and of course _the chickpea flour_, lately, new companies are popping up with vegan egg replacements that are ready to use products, these can also be used for a vegan omelet, a good example is <ExternalLink to="https://www.ju.st/en-us/products/consumer/egg/egg">JUST</ExternalLink>.
+For vegan option omelet, I came across many versions, using all kinds of ingredients like lentils flour, tofu, silken tofu, and of course _the chickpea flour_, lately, new companies are popping up with vegan egg replacements that are ready to use products, these can also be used for a vegan omelet, a good example is <Link to="https://www.ju.st/en-us/products/consumer/egg/egg">JUST</Link>.
 
 ## What is chickpea flour?
 
@@ -62,7 +62,7 @@ This vegan version of an omelet is maybe a bit more tricky than a normal omelet.
 There are two things you can do to make sure you'll end up with a non-sticky result.
 
 1. use the right amount of oil - the oiled pan will help a lot to prevent the stickiness, use the amount noted in the recipe, and if it's not enough, you can add some more next time.
-2. use a <ExternalLink to="https://www.amazon.com/GreenPan-Mini-Ceramic-Non-Stick-Round/dp/B015Y20MVK/ref=sr_1_2?crid=1KF13M0G6G9M1&dchild=1&keywords=6+inch+ceramic+egg+pan+nonstick&qid=1591529534&sprefix=6+inch+nonstick+ceramic+%2Caps%2C224&sr=8-2">non-stick pan.</ExternalLink>
+2. use a <Link to="https://www.amazon.com/GreenPan-Mini-Ceramic-Non-Stick-Round/dp/B015Y20MVK/ref=sr_1_2?crid=1KF13M0G6G9M1&dchild=1&keywords=6+inch+ceramic+egg+pan+nonstick&qid=1591529534&sprefix=6+inch+nonstick+ceramic+%2Caps%2C224&sr=8-2">non-stick pan.</Link>
    The best way to make sure we're getting a good result is to use a non-stick ceramic pan, it makes it so easy and the results are beautiful.
 
 ### Suggestions for other toppings

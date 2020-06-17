@@ -6,7 +6,7 @@
 - 7 gr. active dry yeast
 - ½ tsp salt
 - 2 tsp dry thyme
-- 1 tbs ground coriander seeds
+- 1 tbsp ground coriander seeds
 - 1½ tbsp brown sugar
 - 1 tbsp olive oil
 - 175 ml. water
@@ -22,5 +22,4 @@
 7. Heat the oven to 200℃.
 8. Before baking the buns spray olive oil on top of them and bake them for 15 minutes or until their top becomes darker.
 9. Take the buns out of the oven and let them cool down a bit.<br/>
-enjoy!
-
+   enjoy!

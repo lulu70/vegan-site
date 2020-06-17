@@ -25,7 +25,7 @@ const ValuesContainer = styled.div`
   display: flex;
   @media (max-width: 600px) {
     flex-direction: column;
-    text-align: center;
+    text-align: ${(props) => (props.fromPostPreview ? "center" : "start")};
   }
 `
 const Span = styled.span`
@@ -44,8 +44,7 @@ const NutritionalValues = ({
   title,
   servingsText,
   fileName,
-  noTitle,
-  noServingsText,
+  fromPostPreview,
 }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -80,20 +79,21 @@ const NutritionalValues = ({
   }
   return (
     <Container>
-      {!noServingsText && (
-        <ServingsContainer>
-          <StyledDishSvg />
-          <strong>{servingsText || nutritionalValues.servingsText}</strong>
-        </ServingsContainer>
+      {!fromPostPreview && (
+        <>
+          <ServingsContainer>
+            <StyledDishSvg />
+            <strong>{servingsText || nutritionalValues.servingsText}</strong>
+          </ServingsContainer>
+          <Title>
+            {title ||
+              nutritionalValues.title ||
+              "Nutritional values per serving:"}
+          </Title>
+        </>
       )}
-      {!noTitle && (
-        <Title>
-          {title ||
-            nutritionalValues.title ||
-            "Nutritional values per serving:"}
-        </Title>
-      )}
-      <ValuesContainer>
+
+      <ValuesContainer fromPostPreview={fromPostPreview}>
         <div>
           <Span cal>
             <strong>cal: </strong>

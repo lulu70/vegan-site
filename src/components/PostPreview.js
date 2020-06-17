@@ -67,8 +67,7 @@ const PostPreview = ({ post, onClick }) => {
       <SmallRow>
         <NutritionalValues
           values={post.childMdx.frontmatter.nutritionalValues}
-          noTitle
-          noServingsText
+          fromPostPreview
         />
       </SmallRow>
       <BigRow>

@@ -8,7 +8,6 @@ import RightColumn from "./RightColumn"
 import styled from "styled-components"
 import GlobalStyles from "../GlobalStyles"
 import NutritionalValues from "./NutritionalValues"
-import StyledLink from "./StyledLink"
 import { MAIN_WIDTH, GREY, ASIDE_WIDTH } from "../constants"
 import PrintView from "./PrintView"
 import ExternalLink from "./ExternalLink"
@@ -91,8 +90,7 @@ const Layout = ({ children, relatedPosts, author, noHeader }) => {
   const posts = data.allFile.nodes
   const componentsForMdx = {
     NutritionalValues,
-    Link: StyledLink,
-    ExternalLink,
+    Link: ExternalLink,
     PrintView,
   }
 
