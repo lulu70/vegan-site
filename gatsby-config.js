@@ -3,7 +3,7 @@ module.exports = {
     title: `The Vegan Home`,
     blogTitle: `The Vegan Blog`,
     recipesTitle: `Vegan Recipes`,
-    author: `Lior Cohen`,
+    author: `Lior Cohen and Roi Cohen`,
     description: `A Vegan website`,
     siteUrl: `https://the-vegan-home.netlify.app/`,
     image: `/Logo.png`,

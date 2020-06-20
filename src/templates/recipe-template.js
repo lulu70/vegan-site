@@ -45,6 +45,11 @@ const RecipeTemplate = ({ data, location, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         image={post.frontmatter.images[0]}
+        author={author}
+        date={post.frontmatter.date}
+        updatedDate={post.frontmatter.updatedDate}
+        nutritionalValues={post.frontmatter.nutritionalValues}
+        recipe
       />
       <Article>
         <PostHeader post={post} />
