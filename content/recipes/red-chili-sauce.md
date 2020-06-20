@@ -12,7 +12,8 @@ images:
 
 tags:
   - red chili peppers
-  - sauces and Dips
+  - sauces and dips
+
 nutritionalValues:
   servingsText: "3 small jars"
   title: "Nutritional values per jar:"

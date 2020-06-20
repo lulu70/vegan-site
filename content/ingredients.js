@@ -101,7 +101,13 @@ const ingredients = {
   peanuts: "peanuts",
   turmeric: "turmeric",
   speltFlour: "spelt flour",
-  
+  heartOfPalm: "heart of palm",
+  veganMayonnaise: "vegan mayonnaise",
+  pickledCucumber: "pickled cucumber",
+  pickledOnion: "pickled onion",
+  freshDill: "fresh dill",
+  veganMilk: "vegan milk",
+  dryGreenPeas: "dry green peas",
 }
 
 export default ingredients

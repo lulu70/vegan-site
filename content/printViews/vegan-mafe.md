@@ -17,8 +17,8 @@
 
 <NutritionalValues servingsText="1 small bowl" values={{cal: 140, protein: 4, carbs: 4, fat: 10}}/>
 
-- 2 tbsp vegan cheese spread (homemade or not).
-- 1 tsp of berbere spice mix.
+- 2 tbsp vegan cheese spread (store-bought or homemade)
+- 1 tsp of berbere spice mix
 - 1 tsp of lemon juice
 
 ### Let's start
@@ -35,5 +35,5 @@
 
 ### Side suggestion instructions
 
-1. Mix the vegan cheese spread, the lemon juice, and the spice mix till you get a smooth texture, serve right away.<br/>
+1. Combine and mix the vegan cheese spread, the lemon juice, and the spice mix till you get a smooth texture, serve right away.<br/>
    enjoy!

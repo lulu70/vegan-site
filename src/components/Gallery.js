@@ -32,7 +32,6 @@ const ThumbnailRow = styled.div`
   height: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 `
 const ThumbnailImageContainer = styled.div`
   padding: 0.1rem;

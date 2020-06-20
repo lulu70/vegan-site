@@ -290,6 +290,21 @@ const recipesIngredients = {
     i.oliveOil,
     i.water,
   ],
+  "vegan-fish-sticks": [
+    i.heartOfPalm,
+    i.flour,
+    i.bakingPowder,
+    i.thyme,
+    i.water,
+    i.vegetableOil,
+    i.veganMayonnaise,
+    i.pickledCucumber,
+    i.pickledOnion,
+    i.freshDill,
+    i.veganMilk,
+    i.dryGreenPeas,
+    i.salt,
+  ],
 }
 
 export default recipesIngredients
