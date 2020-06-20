@@ -54,8 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-
-  if (node.internal.type === `Mdx` || node.sourceInstanceName === "pages") {
+  if (node.internal.type === `Mdx`) {
     const fileNode = getNode(node.parent)
     const value = createFilePath({ node, getNode })
     createNodeField({

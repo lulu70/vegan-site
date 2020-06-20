@@ -1,9 +1,9 @@
 import React from "react"
 import StyledLink from "./StyledLink"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
-import { makePretty } from "../utils/helpers"
 import { SECOND_COLOR, MAIN_COLOR } from "../constants"
+import shortUuid from "short-uuid"
+
 const Ul = styled.ul`
   display: flex;
   flex: 1;
@@ -16,38 +16,30 @@ const Li = styled.li`
 `
 
 const MainMenu = () => {
-  const data = useStaticQuery(graphql`
+  const pages = [
     {
-      pages: allFile(
-        filter: {
-          sourceInstanceName: { eq: "pages" }
-          name: { nin: ["404", "index", "app"] }
-        }
-        sort: { fields: fields___slug, order: ASC }
-      ) {
-        nodes {
-          name
-          id
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `)
-
+      name: "Recipes",
+      id: shortUuid.generate(),
+      slug: "/recipes/",
+    },
+    {
+      name: "The vegan pantry",
+      id: shortUuid.generate(),
+      slug: "/the-vegan-pantry/",
+    },
+  ]
   return (
     <div className="MainMenu__navWrapper">
       <nav>
         <Ul>
-          {data.pages.nodes.map((page) => (
+          {pages.map((page) => (
             <Li key={page.id}>
               <StyledLink
                 $fontColor={MAIN_COLOR}
-                to={page.fields.slug}
+                to={page.slug}
                 activeStyle={{ color: SECOND_COLOR }}
               >
-                {makePretty(page.name)}
+                {page.name}
               </StyledLink>
             </Li>
           ))}
