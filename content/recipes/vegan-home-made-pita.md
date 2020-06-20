@@ -1,8 +1,8 @@
 ---
-title: Home-made pita
+title: Vegan home made pita
 date: 2020-04-27
 updatedDate: 2020-04-27
-description: "Easy and authentic home made pita bread recipe, requires a few basic ingredients for success."
+description: "Easy and authentic vegan home made pita bread recipe, requires a few basic ingredients for success."
 images:
   - ../assets/images/baked-pita.jpg
   - ../assets/images/dough.jpg
@@ -36,14 +36,28 @@ Check out <Link to="/recipes/home-made-falafel">our home made falafel</Link> for
 The sandwich, the most common use of this bread is not the only option though, many pita lovers also love to use it in a less constructed way, they just tear of a piece of it and dip it in a dip like <Link to="/recipes/the-ultimate-hummus-protein-bomb">hummus</Link> or a sauce like <Link to="/recipes/green-chili-sauce">our green chili sauce</Link> or even a soup.
 It doesn't matter how you use it, there are no rules, the fresh pita bread is simple, tasty, and a bread option which is normally without a doubt VEGAN.
 
-## Where is pita bread from?
+## flat bread
 
-## How to cut pita bread?
+### mini
 
-## Different grain same pita bread
+### greek
 
-## How to create the pocket of the pita?
+### turkish
 
-## How long does it takes to make a pita bread?
+### tortilla
 
-<PrintView fileName="home-made-pita"/>
+### lebanese
+
+### indian chapati
+
+## the flour pita options
+
+### spelt
+
+### whole
+
+## how to get the pocket
+
+## ideas for pita bread sandwiches
+
+<PrintView fileName="vegan-home-made-pita"/>

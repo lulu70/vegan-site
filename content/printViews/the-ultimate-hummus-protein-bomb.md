@@ -45,5 +45,5 @@ You can add many things like mushrooms, eggplants, etc. in this recipe, we will 
 pour 5-7 tbsp of the hummus mash to a deep round plate, spread it and make a hole in the center. pour the fava beans to the hole and finish with some cooked chickpeas on top and few fresh parsley leaves. sprinkle olive oil on top of everything, as much as you like, we use 2 tsp.
 you can decorate with a bit of paprika or cumin powder on top to make it look even better 😊
 
-As a siders we add our <Link to="/recipes/green-chili-sauce">green chili paste</Link>, and of course a <Link to="/recipes/home-made-pita">home made pita</Link> to wipe the delicious Hummus.<br/>
+As a siders we add our <Link to="/recipes/green-chili-sauce">green chili paste</Link>, and of course a <Link to="/recipes/vegan-home-made-pita">home made pita</Link> to wipe the delicious Hummus.<br/>
 enjoy!

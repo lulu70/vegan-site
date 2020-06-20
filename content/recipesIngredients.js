@@ -39,7 +39,14 @@ const recipesIngredients = {
     i.corianderSeeds,
     i.vegetableOil,
   ],
-  "home-made-pita": [i.flour, i.yeast, i.sugar, i.oliveOil, i.salt, i.water],
+  "vegan-home-made-pita": [
+    i.flour,
+    i.yeast,
+    i.sugar,
+    i.oliveOil,
+    i.salt,
+    i.water,
+  ],
   "the-ultimate-hummus-protein-bomb": [
     i.chickpeas,
     i.onion,
@@ -255,7 +262,7 @@ const recipesIngredients = {
     i.salt,
     i.blackPepper,
   ],
-  "peanuts-cream-tofu":[
+  "peanuts-cream-tofu": [
     i.tofu,
     i.zucchini,
     i.leek,
@@ -271,7 +278,7 @@ const recipesIngredients = {
     i.turmeric,
     i.blackPepper,
   ],
-  "tomatoes-spelt-buns":[
+  "tomatoes-spelt-buns": [
     i.wholeSpeltFlour,
     i.speltFlour,
     i.sunDriedTomatoes,
@@ -282,7 +289,7 @@ const recipesIngredients = {
     i.brownSugar,
     i.oliveOil,
     i.water,
-  ]
+  ],
 }
 
 export default recipesIngredients
