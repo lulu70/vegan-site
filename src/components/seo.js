@@ -1,10 +1,3 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
@@ -21,6 +14,8 @@ function SEO({
   date,
   updatedDate,
   nutritionalValues,
+  recipeIngredients,
+  recipeInstructions,
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -47,9 +42,9 @@ function SEO({
   const metaImageHeight = image ? image.childImageSharp.original.height : 1080
   const metaAuthor = author ? author.title : site.siteMetadata.author
 
-  const schemaOrg = {
+  const basicSchemaOrg = {
     "@context": "https://schema.org/",
-    "@type": recipe ? "Recipe" : "Website",
+    "@type": "Website",
     name: metaTitle,
     image: [metaImageUrl],
     author: {
@@ -59,6 +54,10 @@ function SEO({
     datePublished: date,
     dateModified: updatedDate,
     description: metaDescription,
+  }
+  const recipeSchemaOrg = recipe && {
+    ...basicSchemaOrg,
+    "@type": "Recipe",
     // recipeCuisine: "American",
     // prepTime: "PT1M",
     // cookTime: "PT2M",
@@ -75,26 +74,11 @@ function SEO({
     //   ratingValue: "5",
     //   ratingCount: "18",
     // },
-    // recipeIngredient: [
-    //   "2 cups of pineapple juice",
-    //   "5/8 cup cream of coconut",
-    //   "ice",
-    // ],
-    // recipeInstructions: [
-    //   {
-    //     "@type": "HowToStep",
-    //     text:
-    //       "Blend 2 cups of pineapple juice and 5/8 cup cream of coconut until smooth.",
-    //   },
-    //   {
-    //     "@type": "HowToStep",
-    //     text: "Fill a glass with ice.",
-    //   },
-    //   {
-    //     "@type": "HowToStep",
-    //     text: "Pour the pineapple juice and coconut mixture over ice.",
-    //   },
-    // ],
+    recipeIngredient: recipeIngredients,
+    recipeInstructions: recipeInstructions.map((instruction) => ({
+      "@type": "HowToStep",
+      text: instruction,
+    })),
     // video: {
     //   "@type": "VideoObject",
     //   name: "How to make a Party Coffee Cake",
@@ -174,7 +158,9 @@ function SEO({
         },
       ].concat(meta)}
     >
-      <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(recipe ? recipeSchemaOrg : basicSchemaOrg)}
+      </script>
     </Helmet>
   )
 }

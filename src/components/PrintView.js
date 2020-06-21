@@ -2,12 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import { SECOND_COLOR, MAIN_FONT_SIZE, GREY } from "../constants"
 import NutritionalValues from "./NutritionalValues"
-import { useStaticQuery, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { Link } from "gatsby"
 import GatsbyImage from "gatsby-image"
 import PrintSvg from "../../content/assets/print.svg"
 import ExternalLink from "./ExternalLink"
-
+import shortUuid from "short-uuid"
 const Container = styled.div`
   padding-top: 6rem;
   margin-top: -6rem;
@@ -29,7 +28,7 @@ const TopColumn = styled.div`
   display: flex;
   flex-direction: column;
 `
-const PrintLink = styled.a`
+const PrintLink = styled(Link)`
   width: 60px;
   color: ${SECOND_COLOR};
   background-color: ${GREY};
@@ -42,77 +41,20 @@ const StyledImage = styled(GatsbyImage)`
   width: 128px;
   height: 72px;
 `
-const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { sourceInstanceName: { eq: "recipes" } }) {
-        nodes {
-          name
-          childMdx {
-            frontmatter {
-              title
-              nutritionalValues {
-                servingsText
-                title
-                cal
-                protein
-                carbs
-                fat
-              }
-              images {
-                name
-                publicURL
-                childImageSharp {
-                  fluid(maxWidth: 500, quality: 100) {
-                    ...GatsbyImageSharpFluid_withWebp_noBase64
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      printView: allFile(filter: { sourceInstanceName: { eq: "printViews" } }) {
-        nodes {
-          name
-          childMdx {
-            body
-          }
-        }
-      }
-    }
-  `)
-  const matchedPost = data.allFile.nodes.find(({ name }) => name === fileName)
-  const matchedPrintView = data.printView.nodes.find(
-    ({ name }) => name === fileName
-  )
-  if (!matchedPost || !matchedPrintView) {
-    return <span />
-  }
-
-  const post = matchedPost.childMdx
-  const printView = matchedPrintView.childMdx
-  return (
+const PrintView = ({ fileName, noPrintButton, setImageLoaded, post }) => {
+  return post ? (
     <Container id="printView__innerContainer">
       <InnerContainer>
         <TopRow>
           <TopColumn>
             <h2>{post.frontmatter.title}</h2>
             <NutritionalValues
-              values={{
-                cal: post.frontmatter.nutritionalValues.cal,
-                protein: post.frontmatter.nutritionalValues.protein,
-                carbs: post.frontmatter.nutritionalValues.carbs,
-                fat: post.frontmatter.nutritionalValues.fat,
-              }}
-              title={post.frontmatter.nutritionalValues.title}
-              servingsText={post.frontmatter.nutritionalValues.servingsText}
+              values={post.frontmatter.ingredients[0].nutritionalValues}
             />
             {!noPrintButton && (
               <PrintLink
-                href={`/app/print/${fileName}`}
-                target="_blank"
-                rel="noreferrer"
+                to={`/app/print`}
+                state={{ post }}
                 data-test-id="printView__printLink"
               >
                 Print
@@ -131,9 +73,36 @@ const PrintView = ({ fileName, noPrintButton, setImageLoaded }) => {
             />
           </ExternalLink>
         </TopRow>
-        <MDXRenderer>{printView.body}</MDXRenderer>
+        {post.frontmatter.ingredients &&
+          post.frontmatter.ingredients.map((list, index) => (
+            <React.Fragment key={shortUuid.generate()}>
+              <h3>{list.title || "Ingredients"}</h3>
+              {index !== 0 && list.nutritionalValues && (
+                <NutritionalValues values={list.nutritionalValues} />
+              )}
+              <ul>
+                {list.items.map((item) => (
+                  <li key={shortUuid.generate()}>{item}</li>
+                ))}
+              </ul>
+            </React.Fragment>
+          ))}
+        {post.frontmatter.instructions &&
+          post.frontmatter.instructions.map((list) => (
+            <React.Fragment key={shortUuid.generate()}>
+              <h3>{list.title || "Let's start"}</h3>
+              <ol>
+                {list.items.map((item) => (
+                  <li key={shortUuid.generate()}>{item}</li>
+                ))}
+              </ol>
+            </React.Fragment>
+          ))}
+        <span>Enjoy!</span>
       </InnerContainer>
     </Container>
+  ) : (
+    <span />
   )
 }
 

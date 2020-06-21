@@ -80,12 +80,17 @@ export const pageQuery = graphql`
             description
             date(formatString: "MMMM DD, YYYY")
             updatedDate(formatString: "MMMM DD, YYYY")
-            nutritionalValues {
+            ingredients {
+              nutritionalValues {
+                title
+                servingsText
+                cal
+                fat
+                protein
+                carbs
+              }
               title
-              cal
-              protein
-              carbs
-              fat
+              items
             }
             images {
               name

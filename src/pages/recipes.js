@@ -55,11 +55,17 @@ export const pageQuery = graphql`
             title
             description
             tags
-            nutritionalValues {
-              cal
-              protein
-              carbs
-              fat
+            ingredients {
+              nutritionalValues {
+                title
+                servingsText
+                cal
+                fat
+                protein
+                carbs
+              }
+              title
+              items
             }
             images {
               name

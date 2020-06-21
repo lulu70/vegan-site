@@ -7,9 +7,8 @@ import { MDXProvider } from "@mdx-js/react"
 import RightColumn from "./RightColumn"
 import styled from "styled-components"
 import GlobalStyles from "../GlobalStyles"
-import NutritionalValues from "./NutritionalValues"
 import { MAIN_WIDTH, GREY, ASIDE_WIDTH } from "../constants"
-import PrintView from "./PrintView"
+
 import ExternalLink from "./ExternalLink"
 const Container = styled.div``
 
@@ -65,12 +64,17 @@ const Layout = ({ children, relatedPosts, author, noHeader }) => {
               title
               tags
               description
-              nutritionalValues {
+              ingredients {
+                nutritionalValues {
+                  title
+                  servingsText
+                  cal
+                  fat
+                  protein
+                  carbs
+                }
                 title
-                cal
-                fat
-                protein
-                carbs
+                items
               }
               images {
                 name
@@ -89,9 +93,7 @@ const Layout = ({ children, relatedPosts, author, noHeader }) => {
 
   const posts = data.allFile.nodes
   const componentsForMdx = {
-    NutritionalValues,
     Link: ExternalLink,
-    PrintView,
   }
 
   return (

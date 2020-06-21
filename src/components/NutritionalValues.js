@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuerxy, graphql } from "gatsby"
 import styled from "styled-components"
 import { SMALL_FONT_SIZE, TINY_FONT_SIZE, SECOND_COLOR } from "../constants"
 import DishSvg from "../../content/assets/dish-spoon-knife.svg"
@@ -40,43 +40,11 @@ const Span = styled.span`
   }
 `
 const NutritionalValues = ({
-  values,
+  values: nutritionalValues,
   title,
   servingsText,
-  fileName,
   fromPostPreview,
 }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { sourceInstanceName: { eq: "recipes" } }) {
-        nodes {
-          name
-          childMdx {
-            frontmatter {
-              nutritionalValues {
-                servingsText
-                title
-                cal
-                protein
-                carbs
-                fat
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-  let nutritionalValues
-  if (fileName) {
-    const matchedRecipe = data.allFile.nodes.find(
-      ({ name }) => name === fileName
-    )
-    nutritionalValues = matchedRecipe.childMdx.frontmatter.nutritionalValues
-  }
-  if (values) {
-    nutritionalValues = values
-  }
   return (
     <Container>
       {!fromPostPreview && (

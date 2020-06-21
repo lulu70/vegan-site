@@ -8,6 +8,7 @@ import PostHeader from "../components/PostHeader"
 import { MAIN_FONT_SIZE, SECOND_COLOR, GREY } from "../constants"
 import NutritionalValues from "../components/NutritionalValues"
 import Gallery from "../components/Gallery"
+import PrintView from "../components/PrintView"
 
 const Article = styled.article`
   width: 100%;
@@ -33,7 +34,6 @@ const MdxWrapper = styled.div`
 const RecipeTemplate = ({ data, location, pageContext }) => {
   const post = data.mdx
   const author = data.author
-
   const relatedPosts = data.relatedPosts.edges.filter(
     (edge) => edge.node.fields.slug !== pageContext.slug
   )
@@ -48,18 +48,30 @@ const RecipeTemplate = ({ data, location, pageContext }) => {
         author={author}
         date={post.frontmatter.date}
         updatedDate={post.frontmatter.updatedDate}
-        nutritionalValues={post.frontmatter.nutritionalValues}
+        nutritionalValues={post.frontmatter.ingredients[0].nutritionalValues}
+        recipeIngredients={post.frontmatter.ingredients.reduce((acc, list) => {
+          return [...acc, ...list.items]
+        }, [])}
+        recipeInstructions={post.frontmatter.instructions.reduce(
+          (acc, list) => {
+            return [...acc, ...list.items]
+          },
+          []
+        )}
         recipe
       />
       <Article>
         <PostHeader post={post} />
         <MdxWrapper>
-          <NutritionalValues values={post.frontmatter.nutritionalValues} />
+          <NutritionalValues
+            values={post.frontmatter.ingredients[0].nutritionalValues}
+          />
           <JumpToRecipeLink href="#printView__innerContainer">
             Jump to recipe
           </JumpToRecipeLink>
           <Gallery images={images} />
           <MDXRenderer>{post.body}</MDXRenderer>
+          <PrintView post={post} />
         </MdxWrapper>
       </Article>
     </Layout>
@@ -74,6 +86,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       body
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -81,13 +96,21 @@ export const pageQuery = graphql`
         description
         tags
         author
-        nutritionalValues {
-          servingsText
+        ingredients {
+          nutritionalValues {
+            title
+            servingsText
+            cal
+            fat
+            protein
+            carbs
+          }
           title
-          cal
-          fat
-          protein
-          carbs
+          items
+        }
+        instructions {
+          title
+          items
         }
         images {
           name

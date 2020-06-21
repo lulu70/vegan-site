@@ -66,7 +66,7 @@ const PostPreview = ({ post, onClick }) => {
       </StyledLink>
       <SmallRow>
         <NutritionalValues
-          values={post.childMdx.frontmatter.nutritionalValues}
+          values={post.childMdx.frontmatter.ingredients[0].nutritionalValues}
           fromPostPreview
         />
       </SmallRow>

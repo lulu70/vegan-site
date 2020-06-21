@@ -26,7 +26,7 @@ describe("Pages loading", () => {
     cy.findByTestId("the-vegan-pantry__container").should("exist")
   })
 
-  it("One random recipe page is loaded", () => {
+  it.only("One random recipe page is loaded", () => {
     cy.findAllByText(/recipes/i)
       .first()
       .click()
@@ -45,11 +45,8 @@ describe("Pages loading", () => {
         "not.contain.text",
         randomHeaderText
       )
-      cy.findByTestId("printView__printLink").then((el) => {
-        const href = el.prop("href")
-        cy.visit(href)
-        cy.url().should("include", "app/print/")
-      })
+      cy.findByTestId("printView__printLink").click()
+      cy.url().should("include", "app/print")
     })
   })
 })

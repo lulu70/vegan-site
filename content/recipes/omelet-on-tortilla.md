@@ -1,7 +1,8 @@
 ---
-title: Omelet on tortilla
 date: 2020-06-06
 updatedDate: 2020-06-06
+author: lior cohen
+title: Omelet on tortilla
 description: Vegan omelet with red pepper strips on top of a tortilla.
 images:
   - ../assets/images/omelet-tortilla-plate.jpg
@@ -16,13 +17,37 @@ tags:
   - fast and simple
   - chickpea flour
 
-nutritionalValues:
-  servingsText: "1 serving"
-  cal: 320
-  protein: 8
-  carbs: 31
-  fat: 14
-author: lior cohen
+ingredients:
+  - items:
+      - ¼ a cup of chickpea flour
+      - ¼ a cup of water
+      - ¾ tbsp of olive oil
+      - ½ fresh red pepper
+      - ½ tsp of mustard
+      - ¼ a tsp of black pepper
+      - ¼ tsp of chili pepper powder or flakes
+      - ½ tsp of cumin
+      - ½ tsp of curcuma
+      - salt, to taste
+      - 1 small tortilla
+    nutritionalValues:
+      servingsText: "1 serving"
+      cal: 320
+      protein: 8
+      carbs: 31
+      fat: 14
+
+instructions:
+  - items:
+      - Cut the red pepper into strips.
+      - Mix the chickpea flour with the black pepper, chili powder, cumin, curcuma, and some salt.
+      - Add the water to the mixture and mix everything.
+      - Add the mustard and mix it with the rest.
+      - Pour the oil into a 15 cm **non-stick** frying pan, (the non-stick part is necessary, otherwise it will be tricky to flip it over).
+      - Fry the red pepper strips for 5 minutes.
+      - Pour the omelet mixture in and fry for 5 minutes.
+      - Place a tortilla on top of the omelet and continue frying for 3 more minutes.
+      - Flip it over so the tortilla will lie on the bottom and fry it for 3 more minutes.
 ---
 
 ## The vegan omelet on tortilla
@@ -78,5 +103,3 @@ The options for more toppings are almost endless, this is a list of recommended 
 6. olives
 7. corn
 8. sun-dried tomato
-
-<PrintView fileName="omelet-on-tortilla"/>

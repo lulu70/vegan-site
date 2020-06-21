@@ -8,7 +8,7 @@ const Container = styled.div`
   padding: 1rem;
 `
 
-const PrintPage = ({ fileName }) => {
+const PrintPage = ({ post }) => {
   const [imageLoaded, setImageLoaded] = React.useState(false)
   React.useEffect(() => {
     if (imageLoaded) {
@@ -20,11 +20,7 @@ const PrintPage = ({ fileName }) => {
     <Layout noHeader>
       <SEO title="Print page" />
       <Container>
-        <PrintView
-          fileName={fileName}
-          noPrintButton
-          setImageLoaded={setImageLoaded}
-        />
+        <PrintView post={post} noPrintButton setImageLoaded={setImageLoaded} />
       </Container>
     </Layout>
   )
