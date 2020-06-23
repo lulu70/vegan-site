@@ -46,6 +46,7 @@ const RecipeTemplate = ({ data, location, pageContext }) => {
         description={post.frontmatter.description || post.excerpt}
         image={post.frontmatter.images[0]}
         author={author}
+        location={location}
         date={post.frontmatter.date}
         updatedDate={post.frontmatter.updatedDate}
         nutritionalValues={post.frontmatter.ingredients[0].nutritionalValues}

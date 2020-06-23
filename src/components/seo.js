@@ -16,6 +16,7 @@ function SEO({
   nutritionalValues,
   recipeIngredients,
   recipeInstructions,
+  location,
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -35,13 +36,13 @@ function SEO({
   const metaTitle = title ? title : site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
   const siteUrl = site.siteMetadata.siteUrl
+  const metaUrl = location ? siteUrl + location.pathname : siteUrl
   const metaImageUrl = image
     ? `${siteUrl}${image.publicURL}`
     : `${siteUrl}${site.siteMetadata.image}`
   const metaImageWidth = image ? image.childImageSharp.original.width : 1920
   const metaImageHeight = image ? image.childImageSharp.original.height : 1080
   const metaAuthor = author ? author.title : site.siteMetadata.author
-
   const basicSchemaOrg = {
     "@context": "https://schema.org/",
     "@type": "Website",
@@ -111,6 +112,14 @@ function SEO({
         {
           name: `image`,
           content: metaImageUrl,
+        },
+        {
+          name: `url`,
+          content: metaUrl,
+        },
+        {
+          name: `og:url`,
+          content: metaUrl,
         },
         {
           property: `og:image`,
