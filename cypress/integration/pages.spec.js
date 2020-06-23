@@ -26,7 +26,7 @@ describe("Pages loading", () => {
     cy.findByTestId("the-vegan-pantry__container").should("exist")
   })
 
-  it.only("One random recipe page is loaded", () => {
+  it("One random recipe page is loaded", () => {
     cy.findAllByText(/recipes/i)
       .first()
       .click()

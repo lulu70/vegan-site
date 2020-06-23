@@ -39,7 +39,7 @@ const recipesIngredients = {
     i.corianderSeeds,
     i.vegetableOil,
   ],
-  "vegan-home-made-pita": [
+  "vegan-home-made-pita-bread": [
     i.flour,
     i.yeast,
     i.sugar,
