@@ -108,6 +108,7 @@ function SEO({
         lang,
       }}
       title={metaTitle}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `image`,

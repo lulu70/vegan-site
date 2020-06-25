@@ -47,9 +47,9 @@ const TheVeganPantry = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="The vegan pantry" />
+      <SEO title="The Vegan Pantry" />
       <Container data-test-id="the-vegan-pantry__container">
-        <PostHeader title="The vegan pantry" />
+        <PostHeader title="The Vegan Pantry" />
         <Content>
           <PantryMenu />
           <PantryInput />

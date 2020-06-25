@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `The Vegan Home`,
-    blogTitle: `The Vegan Blog`,
-    recipesTitle: `Vegan Recipes`,
+    blogTitle: `Blog`,
+    recipesTitle: `Recipes`,
     author: `Lior Cohen and Roi Cohen`,
     description: `A Vegan website`,
     siteUrl: `https://the-vegan-home.netlify.app/`,

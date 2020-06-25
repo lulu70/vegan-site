@@ -7,7 +7,7 @@ import PostHeader from "../components/PostHeader"
 const index = ({ data }) => {
   return (
     <Layout>
-      <SEO title={data.site.siteMetadata.title} />
+      <SEO title="Home" />
       <PostHeader title={data.site.siteMetadata.title} />
     </Layout>
   )
