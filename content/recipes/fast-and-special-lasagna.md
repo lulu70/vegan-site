@@ -75,18 +75,6 @@ instructions:
       - Bake for 45 minutes and check with a knife if the pasta sheets are soft enough, if not, you can cover it with aluminum foil and bake for another 10 minutes. When it's ready, take it out of the oven and let it cool down before serving.
 ---
 
-## What is lasagna?
-
-## Origin
-
-## The vegan version
-
-## Pasta
-
-## The herbs
-
-## The process
-
 ## All-in lasagna
 
 Sometimes we just want to make something fast and simple with some random ingredients we have at home.
