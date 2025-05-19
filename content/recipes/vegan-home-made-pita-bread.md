@@ -18,12 +18,12 @@ tags:
 
 ingredients:
   - items:
-      - 4 cups of all-purpose flour, (you can also use spelt flour for a healthier choice)
-      - 1½ tsp of active dry yeast
+      - 3.5 cups of all-purpose flour, (you can also use spelt flour for a healthier choice)
+      - 1½ tbsp of active dry yeast
       - 1 tbsp of sugar
-      - 2½ tbsp of olive oil
-      - 1½ tsp of salt
-      - 1 cup of water
+      - 3 tbsp of olive oil
+      - 1 tsp of salt
+      - 1⅓ cup of water
     nutritionalValues:
       servingsText: "8 portions"
       title: "Nutritional values per portion:"
@@ -33,15 +33,15 @@ ingredients:
       fat: 4
 instructions:
   - items:
-      - Mix the yeast with half a cup room temperature water in a glass.
-      - Place the flour, the yeast, the sugar, and the oil into a bowl, (if you have a standing mixer you can place it in the working bowl) and knead for five minutes.
-      - Add the salt and knead until you get a beautiful non-sticky stable piece of dough, add the other half a cup of water gradually and carefully.
-      - Place a cloth or a towel on top of the bowl and let it rest for an hour.
+      - Mix the yeast and sugar with ⅓ a cup room temperature water in a bowl, let it rest for 10 minutes.
+      - Place the flour and the salt in a bowl or standing mixer  and mix well.
+      - Add 2 tbsp of olive oil, the yeast mix, and 1 cup of water knead/mix for 6 to 8 minutes.
+      - On a floured workspace, form a nice ball of dough, pour 1 tbsp of olive oil in a bowl, place the dough in the bowl (make sure the dough is covered with the oil all around), cover with a plastic wrap and let it rest for an hour.
       - Take the dough out of the bowl, place onto a floured workspace, and form a long round shape (like a shape of a normal loaf of bread).
-      - Cut eight even pieces and form each piece into a small round ball with a smooth top, pulling dough from the sides and tucking the ends underneath the bottom.
-      - Place a cloth or a towel on top of the balls and let them rest for 15 minutes.
-      - On a floured workspace gently pat each ball flat using your hand and form a round pita shape using a rolling pin - the thickness should be around 6 mm (¼ inch).
-      - Preheat the oven to 250℃.
+      - Cut ten even pieces and form each piece into a small round ball, spread some flour on each ball.
+      - Place a cloth or a towel on top of the balls and let them rest for 30 minutes.
+      - On a floured workspace gently pat each ball flat using your hand and form a round pita shape using a rolling pin - the thickness should be around 6 mm (¼ inch), cover and let them rest for 10 more minutes.
+      - Preheat the oven to 230℃.
       - Prepare a baking tray with baking paper, sprinkle some flour on it, and place the pitas on.
       - Bake for about 5 minutes until there is a bit of a color change.
       - Take out, let it chill a few minutes.
