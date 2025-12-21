@@ -38,12 +38,12 @@ instructions:
       - Add 2 tbsp of olive oil, the yeast mix, and 1 cup of water knead/mix for 6 to 8 minutes.
       - On a floured workspace, form a nice ball of dough, pour 1 tbsp of olive oil in a bowl, place the dough in the bowl (make sure the dough is covered with the oil all around), cover with a plastic wrap and let it rest for an hour.
       - Take the dough out of the bowl, place onto a floured workspace, and form a long round shape (like a shape of a normal loaf of bread).
-      - Cut ten even pieces and form each piece into a small round ball, spread some flour on each ball.
+      - Cut eight even pieces and form each piece into a small round ball, spread some flour on each ball.
       - Place a cloth or a towel on top of the balls and let them rest for 30 minutes.
       - On a floured workspace gently pat each ball flat using your hand and form a round pita shape using a rolling pin - the thickness should be around 6 mm (¼ inch), cover and let them rest for 10 more minutes.
       - Preheat the oven to 230℃.
       - Prepare a baking tray with baking paper, sprinkle some flour on it, and place the pitas on.
-      - Bake for about 5 minutes until there is a bit of a color change.
+      - Bake for about 7 minutes until there is a bit of a color change.
       - Take out, let it chill a few minutes.
 ---
 
